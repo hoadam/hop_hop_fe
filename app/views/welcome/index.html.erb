@@ -1,0 +1,9 @@
+<h1>Hop Hop</h1>
+<p>Hop Hop! - your ultimate travel planning companion. Enjoy your trip and let us take away the stress of planning for you</p>
+
+<% if current_user %>
+   <%= button_to "Log Out", logout_path, method: :delete, class: "btn btn-lg btn-outline-secondary" %>
+<% else %>   
+   <%= button_to 'Sign Up', register_user_path, method: :get, class: "btn btn-lg btn-outline-secondary" %><br>
+   <%= button_to 'Log In', user_login_path, method: :get, class: "btn btn-lg btn-outline-secondary" %><br>
+<% end %>
