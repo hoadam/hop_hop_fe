@@ -30,5 +30,18 @@ RSpec.describe 'Log in', type: :feature do
 
       expect(current_path).to eq(user_path(User.first))
     end
+
+    it 'renders an error when invalid credentials' do #Sad Path
+      user = User.create!(name: 'Selena', email: 'selena@gmail.com',
+      password: 'selena123', password_confirmation: 'selena123')
+      visit user_login_path
+
+      fill_in 'Email', with: 'selena@wrong.com'
+      fill_in 'Password', with: 'selena123'
+      click_on 'Log In'
+
+      expect(current_path).to eq(user_login_path)
+      expect(page).to have_content('Sorry, your credentials are bad')
+    end
   end
 end
