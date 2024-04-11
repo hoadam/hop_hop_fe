@@ -1,0 +1,18 @@
+<h1>Sign Up before starting to plan your trip!</h1>
+
+<%= form_with model: @user, url: users_path, method: :post, data: {turbo: false}, local: true do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, class: "form-control" %><br>
+  <%= f.label :email %>
+  <%= f.text_field :email, class: "form-control" %><br>
+  <%= f.label :password, "Password:" %>
+  <%= f.password_field :password %>
+  <%= f.label :password_confirmation, "Password Confirmation:" %>
+  <%= f.password_field :password_confirmation %>
+
+
+  <%= f.submit 'Create New User', class: "btn btn-primary" %>
+<% end %>
+
+<p>Or</p><br>
+<%= link_to "Sign Up with Google", "/auth/google_oauth2", class: "btn btn-lg btn-outline-secondary"%>
