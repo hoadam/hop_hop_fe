@@ -8,11 +8,11 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
   root 'welcome#index'
-  get '/signup', to: 'users#new', as: 'signup_user'
+  get '/signup', to: 'users#new', as: 'register_user'
   get '/login', to: 'sessions#new', as: 'user_login'
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
-  get '/auth/google_oauth2/callback', to: 'sessions#google'
+  get '/auth/google_oauth2/callback', to: 'sessions#google', as: 'auth_google'
 
   resources :users, only: [:show, :new, :create]
 end
