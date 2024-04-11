@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Log in', type: :feature do
+RSpec.describe 'Sign Up', type: :feature do
   describe 'When user visits sign up page' do
     it "users can sign up using their google acocunt" do
       OmniAuth.config.test_mode = true
