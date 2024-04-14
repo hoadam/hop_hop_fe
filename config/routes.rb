@@ -14,5 +14,11 @@ Rails.application.routes.draw do
   delete '/logout', to: 'sessions#destroy'
   get '/auth/google_oauth2/callback', to: 'sessions#google', as: 'auth_google'
 
-  resources :users, only: [:show, :new, :create]
+  resources :users, only: [:show, :new, :create] do
+    resources :trips do
+      resources :daily_itineraries, only: [:index, :show, :new, :create] do
+        resources :activities
+      end
+    end
+  end
 end
