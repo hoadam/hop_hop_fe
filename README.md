@@ -22,3 +22,11 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+## How to regenerate openapi client
+1. Clone/pull latest openapi spec under hophop_be
+2. Run `openapi-generator generate -i <path to swagger.yaml> -g ruby -o ./vendor/gems/hophop-be --additional-properties=library=faraday,gemName=hophop-be-api`
+3. Run `bundle install`
+4. Refer to README.md under /vendor/gems/hophop-be for usage instructions
+NOTE: if run into issue installing ruby-magic, run `brew install libmagic`
