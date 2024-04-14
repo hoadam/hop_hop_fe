@@ -1,76 +1,91 @@
-# require 'rails_helper'
+require 'rails_helper'
 
-# RSpec.describe AccommodationService do
-#   let(:user_id) { 1 }
-#   let(:trip_id) { 1 }
-#   let(:accommodation_id) { 1 }
-#   let(:accommodation_params) { { name: "Updated Accommodation name" } }
+RSpec.describe AccommodationService do
+  let(:accommodation_params) do
+    {
+      name: 'Conrad Tokyo',
+      address: 'Ginza, Tokyo',
+      check_in: '2024-04-20',
+      check_out: '2024-04-30'
+    }
+  end
 
-#   describe '.conn' do
-#     it 'returns a Faraday connection' do
-#       expect(AccommodationService.conn).to be_a(Faraday::Connection)
-#     end
-#   end
+  let(:trip_params) do
+    {
+      name: 'Trip To Japan',
+      location: 'Japan',
+      start_date: '2024-04-20',
+      end_date: '2024-04-30',
+      status: 'in_progress',
+      total_budget: 1000
+    }
+  end
+  describe '.get_accommodations' do
+    it 'returns an array of Accommodation objects', :vcr do
+      user_id = 1
+      trip = TripService.create_trip(user_id, trip_params)
 
-#   describe '.get_url' do
-#     it 'makes a GET request to the specified URL' do
-#       allow(AccommodationService).to receive(:conn).and_return(double(get: double(body: { "data": [] }.to_json)))
-#       AccommodationService.get_url('test')
-#     end
-#   end
+      accommodation_ids = 5.times.map do
+        accommodation = AccommodationService.create_accommodation(user_id, trip.id, accommodation_params)
+        accommodation.id
+      end
 
-#   describe '.get_accommodations' do
-#     it 'returns a list of accommodations' do
-#       allow(AccommodationService).to receive(:conn).and_return(double(get: double(body: { "data": [{ id: 1, attributes: { name: "Hotel Name" } }] }.to_json)))
+      accommodations = AccommodationService.get_accommodations(user_id, trip.id)
 
-#       accommodations = AccommodationService.get_accommodations(1, 1)
+      expect(accommodations.map(&:id)).to match_array(accommodation_ids)
+      expect(accommodations.first).to be_an(Accommodation)
+      expect(accommodations.first.name).not_to be_nil
+    end
+  end
 
-#       expect(accommodations).to be_an(Array)
-#       expect(accommodations.size).to eq(1)
-#       expect(accommodations.first.name).to eq('Hotel Name')
-#     end
-#   end
+  describe '.accommodation_details' do
+    it 'returns an Accommodation object', :vcr do
+      user_id = 1
+      trip = TripService.create_trip(user_id, trip_params)
+      accommodation = AccommodationService.create_accommodation(user_id, trip.id, accommodation_params)
 
-#   describe '.accommodation_details' do
-#     it 'returns an accommodation object' do
-#       allow(AccommodationService).to receive(:conn).and_return(double(get: double(body: { id: 1, attributes: { name: "Hotel Name" } }.to_json)))
+      accommodation = AccommodationService.accommodation_details(user_id, trip.id, accommodation.id)
 
-#       accommodation = AccommodationService.accommodation_details(user_id, trip_id, accommodation_id)
+      expect(accommodation).to be_a(Accommodation)
+      expect(accommodation.name).not_to be_nil
+    end
+  end
 
-#       expect(accommodation.name).to eq('Hotel Name')
-#       expect(accommodation).to be_a(Accommodation)
-#     end
-#   end
+  describe '.create_accommodation' do
+    it 'creates a new accommodation', :vcr do
+      user_id = 1
+      trip = TripService.create_trip(user_id, trip_params)
 
-#   describe '.create_accommodation' do
-#     it 'creates a new accommodation' do
-#       allow(AccommodationService).to receive(:conn).and_return(double(post: double(body: { id: 1, name: "New Hotel Name" }.to_json)))
+      response = AccommodationService.create_accommodation(user_id, trip.id, accommodation_params)
 
-#       response = AccommodationService.create_accommodation(user_id, trip_id, { name: "New Hotel Name" })
+      expect(response.name).to eq('Conrad Tokyo')
+      expect(response.address).to eq('Ginza, Tokyo')
+    end
+  end
 
-#       expect(response[:name]).to eq('New Hotel Name')
-#       expect(response[:id]).to eq(1)
-#     end
-#   end
+  describe '.update_accommodation' do
+    it 'updates an existing accommodation', :vcr do
+      user_id = 1
+      trip = TripService.create_trip(user_id, trip_params)
+      accommodation = AccommodationService.create_accommodation(user_id, trip.id, accommodation_params)
+      update_params = { name: 'Cerulean Hotel' }
 
-#   describe '.update_accommodation' do
-#     it 'updates an existing accommodation' do
-#       allow(AccommodationService).to receive(:conn).and_return(double(put: double(body: { id: 1, attribute: { name: "Updated Accommodation Name" } }.to_json)))
+      response = AccommodationService.update_accommodation(user_id, trip.id, accommodation.id, update_params)
 
-#       response = AccommodationService.update_accommodation(user_id, trip_id, accommodation_id, accommodation_params)
+      expect(response.id).to eq(accommodation.id)
+      expect(response.name).to eq('Cerulean Hotel')
+    end
+  end
 
-#       expect(response[:id]).to eq(1)
-#       expect(response[:name]).to eq('Updated Accommodation Name')
-#     end
-#   end
+  describe '.delete_accommodation' do
+    it 'deletes an existing accommodation', :vcr do
+      user_id = 1
+      trip = TripService.create_trip(user_id, trip_params)
+      accommodation = AccommodationService.create_accommodation(user_id, trip.id, accommodation_params)
 
-#   describe '.delete_accommodation' do
-#     it 'deletes an existing accommodation' do
-#       allow(AccommodationService).to receive(:conn).and_return(double(delete: nil))
+      response = AccommodationService.delete_accommodation(user_id, trip.id, accommodation.id)
 
-#       response = AccommodationService.delete_accommodation(user_id, trip_id, accommodation_id)
-
-#       expect(response).to be_nil
-#     end
-#   end
-# end
+      expect(response).to eq(true)
+    end
+  end
+end
