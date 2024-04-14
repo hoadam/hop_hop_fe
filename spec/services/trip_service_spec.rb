@@ -3,7 +3,12 @@ require 'rails_helper'
 describe TripService do
   let(:trip_params) do
     {
-      name: 'Trip To Japan', location: 'Japan', start_date: '2024-04-20', end_date: '2024-04-30', status: 'in_progress', total_budget: 1000
+      name: 'Trip To Japan',
+      location: 'Japan',
+      start_date: '2024-04-20',
+      end_date: '2024-04-30',
+      status: 'in_progress',
+      total_budget: 1000
     }
   end
   describe '.conn' do
