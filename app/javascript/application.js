@@ -2,7 +2,6 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 import "mapkick/bundle"
-// import '/~@googlemaps/extended-component-library/';
 
 let map;
 
@@ -18,7 +17,7 @@ async function initMap() {
   console.log(map);
 
   map.addListener("click", (e) => {
-    console.log(e)
+    console.log(e.placeId)
     placeMarkerAndPanTo(e.latLng, map);
   });
 }
@@ -34,10 +33,8 @@ function placeMarkerAndPanTo(latLng, map) {
 async function getPlaceDetails(Place) {
   const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
   // Use place ID to create a new Place instance.
-  const marker = new AdvancedMarkerElement({
-    map,
-    position: place.location,
-    title: place.displayName,
+  const place = new Place({
+    id: Place.placeId
   });
 
   // Call fetchFields, passing the desired data fields.
@@ -48,12 +45,12 @@ async function getPlaceDetails(Place) {
   console.log(place.displayName);
   console.log(place.formattedAddress);
 
-  // // Add an Advanced Marker
-  // const marker = new AdvancedMarkerElement({
-  //   map,
-  //   position: place.location,
-  //   title: place.displayName,
-  // });
+  // Add an Advanced Marker
+  const marker = new AdvancedMarkerElement({
+    map,
+    position: place.location,
+    title: place.displayName,
+  });
 }
 
 initMap();
