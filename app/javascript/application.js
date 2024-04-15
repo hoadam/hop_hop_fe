@@ -2,54 +2,77 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 
-let map;
+document.addEventListener('turbolinks:load', function() {
+  let map;
 
-async function initMap() {
-  const { Map } = await google.maps.importLibrary("maps");
+  async function initMap() {
+    const { Map } = await google.maps.importLibrary("maps");
 
-  console.log(document.getElementById("map"));
+    map = new Map(document.getElementById("map"), {
+      center: { lat: -34.397, lng: 150.644 },
+      zoom: 8,
+    });
 
-  map = new Map(document.getElementById("map"), {
-    center: { lat: -34.397, lng: 150.644 },
-    zoom: 8,
-  });
-  console.log(map);
+    // Access the data from the data-info attribute of your element
+    const dataArray = document.getElementById("myElement").dataset.info;
 
-  map.addListener("click", (e) => {
-    console.log(e.placeId)
-    placeMarkerAndPanTo(e.latLng, map);
-  });
-}
+    // Parse the data to extract the lat and lon
+    const jsonData = JSON.parse(dataArray);
 
-function placeMarkerAndPanTo(latLng, map) {
-  new google.maps.Marker({
-    position: latLng,
-    map: map,
-  });
-  map.panTo(latLng);
-}
+    jsonData.forEach(location => {
+      const latitude = location.data.lat;
+      const longitude = location.data.lon;
 
-async function getPlaceDetails(Place) {
-  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
-  // Use place ID to create a new Place instance.
-  const place = new Place({
-    id: Place.placeId
-  });
+      const latLng = new google.maps.LatLng(latitude, longitude);
 
-  // Call fetchFields, passing the desired data fields.
-  await place.fetchFields({
-    fields: ["displayName", "formattedAddress", "location"],
-  });
-  // Log the result
-  console.log(place.displayName);
-  console.log(place.formattedAddress);
+      placeMarker(latLng, map)
+      map.panTo(latLng);
+    });
+  }
 
-  // Add an Advanced Marker
-  const marker = new AdvancedMarkerElement({
-    map,
-    position: place.location,
-    title: place.displayName,
-  });
-}
+  function placeMarker(latLng, map) {
+    new google.maps.marker.AdvancedMarkerElement({
+      position: latLng,
+      map: map,
+    });
+  }
 
-initMap();
+  initMap();
+});
+
+    // Place markers for each set of coordinates in the array
+
+
+  // Function to place a marker at a specific location on the map
+
+
+  // map.addListener("click", (e) => {
+  //   placeMarkerAndPanTo(e.latLng, map);
+  // });
+
+
+
+  // async function getPlaceDetails(Place) {
+  //   const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+  //   // Use place ID to create a new Place instance.
+  //   const place = new Place({
+  //     id: Place.placeId
+  //   });
+
+  //   // Call fetchFields, passing the desired data fields.
+  //   await place.fetchFields({
+  //     fields: ["displayName", "formattedAddress", "location"],
+  //   });
+  //   // Log the result
+  //   console.log(place.displayName);
+  //   console.log(place.formattedAddress);
+
+  //   // Add an Advanced Marker
+  //   const marker = new AdvancedMarkerElement({
+  //     map,
+  //     position: place.location,
+  //     title: place.displayName,
+  //   });
+  // }
+
+

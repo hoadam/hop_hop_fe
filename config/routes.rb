@@ -22,4 +22,5 @@ Rails.application.routes.draw do
       end
     end
   end
+  post '/discover', to: "discover#create", as: "create_discover"
 end
