@@ -2,6 +2,7 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 import "mapkick/bundle"
+// import '/~@googlemaps/extended-component-library/';
 
 let map;
 
