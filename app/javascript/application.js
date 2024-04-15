@@ -17,7 +17,7 @@ async function initMap() {
   console.log(map);
 
   map.addListener("click", (e) => {
-    console.log(e.latLng)
+    console.log(e)
     placeMarkerAndPanTo(e.latLng, map);
   });
 }
@@ -28,6 +28,31 @@ function placeMarkerAndPanTo(latLng, map) {
     map: map,
   });
   map.panTo(latLng);
+}
+
+async function getPlaceDetails(Place) {
+  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+  // Use place ID to create a new Place instance.
+  const marker = new AdvancedMarkerElement({
+    map,
+    position: place.location,
+    title: place.displayName,
+  });
+
+  // Call fetchFields, passing the desired data fields.
+  await place.fetchFields({
+    fields: ["displayName", "formattedAddress", "location"],
+  });
+  // Log the result
+  console.log(place.displayName);
+  console.log(place.formattedAddress);
+
+  // // Add an Advanced Marker
+  // const marker = new AdvancedMarkerElement({
+  //   map,
+  //   position: place.location,
+  //   title: place.displayName,
+  // });
 }
 
 initMap();

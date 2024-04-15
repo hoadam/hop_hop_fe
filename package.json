@@ -6,6 +6,7 @@
   "author": "Igor Magalhaes <magalhaess.igor@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@googlemaps/extended-component-library": "^0.6.10",
     "@googlemaps/js-api-loader": "^1.16.6",
     "stimulus": "^3.2.2"
   }
