@@ -1,18 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 nav {
   background-color: #FFFBF8;
 }
-
-#logo {
-  width: 75px;
-  height: 75px;
+.mulish {
+  font-family: "mulish";
 }
 
+#logo {
+  width: 80px;
+  height: 80px;
+}
+/* .padding {
+  padding-top: 25px;
+  padding-bottom: 25px;
+} */
+
 .link {
-  padding-inline: 5px;
+  padding-inline: 1rem;
   padding-top: 2px;
   padding-bottom: 2px;
   background: #004346;
@@ -20,6 +28,27 @@ nav {
   color: #EFF7F6;
 }
 
-#body-container {
-  background-color: #FFFBF8;
+.mint-row {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.celeste {
+  background-color: #B2F7EF;
+}
+
+.mint-cream {
+  background-color: #EFF7F6;
+}
+
+.prussian-blue {
+  background-color: #172A3A;
+}
+
+.midnight-green {
+  background-color: #004346;
+}
+
+.snow {
+  background-color: #fffbf8;
 }
