@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav {
+  background-color: #FFFBF8;
+}
+
+#logo {
+  width: 75px;
+  height: 75px;
+}
+
+.link {
+  padding-inline: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background: #004346;
+  border-color: #004346;
+  color: #EFF7F6;
+}
+
+#body-container {
+  background-color: #FFFBF8;
+}
