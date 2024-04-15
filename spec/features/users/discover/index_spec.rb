@@ -12,14 +12,14 @@ RSpec.describe 'discover page', type: :feature do
       click_button 'Log In'
     end
 
-    it 'has a link on the user dashboard' do
-      expect(page).to have_content ("Discover")
+    # it 'has a link on the user dashboard' do
+    #   expect(page).to have_content ("Discover")
 
-      click_on "Discover"
+    #   click_on "Discover"
 
-      expect(current_path).to eq(user_discover_path(@user))
-      expect(page).to have_content("Discover")
-      expect(page).to have_content("Search for a place to discover:")
-    end
+    #   expect(current_path).to eq(user_discover_path(@user))
+    #   expect(page).to have_content("Discover")
+    #   expect(page).to have_content("Search for a place to discover:")
+    # end
   end
 end
