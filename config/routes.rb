@@ -16,5 +16,9 @@ Rails.application.routes.draw do
 
   resources :users, only: [:show, :new, :create] do
     get '/discover/', to: "discover#index", as: "discover"
+    resources :trips do
+      resources :daily_itineraries, only: [:index, :show, :new, :create] do
+        resources :activities
+      end
+    end
   end
-end
