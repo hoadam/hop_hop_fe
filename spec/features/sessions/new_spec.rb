@@ -9,7 +9,7 @@ RSpec.describe 'Log in', type: :feature do
 
       fill_in 'Email', with: 'selena@gmail.com'
       fill_in 'Password', with: 'selena123'
-      click_on 'Log In'
+      click_button 'Log In'
 
       expect(current_path).to eq(user_path(user))
     end
@@ -38,7 +38,7 @@ RSpec.describe 'Log in', type: :feature do
 
       fill_in 'Email', with: 'selena@wrong.com'
       fill_in 'Password', with: 'selena123'
-      click_on 'Log In'
+      click_button 'Log In'
 
       expect(current_path).to eq(user_login_path)
       expect(page).to have_content('Sorry, your credentials are bad')

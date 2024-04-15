@@ -9,7 +9,7 @@ RSpec.describe 'discover page', type: :feature do
 
       fill_in 'Email', with: 'selena@gmail.com'
       fill_in 'Password', with: 'selena123'
-      click_on 'Log In'
+      click_button 'Log In'
     end
 
     it 'has a link on the user dashboard' do

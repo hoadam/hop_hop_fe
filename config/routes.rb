@@ -15,10 +15,10 @@ Rails.application.routes.draw do
   get '/auth/google_oauth2/callback', to: 'sessions#google', as: 'auth_google'
 
   resources :users, only: [:show, :new, :create] do
-    get '/discover/', to: "discover#index", as: "discover"
     resources :trips do
       resources :daily_itineraries, only: [:index, :show, :new, :create] do
         resources :activities
       end
     end
   end
+end
