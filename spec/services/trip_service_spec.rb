@@ -30,6 +30,7 @@ describe TripService do
       TripService.get_trips(user_id).each do |trip|
         TripService.delete_trip(user_id, trip.id)
       end
+
       trip_ids = 5.times.map do
         trip = TripService.create_trip(user_id, trip_params)
         trip.id

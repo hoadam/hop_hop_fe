@@ -6,13 +6,25 @@ class TripService
   def self.get_url(url, params = {})
     response = conn.get(url, params)
 
-    JSON.parse(response.body, symbolize_names: true)[:data]
+    JSON.parse(response.body, symbolize_names: true)
   end
 
   def self.get_trips(user_id)
     response = get_url('trips', user_id: user_id)
-    response.map do |json|
-      Trip.from_json(json)
+    return [] if response[:data].blank?
+
+    response[:data].map do |json|
+      Trip.new(
+        json.dig(:id),
+        json.dig(:attributes, :name),
+        json.dig(:attributes, :location),
+        json.dig(:attributes, :start_date),
+        json.dig(:attributes, :end_date),
+        json.dig(:attributes, :status),
+        json.dig(:attributes, :total_budget),
+        json.dig(:attributes, :total_expenses),
+        []
+      )
     end
   end
 
@@ -24,13 +36,13 @@ class TripService
 
   def self.create_trip(user_id, trip_params)
     response = conn.post("trips", trip: trip_params.merge(user_id: user_id))
-    json = JSON.parse(response.body, symbolize_names: true)[:data]
+    json = JSON.parse(response.body, symbolize_names: true)
     Trip.from_json(json)
   end
 
   def self.update_trip(user_id, trip_id, trip_params)
     response = conn.put("trips/#{trip_id}", user_id: user_id, trip: trip_params.merge(user_id: user_id))
-    json = JSON.parse(response.body, symbolize_names: true)[:data]
+    json = JSON.parse(response.body, symbolize_names: true)
     Trip.from_json(json)
   end
 

@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/325/accommodations
+    uri: http://127.0.0.1:3000/api/v1/trips/329/daily_itineraries/2156/activities
     body:
       encoding: UTF-8
-      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
     headers:
       User-Agent:
       - Faraday v2.9.0
@@ -35,24 +35,23 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"f286af26ee7513a88ff6cdddb829e5dd"
+      - W/"23388c0dae6b8c7b785564129018eb59"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f65da7d8-d1a5-4772-a818-d6e7b36f0211
+      - 9ccf5257-d154-41f2-91f1-12217aeaedb7
       X-Runtime:
-      - '0.002112'
+      - '0.002427'
       Content-Length:
-      - '263'
+      - '164'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"48","type":"accommodation","attributes":{"trip_id":325,"name":"Conrad
-        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
-        Tokyo","lat":null,"lon":null,"type_of_accommodation":null}}}'
-  recorded_at: Mon, 15 Apr 2024 06:35:17 GMT
+      string: '{"data":{"id":"255","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Mon, 15 Apr 2024 06:35:18 GMT
 - request:
     method: delete
-    uri: http://127.0.0.1:3000/api/v1/trips/325/accommodations/48?user_id=1
+    uri: http://127.0.0.1:3000/api/v1/trips/329/daily_itineraries/2156/activities/255?user_id=1
     body:
       encoding: US-ASCII
       string: ''
@@ -81,19 +80,19 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 555b85b5-1ad4-493d-8dd2-0951333e3398
+      - 64cfbc4b-c4d7-48d9-81e3-42afd6ed031d
       X-Runtime:
-      - '0.001929'
+      - '0.002409'
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Mon, 15 Apr 2024 06:35:17 GMT
+  recorded_at: Mon, 15 Apr 2024 06:35:18 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/338/accommodations
+    uri: http://127.0.0.1:3000/api/v1/trips/342/daily_itineraries/2299/activities
     body:
       encoding: UTF-8
-      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
     headers:
       User-Agent:
       - Faraday v2.9.0
@@ -123,24 +122,23 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"12b4fedddd0061972e2ff8a18a3277f0"
+      - W/"1335a9830cb5ff0e994b243b27773fff"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b6774faf-6f1b-4efb-b3d9-1630d9c61313
+      - 0d18db33-058f-491c-b871-bea280f56ab2
       X-Runtime:
-      - '0.001772'
+      - '0.002078'
       Content-Length:
-      - '263'
+      - '164'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"57","type":"accommodation","attributes":{"trip_id":338,"name":"Conrad
-        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
-        Tokyo","lat":null,"lon":null,"type_of_accommodation":null}}}'
+      string: '{"data":{"id":"263","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
   recorded_at: Mon, 15 Apr 2024 06:36:28 GMT
 - request:
     method: delete
-    uri: http://127.0.0.1:3000/api/v1/trips/338/accommodations/57?user_id=1
+    uri: http://127.0.0.1:3000/api/v1/trips/342/daily_itineraries/2299/activities/263?user_id=1
     body:
       encoding: US-ASCII
       string: ''
@@ -169,19 +167,19 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 2f3c49c0-d2a6-4e6a-a8e8-c310fa2da54b
+      - 75fb3732-0236-45e0-ba36-9da4ccfeb45d
       X-Runtime:
-      - '0.002079'
+      - '0.001882'
     body:
       encoding: UTF-8
       string: ''
   recorded_at: Mon, 15 Apr 2024 06:36:28 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/351/accommodations
+    uri: http://127.0.0.1:3000/api/v1/trips/355/daily_itineraries/2442/activities
     body:
       encoding: UTF-8
-      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
     headers:
       User-Agent:
       - Faraday v2.9.0
@@ -211,24 +209,23 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"0d1c0acd5498ac6fa6973666b0900f6c"
+      - W/"f284d8cab983f1da4d4f6cebab6b2668"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 20806334-cf0c-4b99-abc0-23819440fe62
+      - ea0be864-b534-41bf-81d6-44af261e1778
       X-Runtime:
-      - '0.002059'
+      - '0.002352'
       Content-Length:
-      - '263'
+      - '164'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"66","type":"accommodation","attributes":{"trip_id":351,"name":"Conrad
-        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
-        Tokyo","lat":null,"lon":null,"type_of_accommodation":null}}}'
+      string: '{"data":{"id":"271","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
   recorded_at: Mon, 15 Apr 2024 06:39:10 GMT
 - request:
     method: delete
-    uri: http://127.0.0.1:3000/api/v1/trips/351/accommodations/66?user_id=1
+    uri: http://127.0.0.1:3000/api/v1/trips/355/daily_itineraries/2442/activities/271?user_id=1
     body:
       encoding: US-ASCII
       string: ''
@@ -257,19 +254,19 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 0b7553ec-b4e6-4269-a33c-b01e56c25137
+      - aaae2897-6313-466a-b25c-bc6d1e910612
       X-Runtime:
-      - '0.001836'
+      - '0.002055'
     body:
       encoding: UTF-8
       string: ''
   recorded_at: Mon, 15 Apr 2024 06:39:10 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/364/accommodations
+    uri: http://127.0.0.1:3000/api/v1/trips/368/daily_itineraries/2585/activities
     body:
       encoding: UTF-8
-      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
     headers:
       User-Agent:
       - Faraday v2.9.0
@@ -299,24 +296,23 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"6b9b01920e9eec6d17fa7c04f5bd4a6a"
+      - W/"2e8a0565c38c3371430a5fa7ab41bbc6"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0bb90009-8109-4d3c-94d8-dd6791d59825
+      - cb353b39-4ac7-4db0-8989-c2420a27c709
       X-Runtime:
-      - '0.002153'
+      - '0.002425'
       Content-Length:
-      - '263'
+      - '164'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"75","type":"accommodation","attributes":{"trip_id":364,"name":"Conrad
-        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
-        Tokyo","lat":null,"lon":null,"type_of_accommodation":null}}}'
+      string: '{"data":{"id":"279","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
   recorded_at: Mon, 15 Apr 2024 06:39:55 GMT
 - request:
     method: delete
-    uri: http://127.0.0.1:3000/api/v1/trips/364/accommodations/75?user_id=1
+    uri: http://127.0.0.1:3000/api/v1/trips/368/daily_itineraries/2585/activities/279?user_id=1
     body:
       encoding: US-ASCII
       string: ''
@@ -345,19 +341,19 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 38e2a0fd-458e-4676-9658-0dc5c3814097
+      - df6fd2a1-5f4a-46be-9b5c-8020b511c568
       X-Runtime:
-      - '0.001817'
+      - '0.001992'
     body:
       encoding: UTF-8
       string: ''
   recorded_at: Mon, 15 Apr 2024 06:39:55 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/377/accommodations
+    uri: http://127.0.0.1:3000/api/v1/trips/381/daily_itineraries/2728/activities
     body:
       encoding: UTF-8
-      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
     headers:
       User-Agent:
       - Faraday v2.9.0
@@ -387,24 +383,23 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"0f15e06375ac0cd7b05e64be1e83fdef"
+      - W/"9cfa0af4045fc2ed3a63ff9a2fe16d30"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1d5d8152-754f-45b5-99cb-ca53bff6e0e9
+      - cab8818b-bfd4-4bc7-8774-ec48df1d6ef5
       X-Runtime:
-      - '0.002127'
+      - '0.007608'
       Content-Length:
-      - '263'
+      - '164'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"84","type":"accommodation","attributes":{"trip_id":377,"name":"Conrad
-        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
-        Tokyo","lat":null,"lon":null,"type_of_accommodation":null}}}'
+      string: '{"data":{"id":"287","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
   recorded_at: Mon, 15 Apr 2024 06:41:52 GMT
 - request:
     method: delete
-    uri: http://127.0.0.1:3000/api/v1/trips/377/accommodations/84?user_id=1
+    uri: http://127.0.0.1:3000/api/v1/trips/381/daily_itineraries/2728/activities/287?user_id=1
     body:
       encoding: US-ASCII
       string: ''
@@ -433,19 +428,19 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 8f805d62-afa6-4324-bcb9-b55ec4f473cf
+      - 95297201-3e64-4fb4-adbe-f6990fe65a44
       X-Runtime:
-      - '0.001752'
+      - '0.001869'
     body:
       encoding: UTF-8
       string: ''
   recorded_at: Mon, 15 Apr 2024 06:41:52 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/390/accommodations
+    uri: http://127.0.0.1:3000/api/v1/trips/394/daily_itineraries/2871/activities
     body:
       encoding: UTF-8
-      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
     headers:
       User-Agent:
       - Faraday v2.9.0
@@ -475,24 +470,23 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"a5a5ab92969eb91672bbec100f941c5f"
+      - W/"1fbb25d613937828c86d3b86538d1ab3"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 68b83b18-41d6-4518-b28e-4e358dbb60ee
+      - 9c5db51d-4357-4ffb-aa71-094318d0ebd0
       X-Runtime:
-      - '0.002119'
+      - '0.002641'
       Content-Length:
-      - '263'
+      - '164'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"93","type":"accommodation","attributes":{"trip_id":390,"name":"Conrad
-        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
-        Tokyo","lat":null,"lon":null,"type_of_accommodation":null}}}'
+      string: '{"data":{"id":"295","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
   recorded_at: Mon, 15 Apr 2024 06:43:31 GMT
 - request:
     method: delete
-    uri: http://127.0.0.1:3000/api/v1/trips/390/accommodations/93?user_id=1
+    uri: http://127.0.0.1:3000/api/v1/trips/394/daily_itineraries/2871/activities/295?user_id=1
     body:
       encoding: US-ASCII
       string: ''
@@ -521,19 +515,19 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 4bfbf9ee-e0a4-4425-b503-8c3bc193fcc3
+      - 238a60c8-18b3-433b-8b2d-7fb25140db04
       X-Runtime:
-      - '0.001887'
+      - '0.002078'
     body:
       encoding: UTF-8
       string: ''
   recorded_at: Mon, 15 Apr 2024 06:43:31 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/403/accommodations
+    uri: http://127.0.0.1:3000/api/v1/trips/407/daily_itineraries/3014/activities
     body:
       encoding: UTF-8
-      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
     headers:
       User-Agent:
       - Faraday v2.9.0
@@ -563,24 +557,23 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"bbef9eb59d865cf391511b503a8f7a9b"
+      - W/"3065e09ca3d6bedf8a7d25c872c7ff33"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d3441324-cb4f-429a-ba97-35490d47c1f9
+      - 20e07682-bd23-4736-8703-69b56899ba9c
       X-Runtime:
-      - '0.002855'
+      - '0.002283'
       Content-Length:
-      - '264'
+      - '164'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"102","type":"accommodation","attributes":{"trip_id":403,"name":"Conrad
-        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
-        Tokyo","lat":null,"lon":null,"type_of_accommodation":null}}}'
+      string: '{"data":{"id":"303","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
   recorded_at: Mon, 15 Apr 2024 06:45:11 GMT
 - request:
     method: delete
-    uri: http://127.0.0.1:3000/api/v1/trips/403/accommodations/102?user_id=1
+    uri: http://127.0.0.1:3000/api/v1/trips/407/daily_itineraries/3014/activities/303?user_id=1
     body:
       encoding: US-ASCII
       string: ''
@@ -609,19 +602,19 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - d94c250b-f2c1-4084-81ef-2394b46a431c
+      - b1884e78-f237-4523-af88-c72caedb4a81
       X-Runtime:
-      - '0.018035'
+      - '0.001940'
     body:
       encoding: UTF-8
       string: ''
   recorded_at: Mon, 15 Apr 2024 06:45:11 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/416/accommodations
+    uri: http://127.0.0.1:3000/api/v1/trips/420/daily_itineraries/3157/activities
     body:
       encoding: UTF-8
-      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
     headers:
       User-Agent:
       - Faraday v2.9.0
@@ -651,24 +644,23 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"6084c9cf1a4e3a5b4ff9e5c2d6b667be"
+      - W/"7503744708bdbbc521e80449882298e4"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 476c424a-d7c4-4ab0-8e18-ff4eb044fd01
+      - 4a2c9068-8e02-4f31-81a5-c02ccdf217d1
       X-Runtime:
-      - '0.001900'
+      - '0.002457'
       Content-Length:
-      - '264'
+      - '164'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"111","type":"accommodation","attributes":{"trip_id":416,"name":"Conrad
-        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
-        Tokyo","lat":null,"lon":null,"type_of_accommodation":null}}}'
-  recorded_at: Mon, 15 Apr 2024 06:48:31 GMT
+      string: '{"data":{"id":"311","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Mon, 15 Apr 2024 06:48:32 GMT
 - request:
     method: delete
-    uri: http://127.0.0.1:3000/api/v1/trips/416/accommodations/111?user_id=1
+    uri: http://127.0.0.1:3000/api/v1/trips/420/daily_itineraries/3157/activities/311?user_id=1
     body:
       encoding: US-ASCII
       string: ''
@@ -697,19 +689,19 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - f40ddec0-a03c-4625-a326-9b03753a362c
+      - 272a9bf8-0739-428d-b1e9-dff3f607060c
       X-Runtime:
-      - '0.004479'
+      - '0.002055'
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Mon, 15 Apr 2024 06:48:31 GMT
+  recorded_at: Mon, 15 Apr 2024 06:48:32 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/429/accommodations
+    uri: http://127.0.0.1:3000/api/v1/trips/433/daily_itineraries/3300/activities
     body:
       encoding: UTF-8
-      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
     headers:
       User-Agent:
       - Faraday v2.9.0
@@ -739,24 +731,23 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"96ca30c20160a2ca474bb90e6ddabff4"
+      - W/"60fc9e8474aac622df693e13ba10fc5b"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9cc8346c-a424-43b5-a263-de8458eff6c7
+      - 528325e8-b3f9-4592-a89a-21939db425cf
       X-Runtime:
-      - '0.003389'
+      - '0.002164'
       Content-Length:
-      - '264'
+      - '164'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"120","type":"accommodation","attributes":{"trip_id":429,"name":"Conrad
-        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
-        Tokyo","lat":null,"lon":null,"type_of_accommodation":null}}}'
+      string: '{"data":{"id":"319","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
   recorded_at: Mon, 15 Apr 2024 06:51:27 GMT
 - request:
     method: delete
-    uri: http://127.0.0.1:3000/api/v1/trips/429/accommodations/120?user_id=1
+    uri: http://127.0.0.1:3000/api/v1/trips/433/daily_itineraries/3300/activities/319?user_id=1
     body:
       encoding: US-ASCII
       string: ''
@@ -785,19 +776,19 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - f0e7fc9c-ed68-4a4e-b8ac-74719299eb1b
+      - 2abb76f7-ffd0-4edd-b40f-3846be081b02
       X-Runtime:
-      - '0.002322'
+      - '0.002135'
     body:
       encoding: UTF-8
       string: ''
   recorded_at: Mon, 15 Apr 2024 06:51:27 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/442/accommodations
+    uri: http://127.0.0.1:3000/api/v1/trips/446/daily_itineraries/3443/activities
     body:
       encoding: UTF-8
-      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
     headers:
       User-Agent:
       - Faraday v2.9.0
@@ -827,24 +818,23 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"01b92c578fe8407a41790411a6292f37"
+      - W/"90907fc475a99d9b018eb454618fc2e0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 438a36ea-76be-4b21-bd34-119a9210ce4f
+      - 99fb3b87-c140-404f-abe5-63509142efc3
       X-Runtime:
-      - '0.002040'
+      - '0.003732'
       Content-Length:
-      - '264'
+      - '164'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"129","type":"accommodation","attributes":{"trip_id":442,"name":"Conrad
-        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
-        Tokyo","lat":null,"lon":null,"type_of_accommodation":null}}}'
-  recorded_at: Mon, 15 Apr 2024 06:52:18 GMT
+      string: '{"data":{"id":"327","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Mon, 15 Apr 2024 06:52:19 GMT
 - request:
     method: delete
-    uri: http://127.0.0.1:3000/api/v1/trips/442/accommodations/129?user_id=1
+    uri: http://127.0.0.1:3000/api/v1/trips/446/daily_itineraries/3443/activities/327?user_id=1
     body:
       encoding: US-ASCII
       string: ''
@@ -873,19 +863,19 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - d5f64c9c-df6b-402d-b285-8f61b512c977
+      - 27fd0c78-2c0a-4eee-89d3-1082f4fa58f0
       X-Runtime:
-      - '0.001800'
+      - '0.001978'
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Mon, 15 Apr 2024 06:52:18 GMT
+  recorded_at: Mon, 15 Apr 2024 06:52:19 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/455/accommodations
+    uri: http://127.0.0.1:3000/api/v1/trips/459/daily_itineraries/3586/activities
     body:
       encoding: UTF-8
-      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
     headers:
       User-Agent:
       - Faraday v2.9.0
@@ -915,24 +905,23 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"14610c3a5b9dac18efa9acf060cd9dca"
+      - W/"b3d674f0c96215189d6ca63f4f2446a2"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1c659424-94a6-4d76-a134-7ace8bfffd5a
+      - 49cb7c0e-9332-45b4-9843-85011bd5a2db
       X-Runtime:
-      - '0.002015'
+      - '0.002386'
       Content-Length:
-      - '264'
+      - '164'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"138","type":"accommodation","attributes":{"trip_id":455,"name":"Conrad
-        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
-        Tokyo","lat":null,"lon":null,"type_of_accommodation":null}}}'
+      string: '{"data":{"id":"335","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
   recorded_at: Mon, 15 Apr 2024 06:53:02 GMT
 - request:
     method: delete
-    uri: http://127.0.0.1:3000/api/v1/trips/455/accommodations/138?user_id=1
+    uri: http://127.0.0.1:3000/api/v1/trips/459/daily_itineraries/3586/activities/335?user_id=1
     body:
       encoding: US-ASCII
       string: ''
@@ -961,19 +950,19 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 9da74cdb-d731-4ac3-a29e-eba4e81bb03f
+      - 894f128a-665a-42fe-847a-fd982753e223
       X-Runtime:
-      - '0.002023'
+      - '0.002130'
     body:
       encoding: UTF-8
       string: ''
   recorded_at: Mon, 15 Apr 2024 06:53:02 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/468/accommodations
+    uri: http://127.0.0.1:3000/api/v1/trips/472/daily_itineraries/3729/activities
     body:
       encoding: UTF-8
-      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
     headers:
       User-Agent:
       - Faraday v2.9.0
@@ -1003,24 +992,23 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"e2b5688c4dc80b835366c1a9c837bbb5"
+      - W/"1ae89bf564cfaf9f877a82062ec8d90e"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0d8bcf72-0b67-4fd2-ac4f-43bdb203f981
+      - 63d2009e-eaf4-4300-9bf4-35a2aa42aba7
       X-Runtime:
-      - '0.001958'
+      - '0.002113'
       Content-Length:
-      - '264'
+      - '164'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"147","type":"accommodation","attributes":{"trip_id":468,"name":"Conrad
-        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
-        Tokyo","lat":null,"lon":null,"type_of_accommodation":null}}}'
+      string: '{"data":{"id":"343","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
   recorded_at: Mon, 15 Apr 2024 06:54:01 GMT
 - request:
     method: delete
-    uri: http://127.0.0.1:3000/api/v1/trips/468/accommodations/147?user_id=1
+    uri: http://127.0.0.1:3000/api/v1/trips/472/daily_itineraries/3729/activities/343?user_id=1
     body:
       encoding: US-ASCII
       string: ''
@@ -1049,19 +1037,19 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - a4381be5-0df1-41de-a2df-dd4bb5ac15d9
+      - 3793c22d-cee3-4716-baa4-0268b072e46d
       X-Runtime:
-      - '0.001880'
+      - '0.002290'
     body:
       encoding: UTF-8
       string: ''
   recorded_at: Mon, 15 Apr 2024 06:54:01 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/481/accommodations
+    uri: http://127.0.0.1:3000/api/v1/trips/485/daily_itineraries/3872/activities
     body:
       encoding: UTF-8
-      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
     headers:
       User-Agent:
       - Faraday v2.9.0
@@ -1091,24 +1079,23 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"8c134cbd197326b7fc63368fef092c08"
+      - W/"b0d536e62ad00a16f5565b9ded4fa887"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c7dba6e8-af66-4070-95e2-1ce82adca4f2
+      - c59001c5-4a50-4f10-986d-fb5316094a46
       X-Runtime:
-      - '0.002013'
+      - '0.002423'
       Content-Length:
-      - '264'
+      - '164'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"156","type":"accommodation","attributes":{"trip_id":481,"name":"Conrad
-        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
-        Tokyo","lat":null,"lon":null,"type_of_accommodation":null}}}'
-  recorded_at: Mon, 15 Apr 2024 06:55:28 GMT
+      string: '{"data":{"id":"351","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Mon, 15 Apr 2024 06:55:29 GMT
 - request:
     method: delete
-    uri: http://127.0.0.1:3000/api/v1/trips/481/accommodations/156?user_id=1
+    uri: http://127.0.0.1:3000/api/v1/trips/485/daily_itineraries/3872/activities/351?user_id=1
     body:
       encoding: US-ASCII
       string: ''
@@ -1137,19 +1124,19 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 925f3acb-41e9-4e8e-bcb1-8b5c3056682e
+      - f8f3100c-a9ca-4fcd-8baf-6e1391080f6a
       X-Runtime:
-      - '0.002325'
+      - '0.002008'
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Mon, 15 Apr 2024 06:55:28 GMT
+  recorded_at: Mon, 15 Apr 2024 06:55:29 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/494/accommodations
+    uri: http://127.0.0.1:3000/api/v1/trips/498/daily_itineraries/4015/activities
     body:
       encoding: UTF-8
-      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
     headers:
       User-Agent:
       - Faraday v2.9.0
@@ -1179,24 +1166,23 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"4b37fa65d2b7258e0edbf4dd462bc544"
+      - W/"74482e8558667777cc5c166be1530822"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6cc441ff-f623-42cb-8a5f-6235e6358a38
+      - 07bc7179-aa80-4d41-8168-1db4130b5c60
       X-Runtime:
-      - '0.002028'
+      - '0.002163'
       Content-Length:
-      - '264'
+      - '164'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"165","type":"accommodation","attributes":{"trip_id":494,"name":"Conrad
-        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
-        Tokyo","lat":null,"lon":null,"type_of_accommodation":null}}}'
+      string: '{"data":{"id":"359","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
   recorded_at: Mon, 15 Apr 2024 06:56:02 GMT
 - request:
     method: delete
-    uri: http://127.0.0.1:3000/api/v1/trips/494/accommodations/165?user_id=1
+    uri: http://127.0.0.1:3000/api/v1/trips/498/daily_itineraries/4015/activities/359?user_id=1
     body:
       encoding: US-ASCII
       string: ''
@@ -1225,547 +1211,19 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 7f8304e1-f8c1-42d4-ab2b-2244f6822b9b
-      X-Runtime:
-      - '0.001884'
-    body:
-      encoding: UTF-8
-      string: ''
-  recorded_at: Mon, 15 Apr 2024 06:56:02 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/507/accommodations
-    body:
-      encoding: UTF-8
-      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"a6a00a06f0fb98bde9de4331c7421e8e"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 04fa2943-f017-4e85-95cd-f206c63a32bd
-      X-Runtime:
-      - '0.002344'
-      Content-Length:
-      - '264'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"174","type":"accommodation","attributes":{"trip_id":507,"name":"Conrad
-        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
-        Tokyo","lat":null,"lon":null,"type_of_accommodation":null}}}'
-  recorded_at: Mon, 15 Apr 2024 06:56:48 GMT
-- request:
-    method: delete
-    uri: http://127.0.0.1:3000/api/v1/trips/507/accommodations/174?user_id=1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 204
-      message: No Content
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Cache-Control:
-      - no-cache
-      X-Request-Id:
-      - 4550d605-da94-42ce-ba90-1190e3354b77
-      X-Runtime:
-      - '0.001826'
-    body:
-      encoding: UTF-8
-      string: ''
-  recorded_at: Mon, 15 Apr 2024 06:56:48 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/520/accommodations
-    body:
-      encoding: UTF-8
-      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"08d0bf1305ee46f1da4972c06ddf2b50"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - d290578a-ac06-42e5-bf28-a239206ed7a6
-      X-Runtime:
-      - '0.002493'
-      Content-Length:
-      - '264'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"183","type":"accommodation","attributes":{"trip_id":520,"name":"Conrad
-        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
-        Tokyo","lat":null,"lon":null,"type_of_accommodation":null}}}'
-  recorded_at: Mon, 15 Apr 2024 06:58:42 GMT
-- request:
-    method: delete
-    uri: http://127.0.0.1:3000/api/v1/trips/520/accommodations/183?user_id=1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 204
-      message: No Content
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Cache-Control:
-      - no-cache
-      X-Request-Id:
-      - a1bae125-ebaa-4f8a-852b-90d292c52d91
-      X-Runtime:
-      - '0.001794'
-    body:
-      encoding: UTF-8
-      string: ''
-  recorded_at: Mon, 15 Apr 2024 06:58:42 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/538/accommodations
-    body:
-      encoding: UTF-8
-      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"4e5470e82e3a9563e0e3f0c398545eee"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - fa6d7912-5a45-4ff5-908c-9c44b3b45e84
-      X-Runtime:
-      - '0.002032'
-      Content-Length:
-      - '264'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"192","type":"accommodation","attributes":{"trip_id":538,"name":"Conrad
-        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
-        Tokyo","lat":null,"lon":null,"type_of_accommodation":null}}}'
-  recorded_at: Mon, 15 Apr 2024 06:59:11 GMT
-- request:
-    method: delete
-    uri: http://127.0.0.1:3000/api/v1/trips/538/accommodations/192?user_id=1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 204
-      message: No Content
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Cache-Control:
-      - no-cache
-      X-Request-Id:
-      - 0e5d3893-15b3-4686-9b56-d45af068e1bc
-      X-Runtime:
-      - '0.001743'
-    body:
-      encoding: UTF-8
-      string: ''
-  recorded_at: Mon, 15 Apr 2024 06:59:11 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/551/accommodations
-    body:
-      encoding: UTF-8
-      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"17ed92ba3b56d965058344190e4f8570"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 14e377a0-7701-4411-9835-76a12c4ab1bb
-      X-Runtime:
-      - '0.002223'
-      Content-Length:
-      - '264'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"201","type":"accommodation","attributes":{"trip_id":551,"name":"Conrad
-        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
-        Tokyo","lat":null,"lon":null,"type_of_accommodation":null}}}'
-  recorded_at: Mon, 15 Apr 2024 07:00:31 GMT
-- request:
-    method: delete
-    uri: http://127.0.0.1:3000/api/v1/trips/551/accommodations/201?user_id=1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 204
-      message: No Content
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Cache-Control:
-      - no-cache
-      X-Request-Id:
-      - 63156a01-dae7-4273-bb8a-195c4dde5b72
-      X-Runtime:
-      - '0.001911'
-    body:
-      encoding: UTF-8
-      string: ''
-  recorded_at: Mon, 15 Apr 2024 07:00:31 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/564/accommodations
-    body:
-      encoding: UTF-8
-      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"d9210fa423f91b63a1d1df9b9ee5b80f"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 0f3d838f-b282-4b31-a7fe-241a03ca91f5
-      X-Runtime:
-      - '0.002047'
-      Content-Length:
-      - '264'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"210","type":"accommodation","attributes":{"trip_id":564,"name":"Conrad
-        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
-        Tokyo","lat":null,"lon":null,"type_of_accommodation":null}}}'
-  recorded_at: Mon, 15 Apr 2024 07:00:50 GMT
-- request:
-    method: delete
-    uri: http://127.0.0.1:3000/api/v1/trips/564/accommodations/210?user_id=1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 204
-      message: No Content
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Cache-Control:
-      - no-cache
-      X-Request-Id:
-      - f7de8b17-728e-4abb-9b42-3acbfa2c379c
-      X-Runtime:
-      - '0.001682'
-    body:
-      encoding: UTF-8
-      string: ''
-  recorded_at: Mon, 15 Apr 2024 07:00:50 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/573/accommodations
-    body:
-      encoding: UTF-8
-      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"5f311db4b1d9fe2593a2d8449b0e903b"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - f3eef9ff-a79d-4d7a-a977-37c7084618fd
+      - a62f4a61-034b-44df-b40e-53f40fc37614
       X-Runtime:
       - '0.002138'
-      Content-Length:
-      - '264'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"219","type":"accommodation","attributes":{"trip_id":573,"name":"Conrad
-        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
-        Tokyo","lat":null,"lon":null,"type_of_accommodation":null}}}'
-  recorded_at: Mon, 15 Apr 2024 07:01:12 GMT
-- request:
-    method: delete
-    uri: http://127.0.0.1:3000/api/v1/trips/573/accommodations/219?user_id=1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 204
-      message: No Content
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Cache-Control:
-      - no-cache
-      X-Request-Id:
-      - 81cf5f07-8f20-4fba-b065-062ea3f6779d
-      X-Runtime:
-      - '0.001860'
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Mon, 15 Apr 2024 07:01:12 GMT
+  recorded_at: Mon, 15 Apr 2024 06:56:02 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/582/accommodations
+    uri: http://127.0.0.1:3000/api/v1/trips/511/daily_itineraries/4158/activities
     body:
       encoding: UTF-8
-      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
     headers:
       User-Agent:
       - Faraday v2.9.0
@@ -1795,24 +1253,23 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"a4cd26157391d44ea0571d03be518e60"
+      - W/"41771f5a99a325f66571603517dfc540"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8f344c99-7ac6-4835-8857-932bbb824492
+      - 1701800e-8248-438f-979b-c445d2a99f42
       X-Runtime:
-      - '0.002358'
+      - '0.002683'
       Content-Length:
-      - '264'
+      - '164'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"228","type":"accommodation","attributes":{"trip_id":582,"name":"Conrad
-        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
-        Tokyo","lat":null,"lon":null,"type_of_accommodation":null}}}'
-  recorded_at: Mon, 15 Apr 2024 07:01:44 GMT
+      string: '{"data":{"id":"367","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Mon, 15 Apr 2024 06:56:48 GMT
 - request:
     method: delete
-    uri: http://127.0.0.1:3000/api/v1/trips/582/accommodations/228?user_id=1
+    uri: http://127.0.0.1:3000/api/v1/trips/511/daily_itineraries/4158/activities/367?user_id=1
     body:
       encoding: US-ASCII
       string: ''
@@ -1841,19 +1298,19 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 7e220b7e-5192-4f55-a690-bacc70bb2bf1
+      - e7bba7a3-c087-462d-b74e-d32de39ab18b
       X-Runtime:
-      - '0.001932'
+      - '0.002199'
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Mon, 15 Apr 2024 07:01:44 GMT
+  recorded_at: Mon, 15 Apr 2024 06:56:48 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/600/accommodations
+    uri: http://127.0.0.1:3000/api/v1/trips/524/daily_itineraries/4301/activities
     body:
       encoding: UTF-8
-      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
     headers:
       User-Agent:
       - Faraday v2.9.0
@@ -1883,24 +1340,23 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"0f5000ac11523e0fcf1637d6b66a8f52"
+      - W/"39c6fe845a539806acbbaafb84ae7b4b"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f675eb40-8aa1-45d1-b307-15a345883435
+      - 0437c9e8-2d27-4bda-a478-72b5b64c89dc
       X-Runtime:
-      - '0.002362'
+      - '0.002365'
       Content-Length:
-      - '264'
+      - '164'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"237","type":"accommodation","attributes":{"trip_id":600,"name":"Conrad
-        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
-        Tokyo","lat":null,"lon":null,"type_of_accommodation":null}}}'
-  recorded_at: Mon, 15 Apr 2024 07:02:01 GMT
+      string: '{"data":{"id":"375","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Mon, 15 Apr 2024 06:58:42 GMT
 - request:
     method: delete
-    uri: http://127.0.0.1:3000/api/v1/trips/600/accommodations/237?user_id=1
+    uri: http://127.0.0.1:3000/api/v1/trips/524/daily_itineraries/4301/activities/375?user_id=1
     body:
       encoding: US-ASCII
       string: ''
@@ -1929,19 +1385,19 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - e23d0856-721a-4047-8c1d-933d53b7b893
+      - f33cffc4-b13e-45a2-b72e-cb3b73de577d
       X-Runtime:
-      - '0.012671'
+      - '0.002041'
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Mon, 15 Apr 2024 07:02:01 GMT
+  recorded_at: Mon, 15 Apr 2024 06:58:42 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/618/accommodations
+    uri: http://127.0.0.1:3000/api/v1/trips/542/daily_itineraries/4499/activities
     body:
       encoding: UTF-8
-      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
     headers:
       User-Agent:
       - Faraday v2.9.0
@@ -1971,24 +1427,545 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"4a5e54aec585fa41271693956723e658"
+      - W/"dac25571cd100c9a08876feb8c7ef1ac"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 5dfe428d-69aa-43e1-8ce4-1d12f4656829
+      - f5af1cb6-686d-42bf-a679-c0ad978fa9cc
       X-Runtime:
-      - '0.004772'
+      - '0.002525'
       Content-Length:
-      - '264'
+      - '164'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"246","type":"accommodation","attributes":{"trip_id":618,"name":"Conrad
-        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
-        Tokyo","lat":null,"lon":null,"type_of_accommodation":null}}}'
+      string: '{"data":{"id":"383","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Mon, 15 Apr 2024 06:59:12 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/542/daily_itineraries/4499/activities/383?user_id=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - a11fbab6-5027-490d-961a-f7073ab4c23d
+      X-Runtime:
+      - '0.002303'
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 06:59:12 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/555/daily_itineraries/4642/activities
+    body:
+      encoding: UTF-8
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"0c4a642ae6a9d077fb235901bf9bbabd"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1aedf8a3-709a-4e95-a8e9-db154028c572
+      X-Runtime:
+      - '0.002606'
+      Content-Length:
+      - '164'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"391","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Mon, 15 Apr 2024 07:00:31 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/555/daily_itineraries/4642/activities/391?user_id=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 2c4a12f6-a5ac-4124-815f-a8ff5af80ccc
+      X-Runtime:
+      - '0.002136'
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 07:00:31 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/568/daily_itineraries/4785/activities
+    body:
+      encoding: UTF-8
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"8557ca63df056b10c39bfb060cd463ae"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6539d7dc-91ba-4241-a451-b842db6293ab
+      X-Runtime:
+      - '0.002378'
+      Content-Length:
+      - '164'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"399","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Mon, 15 Apr 2024 07:00:50 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/568/daily_itineraries/4785/activities/399?user_id=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 3ee2c706-f755-4cc7-8694-2dec1002b0eb
+      X-Runtime:
+      - '0.002188'
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 07:00:50 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/577/daily_itineraries/4884/activities
+    body:
+      encoding: UTF-8
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"e4291e513f0ba99467caa01714028c42"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2ce2590d-8c6b-4c60-ba0c-84db80e30222
+      X-Runtime:
+      - '0.002392'
+      Content-Length:
+      - '164'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"407","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Mon, 15 Apr 2024 07:01:13 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/577/daily_itineraries/4884/activities/407?user_id=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 9d0f1d3c-4a11-4490-9fd4-6357b452c56d
+      X-Runtime:
+      - '0.002115'
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 07:01:13 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/586/daily_itineraries/4983/activities
+    body:
+      encoding: UTF-8
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"86230ac581abce2b12f347a35096981c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 441cfe6e-eb86-4f77-ad3e-e1379a8055cc
+      X-Runtime:
+      - '0.002305'
+      Content-Length:
+      - '164'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"415","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Mon, 15 Apr 2024 07:01:45 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/586/daily_itineraries/4983/activities/415?user_id=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - d965284a-04cc-468c-9971-5f3c07f1fd05
+      X-Runtime:
+      - '0.002117'
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 07:01:45 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/604/daily_itineraries/5181/activities
+    body:
+      encoding: UTF-8
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"18d89873c0394c2fd1ecb082feea2c37"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 002265b2-1e13-4f0e-a930-a414eb36e680
+      X-Runtime:
+      - '0.002439'
+      Content-Length:
+      - '164'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"423","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Mon, 15 Apr 2024 07:02:02 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/604/daily_itineraries/5181/activities/423?user_id=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - c8cb6e4a-9454-4f0e-a33a-2ae9c71ef772
+      X-Runtime:
+      - '0.002309'
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 07:02:02 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/622/daily_itineraries/5379/activities
+    body:
+      encoding: UTF-8
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"62b301028f41a0e0501a9e6f19b12c1e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 7ced1648-1f84-4012-902d-20624bbeabe7
+      X-Runtime:
+      - '0.002968'
+      Content-Length:
+      - '164'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"431","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
   recorded_at: Mon, 15 Apr 2024 15:13:14 GMT
 - request:
     method: delete
-    uri: http://127.0.0.1:3000/api/v1/trips/618/accommodations/246?user_id=1
+    uri: http://127.0.0.1:3000/api/v1/trips/622/daily_itineraries/5379/activities/431?user_id=1
     body:
       encoding: US-ASCII
       string: ''
@@ -2017,9 +1994,9 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - e3e33709-820d-4c7e-98f2-1b206a6f7449
+      - 90dd31fb-1db0-4090-bd37-5fe581b4877c
       X-Runtime:
-      - '0.002287'
+      - '0.001977'
     body:
       encoding: UTF-8
       string: ''
@@ -2059,25 +2036,25 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"a819cb1e514dd1d23def54ea4f2983eb"
+      - W/"9f0b57b9bc2992e8f8bde582f2b6c9cd"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2985475d-036d-4d4e-82b8-6cbce9744fbe
+      - bbdbed13-4e66-4945-a04d-00d0582e1122
       X-Runtime:
-      - '0.025879'
+      - '0.017465'
       Content-Length:
       - '1691'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"636","type":"trip","attributes":{"name":"Trip To Japan","location":"Japan","start_date":"2024-04-20T00:00:00.000Z","end_date":"2024-04-30T00:00:00.000Z","status":"in_progress","total_budget":1000,"total_expenses":0},"relationships":{"daily_itineraries":{"data":[{"id":"5533","type":"daily_itinerary"},{"id":"5534","type":"daily_itinerary"},{"id":"5535","type":"daily_itinerary"},{"id":"5536","type":"daily_itinerary"},{"id":"5537","type":"daily_itinerary"},{"id":"5538","type":"daily_itinerary"},{"id":"5539","type":"daily_itinerary"},{"id":"5540","type":"daily_itinerary"},{"id":"5541","type":"daily_itinerary"},{"id":"5542","type":"daily_itinerary"},{"id":"5543","type":"daily_itinerary"}]}}},"included":[{"id":"5533","type":"daily_itinerary","attributes":{"trip_id":636,"date":"2024-04-20"}},{"id":"5534","type":"daily_itinerary","attributes":{"trip_id":636,"date":"2024-04-21"}},{"id":"5535","type":"daily_itinerary","attributes":{"trip_id":636,"date":"2024-04-22"}},{"id":"5536","type":"daily_itinerary","attributes":{"trip_id":636,"date":"2024-04-23"}},{"id":"5537","type":"daily_itinerary","attributes":{"trip_id":636,"date":"2024-04-24"}},{"id":"5538","type":"daily_itinerary","attributes":{"trip_id":636,"date":"2024-04-25"}},{"id":"5539","type":"daily_itinerary","attributes":{"trip_id":636,"date":"2024-04-26"}},{"id":"5540","type":"daily_itinerary","attributes":{"trip_id":636,"date":"2024-04-27"}},{"id":"5541","type":"daily_itinerary","attributes":{"trip_id":636,"date":"2024-04-28"}},{"id":"5542","type":"daily_itinerary","attributes":{"trip_id":636,"date":"2024-04-29"}},{"id":"5543","type":"daily_itinerary","attributes":{"trip_id":636,"date":"2024-04-30"}}]}'
-  recorded_at: Mon, 15 Apr 2024 15:33:11 GMT
+      string: '{"data":{"id":"640","type":"trip","attributes":{"name":"Trip To Japan","location":"Japan","start_date":"2024-04-20T00:00:00.000Z","end_date":"2024-04-30T00:00:00.000Z","status":"in_progress","total_budget":1000,"total_expenses":0},"relationships":{"daily_itineraries":{"data":[{"id":"5577","type":"daily_itinerary"},{"id":"5578","type":"daily_itinerary"},{"id":"5579","type":"daily_itinerary"},{"id":"5580","type":"daily_itinerary"},{"id":"5581","type":"daily_itinerary"},{"id":"5582","type":"daily_itinerary"},{"id":"5583","type":"daily_itinerary"},{"id":"5584","type":"daily_itinerary"},{"id":"5585","type":"daily_itinerary"},{"id":"5586","type":"daily_itinerary"},{"id":"5587","type":"daily_itinerary"}]}}},"included":[{"id":"5577","type":"daily_itinerary","attributes":{"trip_id":640,"date":"2024-04-20"}},{"id":"5578","type":"daily_itinerary","attributes":{"trip_id":640,"date":"2024-04-21"}},{"id":"5579","type":"daily_itinerary","attributes":{"trip_id":640,"date":"2024-04-22"}},{"id":"5580","type":"daily_itinerary","attributes":{"trip_id":640,"date":"2024-04-23"}},{"id":"5581","type":"daily_itinerary","attributes":{"trip_id":640,"date":"2024-04-24"}},{"id":"5582","type":"daily_itinerary","attributes":{"trip_id":640,"date":"2024-04-25"}},{"id":"5583","type":"daily_itinerary","attributes":{"trip_id":640,"date":"2024-04-26"}},{"id":"5584","type":"daily_itinerary","attributes":{"trip_id":640,"date":"2024-04-27"}},{"id":"5585","type":"daily_itinerary","attributes":{"trip_id":640,"date":"2024-04-28"}},{"id":"5586","type":"daily_itinerary","attributes":{"trip_id":640,"date":"2024-04-29"}},{"id":"5587","type":"daily_itinerary","attributes":{"trip_id":640,"date":"2024-04-30"}}]}'
+  recorded_at: Mon, 15 Apr 2024 15:33:12 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/636/accommodations
+    uri: http://127.0.0.1:3000/api/v1/trips/640/daily_itineraries/5577/activities
     body:
       encoding: UTF-8
-      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
     headers:
       User-Agent:
       - Faraday v2.9.0
@@ -2107,24 +2084,23 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"8eac93c636e8da4c8274fa594b09843a"
+      - W/"9fd0cdfedd7b963b51e23d155cbfab97"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - cf106ece-7cc0-44e7-8ccf-c16eeb3bbda5
+      - 52f30425-ddac-416d-b8e2-2cd33bd1d7ea
       X-Runtime:
-      - '0.002213'
+      - '0.002544'
       Content-Length:
-      - '264'
+      - '164'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"255","type":"accommodation","attributes":{"trip_id":636,"name":"Conrad
-        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
-        Tokyo","lat":null,"lon":null,"type_of_accommodation":null}}}'
-  recorded_at: Mon, 15 Apr 2024 15:33:11 GMT
+      string: '{"data":{"id":"439","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Mon, 15 Apr 2024 15:33:12 GMT
 - request:
     method: delete
-    uri: http://127.0.0.1:3000/api/v1/trips/636/accommodations/255?user_id=1
+    uri: http://127.0.0.1:3000/api/v1/trips/640/daily_itineraries/5577/activities/439?user_id=1
     body:
       encoding: US-ASCII
       string: ''
@@ -2153,11 +2129,11 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 68a86174-cdc0-4d23-905a-5d7dde8214ee
+      - 3c53eb64-6644-4cca-b228-57b8b839dc63
       X-Runtime:
-      - '0.002389'
+      - '0.004115'
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Mon, 15 Apr 2024 15:33:11 GMT
+  recorded_at: Mon, 15 Apr 2024 15:33:12 GMT
 recorded_with: VCR 6.2.0
