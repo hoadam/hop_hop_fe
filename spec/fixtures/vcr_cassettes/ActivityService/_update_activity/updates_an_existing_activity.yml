@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/328/daily_itineraries/2145/activities
+    uri: http://127.0.0.1:3000/api/v1/trips/64/daily_itineraries/694/activities
     body:
       encoding: UTF-8
       string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
@@ -35,23 +35,27 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"f993b27ba2ef75cc7be150cfdeabde02"
+      - W/"03f89fb45c9d82e92be94ce42a910b16"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 5ef63a90-03c0-420b-9cf1-17406fac5711
+      - 28bb74d6-e612-4502-a3c2-625c15402eb7
       X-Runtime:
-      - '0.002093'
+      - '0.006961'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.00, instantiation.active_record;dur=0.06,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=0.84,
+        process_action.action_controller;dur=3.14
       Content-Length:
-      - '164'
+      - '205'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"254","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
-        Planet"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:35:18 GMT
+      string: '{"data":{"id":"7","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet","daily_itinerary_date_format":"04/20/2024"}}}'
+  recorded_at: Mon, 15 Apr 2024 23:17:57 GMT
 - request:
     method: put
-    uri: http://127.0.0.1:3000/api/v1/trips/328/daily_itineraries/2145/activities/254
+    uri: http://127.0.0.1:3000/api/v1/trips/64/daily_itineraries/694/activities/7
     body:
       encoding: UTF-8
       string: activity%5Bname%5D=Shibuya+Crossing&activity%5Buser_id%5D=1
@@ -84,23 +88,27 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"a9b39dec4fa9523247d3548b7c62b6ba"
+      - W/"43fea8a598ee1984dff901f22dd24a37"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6cc5726e-cc67-4861-aa35-beefb337d48e
+      - '04929fde-ddb7-4f41-907e-5a5c45f47499'
       X-Runtime:
-      - '0.002568'
+      - '0.007512'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.37, instantiation.active_record;dur=0.11,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=0.81,
+        process_action.action_controller;dur=3.87
       Content-Length:
-      - '166'
+      - '207'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"254","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
-        Crossing"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:35:18 GMT
+      string: '{"data":{"id":"7","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
+        Crossing","daily_itinerary_date_format":"04/20/2024"}}}'
+  recorded_at: Mon, 15 Apr 2024 23:17:57 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/341/daily_itineraries/2288/activities
+    uri: http://127.0.0.1:3000/api/v1/trips/82/daily_itineraries/892/activities
     body:
       encoding: UTF-8
       string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
@@ -133,23 +141,27 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"f7aee25c68a76e78f0bc00de2977ca86"
+      - W/"08cd3808192eec49cb608ec2444e110d"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a0048346-dbf4-4963-996d-803b5597b65e
+      - 2a709cb5-f2c9-4a16-9dd2-1bc6840c00dd
       X-Runtime:
-      - '0.002279'
+      - '0.007285'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.10, instantiation.active_record;dur=0.06,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=0.87,
+        process_action.action_controller;dur=3.48
       Content-Length:
-      - '164'
+      - '206'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"262","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
-        Planet"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:36:28 GMT
+      string: '{"data":{"id":"15","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet","daily_itinerary_date_format":"04/20/2024"}}}'
+  recorded_at: Mon, 15 Apr 2024 23:19:28 GMT
 - request:
     method: put
-    uri: http://127.0.0.1:3000/api/v1/trips/341/daily_itineraries/2288/activities/262
+    uri: http://127.0.0.1:3000/api/v1/trips/82/daily_itineraries/892/activities/15
     body:
       encoding: UTF-8
       string: activity%5Bname%5D=Shibuya+Crossing&activity%5Buser_id%5D=1
@@ -182,23 +194,27 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"827901d4ad39ca3143ac8d0f9524ecd5"
+      - W/"d90561b98105a40d27dd941f3c6e0a65"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 57c94c3c-e262-4a80-9896-e7d2dd70e4e8
+      - 5645efc7-f971-4f02-9c25-a5a1f97e2e0f
       X-Runtime:
-      - '0.002495'
+      - '0.019372'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=22.45,
+        instantiation.active_record;dur=0.11, unpermitted_parameters.action_controller;dur=0.00,
+        transaction.active_record;dur=1.39, process_action.action_controller;dur=15.19
       Content-Length:
-      - '166'
+      - '208'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"262","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
-        Crossing"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:36:28 GMT
+      string: '{"data":{"id":"15","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
+        Crossing","daily_itinerary_date_format":"04/20/2024"}}}'
+  recorded_at: Mon, 15 Apr 2024 23:19:28 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/354/daily_itineraries/2431/activities
+    uri: http://127.0.0.1:3000/api/v1/trips/100/daily_itineraries/1090/activities
     body:
       encoding: UTF-8
       string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
@@ -231,23 +247,27 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"9c6d79f86998c3f9049dd65d56cbb5e9"
+      - W/"b5413ab077c11342d2c3f44359008126"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 63b450a0-5d1f-440f-b684-28ef98b3827d
+      - 67439692-e398-4a3c-be5e-21d0b71ac592
       X-Runtime:
-      - '0.002482'
+      - '0.007580'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.30, instantiation.active_record;dur=0.06,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=1.28,
+        process_action.action_controller;dur=3.38
       Content-Length:
-      - '164'
+      - '206'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"270","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
-        Planet"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:39:10 GMT
+      string: '{"data":{"id":"23","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet","daily_itinerary_date_format":"04/20/2024"}}}'
+  recorded_at: Mon, 15 Apr 2024 23:19:50 GMT
 - request:
     method: put
-    uri: http://127.0.0.1:3000/api/v1/trips/354/daily_itineraries/2431/activities/270
+    uri: http://127.0.0.1:3000/api/v1/trips/100/daily_itineraries/1090/activities/23
     body:
       encoding: UTF-8
       string: activity%5Bname%5D=Shibuya+Crossing&activity%5Buser_id%5D=1
@@ -280,23 +300,27 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"424f0f34cd64cbd96c9a10d61a3d458e"
+      - W/"371209fbc0aec526e806ff7e6cc9ab4e"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c0b89298-e906-4010-ba0c-e37b9409e437
+      - 488a6a21-3415-4704-b71b-23f3ae95d242
       X-Runtime:
-      - '0.011308'
+      - '0.007100'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.19, instantiation.active_record;dur=0.10,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=0.74,
+        process_action.action_controller;dur=3.79
       Content-Length:
-      - '166'
+      - '208'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"270","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
-        Crossing"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:39:10 GMT
+      string: '{"data":{"id":"23","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
+        Crossing","daily_itinerary_date_format":"04/20/2024"}}}'
+  recorded_at: Mon, 15 Apr 2024 23:19:50 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/367/daily_itineraries/2574/activities
+    uri: http://127.0.0.1:3000/api/v1/trips/118/daily_itineraries/1288/activities
     body:
       encoding: UTF-8
       string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
@@ -329,23 +353,27 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"90278ec27776883306bd4a8a00d23426"
+      - W/"db3bbbf0d6c1ac55e4ee12a9114562f4"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8b591d2e-02d6-4484-b717-98754c870fcd
+      - 69765270-0833-4c89-bea1-84ec50ca9529
       X-Runtime:
-      - '0.002305'
+      - '0.007651'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.03, instantiation.active_record;dur=0.06,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=1.10,
+        process_action.action_controller;dur=3.28
       Content-Length:
-      - '164'
+      - '206'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"278","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
-        Planet"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:39:55 GMT
+      string: '{"data":{"id":"31","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet","daily_itinerary_date_format":"04/20/2024"}}}'
+  recorded_at: Mon, 15 Apr 2024 23:20:08 GMT
 - request:
     method: put
-    uri: http://127.0.0.1:3000/api/v1/trips/367/daily_itineraries/2574/activities/278
+    uri: http://127.0.0.1:3000/api/v1/trips/118/daily_itineraries/1288/activities/31
     body:
       encoding: UTF-8
       string: activity%5Bname%5D=Shibuya+Crossing&activity%5Buser_id%5D=1
@@ -378,23 +406,27 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"7cbc3ef936a026081457ee4bcf614194"
+      - W/"091267a4c7c768927e1ef892df61f0a3"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d5427fae-19aa-4258-9651-8a4ee85375f9
+      - 0e7cc11e-86b9-4a07-8ad3-9648a30d94f9
       X-Runtime:
-      - '0.004637'
+      - '0.006580'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.99, instantiation.active_record;dur=0.07,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=0.73,
+        process_action.action_controller;dur=3.26
       Content-Length:
-      - '166'
+      - '208'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"278","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
-        Crossing"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:39:55 GMT
+      string: '{"data":{"id":"31","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
+        Crossing","daily_itinerary_date_format":"04/20/2024"}}}'
+  recorded_at: Mon, 15 Apr 2024 23:20:08 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/380/daily_itineraries/2717/activities
+    uri: http://127.0.0.1:3000/api/v1/trips/136/daily_itineraries/1486/activities
     body:
       encoding: UTF-8
       string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
@@ -427,23 +459,27 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"10e1092bbb56e573783bd7f20a2b9e2e"
+      - W/"c89803f4859ea29dae6c1c20ccff10e2"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - dcf226a9-7937-4f81-ab10-616e63fd93e0
+      - 1ba63aee-7075-403b-a930-23f1f9388687
       X-Runtime:
-      - '0.002363'
+      - '0.007316'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.03, instantiation.active_record;dur=0.05,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=0.85,
+        process_action.action_controller;dur=3.33
       Content-Length:
-      - '164'
+      - '206'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"286","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
-        Planet"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:41:52 GMT
+      string: '{"data":{"id":"39","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet","daily_itinerary_date_format":"04/20/2024"}}}'
+  recorded_at: Mon, 15 Apr 2024 23:20:54 GMT
 - request:
     method: put
-    uri: http://127.0.0.1:3000/api/v1/trips/380/daily_itineraries/2717/activities/286
+    uri: http://127.0.0.1:3000/api/v1/trips/136/daily_itineraries/1486/activities/39
     body:
       encoding: UTF-8
       string: activity%5Bname%5D=Shibuya+Crossing&activity%5Buser_id%5D=1
@@ -476,1784 +512,24 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"13c9e74572c0fa9453bdca8d1f1d5263"
+      - W/"c2a49256c8a454f74b1a4f4d10ce3543"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 5004ba00-5d8b-45d9-83ea-2bac1566a37d
+      - fafca960-62cd-40ab-b616-9b81196a5bf6
       X-Runtime:
-      - '0.002176'
+      - '0.008020'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.95, instantiation.active_record;dur=0.09,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=1.69,
+        process_action.action_controller;dur=4.44
       Content-Length:
-      - '166'
+      - '208'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"286","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
-        Crossing"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:41:52 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/393/daily_itineraries/2860/activities
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"b8d57a027ed36614559338877e4169af"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 8358915d-d4a1-4f1a-ace0-5064b8087999
-      X-Runtime:
-      - '0.002227'
-      Content-Length:
-      - '164'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"294","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
-        Planet"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:43:31 GMT
-- request:
-    method: put
-    uri: http://127.0.0.1:3000/api/v1/trips/393/daily_itineraries/2860/activities/294
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Shibuya+Crossing&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"d2f519e447911c1e3cf5277f56435df9"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 74340981-8a2c-4797-90ba-3b489c8b14e6
-      X-Runtime:
-      - '0.002488'
-      Content-Length:
-      - '166'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"294","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
-        Crossing"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:43:31 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/406/daily_itineraries/3003/activities
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"34730d96a4292fda8c469dfb0e65e318"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - fd095d3f-8065-44e0-acde-4b0a43f714c8
-      X-Runtime:
-      - '0.002405'
-      Content-Length:
-      - '164'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"302","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
-        Planet"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:45:11 GMT
-- request:
-    method: put
-    uri: http://127.0.0.1:3000/api/v1/trips/406/daily_itineraries/3003/activities/302
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Shibuya+Crossing&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"84e01b4f42154236824ebda9cd5023f7"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 5c1956b9-1cea-49f2-9df2-67a0d17c645a
-      X-Runtime:
-      - '0.002650'
-      Content-Length:
-      - '166'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"302","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
-        Crossing"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:45:11 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/419/daily_itineraries/3146/activities
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"13767b366234c89e46d8a6b97fca029b"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - d10eacf6-76a7-4656-b0f0-30482424182b
-      X-Runtime:
-      - '0.002399'
-      Content-Length:
-      - '164'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"310","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
-        Planet"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:48:32 GMT
-- request:
-    method: put
-    uri: http://127.0.0.1:3000/api/v1/trips/419/daily_itineraries/3146/activities/310
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Shibuya+Crossing&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"37c6038858314a840c7d1d15f531dabb"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - f6953fd7-76fb-4312-9477-297d968e2d9a
-      X-Runtime:
-      - '0.004255'
-      Content-Length:
-      - '166'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"310","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
-        Crossing"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:48:32 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/432/daily_itineraries/3289/activities
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"3585564801a943a54614e297756e2921"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 90a6669b-78e7-4f43-b934-f63509ff44d6
-      X-Runtime:
-      - '0.002177'
-      Content-Length:
-      - '164'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"318","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
-        Planet"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:51:27 GMT
-- request:
-    method: put
-    uri: http://127.0.0.1:3000/api/v1/trips/432/daily_itineraries/3289/activities/318
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Shibuya+Crossing&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"5162812b18812058753471a9b49d36db"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - '09d34ca9-cc28-4c58-aef0-5d444320d5e2'
-      X-Runtime:
-      - '0.002397'
-      Content-Length:
-      - '166'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"318","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
-        Crossing"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:51:27 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/445/daily_itineraries/3432/activities
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"c55fbfa57f7a1b6f02035172e4329b73"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 44fc3a31-ca23-4abc-bd03-2b38f12e659a
-      X-Runtime:
-      - '0.002494'
-      Content-Length:
-      - '164'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"326","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
-        Planet"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:52:19 GMT
-- request:
-    method: put
-    uri: http://127.0.0.1:3000/api/v1/trips/445/daily_itineraries/3432/activities/326
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Shibuya+Crossing&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"97eab321540815d4b2c47a22bcb8f006"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 1f813530-58fb-467f-8160-bc171bbd47ec
-      X-Runtime:
-      - '0.002229'
-      Content-Length:
-      - '166'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"326","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
-        Crossing"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:52:19 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/458/daily_itineraries/3575/activities
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"d682223c44f940b7144eed6097e030a2"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 558315e0-6203-4a1f-b5d2-a7a22b3c52a0
-      X-Runtime:
-      - '0.002363'
-      Content-Length:
-      - '164'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"334","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
-        Planet"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:53:02 GMT
-- request:
-    method: put
-    uri: http://127.0.0.1:3000/api/v1/trips/458/daily_itineraries/3575/activities/334
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Shibuya+Crossing&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"0fe7193928244a07b313196bcbf31b21"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 9562da7d-244f-422b-844f-c43519eec07e
-      X-Runtime:
-      - '0.002279'
-      Content-Length:
-      - '166'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"334","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
-        Crossing"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:53:02 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/471/daily_itineraries/3718/activities
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"14724fbabcc5cb689e7579cca6924a88"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - a5dff945-11b6-46fb-b372-5a53af6824c9
-      X-Runtime:
-      - '0.002441'
-      Content-Length:
-      - '164'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"342","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
-        Planet"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:54:01 GMT
-- request:
-    method: put
-    uri: http://127.0.0.1:3000/api/v1/trips/471/daily_itineraries/3718/activities/342
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Shibuya+Crossing&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"33ba06a26b6f84f9efe7c93a36c12aee"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - bfabb8bb-579a-4681-9d78-242b7bf83cd8
-      X-Runtime:
-      - '0.002499'
-      Content-Length:
-      - '166'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"342","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
-        Crossing"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:54:01 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/484/daily_itineraries/3861/activities
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"0deb7438927e00f7f37526c0ea408957"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - e864f70b-884c-4aaf-a7a3-8e65bdebd1a1
-      X-Runtime:
-      - '0.003396'
-      Content-Length:
-      - '164'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"350","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
-        Planet"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:55:29 GMT
-- request:
-    method: put
-    uri: http://127.0.0.1:3000/api/v1/trips/484/daily_itineraries/3861/activities/350
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Shibuya+Crossing&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"86d75c1b15ec7710a97916da90369aa6"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - aef489b8-954a-4ff0-8414-c5798bb0c661
-      X-Runtime:
-      - '0.002570'
-      Content-Length:
-      - '166'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"350","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
-        Crossing"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:55:29 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/497/daily_itineraries/4004/activities
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"ba59dd8a2fd144397fce317569c2ea43"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - a61c303c-ef28-4907-8b0d-61f9b76e531d
-      X-Runtime:
-      - '0.002195'
-      Content-Length:
-      - '164'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"358","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
-        Planet"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:56:02 GMT
-- request:
-    method: put
-    uri: http://127.0.0.1:3000/api/v1/trips/497/daily_itineraries/4004/activities/358
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Shibuya+Crossing&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"db1b66b138fcb397b1c989467ab60f02"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - b5219d68-9d5f-4d3c-b034-5624e24f1931
-      X-Runtime:
-      - '0.002582'
-      Content-Length:
-      - '166'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"358","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
-        Crossing"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:56:02 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/510/daily_itineraries/4147/activities
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"667e28593716e40651b9bb7aec6483e0"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - beac2ebb-67a4-4453-a0b2-fc5abb5cbec3
-      X-Runtime:
-      - '0.002122'
-      Content-Length:
-      - '164'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"366","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
-        Planet"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:56:48 GMT
-- request:
-    method: put
-    uri: http://127.0.0.1:3000/api/v1/trips/510/daily_itineraries/4147/activities/366
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Shibuya+Crossing&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"57fc9b786560bcfcab3c29c9e4d38337"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 6589e6be-c035-44f8-a064-0ca2553c913d
-      X-Runtime:
-      - '0.002674'
-      Content-Length:
-      - '166'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"366","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
-        Crossing"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:56:48 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/523/daily_itineraries/4290/activities
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"70db23c8e4fa0accc83a767164da9d12"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - dc235db2-0258-4f93-9670-6fe4452d3dd7
-      X-Runtime:
-      - '0.002233'
-      Content-Length:
-      - '164'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"374","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
-        Planet"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:58:42 GMT
-- request:
-    method: put
-    uri: http://127.0.0.1:3000/api/v1/trips/523/daily_itineraries/4290/activities/374
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Shibuya+Crossing&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"e73704de8a8e3d2065f4dd6a0ab96d7b"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - b8488fa3-2837-4343-bfdb-534df2590716
-      X-Runtime:
-      - '0.002601'
-      Content-Length:
-      - '166'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"374","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
-        Crossing"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:58:42 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/541/daily_itineraries/4488/activities
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"27516b536bc7682a454fb81988c8f90d"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 9a2db661-02a1-4598-a648-4c0177db5847
-      X-Runtime:
-      - '0.002195'
-      Content-Length:
-      - '164'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"382","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
-        Planet"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:59:12 GMT
-- request:
-    method: put
-    uri: http://127.0.0.1:3000/api/v1/trips/541/daily_itineraries/4488/activities/382
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Shibuya+Crossing&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"f687ad7849c34708aa1e406cc800b855"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 916bb825-0882-4289-9774-48c72356589c
-      X-Runtime:
-      - '0.002543'
-      Content-Length:
-      - '166'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"382","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
-        Crossing"}}}'
-  recorded_at: Mon, 15 Apr 2024 06:59:12 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/554/daily_itineraries/4631/activities
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"84f07b656950370535c8a8955ea5c973"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - b6d925b1-774d-4670-a3b9-f01f61617cb5
-      X-Runtime:
-      - '0.002384'
-      Content-Length:
-      - '164'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"390","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
-        Planet"}}}'
-  recorded_at: Mon, 15 Apr 2024 07:00:31 GMT
-- request:
-    method: put
-    uri: http://127.0.0.1:3000/api/v1/trips/554/daily_itineraries/4631/activities/390
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Shibuya+Crossing&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"4997c1d52518de02266297d771ad09f3"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - cd45c011-3420-4a40-a348-c539f551e951
-      X-Runtime:
-      - '0.002636'
-      Content-Length:
-      - '166'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"390","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
-        Crossing"}}}'
-  recorded_at: Mon, 15 Apr 2024 07:00:31 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/567/daily_itineraries/4774/activities
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"d42eb00943d27bd4f0bc5bffabf77c1b"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 79dd5ea2-27ea-4238-a391-b4451ce24aab
-      X-Runtime:
-      - '0.002492'
-      Content-Length:
-      - '164'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"398","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
-        Planet"}}}'
-  recorded_at: Mon, 15 Apr 2024 07:00:50 GMT
-- request:
-    method: put
-    uri: http://127.0.0.1:3000/api/v1/trips/567/daily_itineraries/4774/activities/398
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Shibuya+Crossing&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"5703aab657896d0a3fc0ded4bac7d6cc"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - afe165f8-2664-4261-9f0f-2e00a5ba8ad3
-      X-Runtime:
-      - '0.002435'
-      Content-Length:
-      - '166'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"398","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
-        Crossing"}}}'
-  recorded_at: Mon, 15 Apr 2024 07:00:50 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/576/daily_itineraries/4873/activities
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"9f165762cacc4d60026abd6f8904958d"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - af225b09-5210-4d1e-805e-a0c8d15c273c
-      X-Runtime:
-      - '0.003056'
-      Content-Length:
-      - '164'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"406","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
-        Planet"}}}'
-  recorded_at: Mon, 15 Apr 2024 07:01:13 GMT
-- request:
-    method: put
-    uri: http://127.0.0.1:3000/api/v1/trips/576/daily_itineraries/4873/activities/406
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Shibuya+Crossing&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"25330da6fc3ddb6638b13eda3f8d2aab"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 6ccd12b6-6cf3-4780-a5af-2a6e3369e397
-      X-Runtime:
-      - '0.002481'
-      Content-Length:
-      - '166'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"406","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
-        Crossing"}}}'
-  recorded_at: Mon, 15 Apr 2024 07:01:13 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/585/daily_itineraries/4972/activities
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"d6bb100f3325ace3b543b8f8ccf303e6"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 17e9a392-6f2a-464d-b2cb-0cf73f5cc29b
-      X-Runtime:
-      - '0.002530'
-      Content-Length:
-      - '164'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"414","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
-        Planet"}}}'
-  recorded_at: Mon, 15 Apr 2024 07:01:44 GMT
-- request:
-    method: put
-    uri: http://127.0.0.1:3000/api/v1/trips/585/daily_itineraries/4972/activities/414
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Shibuya+Crossing&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"e389a4202b0d62b0a6ca611c992c560a"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - f7d559f5-3d62-47d6-9ac2-9853bdcf7e1e
-      X-Runtime:
-      - '0.002628'
-      Content-Length:
-      - '166'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"414","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
-        Crossing"}}}'
-  recorded_at: Mon, 15 Apr 2024 07:01:44 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/603/daily_itineraries/5170/activities
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"df0f4776eede4c37788a864e65b4bb61"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 39990c98-e471-4426-be3b-95dfb8654a3a
-      X-Runtime:
-      - '0.002339'
-      Content-Length:
-      - '164'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"422","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
-        Planet"}}}'
-  recorded_at: Mon, 15 Apr 2024 07:02:02 GMT
-- request:
-    method: put
-    uri: http://127.0.0.1:3000/api/v1/trips/603/daily_itineraries/5170/activities/422
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Shibuya+Crossing&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"292127318ee5ddb9cad72399565bda13"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 4abf35f2-19cb-4d43-b33d-ed7d41893b53
-      X-Runtime:
-      - '0.002412'
-      Content-Length:
-      - '166'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"422","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
-        Crossing"}}}'
-  recorded_at: Mon, 15 Apr 2024 07:02:02 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/621/daily_itineraries/5368/activities
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"c8eb55c2779e6b534ccdd09142906a80"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 3debd516-3571-4297-9320-77fb0cb7d086
-      X-Runtime:
-      - '0.003536'
-      Content-Length:
-      - '164'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"430","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
-        Planet"}}}'
-  recorded_at: Mon, 15 Apr 2024 15:13:14 GMT
-- request:
-    method: put
-    uri: http://127.0.0.1:3000/api/v1/trips/621/daily_itineraries/5368/activities/430
-    body:
-      encoding: UTF-8
-      string: activity%5Bname%5D=Shibuya+Crossing&activity%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"1adcafb34c9c3f1ff9b2e8e398dd48b6"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 1deaa80d-9962-4c77-8ccf-c2e32a7f07a1
-      X-Runtime:
-      - '0.002793'
-      Content-Length:
-      - '166'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"430","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
-        Crossing"}}}'
-  recorded_at: Mon, 15 Apr 2024 15:13:14 GMT
+      string: '{"data":{"id":"39","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
+        Crossing","daily_itinerary_date_format":"04/20/2024"}}}'
+  recorded_at: Mon, 15 Apr 2024 23:20:54 GMT
 - request:
     method: post
     uri: http://127.0.0.1:3000/api/v1/trips
@@ -2289,22 +565,26 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"0de9595586d4e57b7fb0e029ec0900a6"
+      - W/"9d93211a84aafc9d7fc0434818194fb4"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3e96f838-9efe-418a-be02-b3b1d74da84e
+      - 658df2e7-9e84-43bd-8fa0-f4ea9b6806e4
       X-Runtime:
-      - '0.015656'
+      - '0.029738'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=11.50,
+        transaction.active_record;dur=10.61, instantiation.active_record;dur=0.10,
+        process_action.action_controller;dur=25.97
       Content-Length:
-      - '1691'
+      - '1663'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"639","type":"trip","attributes":{"name":"Trip To Japan","location":"Japan","start_date":"2024-04-20T00:00:00.000Z","end_date":"2024-04-30T00:00:00.000Z","status":"in_progress","total_budget":1000,"total_expenses":0},"relationships":{"daily_itineraries":{"data":[{"id":"5566","type":"daily_itinerary"},{"id":"5567","type":"daily_itinerary"},{"id":"5568","type":"daily_itinerary"},{"id":"5569","type":"daily_itinerary"},{"id":"5570","type":"daily_itinerary"},{"id":"5571","type":"daily_itinerary"},{"id":"5572","type":"daily_itinerary"},{"id":"5573","type":"daily_itinerary"},{"id":"5574","type":"daily_itinerary"},{"id":"5575","type":"daily_itinerary"},{"id":"5576","type":"daily_itinerary"}]}}},"included":[{"id":"5566","type":"daily_itinerary","attributes":{"trip_id":639,"date":"2024-04-20"}},{"id":"5567","type":"daily_itinerary","attributes":{"trip_id":639,"date":"2024-04-21"}},{"id":"5568","type":"daily_itinerary","attributes":{"trip_id":639,"date":"2024-04-22"}},{"id":"5569","type":"daily_itinerary","attributes":{"trip_id":639,"date":"2024-04-23"}},{"id":"5570","type":"daily_itinerary","attributes":{"trip_id":639,"date":"2024-04-24"}},{"id":"5571","type":"daily_itinerary","attributes":{"trip_id":639,"date":"2024-04-25"}},{"id":"5572","type":"daily_itinerary","attributes":{"trip_id":639,"date":"2024-04-26"}},{"id":"5573","type":"daily_itinerary","attributes":{"trip_id":639,"date":"2024-04-27"}},{"id":"5574","type":"daily_itinerary","attributes":{"trip_id":639,"date":"2024-04-28"}},{"id":"5575","type":"daily_itinerary","attributes":{"trip_id":639,"date":"2024-04-29"}},{"id":"5576","type":"daily_itinerary","attributes":{"trip_id":639,"date":"2024-04-30"}}]}'
-  recorded_at: Mon, 15 Apr 2024 15:33:12 GMT
+      string: '{"data":{"id":"154","type":"trip","attributes":{"name":"Trip To Japan","location":"Japan","status":"in_progress","total_budget":1000,"start_date":"04/20/2024","end_date":"04/30/2024","total_expenses":0},"relationships":{"daily_itineraries":{"data":[{"id":"1684","type":"daily_itinerary"},{"id":"1685","type":"daily_itinerary"},{"id":"1686","type":"daily_itinerary"},{"id":"1687","type":"daily_itinerary"},{"id":"1688","type":"daily_itinerary"},{"id":"1689","type":"daily_itinerary"},{"id":"1690","type":"daily_itinerary"},{"id":"1691","type":"daily_itinerary"},{"id":"1692","type":"daily_itinerary"},{"id":"1693","type":"daily_itinerary"},{"id":"1694","type":"daily_itinerary"}]}}},"included":[{"id":"1684","type":"daily_itinerary","attributes":{"trip_id":154,"date":"2024-04-20"}},{"id":"1685","type":"daily_itinerary","attributes":{"trip_id":154,"date":"2024-04-21"}},{"id":"1686","type":"daily_itinerary","attributes":{"trip_id":154,"date":"2024-04-22"}},{"id":"1687","type":"daily_itinerary","attributes":{"trip_id":154,"date":"2024-04-23"}},{"id":"1688","type":"daily_itinerary","attributes":{"trip_id":154,"date":"2024-04-24"}},{"id":"1689","type":"daily_itinerary","attributes":{"trip_id":154,"date":"2024-04-25"}},{"id":"1690","type":"daily_itinerary","attributes":{"trip_id":154,"date":"2024-04-26"}},{"id":"1691","type":"daily_itinerary","attributes":{"trip_id":154,"date":"2024-04-27"}},{"id":"1692","type":"daily_itinerary","attributes":{"trip_id":154,"date":"2024-04-28"}},{"id":"1693","type":"daily_itinerary","attributes":{"trip_id":154,"date":"2024-04-29"}},{"id":"1694","type":"daily_itinerary","attributes":{"trip_id":154,"date":"2024-04-30"}}]}'
+  recorded_at: Mon, 15 Apr 2024 23:21:15 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:3000/api/v1/trips/639/daily_itineraries/5566/activities
+    uri: http://127.0.0.1:3000/api/v1/trips/154/daily_itineraries/1684/activities
     body:
       encoding: UTF-8
       string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
@@ -2337,23 +617,27 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"8766bf091715c25e131638308679f07d"
+      - W/"b72a584a7363d7cf6d8bfded989d4068"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a0c45c24-570b-4a4a-b18e-a65f5b77d6f1
+      - d01ebe33-3b1c-4460-8c81-4317914ea85a
       X-Runtime:
-      - '0.002287'
+      - '0.007045'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.14, instantiation.active_record;dur=0.05,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=0.80,
+        process_action.action_controller;dur=2.88
       Content-Length:
-      - '164'
+      - '206'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"438","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
-        Planet"}}}'
-  recorded_at: Mon, 15 Apr 2024 15:33:12 GMT
+      string: '{"data":{"id":"47","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet","daily_itinerary_date_format":"04/20/2024"}}}'
+  recorded_at: Mon, 15 Apr 2024 23:21:15 GMT
 - request:
     method: put
-    uri: http://127.0.0.1:3000/api/v1/trips/639/daily_itineraries/5566/activities/438
+    uri: http://127.0.0.1:3000/api/v1/trips/154/daily_itineraries/1684/activities/47
     body:
       encoding: UTF-8
       string: activity%5Bname%5D=Shibuya+Crossing&activity%5Buser_id%5D=1
@@ -2386,18 +670,22 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"f693f5c545e688312095cf3ac38edf5f"
+      - W/"2c59f3a2989ce7b69e6a6a60fbebde42"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 70aeafdb-16cf-4ff4-b85a-1b0a7228b32f
+      - 19ed392e-dd08-44eb-979a-a9ecbb823478
       X-Runtime:
-      - '0.002337'
+      - '0.006879'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.27, instantiation.active_record;dur=0.07,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=0.97,
+        process_action.action_controller;dur=3.69
       Content-Length:
-      - '166'
+      - '208'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"438","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
-        Crossing"}}}'
-  recorded_at: Mon, 15 Apr 2024 15:33:12 GMT
+      string: '{"data":{"id":"47","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
+        Crossing","daily_itinerary_date_format":"04/20/2024"}}}'
+  recorded_at: Mon, 15 Apr 2024 23:21:15 GMT
 recorded_with: VCR 6.2.0
