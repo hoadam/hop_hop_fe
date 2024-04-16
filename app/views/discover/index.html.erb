@@ -1,8 +1,13 @@
-<div id="searchResults" data-info="<%= @array %>">
-    <%= @array %>
-    <p>Cat</p>Cat sfsdfsdf
-  </div>
-<div id="map"></div>
+<div id="searchResults" data-info="<%= @results %>"></div>
+<h2>Which place are you searching for?</h2>
+<ul>
+  <% @results.each do |result| %>
+    <li>
+      <%= link_to "#{result.name} in #{result.address}", user_discover_path(current_user.id), data: { turbo_method: :get } %>
+    </li>
+  <% end %>
+</ul>
+<%= render "/shared/map" %>
 
 <!-- prettier-ignore -->
 
