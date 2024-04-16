@@ -10,13 +10,25 @@ class AccommodationService < HophopService
   end
 
   def self.create_accommodation(user_id, trip_id, accommodation_params)
-    response = conn.post("trips/#{trip_id}/accommodations", user_id: user_id, accommodation: accommodation_params)
+    response = conn.post("trips/#{trip_id}/accommodations") do |req|
+      req.body = {
+        user_id: user_id,
+        accommodation: accommodation_params
+      }.to_json
+    end
+
     json = JSON.parse(response.body, symbolize_names: true)[:data]
     Accommodation.from_json(json)
   end
 
   def self.update_accommodation(user_id, trip_id, accommodation_id, accommodation_params)
-    response = conn.put("trips/#{trip_id}/accommodations/#{accommodation_id}", user_id: user_id, accommodation: accommodation_params)
+    response = conn.put("trips/#{trip_id}/accommodations/#{accommodation_id}") do |req|
+      req.body = {
+        user_id: user_id,
+        accommodation: accommodation_params
+      }.to_json
+    end
+
     json = JSON.parse(response.body, symbolize_names: true)[:data]
     Accommodation.from_json(json)
   end
