@@ -1,7 +1,9 @@
 // Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
 import "@hotwired/turbo-rails"
 import "controllers"
-// Find a way to re-render with the partial
+  // Option 1: decouple and call init with a utility file
+  // Option 2: Mutation observer, any time something changes, initiate the map with the params
+  // Find a way to re-render with the partial
 /**
  * Functions -----------
  */
@@ -20,7 +22,6 @@ const waitForElement = async function(elem) {
       });
   }
 };
-
 
 async function addMO (selector) {
         // Select the node that will be observed for mutations
@@ -50,7 +51,6 @@ async function addMO (selector) {
 }
 
 
-
 addMO("#map")
 
   let map 
@@ -64,17 +64,12 @@ addMO("#map")
     // map = a function that keeps looking for the value, and then assigns it to map
 
     // map = await waitForElement("#map")
-    
-
-
-
-
 
     map = new Map(await waitForElement("#map"), {
       center: { lat: -34.397, lng: 150.644 },
       zoom: 8,
     });
-    
+
     console.log("\n\n",  {map})
 
 
@@ -107,8 +102,6 @@ addMO("#map")
 
   initMap();
 
-  // Option 1: decouple and call init with a utility file
-  // Option 2: Mutation observer, anytime something changes, initiate the map with the params
 
 
     // Place markers for each set of coordinates in the array
