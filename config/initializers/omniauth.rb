@@ -1,4 +1,6 @@
-Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :google_oauth2, ENV["GOOGLE_CLIENT_ID"], ENV["GOOGLE_CLIENT_SECRET"]
-end
-# OmniAuth.config.allowed_request_methods = %i[get]
+# Since we are using devise we don't need the initial config for omniauth
+
+# Rails.application.config.middleware.use OmniAuth::Builder do
+#   provider :google_oauth2, ENV["GOOGLE_CLIENT_ID"], ENV["GOOGLE_CLIENT_SECRET"]
+# end
+# # OmniAuth.config.allowed_request_methods = %i[get]
