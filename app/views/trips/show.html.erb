@@ -1,0 +1,34 @@
+<h1><%= @trip.name %></h1>
+
+<p>Location: <%= @trip.location %></p>
+<p><%= @trip.start_date %> - <%= @trip.end_date %></p>
+<div><%= link_to 'Edit', edit_user_trip_path(@user, @trip.id) %></div>
+
+<p>Accommodation</p>
+    <% @accommodations.each do |accommodation| %>
+        <p><%= accommodation.name %></p>
+        <p><%= accommodation.address %></p>
+        <p>Check In: <%= accommodation.check_in %></p>
+        <p>Check Out: <%= accommodation.check_out %></p>
+    <% end %>
+
+<h2>Itineraries</h2>
+    <% @daily_itineraries.each do |daily_itinerary| %>
+        <section> 
+            <span><%= daily_itinerary.date %></span>
+            <ol>
+                <% @activities[daily_itinerary.date].each do |activity| %>
+                <li>
+                    Name: <%= activity.name %><br/>
+                    Description: <%= activity.description %>
+                </lis>
+            <% end %>
+            </ol>
+        </section>
+    <% end %>
+
+<h3>Total Budget</h3>
+    <p><%= @trip.total_budget %></p>
+
+<h4>Total expenses</h4>
+    <p><%= @trip.total_expenses %></p>
