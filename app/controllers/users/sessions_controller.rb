@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Users::SessionsController < Devise::SessionsController
-  
+  skip_before_action :authenticate_user!, only: [:after_sign_in_path_for]
   # before_action :configure_sign_in_params, only: [:create]
 
   # GET /resource/sign_in
@@ -9,7 +9,7 @@ class Users::SessionsController < Devise::SessionsController
     super
   end
 
-  # POST /resource/sign_in
+  # # POST /resource/sign_in
   def create
     super
   end
@@ -24,7 +24,7 @@ class Users::SessionsController < Devise::SessionsController
   end
   
   def after_sign_in_path_for(resource_or_scope)
-    stored_location_for(resource_or_scope) || user_path(resource_or_scope)
+    user_path(resource_or_scope)
   end
 
   protected

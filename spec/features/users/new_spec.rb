@@ -2,31 +2,31 @@ require 'rails_helper'
 
 RSpec.describe 'User Registration', type: :feature do
     it 'shows that user signed up successfully' do
-        visit register_user_path
+        visit new_user_registration_path
 
         fill_in 'Name', with: 'Selena'
         fill_in 'Email', with: 'selena@gmail.com'
-        fill_in 'Password:', with: 'selena123'
-        fill_in 'Password Confirmation:', with: 'selena123'
+        fill_in 'user_password', with: 'selena123'
+        fill_in 'user_password_confirmation', with: 'selena123'
         
-        click_button 'Create New User'
+        click_button 'Sign up'
 
-        expect(current_path).to eq(user_path(User.find_by(email: 'selena@gmail.com')))
+        expect(current_path).to eq(root_path)
     end
 
     it 'returns error message for wrong credentials' do #Sad path
-        visit register_user_path
+        visit new_user_registration_path
 
         fill_in 'Name', with: 'Selena'
         fill_in 'Email', with: ''
-        fill_in 'Password:', with: 'selena123'
-        fill_in 'Password Confirmation:', with: '123'
+        fill_in 'user_password', with: 'selena123'
+        fill_in 'user_password_confirmation', with: '123'
         
-        click_button 'Create New User'
+        click_button 'Sign up'
 
         expect(page).to have_content("Email can't be blank")
         expect(page).to have_content("Password confirmation doesn't match Password")
-        expect(current_path).to eq(register_user_path)
+        expect(current_path).to eq(users_path)
     end
     
     it "users can sign up using their google acocunt" do
@@ -40,10 +40,10 @@ RSpec.describe 'User Registration', type: :feature do
         }
       })
     
-      visit register_user_path
-      click_on "Sign Up with Google"
+      visit new_user_registration_path
+      click_on "Log in with Google"
     
-      expect(current_path).to eq(user_path(User.first))
+      expect(current_path).to eq(root_path)
     end
 end
 

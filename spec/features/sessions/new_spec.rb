@@ -5,11 +5,11 @@ RSpec.describe 'Log in', type: :feature do
     it 'shows a form to fill in, after the user clicks on "Login" the user is taken to their dashboard page' do
       user = User.create!(name: 'Selena', email: 'selena@gmail.com',
                            password: 'selena123', password_confirmation: 'selena123')
-      visit user_login_path
+      visit new_user_session_path
 
       fill_in 'Email', with: 'selena@gmail.com'
       fill_in 'Password', with: 'selena123'
-      click_on 'Log In'
+      click_on 'Log in'
 
       expect(current_path).to eq(user_path(user))
     end
@@ -24,24 +24,24 @@ RSpec.describe 'Log in', type: :feature do
           email: 'test@example.com'
         }
       })
+      
+      visit new_user_session_path
+      click_on "Log in with Google"
 
-      visit user_login_path
-      click_on "Log In with Google"
-
-      expect(current_path).to eq(user_path(User.first))
+      expect(current_path).to eq(root_path)
     end
 
     it 'renders an error when invalid credentials' do #Sad Path
       user = User.create!(name: 'Selena', email: 'selena@gmail.com',
       password: 'selena123', password_confirmation: 'selena123')
-      visit user_login_path
+      visit new_user_session_path
 
       fill_in 'Email', with: 'selena@wrong.com'
       fill_in 'Password', with: 'selena123'
-      click_on 'Log In'
+      click_on 'Log in'
 
-      expect(current_path).to eq(user_login_path)
-      expect(page).to have_content('Sorry, your credentials are bad')
+      expect(current_path).to eq(new_user_session_path)
+      expect(page).to have_content('Invalid Email or password.')
     end
   end
 end
