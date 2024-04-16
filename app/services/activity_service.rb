@@ -1,17 +1,7 @@
-class ActivityService
-  def self.conn
-    conn = Faraday.new(url: 'http://127.0.0.1:3000/api/v1')
-  end
-
-  def self.get_url(url, params = {})
-    response = conn.get(url, params)
-
-    JSON.parse(response.body, symbolize_names: true)[:data]
-  end
-
+class ActivityService < HophopService
   def self.daily_activities(user_id, trip_id, daily_itinerary_id)
     response = get_url("trips/#{trip_id}/daily_itineraries/#{daily_itinerary_id}/activities", user_id: user_id)
-    response.map do |json|
+    response[:data].map do |json|
       Activity.from_json(json)
     end
   end
