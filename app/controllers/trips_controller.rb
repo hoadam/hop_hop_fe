@@ -6,7 +6,14 @@ class TripsController < ApplicationController
 
   def show
     @user = User.find(params[:user_id])
+
+    @accommodations = AccommodationService.get_accommodations(params[:user_id], params[:id])
+
     @trip = TripService.trip_details(params[:user_id], params[:id])
-    @activities = Activity.daily_activities(params[:user_id], params[:id])
+
+    @daily_itineraries = @trip.daily_itineraries
+    @activities = @trip.activities
   end
+
+
 end
