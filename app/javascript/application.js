@@ -1,9 +1,8 @@
 // Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
 import "@hotwired/turbo-rails"
 import "controllers"
-import "mapkick/bundle"
 
-document.addEventListener('turbolinks:load', function() {
+document.addEventListener('DOMContentLoaded', function() {
   let map;
 
   async function initMap() {
@@ -15,11 +14,14 @@ document.addEventListener('turbolinks:load', function() {
     });
 
     // Access the data from the data-info attribute of your element
-    const dataArray = document.getElementById("myElement").dataset.info;
 
+    console.log(document.getElementById("searchResults"))
+    const dataArray = document.getElementById("searchResults").dataset.info;
+    console.log(dataArray);
     // Parse the data to extract the lat and lon
     const jsonData = JSON.parse(dataArray);
 
+    console.log(jsonData);
     jsonData.forEach(location => {
       const latitude = location.data.lat;
       const longitude = location.data.lon;
@@ -32,7 +34,7 @@ document.addEventListener('turbolinks:load', function() {
   }
 
   function placeMarker(latLng, map) {
-    new google.maps.marker.AdvancedMarkerElement({
+    new google.maps.Marker({
       position: latLng,
       map: map,
     });
@@ -40,7 +42,6 @@ document.addEventListener('turbolinks:load', function() {
 
   initMap();
 });
-
     // Place markers for each set of coordinates in the array
 
 
@@ -76,4 +77,30 @@ document.addEventListener('turbolinks:load', function() {
   //   });
   // }
 
+// Initialize and add the map
+// let map;
 
+// async function initMap() {
+//   // The location of Uluru
+//   const position = { lat: -25.344, lng: 131.031 };
+//   // Request needed libraries.
+//   //@ts-ignore
+//   const { Map } = await google.maps.importLibrary("maps");
+//   const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+//   // The map, centered at Uluru
+//   map = new Map(document.getElementById("map"), {
+//     zoom: 4,
+//     center: position,
+//     mapId: "DEMO_MAP_ID",
+//   });
+
+//   // The marker, positioned at Uluru
+//   const marker = new AdvancedMarkerElement({
+//     map: map,
+//     position: position,
+//     title: "Uluru",
+//   });
+// }
+
+// initMap();

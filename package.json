@@ -8,6 +8,7 @@
   "dependencies": {
     "@googlemaps/extended-component-library": "^0.6.10",
     "@googlemaps/js-api-loader": "^1.16.6",
-    "stimulus": "^3.2.2"
+    "stimulus": "^3.2.2",
+    "tailwindcss": "^3.4.3"
   }
 }
