@@ -12,18 +12,13 @@
   </head>
 
   <body>
-    <% if current_user %>
-      Logged in as <%= current_user.email %>.
-      <%= link_to "Log Out", "/logout" %>
-    <% else %>
-      <%= link_to "Sign Up", register_user_path %> or
-      <%= link_to "Log In", user_login_path %>
-    <% end %>
-
     <div id="mainBody" class="container">
       <% flash.each do |name, msg| %>
         <%= content_tag :div, msg, class: name %>
       <% end %>
+
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
       <%= yield %>
     </div>
   </body>

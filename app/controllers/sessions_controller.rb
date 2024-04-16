@@ -1,23 +1,9 @@
-class SessionsController < Devise::SessionsController
-  def new
-    @user = User.new
+class SessionsController < ApplicationController
+  def after_sign_out_path_for(resource_or_scope)
+    new_user_session_path
   end
-
-  def create
-    user = User.find_by(email: params[:email])
-    if user && user.authenticate(params[:password])
-      session[:user_id] = user.id
-      redirect_to user_path(user)
-    else
-      flash[:error] = 'Sorry, your credentials are bad'
-      redirect_to user_login_path
-    end
-  end
-
-  def destroy
-    session[:user_id] = nil
-    redirect_to root_path
-  end
-
   
+  def after_sign_in_path_for(resource_or_scope)
+    stored_location_for(resource_or_scope) || root_path
+  end
 end

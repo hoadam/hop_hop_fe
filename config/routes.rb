@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: {
-      passwords: 'passwords',
-      registrations: 'registrations',
-      sessions: 'sessions'
+      passwords: 'users/passwords',
+      registrations: 'users/registrations',
+      sessions: 'users/sessions',
+      omniauth_callbacks: 'users/omniauth_callbacks'
   }
   resource :two_factor_settings, except: [:index, :show]
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
@@ -14,11 +15,11 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
   root 'welcome#index'
-  get '/signup', to: 'users#new', as: 'register_user'
-  get '/login', to: 'sessions#new', as: 'user_login'
-  post '/login', to: 'sessions#create'
-  delete '/logout', to: 'sessions#destroy'
-  get '/auth/google_oauth2/callback', to: 'google_controller#google', as: 'auth_google'
+  # get '/signup', to: 'users#new', as: 'register_user'
+  # get '/login', to: 'sessions#new', as: 'user_login'
+  # post '/login', to: 'sessions#create'
+  # delete '/logout', to: 'sessions#destroy'
+  # get '/auth/google_oauth2/callback', to: 'google_controller#google', as: 'auth_google'
 
   resources :users, only: [:show, :new, :create] do
     resources :trips do
