@@ -9,8 +9,5 @@
     "@googlemaps/extended-component-library": "^0.6.10",
     "@googlemaps/js-api-loader": "^1.16.6",
     "stimulus": "^3.2.2"
-  },
-  "scripts": {
-    "build-css": "tailwindcss -i app/assets/stylesheets/application.tailwind.css -o app/assets/stylesheets/application.css --watch"
-  }  
+  }
 }
