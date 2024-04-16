@@ -4,15 +4,17 @@
 <p><%= @trip.start_date %> - <%= @trip.end_date %></p>
 <div><%= link_to 'Edit', edit_user_trip_path(@user, @trip.id) %></div>
 
-<p>Accommodation</p>
+<h2>Accommodation</h2>
     <% @accommodations.each do |accommodation| %>
         <p><%= accommodation.name %></p>
         <p><%= accommodation.address %></p>
         <p>Check In: <%= accommodation.check_in %></p>
         <p>Check Out: <%= accommodation.check_out %></p>
+        <div><%= link_to 'Edit', edit_user_trip_accommodation_path(@user, @trip.id, accommodation.id) %></div>
+        <div><%= link_to 'Create Accommodation', new_user_trip_accommodation_path(@user, @trip.id) %></div>
     <% end %>
 
-<h2>Itineraries</h2>
+<h3>Itineraries</h3>
     <% @daily_itineraries.each do |daily_itinerary| %>
         <section> 
             <span><%= daily_itinerary.date %></span>
@@ -27,8 +29,8 @@
         </section>
     <% end %>
 
-<h3>Total Budget</h3>
+<strong>Total Budget</strong>
     <p><%= @trip.total_budget %></p>
 
-<h4>Total expenses</h4>
+<strong>Total Expenses</strong>
     <p><%= @trip.total_expenses %></p>
