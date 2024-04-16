@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   get '/login', to: 'sessions#new', as: 'user_login'
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
-  get '/auth/google_oauth2/callback', to: 'sessions#google', as: 'auth_google'
+  get '/auth/google_oauth2/callback', to: 'google_controller#google', as: 'auth_google'
 
   resources :users, only: [:show, :new, :create] do
     resources :trips do
