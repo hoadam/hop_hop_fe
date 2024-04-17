@@ -6,10 +6,6 @@ class UsersController < ApplicationController
     @trips = TripService.get_trips(current_user.id)
   end
 
-  def new
-    @user = User.new
-  end
-
   def disable_otp
     if current_user.validate_and_consume_otp!(params[:otp_attempt])
       current_user.otp_required_for_login = false
@@ -25,7 +21,6 @@ class UsersController < ApplicationController
   end
 
   def verify_otp
-    require 'pry'; binding.pry
     verifier = Rails.application.message_verifier(:otp_session)
     user_id = verifier.verify(session[:otp_token])
     user = User.find(user_id)
