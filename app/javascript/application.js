@@ -15,7 +15,7 @@ async function initMap() {
     center: { lat: 39.833333, lng: -98.585522 },
     zoom: 4,
   });
-
+  console.log(map)
   map.addListener("click", (e) => {
     map.panTo(e.latLng);
   });
