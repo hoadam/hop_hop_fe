@@ -1,3 +1,27 @@
 <div class="container mint-cream top-border">
   <h1 class="text-6xl">Welcome <%= @user.full_name %>!</h1>
 </div>
+<%= link_to 'Plan a new Trip', new_user_trip_path(current_user.id), data: { turbo_method: :get } %>
+
+<div class="current-trips">
+  <h2 class="text-4xl">Current Trips</h2>
+    <ul>
+      <% @trips.each do |trip| %>
+        <li>
+          <%= link_to trip.name, user_trip_path(current_user.id, trip.id), data: { turbo_method: :get } %> - <%= link_to "Delete", "/users/#{current_user.id}/trips/#{trip.id}", data: { turbo_method: :delete } %>
+        </li>
+      <% end %>
+    </ul>
+</div>
+
+<div class="past-trips">
+  <h2 class="text-4x">Past Trips</h2>
+    <ul>
+      <% @trips.each do |trip| %>
+        <li>
+          <%= link_to trip.name, user_trip_path(current_user.id, trip.id), data: { turbo_method: :get } %>
+        </li>
+      <% end %>
+    </ul>
+</div>
+

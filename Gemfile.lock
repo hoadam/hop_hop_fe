@@ -189,7 +189,6 @@ GEM
       net-imap
       net-pop
       net-smtp
-    mapkick-rb (0.1.5)
     marcel (1.0.4)
     matrix (0.4.2)
     method_source (1.0.0)
@@ -393,11 +392,12 @@ DEPENDENCIES
   factory_bot_rails
   faker
   faraday
+  geocoder
+  google-apis-places_v1 (~> 0.1)
   importmap-rails
   jbuilder
   jsbundling-rails
   launchy
-  mapkick-rb
   omniauth
   omniauth-google-oauth2
   omniauth-rails_csrf_protection

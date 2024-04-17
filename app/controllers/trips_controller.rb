@@ -32,6 +32,11 @@ class TripsController < ApplicationController
     redirect_to edit_user_trip_path(@user, @trip.id)
   end
 
+  def destroy
+    TripService.delete_trip(current_user.id, params[:id] )
+    redirect_to user_path(current_user.id)
+  end
+
 
   private
 
