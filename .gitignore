@@ -37,6 +37,7 @@
 .env
 /app/assets/builds/*
 !/app/assets/builds/.keep
+!/app/vendor/assets
 
 /public/packs
 /public/packs-test
