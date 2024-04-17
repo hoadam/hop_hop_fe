@@ -10,8 +10,8 @@ RSpec.describe Trip do
   let(:total_budget) { 1000 }
   let(:total_expenses) { 500 }
   let(:daily_itineraries) { [] }
-
-  let(:trip) { Trip.new(id, name, location, start_date, end_date, status, total_budget, total_expenses, daily_itineraries)}
+  let(:activities) {[]}
+  let(:trip) { Trip.new(id, name, location, start_date, end_date, status, total_budget, total_expenses, daily_itineraries, activities)}
 
   describe "#initialize" do
     it 'sets the attributes correctly' do
@@ -24,6 +24,7 @@ RSpec.describe Trip do
       expect(trip.total_budget).to eq(total_budget)
       expect(trip.total_expenses).to eq(total_expenses)
       expect(trip.daily_itineraries).to eq(daily_itineraries)
+      expect(trip.activities).to eq(activities)
     end
   end
 
@@ -40,7 +41,8 @@ RSpec.describe Trip do
             status: status,
             total_budget: total_budget,
             total_expenses: total_expenses,
-            daily_itineraries: daily_itineraries
+            daily_itineraries: daily_itineraries,
+            activities: activities
           }
         }
       }

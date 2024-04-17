@@ -1,0 +1,149 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips
+    body:
+      encoding: UTF-8
+      string: '{"trip":{"name":"Trip To Japan","location":"Japan","start_date":"2024-04-20","end_date":"2024-04-30","status":"in_progress","total_budget":1000,"user_id":1}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"c00b781ad7643fe47bcf7d7e9fb477f5"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a5c78a21-462c-4e1a-a2c8-c28382551d0f
+      X-Runtime:
+      - '0.014788'
+      Content-Length:
+      - '1657'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"38","type":"trip","attributes":{"name":"Trip To Japan","location":"Japan","status":"in_progress","total_budget":1000,"start_date":"2024-04-20T00:00:00.000Z","end_date":"2024-04-30T00:00:00.000Z","total_expenses":0},"relationships":{"daily_itineraries":{"data":[{"id":"408","type":"daily_itinerary"},{"id":"409","type":"daily_itinerary"},{"id":"410","type":"daily_itinerary"},{"id":"411","type":"daily_itinerary"},{"id":"412","type":"daily_itinerary"},{"id":"413","type":"daily_itinerary"},{"id":"414","type":"daily_itinerary"},{"id":"415","type":"daily_itinerary"},{"id":"416","type":"daily_itinerary"},{"id":"417","type":"daily_itinerary"},{"id":"418","type":"daily_itinerary"}]}}},"included":[{"id":"408","type":"daily_itinerary","attributes":{"trip_id":38,"date":"2024-04-20"}},{"id":"409","type":"daily_itinerary","attributes":{"trip_id":38,"date":"2024-04-21"}},{"id":"410","type":"daily_itinerary","attributes":{"trip_id":38,"date":"2024-04-22"}},{"id":"411","type":"daily_itinerary","attributes":{"trip_id":38,"date":"2024-04-23"}},{"id":"412","type":"daily_itinerary","attributes":{"trip_id":38,"date":"2024-04-24"}},{"id":"413","type":"daily_itinerary","attributes":{"trip_id":38,"date":"2024-04-25"}},{"id":"414","type":"daily_itinerary","attributes":{"trip_id":38,"date":"2024-04-26"}},{"id":"415","type":"daily_itinerary","attributes":{"trip_id":38,"date":"2024-04-27"}},{"id":"416","type":"daily_itinerary","attributes":{"trip_id":38,"date":"2024-04-28"}},{"id":"417","type":"daily_itinerary","attributes":{"trip_id":38,"date":"2024-04-29"}},{"id":"418","type":"daily_itinerary","attributes":{"trip_id":38,"date":"2024-04-30"}}]}'
+  recorded_at: Wed, 17 Apr 2024 05:26:59 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/38/daily_itineraries/408/activities
+    body:
+      encoding: UTF-8
+      string: '{"activity":{"name":"Teamlab Planet","user_id":1}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"03f89fb45c9d82e92be94ce42a910b16"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 712ecdb1-a8b5-4ed0-83da-aae22965d743
+      X-Runtime:
+      - '0.002133'
+      Content-Length:
+      - '205'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"7","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet","daily_itinerary_date_format":"04/20/2024"}}}'
+  recorded_at: Wed, 17 Apr 2024 05:26:59 GMT
+- request:
+    method: put
+    uri: http://127.0.0.1:3000/api/v1/trips/38/daily_itineraries/408/activities/7
+    body:
+      encoding: UTF-8
+      string: '{"activity":{"name":"Shibuya Crossing","user_id":1}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"43fea8a598ee1984dff901f22dd24a37"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2d6f0f4b-0522-4149-b347-00ba90a7a722
+      X-Runtime:
+      - '0.002758'
+      Content-Length:
+      - '207'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"7","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
+        Crossing","daily_itinerary_date_format":"04/20/2024"}}}'
+  recorded_at: Wed, 17 Apr 2024 05:26:59 GMT
+recorded_with: VCR 6.2.0
