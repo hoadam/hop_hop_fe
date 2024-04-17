@@ -4498,58 +4498,6 @@ http_interactions:
   recorded_at: Wed, 17 Apr 2024 01:34:23 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:5000/api/v1/trips
-    body:
-      encoding: UTF-8
-      string: '{"trip":{"name":"Trip To Japan","location":"Japan","start_date":"2024-04-20","end_date":"2024-04-30","status":"in_progress","total_budget":1000,"user_id":1}}'
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/json
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"1d9ee954308fe4bc3d7264b401d3ac2d"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 0555c57b-d9d8-4ff4-810d-a18d938553b0
-      X-Runtime:
-      - '0.031124'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.00, sql.active_record;dur=11.72,
-        transaction.active_record;dur=10.69, instantiation.active_record;dur=1.19,
-        process_action.action_controller;dur=27.44
-      Content-Length:
-      - '1691'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"249","type":"trip","attributes":{"name":"Trip To Japan","location":"Japan","start_date":"2024-04-20T00:00:00.000Z","end_date":"2024-04-30T00:00:00.000Z","status":"in_progress","total_budget":1000,"total_expenses":0},"relationships":{"daily_itineraries":{"data":[{"id":"3007","type":"daily_itinerary"},{"id":"3008","type":"daily_itinerary"},{"id":"3009","type":"daily_itinerary"},{"id":"3010","type":"daily_itinerary"},{"id":"3011","type":"daily_itinerary"},{"id":"3012","type":"daily_itinerary"},{"id":"3013","type":"daily_itinerary"},{"id":"3014","type":"daily_itinerary"},{"id":"3015","type":"daily_itinerary"},{"id":"3016","type":"daily_itinerary"},{"id":"3017","type":"daily_itinerary"}]}}},"included":[{"id":"3007","type":"daily_itinerary","attributes":{"trip_id":249,"date":"2024-04-20"}},{"id":"3008","type":"daily_itinerary","attributes":{"trip_id":249,"date":"2024-04-21"}},{"id":"3009","type":"daily_itinerary","attributes":{"trip_id":249,"date":"2024-04-22"}},{"id":"3010","type":"daily_itinerary","attributes":{"trip_id":249,"date":"2024-04-23"}},{"id":"3011","type":"daily_itinerary","attributes":{"trip_id":249,"date":"2024-04-24"}},{"id":"3012","type":"daily_itinerary","attributes":{"trip_id":249,"date":"2024-04-25"}},{"id":"3013","type":"daily_itinerary","attributes":{"trip_id":249,"date":"2024-04-26"}},{"id":"3014","type":"daily_itinerary","attributes":{"trip_id":249,"date":"2024-04-27"}},{"id":"3015","type":"daily_itinerary","attributes":{"trip_id":249,"date":"2024-04-28"}},{"id":"3016","type":"daily_itinerary","attributes":{"trip_id":249,"date":"2024-04-29"}},{"id":"3017","type":"daily_itinerary","attributes":{"trip_id":249,"date":"2024-04-30"}}]}'
-  recorded_at: Wed, 17 Apr 2024 01:45:21 GMT
-- request:
-    method: post
     uri: http://127.0.0.1:5000/api/v1/trips/249/daily_itineraries/3007/activities
     body:
       encoding: UTF-8
@@ -4654,4 +4602,268 @@ http_interactions:
       string: '{"data":{"id":"1727","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
         Crossing"}}}'
   recorded_at: Wed, 17 Apr 2024 01:45:21 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:5000/api/v1/trips/267/daily_itineraries/3205/activities
+    body:
+      encoding: UTF-8
+      string: '{"activity":{"name":"Teamlab Planet","user_id":1}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"9d2ca8f864bd8427f2cb3c95a66ce677"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4c0bfa5a-d6f8-4825-b3ad-e58f654d3c66
+      X-Runtime:
+      - '0.006549'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.19, instantiation.active_record;dur=0.05,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=0.93,
+        process_action.action_controller;dur=3.13
+      Content-Length:
+      - '165'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1735","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Wed, 17 Apr 2024 02:41:08 GMT
+- request:
+    method: put
+    uri: http://127.0.0.1:5000/api/v1/trips/267/daily_itineraries/3205/activities/1735
+    body:
+      encoding: UTF-8
+      string: '{"activity":{"name":"Shibuya Crossing","user_id":1}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"9413aad18d1adb76ad9b6d104e17f405"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e85985c0-3d19-49ef-a6cf-1b5f59989912
+      X-Runtime:
+      - '0.009579'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=4.00, instantiation.active_record;dur=0.09,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=1.95,
+        process_action.action_controller;dur=6.43
+      Content-Length:
+      - '167'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1735","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
+        Crossing"}}}'
+  recorded_at: Wed, 17 Apr 2024 02:41:08 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:5000/api/v1/trips
+    body:
+      encoding: UTF-8
+      string: '{"trip":{"name":"Trip To Japan","location":"Japan","start_date":"2024-04-20","end_date":"2024-04-30","status":"in_progress","total_budget":1000,"user_id":1}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"cd30ddd89d7e8b009e9b04840e4339cc"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 206bc4ea-c5ca-487b-a635-f8db17c9affc
+      X-Runtime:
+      - '0.033252'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=14.62,
+        transaction.active_record;dur=12.64, instantiation.active_record;dur=0.09,
+        process_action.action_controller;dur=29.54
+      Content-Length:
+      - '1691'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"285","type":"trip","attributes":{"name":"Trip To Japan","location":"Japan","start_date":"2024-04-20T00:00:00.000Z","end_date":"2024-04-30T00:00:00.000Z","status":"in_progress","total_budget":1000,"total_expenses":0},"relationships":{"daily_itineraries":{"data":[{"id":"3403","type":"daily_itinerary"},{"id":"3404","type":"daily_itinerary"},{"id":"3405","type":"daily_itinerary"},{"id":"3406","type":"daily_itinerary"},{"id":"3407","type":"daily_itinerary"},{"id":"3408","type":"daily_itinerary"},{"id":"3409","type":"daily_itinerary"},{"id":"3410","type":"daily_itinerary"},{"id":"3411","type":"daily_itinerary"},{"id":"3412","type":"daily_itinerary"},{"id":"3413","type":"daily_itinerary"}]}}},"included":[{"id":"3403","type":"daily_itinerary","attributes":{"trip_id":285,"date":"2024-04-20"}},{"id":"3404","type":"daily_itinerary","attributes":{"trip_id":285,"date":"2024-04-21"}},{"id":"3405","type":"daily_itinerary","attributes":{"trip_id":285,"date":"2024-04-22"}},{"id":"3406","type":"daily_itinerary","attributes":{"trip_id":285,"date":"2024-04-23"}},{"id":"3407","type":"daily_itinerary","attributes":{"trip_id":285,"date":"2024-04-24"}},{"id":"3408","type":"daily_itinerary","attributes":{"trip_id":285,"date":"2024-04-25"}},{"id":"3409","type":"daily_itinerary","attributes":{"trip_id":285,"date":"2024-04-26"}},{"id":"3410","type":"daily_itinerary","attributes":{"trip_id":285,"date":"2024-04-27"}},{"id":"3411","type":"daily_itinerary","attributes":{"trip_id":285,"date":"2024-04-28"}},{"id":"3412","type":"daily_itinerary","attributes":{"trip_id":285,"date":"2024-04-29"}},{"id":"3413","type":"daily_itinerary","attributes":{"trip_id":285,"date":"2024-04-30"}}]}'
+  recorded_at: Wed, 17 Apr 2024 02:49:34 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:5000/api/v1/trips/285/daily_itineraries/3403/activities
+    body:
+      encoding: UTF-8
+      string: '{"activity":{"name":"Teamlab Planet","user_id":1}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"133ee03ff33b654bb7aab913ce2bb946"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2a1c133f-f15c-4f12-9b43-1a8b6d5888ec
+      X-Runtime:
+      - '0.006506'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.18, instantiation.active_record;dur=0.05,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=0.88,
+        process_action.action_controller;dur=2.99
+      Content-Length:
+      - '165'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1744","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Wed, 17 Apr 2024 02:49:34 GMT
+- request:
+    method: put
+    uri: http://127.0.0.1:5000/api/v1/trips/285/daily_itineraries/3403/activities/1744
+    body:
+      encoding: UTF-8
+      string: '{"activity":{"name":"Shibuya Crossing","user_id":1}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"9882aff28c1061bfed22f9c23a4dff6d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e5b63b4d-12f4-4a42-9e23-24bd3d8d55b1
+      X-Runtime:
+      - '0.007240'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.41, instantiation.active_record;dur=0.08,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=0.75,
+        process_action.action_controller;dur=4.20
+      Content-Length:
+      - '167'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1744","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Shibuya
+        Crossing"}}}'
+  recorded_at: Wed, 17 Apr 2024 02:49:34 GMT
 recorded_with: VCR 6.2.0
