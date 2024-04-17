@@ -19,8 +19,11 @@
 
   <body>
     <%= render partial: "shared/navbar" %>
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
+    <% flash.each do |type, message| %>
+      <section class=<%= type %>>
+      <p><%= message %></p>
+      </section>
+    <% end %>
       <%= yield %>
   </body>
 </html>

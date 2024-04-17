@@ -1,4 +1,4 @@
-  <%= form_with url: "/users/#{current_user.id}/discover", method: :get do |form| %>
+  <%= form_with url: discover_index_path, method: :get do |form| %>
     <%= form.label :search, "Search for a place to discover:" %>
     <%= text_field_tag(:search, params[:search]) %>
     <br />
