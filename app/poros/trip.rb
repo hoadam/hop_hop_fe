@@ -33,12 +33,17 @@ class Trip
       json.dig(:data, :attributes, :status),
       json.dig(:data, :attributes, :total_budget),
       json.dig(:data, :attributes, :total_expenses),
-      json.dig(:included).to_a.select { |item| item[:type] == 'daily_itinerary' }.map { |item| DailyItinerary.from_json(item) },
+      process_daily_itineraries(json),
       process_activities_by_date(json)
     )
   end
 
   private
+
+  def self.process_daily_itineraries(json)
+    daily_itineraries = json.dig(:included).to_a.select { |item| item[:type] == 'daily_itinerary' }
+    daily_itineraries.map { |item| DailyItinerary.from_json(item) }
+  end
 
   def self.process_activities_by_date(json)
     raw = json.dig(:data, :attributes, :daily_itineraries).to_h.with_indifferent_access
