@@ -60,10 +60,13 @@ describe TripService do
       user_id = 1
       response = TripService.create_trip(user_id, trip_params)
 
+      start_date = Date.parse(response.start_date)
+      end_date = Date.parse(response.end_date)
+
       expect(response.name).to eq('Trip To Japan')
       expect(response.location).to eq('Japan')
-      expect(response.start_date).to eq("04/20/2024")
-      expect(response.end_date).to eq("04/30/2024")
+      expect(start_date.strftime("%m/%d/%Y")).to eq("04/20/2024")
+      expect(end_date.strftime("%m/%d/%Y")).to eq("04/30/2024")
       expect(response.status).to eq('in_progress')
       expect(response.total_budget).to eq(1000)
     end
