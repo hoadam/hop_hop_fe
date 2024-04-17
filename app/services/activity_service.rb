@@ -6,15 +6,30 @@ class ActivityService < HophopService
     end
   end
 
+  def self.activity_details(user_id, trip_id, daily_itinerary_id, activity_id)
+    response = get_url("trips/#{trip_id}/daily_itineraries/#{daily_itinerary_id}/activities/#{activity_id}", user_id: user_id)
+
+    Activity.from_json(response[:data])
+  end
+
   def self.create_activity(user_id, trip_id, daily_itinerary_id, activity_params)
-    response = conn.post("trips/#{trip_id}/daily_itineraries/#{daily_itinerary_id}/activities", activity: activity_params.merge(user_id: user_id))
+    response = conn.post("trips/#{trip_id}/daily_itineraries/#{daily_itinerary_id}/activities") do |req|
+      req.body = {
+        activity: activity_params.merge(user_id: user_id)
+  }.to_json
+    end
 
     json = JSON.parse(response.body, symbolize_names: true)[:data]
     Activity.from_json(json)
   end
 
   def self.update_activity(user_id, trip_id, daily_itinerary_id, activity_id, activity_params)
-    response = conn.put("trips/#{trip_id}/daily_itineraries/#{daily_itinerary_id}/activities/#{activity_id}", activity: activity_params.merge(user_id: user_id))
+    response = conn.put("trips/#{trip_id}/daily_itineraries/#{daily_itinerary_id}/activities/#{activity_id}") do |req|
+      req.body = {
+        activity: activity_params.merge(user_id: user_id)
+      }.to_json
+    end
+
     json = JSON.parse(response.body, symbolize_names: true)[:data]
     Activity.from_json(json)
   end
