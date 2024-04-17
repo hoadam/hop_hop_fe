@@ -69,6 +69,7 @@ group :development, :test do
   gem "capybara"
   gem "launchy"
   gem "warden"
+  gem 'database_cleaner-active_record'
 end
 
 group :development do
