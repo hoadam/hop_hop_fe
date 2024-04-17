@@ -3,5 +3,10 @@
 <%= render partial: "trips", locals: {
                                       path: trips_path(current_user.id),
                                       method: :post,
+                                      trip_name: "Trip",
+                                      trip_location: "Location",
+                                      start_date: "",
+                                      end_date: "",
+                                      total_budget: 0,
                                       button: "Save Trip"
 } %>

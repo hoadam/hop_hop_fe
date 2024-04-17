@@ -1,9 +1,9 @@
 <%= simple_form_for :trip, url: path, method: method, data: { turbo: false } do |f| %>
-  <%= f.input :name, label: 'Trip Name', input_html: { value: @trip.name || 'Default Name' }, :label_html => { :class => 'text-white quicksand weight-bold' } %>
-  <%= f.input :location, input_html: { value: @trip.location || 'Default Name' }, :label_html => { :class => 'text-white quicksand weight-bold' } %>
-  <%= f.input :start_date, input_html: { value: @trip.start_date || 'Default Name' }, as: :date, :label_html => { :class => 'text-white quicksand weight-bold' } %>
-  <%= f.input :end_date, input_html: { value: @trip.end_date || 'Default Name' }, as: :date, :label_html => { :class => 'text-white quicksand weight-bold' } %>
-  <%= f.input :total_budget, as: :integer, input_html: { value: @trip.total_budget || 'Default Name' }, :label_html => { :class => 'text-white quicksand weight-bold' } %>
+  <%= f.input :name, label: 'Trip Name', input_html: { value: trip_name }, :label_html => { :class => 'text-white quicksand weight-bold' } %>
+  <%= f.input :location, input_html: { value: trip_location }, :label_html => { :class => 'text-white quicksand weight-bold' } %>
+  <%= f.input :start_date, input_html: { value: start_date }, as: :date, :label_html => { :class => 'text-white quicksand weight-bold' } %>
+  <%= f.input :end_date, input_html: { value: end_date }, as: :date, :label_html => { :class => 'text-white quicksand weight-bold' } %>
+  <%= f.input :total_budget, as: :integer, input_html: { value: total_budget }, :label_html => { :class => 'text-white quicksand weight-bold' } %>
 
   <%= f.button :submit, button %>
 <% end %>

@@ -2,5 +2,10 @@
 <%= render partial: "trips", locals: {
                                       path: trip_path(@trip.id),
                                       method: :patch,
+                                      trip_name: @trip.name,
+                                      trip_location: @trip.location,
+                                      start_date: @trip.start_date,
+                                      end_date: @trip.end_date,
+                                      total_budget: @trip.total_budget,
                                       button: "Submit"
 } %>
