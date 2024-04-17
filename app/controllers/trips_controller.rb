@@ -20,6 +20,14 @@ class TripsController < ApplicationController
     @trip = TripService.trip_details(params[:user_id], params[:id])
   end
 
+  def new;end
+
+  def create
+    TripService.create_trip(current_user.id, trip_params)
+    
+    redirect_to user_path(current_user.id)
+  end
+
   def update
     @user = User.find(params[:user_id])
 
