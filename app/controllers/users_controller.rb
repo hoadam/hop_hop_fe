@@ -30,16 +30,12 @@ class UsersController < ApplicationController
   end
 
   def enable_otp_show_qr
-    if current_user.otp_required_for_login
-      redirect_to edit_user_registration_path, alert: "2FA is already enabled"
-    else
-      current_user.otp_secret = User.generate_otp_secret
-      issuer = "Hop Hop!"
-      label = "#{issuer}:#{current_user.email}"
+    current_user.otp_secret = User.generate_otp_secret
+    issuer = "Hop Hop!"
+    label = "#{issuer}:#{current_user.email}"
 
-      @provisioning_uri = current_user.otp_provisioning_uri(label, issuer:)
-      current_user.save!
-    end
+    @provisioning_uri = current_user.otp_provisioning_uri(label, issuer:)
+    current_user.save!
   end
 
   def enable_otp_verify
@@ -48,7 +44,7 @@ class UsersController < ApplicationController
       current_user.save!
       redirect_to edit_user_registration_path, notice: '2FA enabled successfully'
     else
-      redirect_to enable_otp_show_qr_users_path, alert: 'Invalid OTP code.'
+      redirect_to enable_otp_show_qr_path, alert: 'Invalid OTP code.'
     end
   end
 end

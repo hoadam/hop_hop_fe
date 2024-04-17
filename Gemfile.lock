@@ -398,6 +398,7 @@ DEPENDENCIES
   turbo-rails
   tzinfo-data
   vcr
+  warden
   web-console
   webmock
 
