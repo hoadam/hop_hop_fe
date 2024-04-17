@@ -7,21 +7,24 @@
   <h2 class="text-4xl">Current Trips</h2>
     <ul>
       <% @trips.each do |trip| %>
-        <li>
-          <%= link_to trip.name, trip_path(trip.id), data: { turbo_method: :get } %> - <%= link_to "Delete", trip_path(trip.id), local: true, data: { turbo_method: :delete } %>
-        </li>
+        <% if trip.status != "completed" %>
+          <li>
+            <%= link_to trip.name, trip_path(trip.id), data: { turbo_method: :get } %> - <%= link_to "Delete", trip_path(trip.id), local: true, data: { turbo_method: :delete } %>
+          </li>
+        <% end %>
       <% end %>
     </ul>
 </div>
 
 <div class="past-trips">
-  <h2 class="text-4x">Past Trips</h2>
+  <h2 class="text-4xl">Past Trips</h2>
     <ul>
       <% @trips.each do |trip| %>
-        <li>
-          <%= link_to trip.name, trip_path(trip.id), data: { turbo_method: :get } %>
-        </li>
+        <% if trip.status != "in_progress" %>
+          <li>
+            <%= link_to trip.name, trip_path(trip.id), data: { turbo_method: :get } %> - <%= link_to "Delete", trip_path(trip.id), local: true, data: { turbo_method: :delete } %>
+          </li>
+        <% end %>
       <% end %>
     </ul>
 </div>
-

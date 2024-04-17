@@ -3,7 +3,6 @@ class TripService < HophopService
     response = get_url('trips', user_id: user_id)
 
     return [] if response[:data].blank?
-
     response[:data].map do |json|
       Trip.new(
         json.dig(:id),
