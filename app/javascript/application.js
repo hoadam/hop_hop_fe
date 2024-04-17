@@ -78,9 +78,10 @@ document.addEventListener('turbo:load', function() {
     new google.maps.Marker({
       position: latLng,
       map: map,
-      zoom: 6
     });
     map.panTo(latLng);
+
+    map.setZoom(15)
   }
 
   // Used to wait for the #map to appear, if it does, is it a String?
