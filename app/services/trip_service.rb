@@ -13,6 +13,7 @@ class TripService < HophopService
         json.dig(:attributes, :status),
         json.dig(:attributes, :total_budget),
         json.dig(:attributes, :total_expenses),
+        [],
         []
       )
     end
