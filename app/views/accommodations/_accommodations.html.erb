@@ -1,0 +1,9 @@
+<%= simple_form_for :accommodations, url: path, method: method, data: { turbo: false } do |f| %>
+  <%= f.input :name, label: 'Accommodation Name', :label_html => { :class => 'text-white quicksand weight-bold' } %>
+  <%= f.input :address, :label_html => { :class => 'text-white quicksand weight-bold' } %>
+  <%= f.input :check_in, as: :date, :label_html => { :class => 'text-white quicksand weight-bold' } %>
+  <%= f.input :check_out, as: :date, :label_html => { :class => 'text-white quicksand weight-bold' } %>
+  <%= f.input :expenses, as: :integer, :label_html => { :class => 'text-white quicksand weight-bold' } %>
+
+  <%= f.button :submit, button %>
+<% end %>

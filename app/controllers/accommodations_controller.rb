@@ -6,6 +6,8 @@ class AccommodationsController < ApplicationController
   def create
     @trip = TripService.trip_details(current_user.id, params[:trip_id])
     @accommodation = AccommodationService.create_accommodation(current_user.id, params[:trip_id], accommodation_params)
+
+    redirect_to trip_path(@trip.id)
   end
 
   def edit
@@ -18,6 +20,8 @@ class AccommodationsController < ApplicationController
     @accommodation = AccommodationService.accommodation_details(current_user.id, params[:trip_id], params[:id])
 
     AccommodationService.update_accommodation(current_user.id, params[:trip_id], params[:id], accommodation_params)
+
+    redirect_to trip_path(@trip.id)
   rescue => e
     flash[:error] = "Failed to update accommodation - #{e.message}"
   end
@@ -33,6 +37,6 @@ class AccommodationsController < ApplicationController
   private
 
   def accommodation_params
-    params.permit(:name, :address, :check_in, :check_out, :expenses)
+    params.require(:accommodations).permit(:name, :address, :check_in, :check_out, :expenses)
   end
 end

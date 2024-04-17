@@ -20,7 +20,7 @@
         <p>Check In: <%= accommodation.check_in %></p>
         <p>Check Out: <%= accommodation.check_out %></p>
         <div><%= link_to 'Edit', edit_trip_accommodation_path(@trip.id, accommodation.id) %></div>
-        <div><%= button_to 'Delete',_trip_accommodation_path(@trip.id, accommodation.id), method: :delete %></div>
+        <div><%= button_to 'Delete', trip_accommodation_path(@trip.id, accommodation.id), method: :delete %></div>
     <% end %>
 
 <h3>Itineraries</h3>
@@ -34,7 +34,7 @@
                     Name: <%= activity.name %><br/>
                     Description: <%= activity.description %>
                     <div><%= link_to 'Edit', edit_trip_daily_itinerary_activity_path(@trip.id, daily_itinerary.id, activity.id) %></div>
-                    <div><%= button_to 'Delete',_trip_daily_itinerary_activity_path(@trip.id, daily_itinerary.id, activity.id), method: :delete %></div>
+                    <div><%= button_to 'Delete', trip_daily_itinerary_activity_path(@trip.id, daily_itinerary.id, activity.id), method: :delete %></div>
                 </li>
             <% end %>
             </ol>

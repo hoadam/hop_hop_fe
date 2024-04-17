@@ -1,20 +1,13 @@
-<h1>Update Accommodation</h1>
+<div class="container">
+  <h1 class="text-center text-4xl">Update Accommodation</h1>
 
-<%= form_with url: trip_accommodation_path(current_user.id, params[:trip_id], params[:id]), method: :patch, data: {turbo: false}, local: true do |f| %>
-    <%= f.label :name, "Accommodation Name" %>
-    <%= f.text_field :name, value: @accommodation.name %>
+  <div class="container">
+    <%= render partial: "accommodations", locals: {
+      path: trip_accommodation_path(params[:trip_id], params[:id]),
+      method: :patch,
+      button: "Update Accommodation"
+  } %>
+  </div>
+</div>
 
-    <%= f.label :address, "Address" %>
-    <%= f.text_field :address, value: @accommodation.address%>
 
-    <%= f.label :check_in, "Check In" %>
-    <%= f.date_field :check_in, value: @accommodation.check_in %>
-
-    <%= f.label :check_out, "Check Out" %>
-    <%= f.date_field :check_out, value: @accommodation.check_out %>
-
-    <%= f.label :expenses, "Expenses" %>
-    <%= f.text_field :expenses, value: @accommodation.expenses %>
-
-    <%= f.submit "Update Accommodation" %>
-<% end %>
