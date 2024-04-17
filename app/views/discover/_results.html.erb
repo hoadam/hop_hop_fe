@@ -1,6 +1,6 @@
   <ul>
     <% @search_results.each do |search_result| %>
-      <li><%= link_to "#{search_result.name} at #{search_result.address}", "#", data: { turbo_method: :get } %>
+      <li><%= link_to "#{search_result.name} at #{search_result.address}", user_discover_index_path(current_user.id, params:{lat: search_result.lat, lon: search_result.lon}), data: { turbo_method: :get } %>
       </li>
     <% end %>
   </ul>

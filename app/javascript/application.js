@@ -12,8 +12,8 @@ async function initMap() {
   // map would be the return value of the pulling function looking for the map div
   // map = a function that keeps looking for the value, and then assigns it to map
   map = new Map(await waitForElement("#map"), {
-    center: { lat: -34.397, lng: 150.644 },
-    zoom: 8,
+    center: { lat: 39.833333, lng: -98.585522 },
+    zoom: 4,
   });
 
   map.addListener("click", (e) => {
@@ -23,10 +23,9 @@ async function initMap() {
   // Access the data from the data-info attribute of your element
   console.log(document.getElementById("searchResults").dataset);
   const dataArray = document.getElementById("searchResults").dataset.info;
-  console.log(dataArray);
+
   // Parse the data to extract the lat and lon
   const jsonData = JSON.parse(dataArray);
-  console.log(jsonData);
 
   jsonData.forEach(location => {
     const latitude = location.data.lat;
@@ -34,14 +33,38 @@ async function initMap() {
 
     const latLng = new google.maps.LatLng(latitude, longitude);
 
-    placeMarker(latLng, map)
-    map.panTo(latLng);
+    placeMarkerAndPanTo(latLng, map)
   });
+
+  searchLocation();
+  // const latLng = new google.maps.LatLng(latitude, longitude);
+  // console.log(latLng.slice(1))
 }
 
 document.addEventListener('turbo:load', function() {
+  console.log("Loading map!")
   initMap(); // Call your function to initialize Google Maps
 });
+
+//
+  const searchLocation = function() {
+    // Query string from the URL bar
+    const queryString = window.location.search
+    // Use URLSearchParams to parse the query string
+    const params = new URLSearchParams(queryString);
+    console.log(params)
+    // Get the latitude and longitude from the parameters
+    const latitude = params.get('lat');
+    const longitude = params.get('lon');
+    const latLng = new google.maps.LatLng(latitude, longitude);
+
+    if (latitude && longitude) { // Check if both latitude and longitude are not null
+      const latLng = new google.maps.LatLng(latitude, longitude);
+      placeMarkerAndPanTo(latLng, map);
+    } else {
+      console.log("Latitude and longitude are not provided");
+    }
+  }
 
 // Place markers
   const placeMarker = function(latLng, map) {
@@ -51,6 +74,14 @@ document.addEventListener('turbo:load', function() {
     });
   }
 
+  const placeMarkerAndPanTo = function(latLng, map) {
+    new google.maps.Marker({
+      position: latLng,
+      map: map,
+      zoom: 6
+    });
+    map.panTo(latLng);
+  }
 
   // Used to wait for the #map to appear, if it does, is it a String?
   // If it is a String, then return a promise

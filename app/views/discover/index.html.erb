@@ -5,17 +5,11 @@
 <%= form.label :search, "Search for a place to discover:" %>
 <%= text_field_tag(:search, params[:search]) %>
 <br />
-<%= form.label :latitude %>
-<%= form.text_field :latitude %>
-<br />
-<%= form.label :longitude %>
-<%= form.text_field :longitude %>
-<br />
 <%= form.submit "Search" %>
 <% end %>
 <ul>
   <% @search_objects.each do |search_result| %>
-    <li><%= link_to "#{search_result.name} at #{search_result.address}", "#", data: { turbo_method: :get } %>
+    <li><%= link_to "#{search_result.name} at #{search_result.address}", user_discover_index_path(current_user.id, params:{lat: search_result.lat, lon: search_result.lon}), data: { turbo_method: :get } %>
     </li>
   <% end %>
 </ul>
