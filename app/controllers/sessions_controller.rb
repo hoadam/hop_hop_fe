@@ -31,7 +31,7 @@ class SessionsController < ApplicationController
       session[:user_id] = @user.id
       redirect_to user_path(@user)
     else
-      flash[:error]= "Failed to authenticate with Google"
+      flash[:error]= "Failed to authenticate with Google - #{@user.errors.full_messages}"
       redirect_to root_path
     end
   end

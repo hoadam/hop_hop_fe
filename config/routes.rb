@@ -16,7 +16,8 @@ Rails.application.routes.draw do
 
   resources :users, only: [:show, :new, :create] do
     resources :trips do
-      resources :daily_itineraries, only: [:index, :show, :new, :create] do
+      resources :accommodations
+      resources :daily_itineraries, only: [:index, :show] do
         resources :activities
       end
     end
