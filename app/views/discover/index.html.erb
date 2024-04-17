@@ -1,17 +1,15 @@
-<% if discover_facade %>
+<% if discover_facade.empty? %>
+  <div id="search-form">
+    <%= render "search" %>
+  </div>
+<% else %>
   <div id="search-form">
     <%= render "search" %>
   </div>
 
   <div id="JSON" data-info=" <%= discover_facade.json_data %>"></div>
-
   <div id="results">
     <%= render "results" %>
-  </div>
-
-<% else %>
-  <div id="search-form">
-      <%= render "search" %>
   </div>
 <% end %>
 
