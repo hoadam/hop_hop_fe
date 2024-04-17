@@ -27,9 +27,11 @@ class TripService < HophopService
 
   def self.create_trip(user_id, trip_params)
     trip_params = trip_params.merge(user_id: user_id).to_json
-    trip_params = JSON.parse(trip_params, symbol)
+    trip_params = JSON.parse(trip_params, symbolize_names: true)
 
-    conn.post("trips", trip: trip_params)
+    response = conn.post("trips", trip: trip_params)
+    json = JSON.parse(response.body, symbolize_names: true)
+    Trip.from_json(json)
   end
 
   def self.update_trip(user_id, trip_id, trip_params)
