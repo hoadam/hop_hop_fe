@@ -17,13 +17,11 @@
       ({key: "<%= Rails.application.credentials[:google_maps] %>", v: "weekly"});</script>
   </head>
 
-  <body class="snow">
-    <%= render partial: "shared/navbar" %>
-    <% flash.each do |type, message| %>
-      <section class=<%= type %>>
-        <p><%= message %></p>
-      </section>
-    <% end %>
-    <%= yield %>
+  <body>
+    <div id="mainBody" class="container">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <%= yield %>
+    </div>
   </body>
 </html>

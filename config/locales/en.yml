@@ -29,3 +29,5 @@
 
 en:
   hello: "Hello world"
+  devise_omniauth_callbacks:
+    success: "Successfully authenticated via %{kind}."

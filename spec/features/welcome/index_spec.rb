@@ -13,16 +13,16 @@ RSpec.describe 'Welcome Page', type: :feature do
     it 'takes you to login' do
         visit root_path
 
-        click_on ('Log In')
+        click_on ('Log in')
 
-        expect(current_path).to eq(user_login_path)
+        expect(current_path).to eq(new_user_session_path)
     end
 
     it 'takes you to sign up' do
         visit root_path
 
-        click_on ('Sign Up')
+        click_on ('Sign up')
 
-        expect(current_path).to eq(register_user_path)
+        expect(current_path).to eq(new_user_registration_path)
     end
 end

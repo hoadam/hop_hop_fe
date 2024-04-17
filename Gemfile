@@ -50,6 +50,11 @@ gem "tzinfo-data", platforms: %i[ windows jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
+# 2FA
+gem 'devise'
+gem 'devise-two-factor'
+gem 'rqrcode'
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 gem 'draper'
@@ -70,6 +75,7 @@ group :development, :test do
   gem 'faker'
   gem "capybara"
   gem "launchy"
+  gem "warden"
 end
 
 group :development do
