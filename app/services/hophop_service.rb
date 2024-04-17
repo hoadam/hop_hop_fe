@@ -1,8 +1,8 @@
 class HophopService
   def self.conn
-    conn = Faraday.new(url: 'http://127.0.0.1:5000/api/v1') do |f|
+    conn = Faraday.new(url: 'http://127.0.0.1:3000/api/v1') do |f|
       f.request :json
-      f.response :raise_error
+      faraday.response :raise_error
     end
   end
 
