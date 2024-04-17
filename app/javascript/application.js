@@ -21,8 +21,8 @@ async function initMap() {
   });
   // Adding a pin to search results
   // Access the data from the data-info attribute of your element
-  console.log(document.getElementById("searchResults").dataset);
-  const dataArray = document.getElementById("searchResults").dataset.info;
+  console.log(document.getElementById("JSON").dataset);
+  const dataArray = document.getElementById("JSON").dataset.info;
 
   // Parse the data to extract the lat and lon
   const jsonData = JSON.parse(dataArray);

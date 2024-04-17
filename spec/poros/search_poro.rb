@@ -10,5 +10,6 @@ RSpec.describe Search do
     expect(search_result.lat).to eq("33.813651199999995")
     expect(search_result.lon).to eq("-117.91973507032726")
     expect(search_result.type).to eq("theme_park")
+    expect(search_result.id).to eq("theme_park")
   end
 end

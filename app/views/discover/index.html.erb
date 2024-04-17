@@ -1,17 +1,28 @@
-<div id="searchResults" data-info=" <%= @json_data %>"></div>
-<h2>What are you searching for?</h2>
-<%= form_with url: "/users/#{current_user.id}/discover", method: :get do |form| %>
+<% if discover_facade %>
+  <h2>What are you searching for?</h2>
+  <%= form_with url: "/users/#{current_user.id}/discover", method: :get do |form| %>
 
-<%= form.label :search, "Search for a place to discover:" %>
-<%= text_field_tag(:search, params[:search]) %>
-<br />
-<%= form.submit "Search" %>
-<% end %>
-<ul>
-  <% @search_objects.each do |search_result| %>
-    <li><%= link_to "#{search_result.display_name} - Type: #{search_result.type}", user_discover_index_path(current_user.id, params:{lat: search_result.lat, lon: search_result.lon}), data: { turbo_method: :get } %>
-    </li>
+  <%= form.label :search, "Search for a place to discover:" %>
+  <%= text_field_tag(:search, params[:search]) %>
+  <br />
+  <%= form.submit "Search" %>
   <% end %>
-</ul>
-<%= render "/shared/map" %>
+  <div id="JSON" data-info=" <%= discover_facade.json_data %>"></div>
+  <ul>
+    <% discover_facade.filtered_search_objects.each do |search_result| %>
+      <li><%= link_to "#{search_result.display_name} - Type: #{search_result.type}", user_discover_index_path(current_user.id, params:{lat: search_result.lat, lon: search_result.lon}, id: search_result.id), data: { turbo_method: :get } %>
+      </li>
+    <% end %>
+  </ul>
+  <%= render "/shared/map" %>
+<% else %>
+  <h2>What are you searching for?</h2>
+  <%= form_with url: "/users/#{current_user.id}/discover", method: :get do |form| %>
+
+  <%= form.label :search, "Search for a place to discover:" %>
+  <%= text_field_tag(:search, params[:search]) %>
+  <br />
+  <%= form.submit "Search" %>
+  <% end %>
+<% end %>
 
