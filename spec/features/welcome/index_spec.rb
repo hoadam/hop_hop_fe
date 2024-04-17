@@ -5,9 +5,9 @@ RSpec.describe 'Welcome Page', type: :feature do
         visit root_path
 
         expect(page).to have_content('Hop Hop')
-        expect(page).to have_button('Sign Up')
-        expect(page).to have_button('Log In')
-        expect(page).not_to have_button('Log Out')
+        expect(page).to have_link('Sign Up')
+        expect(page).to have_link('Log In')
+        expect(page).not_to have_link('Log Out')
     end
 
     it 'takes you to login' do
@@ -21,6 +21,7 @@ RSpec.describe 'Welcome Page', type: :feature do
     it 'takes you to sign up' do
         visit root_path
 
+        save_and_open_page
         click_on ('Sign Up')
 
         expect(current_path).to eq(register_user_path)
