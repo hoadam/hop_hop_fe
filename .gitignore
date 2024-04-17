@@ -46,8 +46,6 @@
 yarn-debug.log*
 .yarn-integrity
 
-# Ignore VCR files
-
 # Ignore bundler config
 /bin
 /.bundle
@@ -61,8 +59,8 @@ yarn-debug.log*
 /vendor/cache
 /vendor/bundle
 
-# Ignore documentation cache and generated files
-/.yardoc/
-/_yardoc/
-/doc/
-/rdoc/
+# Ignore VCR cassettes
+/spec/fixtures/vcr_cassettes
+
+# Ignore WebMock stubs
+/spec/fixtures/webmock
