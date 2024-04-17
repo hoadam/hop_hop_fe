@@ -1,6 +1,5 @@
-  <%= form_with url: discover_index_path, method: :get do |form| %>
-    <%= form.label :search, "Search for a place to discover:" %>
-    <%= text_field_tag(:search, params[:search]) %>
-    <br />
-    <%= form.submit "Search" %>
-  <% end %>
+  <%= simple_form_for :search, url: discover_index_path, method: :get, data: { turbo: false } do |f| %>
+  <%= f.input :search, label: "Search for a place to discover:", input_html: { placeholder: "Enter your search query" } %>
+
+  <%= f.button :submit, "Search" %>
+<% end %>

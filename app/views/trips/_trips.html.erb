@@ -1,0 +1,9 @@
+<%= simple_form_for :trip, url: path, method: method, data: { turbo: false } do |f| %>
+  <%= f.input :name, label: 'Trip Name' %>
+  <%= f.input :location %>
+  <%= f.input :start_date, as: :date %>
+  <%= f.input :end_date, as: :date %>
+  <%= f.input :total_budget, as: :integer %>
+
+  <%= f.button :submit %>
+<% end %>
