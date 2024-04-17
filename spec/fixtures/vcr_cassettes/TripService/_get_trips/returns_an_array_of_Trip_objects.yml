@@ -1,0 +1,3593 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/10?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 316f29e5-fc60-442b-9d7d-72b58dd99ebc
+      X-Runtime:
+      - '0.037685'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=12.32,
+        instantiation.active_record;dur=0.20, transaction.active_record;dur=26.52,
+        process_action.action_controller;dur=34.26
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:05:53 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/24?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - c72f9076-f27a-417c-8604-a6ba0f6b88ea
+      X-Runtime:
+      - '0.025304'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=4.56, instantiation.active_record;dur=0.19,
+        transaction.active_record;dur=18.06, process_action.action_controller;dur=21.35
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:12:47 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/38?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 7639b0cb-4ad6-47dd-afc1-b9fc6b26541c
+      X-Runtime:
+      - '0.056864'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=33.69,
+        instantiation.active_record;dur=0.22, transaction.active_record;dur=50.71,
+        process_action.action_controller;dur=52.88
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:15:08 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/52?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 9c7619ad-c921-476d-89ea-fc2b0db48a4a
+      X-Runtime:
+      - '0.020225'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=4.55, instantiation.active_record;dur=0.19,
+        transaction.active_record;dur=15.13, process_action.action_controller;dur=16.43
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:17:58 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/66?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 97daafda-d990-4318-a1fe-4c8100fdd6e6
+      X-Runtime:
+      - '0.020036'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=3.39, instantiation.active_record;dur=0.47,
+        transaction.active_record;dur=14.80, process_action.action_controller;dur=16.11
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:19:29 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/67?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 90182e00-1ac5-4ce5-9b40-d8b5457d68dd
+      X-Runtime:
+      - '0.022165'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=4.02, instantiation.active_record;dur=0.19,
+        transaction.active_record;dur=16.73, process_action.action_controller;dur=17.97
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:19:29 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/68?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 83421377-60bf-49e2-b8fc-91682c001cb9
+      X-Runtime:
+      - '0.018851'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=3.62, instantiation.active_record;dur=0.18,
+        transaction.active_record;dur=13.91, process_action.action_controller;dur=15.06
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:19:29 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/69?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 94794c3b-c442-4e19-a304-a7360ec71d67
+      X-Runtime:
+      - '0.023349'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=3.05, instantiation.active_record;dur=0.21,
+        transaction.active_record;dur=17.91, process_action.action_controller;dur=19.19
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:19:29 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/70?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 99e70407-8414-42e5-8b93-e08948df678f
+      X-Runtime:
+      - '0.020177'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=3.73, instantiation.active_record;dur=0.21,
+        transaction.active_record;dur=14.59, process_action.action_controller;dur=16.37
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:19:29 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/84?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 1488f928-71e8-4e7a-98d4-d12dc8070069
+      X-Runtime:
+      - '0.019789'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=4.03, instantiation.active_record;dur=0.18,
+        transaction.active_record;dur=14.89, process_action.action_controller;dur=16.10
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:19:50 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/85?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 7100e37a-4d5a-4f6e-b3a9-0c7c82305e24
+      X-Runtime:
+      - '0.020808'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=3.12, instantiation.active_record;dur=0.19,
+        transaction.active_record;dur=15.65, process_action.action_controller;dur=16.73
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:19:50 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/86?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - bc435e3e-19c9-4b34-bed7-78b1201d4809
+      X-Runtime:
+      - '0.019767'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=3.59, instantiation.active_record;dur=0.18,
+        transaction.active_record;dur=14.97, process_action.action_controller;dur=16.09
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:19:50 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/87?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - d4d757ac-b3f6-4f13-923a-a067c50a7a19
+      X-Runtime:
+      - '0.022859'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=6.79, instantiation.active_record;dur=0.18,
+        transaction.active_record;dur=14.01, process_action.action_controller;dur=18.86
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:19:50 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/88?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 02dd33db-6db2-455d-8c25-888e9f9f1464
+      X-Runtime:
+      - '0.021050'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=3.48, instantiation.active_record;dur=0.17,
+        transaction.active_record;dur=15.98, process_action.action_controller;dur=17.32
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:19:50 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/102?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 7f867e4d-e34f-473f-965d-c009a6dd58d6
+      X-Runtime:
+      - '0.020097'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=3.06, instantiation.active_record;dur=0.21,
+        transaction.active_record;dur=14.26, process_action.action_controller;dur=15.78
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:20:09 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/103?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - d3dcf871-7008-4a21-ab8f-b1c407842c5d
+      X-Runtime:
+      - '0.026216'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=6.09, instantiation.active_record;dur=0.24,
+        transaction.active_record;dur=15.72, process_action.action_controller;dur=21.71
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:20:09 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/104?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 9e8d6576-2ed8-47cc-8490-55cab18576fc
+      X-Runtime:
+      - '0.019875'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=3.59, instantiation.active_record;dur=0.75,
+        transaction.active_record;dur=14.82, process_action.action_controller;dur=15.97
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:20:09 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/105?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 814c7c30-d805-41a0-8bc9-a5825dd71cd8
+      X-Runtime:
+      - '0.020272'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=4.11, instantiation.active_record;dur=0.17,
+        transaction.active_record;dur=14.97, process_action.action_controller;dur=16.11
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:20:09 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/106?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 33014bd8-0a4e-43cf-91d2-c38aad2b72bd
+      X-Runtime:
+      - '0.021183'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=3.76, instantiation.active_record;dur=0.30,
+        transaction.active_record;dur=15.37, process_action.action_controller;dur=17.69
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:20:09 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/120?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 1f26c42e-6422-4a49-86c7-9a41f1199780
+      X-Runtime:
+      - '0.021046'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=4.04, instantiation.active_record;dur=0.17,
+        transaction.active_record;dur=16.14, process_action.action_controller;dur=17.37
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:20:55 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/121?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 6bcdba23-f4dc-472a-b155-2eed25a5ab32
+      X-Runtime:
+      - '0.018573'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=3.04, instantiation.active_record;dur=0.16,
+        transaction.active_record;dur=13.42, process_action.action_controller;dur=15.08
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:20:55 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/122?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 746fc1b0-3b99-40ba-9721-1a3acb3b264a
+      X-Runtime:
+      - '0.027212'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=12.15,
+        instantiation.active_record;dur=0.16, transaction.active_record;dur=22.88,
+        process_action.action_controller;dur=23.89
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:20:55 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/123?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 13314f8f-0e1f-4e1d-bdc5-2c7d0ca79718
+      X-Runtime:
+      - '0.021789'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=3.17, instantiation.active_record;dur=0.24,
+        transaction.active_record;dur=16.01, process_action.action_controller;dur=18.26
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:20:55 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/124?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - a379e74b-1fbc-42d7-9aa2-9f1422ae1490
+      X-Runtime:
+      - '0.019265'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=3.94, instantiation.active_record;dur=0.18,
+        transaction.active_record;dur=13.93, process_action.action_controller;dur=15.45
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:20:55 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/138?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - f6c95fd3-a561-414c-b2d9-5b7b5a9d7087
+      X-Runtime:
+      - '0.020016'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=3.09, instantiation.active_record;dur=0.22,
+        transaction.active_record;dur=14.66, process_action.action_controller;dur=16.06
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:21:15 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/139?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 95bc3e23-703a-46ec-9432-eba76f51961d
+      X-Runtime:
+      - '0.053297'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=26.27,
+        instantiation.active_record;dur=0.25, transaction.active_record;dur=48.09,
+        process_action.action_controller;dur=49.29
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:21:15 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/140?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - aede018e-fdbd-4f0c-8059-c0f5c7c581bd
+      X-Runtime:
+      - '0.020592'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=3.98, instantiation.active_record;dur=0.21,
+        transaction.active_record;dur=14.95, process_action.action_controller;dur=16.27
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:21:15 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/141?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 6029080c-020e-4286-9555-cef56c659de3
+      X-Runtime:
+      - '0.018190'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=3.42, instantiation.active_record;dur=0.16,
+        transaction.active_record;dur=13.69, process_action.action_controller;dur=14.67
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:21:15 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/142?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 4954e366-8800-478d-9ec8-b93ba4b7ee3e
+      X-Runtime:
+      - '0.020764'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=3.92, instantiation.active_record;dur=0.15,
+        transaction.active_record;dur=15.87, process_action.action_controller;dur=16.87
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:21:15 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/156?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - cf11a4c2-0acd-4692-8125-4b61864cfffd
+      X-Runtime:
+      - '0.019472'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=4.62, instantiation.active_record;dur=0.18,
+        transaction.active_record;dur=14.75, process_action.action_controller;dur=16.13
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:22:46 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/157?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - '0833e26a-035e-4079-9a68-1703ec4e6412'
+      X-Runtime:
+      - '0.020666'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=3.90, instantiation.active_record;dur=0.17,
+        transaction.active_record;dur=15.08, process_action.action_controller;dur=16.13
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:22:46 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/158?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - b9abf7ca-835b-4313-8bf1-ed094b57371b
+      X-Runtime:
+      - '0.018796'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=4.13, instantiation.active_record;dur=0.16,
+        transaction.active_record;dur=14.09, process_action.action_controller;dur=15.22
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:22:46 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/159?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 67a0d474-220a-4cf7-a822-61050a21c829
+      X-Runtime:
+      - '0.021010'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=3.76, instantiation.active_record;dur=0.16,
+        transaction.active_record;dur=16.73, process_action.action_controller;dur=17.74
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:22:46 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/160?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 96081ad3-273b-4f98-ae9f-901430faa9ad
+      X-Runtime:
+      - '0.019058'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=2.97, instantiation.active_record;dur=0.20,
+        transaction.active_record;dur=13.76, process_action.action_controller;dur=15.02
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:22:46 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/174?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - b09e7f43-f757-4de0-af86-fde842e3b7e2
+      X-Runtime:
+      - '0.020897'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=5.12, instantiation.active_record;dur=0.16,
+        transaction.active_record;dur=15.92, process_action.action_controller;dur=17.09
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:47:06 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/175?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 89af39ae-298f-4e6a-81d2-7fb520b0ed55
+      X-Runtime:
+      - '0.018601'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=4.26, instantiation.active_record;dur=0.16,
+        transaction.active_record;dur=14.13, process_action.action_controller;dur=15.31
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:47:06 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/176?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - d2db396a-9c7f-40b7-a775-683fded5bc3e
+      X-Runtime:
+      - '0.020244'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=3.84, instantiation.active_record;dur=0.15,
+        transaction.active_record;dur=15.23, process_action.action_controller;dur=16.77
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:47:06 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/177?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 301fa252-0381-43de-99e8-a57e30e83a2a
+      X-Runtime:
+      - '0.018560'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=3.88, instantiation.active_record;dur=0.16,
+        transaction.active_record;dur=14.04, process_action.action_controller;dur=15.03
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:47:06 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/178?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 5cbe2300-ebed-4c95-a6b2-f59cdd8649bc
+      X-Runtime:
+      - '0.020680'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=4.08, instantiation.active_record;dur=0.15,
+        transaction.active_record;dur=16.19, process_action.action_controller;dur=17.17
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 15 Apr 2024 23:47:06 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/192?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - fd733589-e384-4923-bce7-dc8d521d134d
+      X-Runtime:
+      - '0.023014'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=7.11, instantiation.active_record;dur=0.16,
+        transaction.active_record;dur=18.65, process_action.action_controller;dur=19.65
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 16 Apr 2024 15:46:55 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/193?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - fb95e4f1-dac0-4abe-a975-540d7b8e25da
+      X-Runtime:
+      - '0.021023'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=4.29, instantiation.active_record;dur=0.17,
+        transaction.active_record;dur=16.02, process_action.action_controller;dur=17.41
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 16 Apr 2024 15:46:55 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/194?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 2223e34d-2fc0-478d-873e-884fb5df24f5
+      X-Runtime:
+      - '0.019119'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=4.39, instantiation.active_record;dur=0.33,
+        transaction.active_record;dur=14.52, process_action.action_controller;dur=15.62
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 16 Apr 2024 15:46:55 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/195?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - b3b72f2d-3f89-4f50-81f6-a2b0ff6b3f79
+      X-Runtime:
+      - '0.020580'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=4.23, instantiation.active_record;dur=0.16,
+        transaction.active_record;dur=16.25, process_action.action_controller;dur=17.29
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 16 Apr 2024 15:46:55 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/196?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 00a68b1a-570c-4256-a0a6-127509cf2e4d
+      X-Runtime:
+      - '0.021409'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=5.08, instantiation.active_record;dur=0.18,
+        transaction.active_record;dur=16.20, process_action.action_controller;dur=17.47
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 16 Apr 2024 15:46:55 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/210?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 3233e69d-bd1e-4be3-9d66-00ac3f8b1fab
+      X-Runtime:
+      - '0.035323'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=16.83,
+        instantiation.active_record;dur=0.17, transaction.active_record;dur=29.75,
+        process_action.action_controller;dur=31.44
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 16 Apr 2024 18:12:06 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/211?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - ccaa7019-809d-4b1d-993c-7f1175c10663
+      X-Runtime:
+      - '0.030952'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=15.18,
+        instantiation.active_record;dur=0.17, transaction.active_record;dur=26.21,
+        process_action.action_controller;dur=27.23
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 16 Apr 2024 18:12:06 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/212?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - a2852874-fddb-48e2-a0bb-db6c84bfe13b
+      X-Runtime:
+      - '0.017384'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=2.80, instantiation.active_record;dur=0.17,
+        transaction.active_record;dur=12.59, process_action.action_controller;dur=13.59
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 16 Apr 2024 18:12:06 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/213?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 5ff95270-7293-462c-802c-b56c5add5d43
+      X-Runtime:
+      - '0.020964'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=3.64, instantiation.active_record;dur=0.18,
+        transaction.active_record;dur=15.60, process_action.action_controller;dur=16.64
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 16 Apr 2024 18:12:06 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/214?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 4197f17b-e37b-43d1-ab3c-ce003aa88d3c
+      X-Runtime:
+      - '0.018841'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=4.17, instantiation.active_record;dur=0.19,
+        transaction.active_record;dur=14.13, process_action.action_controller;dur=15.17
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 16 Apr 2024 18:12:06 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/228?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 3f9e53d4-4b7b-4402-9a76-8523550d3f42
+      X-Runtime:
+      - '0.021009'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=4.06, instantiation.active_record;dur=0.19,
+        transaction.active_record;dur=16.15, process_action.action_controller;dur=17.45
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 16 Apr 2024 18:58:08 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/229?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - b467f6bb-ccf3-446d-85b2-9f40e8c915d3
+      X-Runtime:
+      - '0.018685'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=3.19, instantiation.active_record;dur=0.17,
+        transaction.active_record;dur=13.68, process_action.action_controller;dur=15.13
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 16 Apr 2024 18:58:08 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/230?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 9c843f79-c8a9-48f3-bbd5-eb3850af8981
+      X-Runtime:
+      - '0.018909'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=4.08, instantiation.active_record;dur=0.33,
+        transaction.active_record;dur=14.62, process_action.action_controller;dur=15.51
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 16 Apr 2024 18:58:08 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/231?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 835a7109-11f9-486e-9d1c-0a5bd6f8a9a6
+      X-Runtime:
+      - '0.019991'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=3.78, instantiation.active_record;dur=0.16,
+        transaction.active_record;dur=15.76, process_action.action_controller;dur=16.76
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 16 Apr 2024 18:58:08 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/232?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 8b2278a2-420f-4fd4-be6b-9f1e9e442407
+      X-Runtime:
+      - '0.018838'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=3.91, instantiation.active_record;dur=0.16,
+        transaction.active_record;dur=14.08, process_action.action_controller;dur=15.10
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 16 Apr 2024 18:58:08 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/246?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 1099dcbe-d81a-4073-9e3f-2cb79bc545a2
+      X-Runtime:
+      - '0.036684'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=16.84,
+        instantiation.active_record;dur=0.42, transaction.active_record;dur=30.41,
+        process_action.action_controller;dur=32.39
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 16 Apr 2024 19:28:24 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/247?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - c3bbe24d-d337-4ce3-95a8-c046f500512a
+      X-Runtime:
+      - '0.042333'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=21.44,
+        instantiation.active_record;dur=0.21, transaction.active_record;dur=32.96,
+        process_action.action_controller;dur=38.64
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 16 Apr 2024 19:28:24 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/248?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 509ff9b5-8e03-41db-b2e7-bde46dd11fc5
+      X-Runtime:
+      - '0.036301'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=15.98,
+        instantiation.active_record;dur=0.23, transaction.active_record;dur=30.25,
+        process_action.action_controller;dur=31.86
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 16 Apr 2024 19:28:24 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/249?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - f90a24d3-0585-468c-87c2-c1bbcd0ca132
+      X-Runtime:
+      - '0.028797'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=7.76, instantiation.active_record;dur=0.21,
+        transaction.active_record;dur=22.34, process_action.action_controller;dur=24.13
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 16 Apr 2024 19:28:24 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/250?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - e71bbdec-c8e3-4c04-9c37-affc5e219141
+      X-Runtime:
+      - '0.028698'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.01, sql.active_record;dur=4.61, instantiation.active_record;dur=0.22,
+        transaction.active_record;dur=20.97, process_action.action_controller;dur=22.60
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 16 Apr 2024 19:28:24 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/263?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 89bf4873-5940-447a-a39f-5eb2bdaf1353
+      X-Runtime:
+      - '0.027832'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=11.08,
+        instantiation.active_record;dur=0.17, transaction.active_record;dur=22.09,
+        process_action.action_controller;dur=24.20
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 16 Apr 2024 20:45:03 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/264?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - a66fb5f6-3211-45cf-80f4-0794f03f2927
+      X-Runtime:
+      - '0.017804'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=4.16, instantiation.active_record;dur=0.16,
+        transaction.active_record;dur=13.20, process_action.action_controller;dur=14.30
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 16 Apr 2024 20:45:03 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/265?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 30dd984b-2930-4605-84d0-bfab234042d1
+      X-Runtime:
+      - '0.020820'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=4.44, instantiation.active_record;dur=0.16,
+        transaction.active_record;dur=16.44, process_action.action_controller;dur=17.55
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 16 Apr 2024 20:45:03 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/266?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 385a6e02-9fb9-4d71-8b42-b5dd0ef9b1ec
+      X-Runtime:
+      - '0.017732'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=3.66, instantiation.active_record;dur=0.41,
+        transaction.active_record;dur=13.11, process_action.action_controller;dur=14.20
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 16 Apr 2024 20:45:03 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:3000/api/v1/trips/267?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - a6c22610-b361-464f-a542-ad9bcbd883f7
+      X-Runtime:
+      - '0.020202'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=4.45, instantiation.active_record;dur=0.15,
+        transaction.active_record;dur=15.94, process_action.action_controller;dur=16.91
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 16 Apr 2024 20:45:03 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:3000/api/v1/trips?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"42f8104a18754db6b114ef6672fc4f0e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - dd61adb0-8e39-419f-9b54-87544a627512
+      X-Runtime:
+      - '0.023717'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.49, process_action.action_controller;dur=14.99
+      Content-Length:
+      - '25'
+    body:
+      encoding: UTF-8
+      string: '{"data":[],"included":[]}'
+  recorded_at: Tue, 16 Apr 2024 23:04:17 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips
+    body:
+      encoding: UTF-8
+      string: '{"user_id":100,"trip":{"name":"Trip To Japan","location":"Japan","start_date":"2024-04-20","end_date":"2024-04-30","status":"in_progress","total_budget":1000,"user_id":100}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Request-Id:
+      - 8c3695f7-aafb-4090-a612-165590971333
+      X-Runtime:
+      - '0.031144'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.01, process_action.action_controller;dur=0.39
+      Content-Length:
+      - '16828'
+    body:
+      encoding: UTF-8
+      string: '{"status":400,"error":"Bad Request","exception":"#\u003cActionController::ParameterMissing:
+        param is missing or the value is empty: trip\u003e","traces":{"Application
+        Trace":[{"exception_object_id":179000,"id":1,"trace":"app/controllers/api/v1/trips_controller.rb:32:in
+        `trip_params''"},{"exception_object_id":179000,"id":2,"trace":"app/controllers/api/v1/trips_controller.rb:20:in
+        `create''"}],"Framework Trace":[{"exception_object_id":179000,"id":0,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/strong_parameters.rb:523:in `require''"},{"exception_object_id":179000,"id":3,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action''"},{"exception_object_id":179000,"id":4,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/base.rb:224:in `process_action''"},{"exception_object_id":179000,"id":5,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/rendering.rb:165:in `process_action''"},{"exception_object_id":179000,"id":6,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/callbacks.rb:259:in `block in process_action''"},{"exception_object_id":179000,"id":7,"trace":"activesupport
+        (7.1.3.2) lib/active_support/callbacks.rb:110:in `run_callbacks''"},{"exception_object_id":179000,"id":8,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/callbacks.rb:258:in `process_action''"},{"exception_object_id":179000,"id":9,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/rescue.rb:25:in `process_action''"},{"exception_object_id":179000,"id":10,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action''"},{"exception_object_id":179000,"id":11,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications.rb:206:in `block in instrument''"},{"exception_object_id":179000,"id":12,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument''"},{"exception_object_id":179000,"id":13,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications.rb:206:in `instrument''"},{"exception_object_id":179000,"id":14,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/instrumentation.rb:73:in `process_action''"},{"exception_object_id":179000,"id":15,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/params_wrapper.rb:261:in `process_action''"},{"exception_object_id":179000,"id":16,"trace":"activerecord
+        (7.1.3.2) lib/active_record/railties/controller_runtime.rb:32:in `process_action''"},{"exception_object_id":179000,"id":17,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/base.rb:160:in `process''"},{"exception_object_id":179000,"id":18,"trace":"actionview
+        (7.1.3.2) lib/action_view/rendering.rb:40:in `process''"},{"exception_object_id":179000,"id":19,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal.rb:227:in `dispatch''"},{"exception_object_id":179000,"id":20,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal.rb:309:in `dispatch''"},{"exception_object_id":179000,"id":21,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch''"},{"exception_object_id":179000,"id":22,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:32:in `serve''"},{"exception_object_id":179000,"id":23,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:51:in `block in serve''"},{"exception_object_id":179000,"id":24,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes''"},{"exception_object_id":179000,"id":25,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `each''"},{"exception_object_id":179000,"id":26,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `find_routes''"},{"exception_object_id":179000,"id":27,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve''"},{"exception_object_id":179000,"id":28,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:882:in `call''"},{"exception_object_id":179000,"id":29,"trace":"rack
+        (3.0.10) lib/rack/etag.rb:29:in `call''"},{"exception_object_id":179000,"id":30,"trace":"rack
+        (3.0.10) lib/rack/conditional_get.rb:43:in `call''"},{"exception_object_id":179000,"id":31,"trace":"rack
+        (3.0.10) lib/rack/head.rb:15:in `call''"},{"exception_object_id":179000,"id":32,"trace":"activerecord
+        (7.1.3.2) lib/active_record/migration.rb:655:in `call''"},{"exception_object_id":179000,"id":33,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call''"},{"exception_object_id":179000,"id":34,"trace":"activesupport
+        (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks''"},{"exception_object_id":179000,"id":35,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call''"},{"exception_object_id":179000,"id":36,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":179000,"id":37,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call''"},{"exception_object_id":179000,"id":38,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call''"},{"exception_object_id":179000,"id":39,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call''"},{"exception_object_id":179000,"id":40,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app''"},{"exception_object_id":179000,"id":41,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call''"},{"exception_object_id":179000,"id":42,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged''"},{"exception_object_id":179000,"id":43,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged''"},{"exception_object_id":179000,"id":44,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged''"},{"exception_object_id":179000,"id":45,"trace":"activesupport
+        (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing''"},{"exception_object_id":179000,"id":46,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:24:in `call''"},{"exception_object_id":179000,"id":47,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call''"},{"exception_object_id":179000,"id":48,"trace":"request_store
+        (1.6.0) lib/request_store/middleware.rb:19:in `call''"},{"exception_object_id":179000,"id":49,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call''"},{"exception_object_id":179000,"id":50,"trace":"rack
+        (3.0.10) lib/rack/runtime.rb:24:in `call''"},{"exception_object_id":179000,"id":51,"trace":"activesupport
+        (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
+        `call''"},{"exception_object_id":179000,"id":52,"trace":"actionpack (7.1.3.2)
+        lib/action_dispatch/middleware/server_timing.rb:59:in `block in call''"},{"exception_object_id":179000,"id":53,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events''"},{"exception_object_id":179000,"id":54,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call''"},{"exception_object_id":179000,"id":55,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":179000,"id":56,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call''"},{"exception_object_id":179000,"id":57,"trace":"rack
+        (3.0.10) lib/rack/sendfile.rb:114:in `call''"},{"exception_object_id":179000,"id":58,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call''"},{"exception_object_id":179000,"id":59,"trace":"railties
+        (7.1.3.2) lib/rails/engine.rb:536:in `call''"},{"exception_object_id":179000,"id":60,"trace":"puma
+        (6.4.2) lib/puma/configuration.rb:272:in `call''"},{"exception_object_id":179000,"id":61,"trace":"puma
+        (6.4.2) lib/puma/request.rb:100:in `block in handle_request''"},{"exception_object_id":179000,"id":62,"trace":"puma
+        (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown''"},{"exception_object_id":179000,"id":63,"trace":"puma
+        (6.4.2) lib/puma/request.rb:99:in `handle_request''"},{"exception_object_id":179000,"id":64,"trace":"puma
+        (6.4.2) lib/puma/server.rb:464:in `process_client''"},{"exception_object_id":179000,"id":65,"trace":"puma
+        (6.4.2) lib/puma/server.rb:245:in `block in run''"},{"exception_object_id":179000,"id":66,"trace":"puma
+        (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread''"}],"Full Trace":[{"exception_object_id":179000,"id":0,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/strong_parameters.rb:523:in `require''"},{"exception_object_id":179000,"id":1,"trace":"app/controllers/api/v1/trips_controller.rb:32:in
+        `trip_params''"},{"exception_object_id":179000,"id":2,"trace":"app/controllers/api/v1/trips_controller.rb:20:in
+        `create''"},{"exception_object_id":179000,"id":3,"trace":"actionpack (7.1.3.2)
+        lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action''"},{"exception_object_id":179000,"id":4,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/base.rb:224:in `process_action''"},{"exception_object_id":179000,"id":5,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/rendering.rb:165:in `process_action''"},{"exception_object_id":179000,"id":6,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/callbacks.rb:259:in `block in process_action''"},{"exception_object_id":179000,"id":7,"trace":"activesupport
+        (7.1.3.2) lib/active_support/callbacks.rb:110:in `run_callbacks''"},{"exception_object_id":179000,"id":8,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/callbacks.rb:258:in `process_action''"},{"exception_object_id":179000,"id":9,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/rescue.rb:25:in `process_action''"},{"exception_object_id":179000,"id":10,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action''"},{"exception_object_id":179000,"id":11,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications.rb:206:in `block in instrument''"},{"exception_object_id":179000,"id":12,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument''"},{"exception_object_id":179000,"id":13,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications.rb:206:in `instrument''"},{"exception_object_id":179000,"id":14,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/instrumentation.rb:73:in `process_action''"},{"exception_object_id":179000,"id":15,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/params_wrapper.rb:261:in `process_action''"},{"exception_object_id":179000,"id":16,"trace":"activerecord
+        (7.1.3.2) lib/active_record/railties/controller_runtime.rb:32:in `process_action''"},{"exception_object_id":179000,"id":17,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/base.rb:160:in `process''"},{"exception_object_id":179000,"id":18,"trace":"actionview
+        (7.1.3.2) lib/action_view/rendering.rb:40:in `process''"},{"exception_object_id":179000,"id":19,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal.rb:227:in `dispatch''"},{"exception_object_id":179000,"id":20,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal.rb:309:in `dispatch''"},{"exception_object_id":179000,"id":21,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch''"},{"exception_object_id":179000,"id":22,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:32:in `serve''"},{"exception_object_id":179000,"id":23,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:51:in `block in serve''"},{"exception_object_id":179000,"id":24,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes''"},{"exception_object_id":179000,"id":25,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `each''"},{"exception_object_id":179000,"id":26,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `find_routes''"},{"exception_object_id":179000,"id":27,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve''"},{"exception_object_id":179000,"id":28,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:882:in `call''"},{"exception_object_id":179000,"id":29,"trace":"rack
+        (3.0.10) lib/rack/etag.rb:29:in `call''"},{"exception_object_id":179000,"id":30,"trace":"rack
+        (3.0.10) lib/rack/conditional_get.rb:43:in `call''"},{"exception_object_id":179000,"id":31,"trace":"rack
+        (3.0.10) lib/rack/head.rb:15:in `call''"},{"exception_object_id":179000,"id":32,"trace":"activerecord
+        (7.1.3.2) lib/active_record/migration.rb:655:in `call''"},{"exception_object_id":179000,"id":33,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call''"},{"exception_object_id":179000,"id":34,"trace":"activesupport
+        (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks''"},{"exception_object_id":179000,"id":35,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call''"},{"exception_object_id":179000,"id":36,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":179000,"id":37,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call''"},{"exception_object_id":179000,"id":38,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call''"},{"exception_object_id":179000,"id":39,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call''"},{"exception_object_id":179000,"id":40,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app''"},{"exception_object_id":179000,"id":41,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call''"},{"exception_object_id":179000,"id":42,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged''"},{"exception_object_id":179000,"id":43,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged''"},{"exception_object_id":179000,"id":44,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged''"},{"exception_object_id":179000,"id":45,"trace":"activesupport
+        (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing''"},{"exception_object_id":179000,"id":46,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:24:in `call''"},{"exception_object_id":179000,"id":47,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call''"},{"exception_object_id":179000,"id":48,"trace":"request_store
+        (1.6.0) lib/request_store/middleware.rb:19:in `call''"},{"exception_object_id":179000,"id":49,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call''"},{"exception_object_id":179000,"id":50,"trace":"rack
+        (3.0.10) lib/rack/runtime.rb:24:in `call''"},{"exception_object_id":179000,"id":51,"trace":"activesupport
+        (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
+        `call''"},{"exception_object_id":179000,"id":52,"trace":"actionpack (7.1.3.2)
+        lib/action_dispatch/middleware/server_timing.rb:59:in `block in call''"},{"exception_object_id":179000,"id":53,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events''"},{"exception_object_id":179000,"id":54,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call''"},{"exception_object_id":179000,"id":55,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":179000,"id":56,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call''"},{"exception_object_id":179000,"id":57,"trace":"rack
+        (3.0.10) lib/rack/sendfile.rb:114:in `call''"},{"exception_object_id":179000,"id":58,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call''"},{"exception_object_id":179000,"id":59,"trace":"railties
+        (7.1.3.2) lib/rails/engine.rb:536:in `call''"},{"exception_object_id":179000,"id":60,"trace":"puma
+        (6.4.2) lib/puma/configuration.rb:272:in `call''"},{"exception_object_id":179000,"id":61,"trace":"puma
+        (6.4.2) lib/puma/request.rb:100:in `block in handle_request''"},{"exception_object_id":179000,"id":62,"trace":"puma
+        (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown''"},{"exception_object_id":179000,"id":63,"trace":"puma
+        (6.4.2) lib/puma/request.rb:99:in `handle_request''"},{"exception_object_id":179000,"id":64,"trace":"puma
+        (6.4.2) lib/puma/server.rb:464:in `process_client''"},{"exception_object_id":179000,"id":65,"trace":"puma
+        (6.4.2) lib/puma/server.rb:245:in `block in run''"},{"exception_object_id":179000,"id":66,"trace":"puma
+        (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread''"}]}}'
+  recorded_at: Tue, 16 Apr 2024 23:04:17 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips
+    body:
+      encoding: UTF-8
+      string: '{"user_id":100,"trip":{"name":"Trip To Japan","location":"Japan","start_date":"2024-04-20","end_date":"2024-04-30","status":"in_progress","total_budget":1000,"user_id":100}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Request-Id:
+      - a9184d0f-afb9-4a17-8e13-e93535a8bfa8
+      X-Runtime:
+      - '0.027730'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, process_action.action_controller;dur=0.12
+      Content-Length:
+      - '16828'
+    body:
+      encoding: UTF-8
+      string: '{"status":400,"error":"Bad Request","exception":"#\u003cActionController::ParameterMissing:
+        param is missing or the value is empty: trip\u003e","traces":{"Application
+        Trace":[{"exception_object_id":179060,"id":1,"trace":"app/controllers/api/v1/trips_controller.rb:32:in
+        `trip_params''"},{"exception_object_id":179060,"id":2,"trace":"app/controllers/api/v1/trips_controller.rb:20:in
+        `create''"}],"Framework Trace":[{"exception_object_id":179060,"id":0,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/strong_parameters.rb:523:in `require''"},{"exception_object_id":179060,"id":3,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action''"},{"exception_object_id":179060,"id":4,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/base.rb:224:in `process_action''"},{"exception_object_id":179060,"id":5,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/rendering.rb:165:in `process_action''"},{"exception_object_id":179060,"id":6,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/callbacks.rb:259:in `block in process_action''"},{"exception_object_id":179060,"id":7,"trace":"activesupport
+        (7.1.3.2) lib/active_support/callbacks.rb:110:in `run_callbacks''"},{"exception_object_id":179060,"id":8,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/callbacks.rb:258:in `process_action''"},{"exception_object_id":179060,"id":9,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/rescue.rb:25:in `process_action''"},{"exception_object_id":179060,"id":10,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action''"},{"exception_object_id":179060,"id":11,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications.rb:206:in `block in instrument''"},{"exception_object_id":179060,"id":12,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument''"},{"exception_object_id":179060,"id":13,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications.rb:206:in `instrument''"},{"exception_object_id":179060,"id":14,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/instrumentation.rb:73:in `process_action''"},{"exception_object_id":179060,"id":15,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/params_wrapper.rb:261:in `process_action''"},{"exception_object_id":179060,"id":16,"trace":"activerecord
+        (7.1.3.2) lib/active_record/railties/controller_runtime.rb:32:in `process_action''"},{"exception_object_id":179060,"id":17,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/base.rb:160:in `process''"},{"exception_object_id":179060,"id":18,"trace":"actionview
+        (7.1.3.2) lib/action_view/rendering.rb:40:in `process''"},{"exception_object_id":179060,"id":19,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal.rb:227:in `dispatch''"},{"exception_object_id":179060,"id":20,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal.rb:309:in `dispatch''"},{"exception_object_id":179060,"id":21,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch''"},{"exception_object_id":179060,"id":22,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:32:in `serve''"},{"exception_object_id":179060,"id":23,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:51:in `block in serve''"},{"exception_object_id":179060,"id":24,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes''"},{"exception_object_id":179060,"id":25,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `each''"},{"exception_object_id":179060,"id":26,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `find_routes''"},{"exception_object_id":179060,"id":27,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve''"},{"exception_object_id":179060,"id":28,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:882:in `call''"},{"exception_object_id":179060,"id":29,"trace":"rack
+        (3.0.10) lib/rack/etag.rb:29:in `call''"},{"exception_object_id":179060,"id":30,"trace":"rack
+        (3.0.10) lib/rack/conditional_get.rb:43:in `call''"},{"exception_object_id":179060,"id":31,"trace":"rack
+        (3.0.10) lib/rack/head.rb:15:in `call''"},{"exception_object_id":179060,"id":32,"trace":"activerecord
+        (7.1.3.2) lib/active_record/migration.rb:655:in `call''"},{"exception_object_id":179060,"id":33,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call''"},{"exception_object_id":179060,"id":34,"trace":"activesupport
+        (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks''"},{"exception_object_id":179060,"id":35,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call''"},{"exception_object_id":179060,"id":36,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":179060,"id":37,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call''"},{"exception_object_id":179060,"id":38,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call''"},{"exception_object_id":179060,"id":39,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call''"},{"exception_object_id":179060,"id":40,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app''"},{"exception_object_id":179060,"id":41,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call''"},{"exception_object_id":179060,"id":42,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged''"},{"exception_object_id":179060,"id":43,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged''"},{"exception_object_id":179060,"id":44,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged''"},{"exception_object_id":179060,"id":45,"trace":"activesupport
+        (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing''"},{"exception_object_id":179060,"id":46,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:24:in `call''"},{"exception_object_id":179060,"id":47,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call''"},{"exception_object_id":179060,"id":48,"trace":"request_store
+        (1.6.0) lib/request_store/middleware.rb:19:in `call''"},{"exception_object_id":179060,"id":49,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call''"},{"exception_object_id":179060,"id":50,"trace":"rack
+        (3.0.10) lib/rack/runtime.rb:24:in `call''"},{"exception_object_id":179060,"id":51,"trace":"activesupport
+        (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
+        `call''"},{"exception_object_id":179060,"id":52,"trace":"actionpack (7.1.3.2)
+        lib/action_dispatch/middleware/server_timing.rb:59:in `block in call''"},{"exception_object_id":179060,"id":53,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events''"},{"exception_object_id":179060,"id":54,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call''"},{"exception_object_id":179060,"id":55,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":179060,"id":56,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call''"},{"exception_object_id":179060,"id":57,"trace":"rack
+        (3.0.10) lib/rack/sendfile.rb:114:in `call''"},{"exception_object_id":179060,"id":58,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call''"},{"exception_object_id":179060,"id":59,"trace":"railties
+        (7.1.3.2) lib/rails/engine.rb:536:in `call''"},{"exception_object_id":179060,"id":60,"trace":"puma
+        (6.4.2) lib/puma/configuration.rb:272:in `call''"},{"exception_object_id":179060,"id":61,"trace":"puma
+        (6.4.2) lib/puma/request.rb:100:in `block in handle_request''"},{"exception_object_id":179060,"id":62,"trace":"puma
+        (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown''"},{"exception_object_id":179060,"id":63,"trace":"puma
+        (6.4.2) lib/puma/request.rb:99:in `handle_request''"},{"exception_object_id":179060,"id":64,"trace":"puma
+        (6.4.2) lib/puma/server.rb:464:in `process_client''"},{"exception_object_id":179060,"id":65,"trace":"puma
+        (6.4.2) lib/puma/server.rb:245:in `block in run''"},{"exception_object_id":179060,"id":66,"trace":"puma
+        (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread''"}],"Full Trace":[{"exception_object_id":179060,"id":0,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/strong_parameters.rb:523:in `require''"},{"exception_object_id":179060,"id":1,"trace":"app/controllers/api/v1/trips_controller.rb:32:in
+        `trip_params''"},{"exception_object_id":179060,"id":2,"trace":"app/controllers/api/v1/trips_controller.rb:20:in
+        `create''"},{"exception_object_id":179060,"id":3,"trace":"actionpack (7.1.3.2)
+        lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action''"},{"exception_object_id":179060,"id":4,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/base.rb:224:in `process_action''"},{"exception_object_id":179060,"id":5,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/rendering.rb:165:in `process_action''"},{"exception_object_id":179060,"id":6,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/callbacks.rb:259:in `block in process_action''"},{"exception_object_id":179060,"id":7,"trace":"activesupport
+        (7.1.3.2) lib/active_support/callbacks.rb:110:in `run_callbacks''"},{"exception_object_id":179060,"id":8,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/callbacks.rb:258:in `process_action''"},{"exception_object_id":179060,"id":9,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/rescue.rb:25:in `process_action''"},{"exception_object_id":179060,"id":10,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action''"},{"exception_object_id":179060,"id":11,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications.rb:206:in `block in instrument''"},{"exception_object_id":179060,"id":12,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument''"},{"exception_object_id":179060,"id":13,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications.rb:206:in `instrument''"},{"exception_object_id":179060,"id":14,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/instrumentation.rb:73:in `process_action''"},{"exception_object_id":179060,"id":15,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/params_wrapper.rb:261:in `process_action''"},{"exception_object_id":179060,"id":16,"trace":"activerecord
+        (7.1.3.2) lib/active_record/railties/controller_runtime.rb:32:in `process_action''"},{"exception_object_id":179060,"id":17,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/base.rb:160:in `process''"},{"exception_object_id":179060,"id":18,"trace":"actionview
+        (7.1.3.2) lib/action_view/rendering.rb:40:in `process''"},{"exception_object_id":179060,"id":19,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal.rb:227:in `dispatch''"},{"exception_object_id":179060,"id":20,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal.rb:309:in `dispatch''"},{"exception_object_id":179060,"id":21,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch''"},{"exception_object_id":179060,"id":22,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:32:in `serve''"},{"exception_object_id":179060,"id":23,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:51:in `block in serve''"},{"exception_object_id":179060,"id":24,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes''"},{"exception_object_id":179060,"id":25,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `each''"},{"exception_object_id":179060,"id":26,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `find_routes''"},{"exception_object_id":179060,"id":27,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve''"},{"exception_object_id":179060,"id":28,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:882:in `call''"},{"exception_object_id":179060,"id":29,"trace":"rack
+        (3.0.10) lib/rack/etag.rb:29:in `call''"},{"exception_object_id":179060,"id":30,"trace":"rack
+        (3.0.10) lib/rack/conditional_get.rb:43:in `call''"},{"exception_object_id":179060,"id":31,"trace":"rack
+        (3.0.10) lib/rack/head.rb:15:in `call''"},{"exception_object_id":179060,"id":32,"trace":"activerecord
+        (7.1.3.2) lib/active_record/migration.rb:655:in `call''"},{"exception_object_id":179060,"id":33,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call''"},{"exception_object_id":179060,"id":34,"trace":"activesupport
+        (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks''"},{"exception_object_id":179060,"id":35,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call''"},{"exception_object_id":179060,"id":36,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":179060,"id":37,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call''"},{"exception_object_id":179060,"id":38,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call''"},{"exception_object_id":179060,"id":39,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call''"},{"exception_object_id":179060,"id":40,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app''"},{"exception_object_id":179060,"id":41,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call''"},{"exception_object_id":179060,"id":42,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged''"},{"exception_object_id":179060,"id":43,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged''"},{"exception_object_id":179060,"id":44,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged''"},{"exception_object_id":179060,"id":45,"trace":"activesupport
+        (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing''"},{"exception_object_id":179060,"id":46,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:24:in `call''"},{"exception_object_id":179060,"id":47,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call''"},{"exception_object_id":179060,"id":48,"trace":"request_store
+        (1.6.0) lib/request_store/middleware.rb:19:in `call''"},{"exception_object_id":179060,"id":49,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call''"},{"exception_object_id":179060,"id":50,"trace":"rack
+        (3.0.10) lib/rack/runtime.rb:24:in `call''"},{"exception_object_id":179060,"id":51,"trace":"activesupport
+        (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
+        `call''"},{"exception_object_id":179060,"id":52,"trace":"actionpack (7.1.3.2)
+        lib/action_dispatch/middleware/server_timing.rb:59:in `block in call''"},{"exception_object_id":179060,"id":53,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events''"},{"exception_object_id":179060,"id":54,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call''"},{"exception_object_id":179060,"id":55,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":179060,"id":56,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call''"},{"exception_object_id":179060,"id":57,"trace":"rack
+        (3.0.10) lib/rack/sendfile.rb:114:in `call''"},{"exception_object_id":179060,"id":58,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call''"},{"exception_object_id":179060,"id":59,"trace":"railties
+        (7.1.3.2) lib/rails/engine.rb:536:in `call''"},{"exception_object_id":179060,"id":60,"trace":"puma
+        (6.4.2) lib/puma/configuration.rb:272:in `call''"},{"exception_object_id":179060,"id":61,"trace":"puma
+        (6.4.2) lib/puma/request.rb:100:in `block in handle_request''"},{"exception_object_id":179060,"id":62,"trace":"puma
+        (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown''"},{"exception_object_id":179060,"id":63,"trace":"puma
+        (6.4.2) lib/puma/request.rb:99:in `handle_request''"},{"exception_object_id":179060,"id":64,"trace":"puma
+        (6.4.2) lib/puma/server.rb:464:in `process_client''"},{"exception_object_id":179060,"id":65,"trace":"puma
+        (6.4.2) lib/puma/server.rb:245:in `block in run''"},{"exception_object_id":179060,"id":66,"trace":"puma
+        (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread''"}]}}'
+  recorded_at: Tue, 16 Apr 2024 23:04:17 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips
+    body:
+      encoding: UTF-8
+      string: '{"user_id":100,"trip":{"name":"Trip To Japan","location":"Japan","start_date":"2024-04-20","end_date":"2024-04-30","status":"in_progress","total_budget":1000,"user_id":100}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Request-Id:
+      - d532c82e-67f0-424e-b4ce-f1dbdcedf895
+      X-Runtime:
+      - '0.017709'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.01, process_action.action_controller;dur=0.15
+      Content-Length:
+      - '16828'
+    body:
+      encoding: UTF-8
+      string: '{"status":400,"error":"Bad Request","exception":"#\u003cActionController::ParameterMissing:
+        param is missing or the value is empty: trip\u003e","traces":{"Application
+        Trace":[{"exception_object_id":179120,"id":1,"trace":"app/controllers/api/v1/trips_controller.rb:32:in
+        `trip_params''"},{"exception_object_id":179120,"id":2,"trace":"app/controllers/api/v1/trips_controller.rb:20:in
+        `create''"}],"Framework Trace":[{"exception_object_id":179120,"id":0,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/strong_parameters.rb:523:in `require''"},{"exception_object_id":179120,"id":3,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action''"},{"exception_object_id":179120,"id":4,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/base.rb:224:in `process_action''"},{"exception_object_id":179120,"id":5,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/rendering.rb:165:in `process_action''"},{"exception_object_id":179120,"id":6,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/callbacks.rb:259:in `block in process_action''"},{"exception_object_id":179120,"id":7,"trace":"activesupport
+        (7.1.3.2) lib/active_support/callbacks.rb:110:in `run_callbacks''"},{"exception_object_id":179120,"id":8,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/callbacks.rb:258:in `process_action''"},{"exception_object_id":179120,"id":9,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/rescue.rb:25:in `process_action''"},{"exception_object_id":179120,"id":10,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action''"},{"exception_object_id":179120,"id":11,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications.rb:206:in `block in instrument''"},{"exception_object_id":179120,"id":12,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument''"},{"exception_object_id":179120,"id":13,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications.rb:206:in `instrument''"},{"exception_object_id":179120,"id":14,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/instrumentation.rb:73:in `process_action''"},{"exception_object_id":179120,"id":15,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/params_wrapper.rb:261:in `process_action''"},{"exception_object_id":179120,"id":16,"trace":"activerecord
+        (7.1.3.2) lib/active_record/railties/controller_runtime.rb:32:in `process_action''"},{"exception_object_id":179120,"id":17,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/base.rb:160:in `process''"},{"exception_object_id":179120,"id":18,"trace":"actionview
+        (7.1.3.2) lib/action_view/rendering.rb:40:in `process''"},{"exception_object_id":179120,"id":19,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal.rb:227:in `dispatch''"},{"exception_object_id":179120,"id":20,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal.rb:309:in `dispatch''"},{"exception_object_id":179120,"id":21,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch''"},{"exception_object_id":179120,"id":22,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:32:in `serve''"},{"exception_object_id":179120,"id":23,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:51:in `block in serve''"},{"exception_object_id":179120,"id":24,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes''"},{"exception_object_id":179120,"id":25,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `each''"},{"exception_object_id":179120,"id":26,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `find_routes''"},{"exception_object_id":179120,"id":27,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve''"},{"exception_object_id":179120,"id":28,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:882:in `call''"},{"exception_object_id":179120,"id":29,"trace":"rack
+        (3.0.10) lib/rack/etag.rb:29:in `call''"},{"exception_object_id":179120,"id":30,"trace":"rack
+        (3.0.10) lib/rack/conditional_get.rb:43:in `call''"},{"exception_object_id":179120,"id":31,"trace":"rack
+        (3.0.10) lib/rack/head.rb:15:in `call''"},{"exception_object_id":179120,"id":32,"trace":"activerecord
+        (7.1.3.2) lib/active_record/migration.rb:655:in `call''"},{"exception_object_id":179120,"id":33,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call''"},{"exception_object_id":179120,"id":34,"trace":"activesupport
+        (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks''"},{"exception_object_id":179120,"id":35,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call''"},{"exception_object_id":179120,"id":36,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":179120,"id":37,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call''"},{"exception_object_id":179120,"id":38,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call''"},{"exception_object_id":179120,"id":39,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call''"},{"exception_object_id":179120,"id":40,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app''"},{"exception_object_id":179120,"id":41,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call''"},{"exception_object_id":179120,"id":42,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged''"},{"exception_object_id":179120,"id":43,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged''"},{"exception_object_id":179120,"id":44,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged''"},{"exception_object_id":179120,"id":45,"trace":"activesupport
+        (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing''"},{"exception_object_id":179120,"id":46,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:24:in `call''"},{"exception_object_id":179120,"id":47,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call''"},{"exception_object_id":179120,"id":48,"trace":"request_store
+        (1.6.0) lib/request_store/middleware.rb:19:in `call''"},{"exception_object_id":179120,"id":49,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call''"},{"exception_object_id":179120,"id":50,"trace":"rack
+        (3.0.10) lib/rack/runtime.rb:24:in `call''"},{"exception_object_id":179120,"id":51,"trace":"activesupport
+        (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
+        `call''"},{"exception_object_id":179120,"id":52,"trace":"actionpack (7.1.3.2)
+        lib/action_dispatch/middleware/server_timing.rb:59:in `block in call''"},{"exception_object_id":179120,"id":53,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events''"},{"exception_object_id":179120,"id":54,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call''"},{"exception_object_id":179120,"id":55,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":179120,"id":56,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call''"},{"exception_object_id":179120,"id":57,"trace":"rack
+        (3.0.10) lib/rack/sendfile.rb:114:in `call''"},{"exception_object_id":179120,"id":58,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call''"},{"exception_object_id":179120,"id":59,"trace":"railties
+        (7.1.3.2) lib/rails/engine.rb:536:in `call''"},{"exception_object_id":179120,"id":60,"trace":"puma
+        (6.4.2) lib/puma/configuration.rb:272:in `call''"},{"exception_object_id":179120,"id":61,"trace":"puma
+        (6.4.2) lib/puma/request.rb:100:in `block in handle_request''"},{"exception_object_id":179120,"id":62,"trace":"puma
+        (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown''"},{"exception_object_id":179120,"id":63,"trace":"puma
+        (6.4.2) lib/puma/request.rb:99:in `handle_request''"},{"exception_object_id":179120,"id":64,"trace":"puma
+        (6.4.2) lib/puma/server.rb:464:in `process_client''"},{"exception_object_id":179120,"id":65,"trace":"puma
+        (6.4.2) lib/puma/server.rb:245:in `block in run''"},{"exception_object_id":179120,"id":66,"trace":"puma
+        (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread''"}],"Full Trace":[{"exception_object_id":179120,"id":0,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/strong_parameters.rb:523:in `require''"},{"exception_object_id":179120,"id":1,"trace":"app/controllers/api/v1/trips_controller.rb:32:in
+        `trip_params''"},{"exception_object_id":179120,"id":2,"trace":"app/controllers/api/v1/trips_controller.rb:20:in
+        `create''"},{"exception_object_id":179120,"id":3,"trace":"actionpack (7.1.3.2)
+        lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action''"},{"exception_object_id":179120,"id":4,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/base.rb:224:in `process_action''"},{"exception_object_id":179120,"id":5,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/rendering.rb:165:in `process_action''"},{"exception_object_id":179120,"id":6,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/callbacks.rb:259:in `block in process_action''"},{"exception_object_id":179120,"id":7,"trace":"activesupport
+        (7.1.3.2) lib/active_support/callbacks.rb:110:in `run_callbacks''"},{"exception_object_id":179120,"id":8,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/callbacks.rb:258:in `process_action''"},{"exception_object_id":179120,"id":9,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/rescue.rb:25:in `process_action''"},{"exception_object_id":179120,"id":10,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action''"},{"exception_object_id":179120,"id":11,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications.rb:206:in `block in instrument''"},{"exception_object_id":179120,"id":12,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument''"},{"exception_object_id":179120,"id":13,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications.rb:206:in `instrument''"},{"exception_object_id":179120,"id":14,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/instrumentation.rb:73:in `process_action''"},{"exception_object_id":179120,"id":15,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/params_wrapper.rb:261:in `process_action''"},{"exception_object_id":179120,"id":16,"trace":"activerecord
+        (7.1.3.2) lib/active_record/railties/controller_runtime.rb:32:in `process_action''"},{"exception_object_id":179120,"id":17,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/base.rb:160:in `process''"},{"exception_object_id":179120,"id":18,"trace":"actionview
+        (7.1.3.2) lib/action_view/rendering.rb:40:in `process''"},{"exception_object_id":179120,"id":19,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal.rb:227:in `dispatch''"},{"exception_object_id":179120,"id":20,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal.rb:309:in `dispatch''"},{"exception_object_id":179120,"id":21,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch''"},{"exception_object_id":179120,"id":22,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:32:in `serve''"},{"exception_object_id":179120,"id":23,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:51:in `block in serve''"},{"exception_object_id":179120,"id":24,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes''"},{"exception_object_id":179120,"id":25,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `each''"},{"exception_object_id":179120,"id":26,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `find_routes''"},{"exception_object_id":179120,"id":27,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve''"},{"exception_object_id":179120,"id":28,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:882:in `call''"},{"exception_object_id":179120,"id":29,"trace":"rack
+        (3.0.10) lib/rack/etag.rb:29:in `call''"},{"exception_object_id":179120,"id":30,"trace":"rack
+        (3.0.10) lib/rack/conditional_get.rb:43:in `call''"},{"exception_object_id":179120,"id":31,"trace":"rack
+        (3.0.10) lib/rack/head.rb:15:in `call''"},{"exception_object_id":179120,"id":32,"trace":"activerecord
+        (7.1.3.2) lib/active_record/migration.rb:655:in `call''"},{"exception_object_id":179120,"id":33,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call''"},{"exception_object_id":179120,"id":34,"trace":"activesupport
+        (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks''"},{"exception_object_id":179120,"id":35,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call''"},{"exception_object_id":179120,"id":36,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":179120,"id":37,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call''"},{"exception_object_id":179120,"id":38,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call''"},{"exception_object_id":179120,"id":39,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call''"},{"exception_object_id":179120,"id":40,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app''"},{"exception_object_id":179120,"id":41,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call''"},{"exception_object_id":179120,"id":42,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged''"},{"exception_object_id":179120,"id":43,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged''"},{"exception_object_id":179120,"id":44,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged''"},{"exception_object_id":179120,"id":45,"trace":"activesupport
+        (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing''"},{"exception_object_id":179120,"id":46,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:24:in `call''"},{"exception_object_id":179120,"id":47,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call''"},{"exception_object_id":179120,"id":48,"trace":"request_store
+        (1.6.0) lib/request_store/middleware.rb:19:in `call''"},{"exception_object_id":179120,"id":49,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call''"},{"exception_object_id":179120,"id":50,"trace":"rack
+        (3.0.10) lib/rack/runtime.rb:24:in `call''"},{"exception_object_id":179120,"id":51,"trace":"activesupport
+        (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
+        `call''"},{"exception_object_id":179120,"id":52,"trace":"actionpack (7.1.3.2)
+        lib/action_dispatch/middleware/server_timing.rb:59:in `block in call''"},{"exception_object_id":179120,"id":53,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events''"},{"exception_object_id":179120,"id":54,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call''"},{"exception_object_id":179120,"id":55,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":179120,"id":56,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call''"},{"exception_object_id":179120,"id":57,"trace":"rack
+        (3.0.10) lib/rack/sendfile.rb:114:in `call''"},{"exception_object_id":179120,"id":58,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call''"},{"exception_object_id":179120,"id":59,"trace":"railties
+        (7.1.3.2) lib/rails/engine.rb:536:in `call''"},{"exception_object_id":179120,"id":60,"trace":"puma
+        (6.4.2) lib/puma/configuration.rb:272:in `call''"},{"exception_object_id":179120,"id":61,"trace":"puma
+        (6.4.2) lib/puma/request.rb:100:in `block in handle_request''"},{"exception_object_id":179120,"id":62,"trace":"puma
+        (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown''"},{"exception_object_id":179120,"id":63,"trace":"puma
+        (6.4.2) lib/puma/request.rb:99:in `handle_request''"},{"exception_object_id":179120,"id":64,"trace":"puma
+        (6.4.2) lib/puma/server.rb:464:in `process_client''"},{"exception_object_id":179120,"id":65,"trace":"puma
+        (6.4.2) lib/puma/server.rb:245:in `block in run''"},{"exception_object_id":179120,"id":66,"trace":"puma
+        (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread''"}]}}'
+  recorded_at: Tue, 16 Apr 2024 23:04:17 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips
+    body:
+      encoding: UTF-8
+      string: '{"user_id":100,"trip":{"name":"Trip To Japan","location":"Japan","start_date":"2024-04-20","end_date":"2024-04-30","status":"in_progress","total_budget":1000,"user_id":100}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Request-Id:
+      - 614c4f4f-ac62-4d10-b0a2-0fd6029f98a6
+      X-Runtime:
+      - '0.022279'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, process_action.action_controller;dur=0.28
+      Content-Length:
+      - '16828'
+    body:
+      encoding: UTF-8
+      string: '{"status":400,"error":"Bad Request","exception":"#\u003cActionController::ParameterMissing:
+        param is missing or the value is empty: trip\u003e","traces":{"Application
+        Trace":[{"exception_object_id":179180,"id":1,"trace":"app/controllers/api/v1/trips_controller.rb:32:in
+        `trip_params''"},{"exception_object_id":179180,"id":2,"trace":"app/controllers/api/v1/trips_controller.rb:20:in
+        `create''"}],"Framework Trace":[{"exception_object_id":179180,"id":0,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/strong_parameters.rb:523:in `require''"},{"exception_object_id":179180,"id":3,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action''"},{"exception_object_id":179180,"id":4,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/base.rb:224:in `process_action''"},{"exception_object_id":179180,"id":5,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/rendering.rb:165:in `process_action''"},{"exception_object_id":179180,"id":6,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/callbacks.rb:259:in `block in process_action''"},{"exception_object_id":179180,"id":7,"trace":"activesupport
+        (7.1.3.2) lib/active_support/callbacks.rb:110:in `run_callbacks''"},{"exception_object_id":179180,"id":8,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/callbacks.rb:258:in `process_action''"},{"exception_object_id":179180,"id":9,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/rescue.rb:25:in `process_action''"},{"exception_object_id":179180,"id":10,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action''"},{"exception_object_id":179180,"id":11,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications.rb:206:in `block in instrument''"},{"exception_object_id":179180,"id":12,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument''"},{"exception_object_id":179180,"id":13,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications.rb:206:in `instrument''"},{"exception_object_id":179180,"id":14,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/instrumentation.rb:73:in `process_action''"},{"exception_object_id":179180,"id":15,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/params_wrapper.rb:261:in `process_action''"},{"exception_object_id":179180,"id":16,"trace":"activerecord
+        (7.1.3.2) lib/active_record/railties/controller_runtime.rb:32:in `process_action''"},{"exception_object_id":179180,"id":17,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/base.rb:160:in `process''"},{"exception_object_id":179180,"id":18,"trace":"actionview
+        (7.1.3.2) lib/action_view/rendering.rb:40:in `process''"},{"exception_object_id":179180,"id":19,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal.rb:227:in `dispatch''"},{"exception_object_id":179180,"id":20,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal.rb:309:in `dispatch''"},{"exception_object_id":179180,"id":21,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch''"},{"exception_object_id":179180,"id":22,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:32:in `serve''"},{"exception_object_id":179180,"id":23,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:51:in `block in serve''"},{"exception_object_id":179180,"id":24,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes''"},{"exception_object_id":179180,"id":25,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `each''"},{"exception_object_id":179180,"id":26,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `find_routes''"},{"exception_object_id":179180,"id":27,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve''"},{"exception_object_id":179180,"id":28,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:882:in `call''"},{"exception_object_id":179180,"id":29,"trace":"rack
+        (3.0.10) lib/rack/etag.rb:29:in `call''"},{"exception_object_id":179180,"id":30,"trace":"rack
+        (3.0.10) lib/rack/conditional_get.rb:43:in `call''"},{"exception_object_id":179180,"id":31,"trace":"rack
+        (3.0.10) lib/rack/head.rb:15:in `call''"},{"exception_object_id":179180,"id":32,"trace":"activerecord
+        (7.1.3.2) lib/active_record/migration.rb:655:in `call''"},{"exception_object_id":179180,"id":33,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call''"},{"exception_object_id":179180,"id":34,"trace":"activesupport
+        (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks''"},{"exception_object_id":179180,"id":35,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call''"},{"exception_object_id":179180,"id":36,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":179180,"id":37,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call''"},{"exception_object_id":179180,"id":38,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call''"},{"exception_object_id":179180,"id":39,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call''"},{"exception_object_id":179180,"id":40,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app''"},{"exception_object_id":179180,"id":41,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call''"},{"exception_object_id":179180,"id":42,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged''"},{"exception_object_id":179180,"id":43,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged''"},{"exception_object_id":179180,"id":44,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged''"},{"exception_object_id":179180,"id":45,"trace":"activesupport
+        (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing''"},{"exception_object_id":179180,"id":46,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:24:in `call''"},{"exception_object_id":179180,"id":47,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call''"},{"exception_object_id":179180,"id":48,"trace":"request_store
+        (1.6.0) lib/request_store/middleware.rb:19:in `call''"},{"exception_object_id":179180,"id":49,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call''"},{"exception_object_id":179180,"id":50,"trace":"rack
+        (3.0.10) lib/rack/runtime.rb:24:in `call''"},{"exception_object_id":179180,"id":51,"trace":"activesupport
+        (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
+        `call''"},{"exception_object_id":179180,"id":52,"trace":"actionpack (7.1.3.2)
+        lib/action_dispatch/middleware/server_timing.rb:59:in `block in call''"},{"exception_object_id":179180,"id":53,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events''"},{"exception_object_id":179180,"id":54,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call''"},{"exception_object_id":179180,"id":55,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":179180,"id":56,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call''"},{"exception_object_id":179180,"id":57,"trace":"rack
+        (3.0.10) lib/rack/sendfile.rb:114:in `call''"},{"exception_object_id":179180,"id":58,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call''"},{"exception_object_id":179180,"id":59,"trace":"railties
+        (7.1.3.2) lib/rails/engine.rb:536:in `call''"},{"exception_object_id":179180,"id":60,"trace":"puma
+        (6.4.2) lib/puma/configuration.rb:272:in `call''"},{"exception_object_id":179180,"id":61,"trace":"puma
+        (6.4.2) lib/puma/request.rb:100:in `block in handle_request''"},{"exception_object_id":179180,"id":62,"trace":"puma
+        (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown''"},{"exception_object_id":179180,"id":63,"trace":"puma
+        (6.4.2) lib/puma/request.rb:99:in `handle_request''"},{"exception_object_id":179180,"id":64,"trace":"puma
+        (6.4.2) lib/puma/server.rb:464:in `process_client''"},{"exception_object_id":179180,"id":65,"trace":"puma
+        (6.4.2) lib/puma/server.rb:245:in `block in run''"},{"exception_object_id":179180,"id":66,"trace":"puma
+        (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread''"}],"Full Trace":[{"exception_object_id":179180,"id":0,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/strong_parameters.rb:523:in `require''"},{"exception_object_id":179180,"id":1,"trace":"app/controllers/api/v1/trips_controller.rb:32:in
+        `trip_params''"},{"exception_object_id":179180,"id":2,"trace":"app/controllers/api/v1/trips_controller.rb:20:in
+        `create''"},{"exception_object_id":179180,"id":3,"trace":"actionpack (7.1.3.2)
+        lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action''"},{"exception_object_id":179180,"id":4,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/base.rb:224:in `process_action''"},{"exception_object_id":179180,"id":5,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/rendering.rb:165:in `process_action''"},{"exception_object_id":179180,"id":6,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/callbacks.rb:259:in `block in process_action''"},{"exception_object_id":179180,"id":7,"trace":"activesupport
+        (7.1.3.2) lib/active_support/callbacks.rb:110:in `run_callbacks''"},{"exception_object_id":179180,"id":8,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/callbacks.rb:258:in `process_action''"},{"exception_object_id":179180,"id":9,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/rescue.rb:25:in `process_action''"},{"exception_object_id":179180,"id":10,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action''"},{"exception_object_id":179180,"id":11,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications.rb:206:in `block in instrument''"},{"exception_object_id":179180,"id":12,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument''"},{"exception_object_id":179180,"id":13,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications.rb:206:in `instrument''"},{"exception_object_id":179180,"id":14,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/instrumentation.rb:73:in `process_action''"},{"exception_object_id":179180,"id":15,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/params_wrapper.rb:261:in `process_action''"},{"exception_object_id":179180,"id":16,"trace":"activerecord
+        (7.1.3.2) lib/active_record/railties/controller_runtime.rb:32:in `process_action''"},{"exception_object_id":179180,"id":17,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/base.rb:160:in `process''"},{"exception_object_id":179180,"id":18,"trace":"actionview
+        (7.1.3.2) lib/action_view/rendering.rb:40:in `process''"},{"exception_object_id":179180,"id":19,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal.rb:227:in `dispatch''"},{"exception_object_id":179180,"id":20,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal.rb:309:in `dispatch''"},{"exception_object_id":179180,"id":21,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch''"},{"exception_object_id":179180,"id":22,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:32:in `serve''"},{"exception_object_id":179180,"id":23,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:51:in `block in serve''"},{"exception_object_id":179180,"id":24,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes''"},{"exception_object_id":179180,"id":25,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `each''"},{"exception_object_id":179180,"id":26,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `find_routes''"},{"exception_object_id":179180,"id":27,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve''"},{"exception_object_id":179180,"id":28,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:882:in `call''"},{"exception_object_id":179180,"id":29,"trace":"rack
+        (3.0.10) lib/rack/etag.rb:29:in `call''"},{"exception_object_id":179180,"id":30,"trace":"rack
+        (3.0.10) lib/rack/conditional_get.rb:43:in `call''"},{"exception_object_id":179180,"id":31,"trace":"rack
+        (3.0.10) lib/rack/head.rb:15:in `call''"},{"exception_object_id":179180,"id":32,"trace":"activerecord
+        (7.1.3.2) lib/active_record/migration.rb:655:in `call''"},{"exception_object_id":179180,"id":33,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call''"},{"exception_object_id":179180,"id":34,"trace":"activesupport
+        (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks''"},{"exception_object_id":179180,"id":35,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call''"},{"exception_object_id":179180,"id":36,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":179180,"id":37,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call''"},{"exception_object_id":179180,"id":38,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call''"},{"exception_object_id":179180,"id":39,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call''"},{"exception_object_id":179180,"id":40,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app''"},{"exception_object_id":179180,"id":41,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call''"},{"exception_object_id":179180,"id":42,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged''"},{"exception_object_id":179180,"id":43,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged''"},{"exception_object_id":179180,"id":44,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged''"},{"exception_object_id":179180,"id":45,"trace":"activesupport
+        (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing''"},{"exception_object_id":179180,"id":46,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:24:in `call''"},{"exception_object_id":179180,"id":47,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call''"},{"exception_object_id":179180,"id":48,"trace":"request_store
+        (1.6.0) lib/request_store/middleware.rb:19:in `call''"},{"exception_object_id":179180,"id":49,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call''"},{"exception_object_id":179180,"id":50,"trace":"rack
+        (3.0.10) lib/rack/runtime.rb:24:in `call''"},{"exception_object_id":179180,"id":51,"trace":"activesupport
+        (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
+        `call''"},{"exception_object_id":179180,"id":52,"trace":"actionpack (7.1.3.2)
+        lib/action_dispatch/middleware/server_timing.rb:59:in `block in call''"},{"exception_object_id":179180,"id":53,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events''"},{"exception_object_id":179180,"id":54,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call''"},{"exception_object_id":179180,"id":55,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":179180,"id":56,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call''"},{"exception_object_id":179180,"id":57,"trace":"rack
+        (3.0.10) lib/rack/sendfile.rb:114:in `call''"},{"exception_object_id":179180,"id":58,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call''"},{"exception_object_id":179180,"id":59,"trace":"railties
+        (7.1.3.2) lib/rails/engine.rb:536:in `call''"},{"exception_object_id":179180,"id":60,"trace":"puma
+        (6.4.2) lib/puma/configuration.rb:272:in `call''"},{"exception_object_id":179180,"id":61,"trace":"puma
+        (6.4.2) lib/puma/request.rb:100:in `block in handle_request''"},{"exception_object_id":179180,"id":62,"trace":"puma
+        (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown''"},{"exception_object_id":179180,"id":63,"trace":"puma
+        (6.4.2) lib/puma/request.rb:99:in `handle_request''"},{"exception_object_id":179180,"id":64,"trace":"puma
+        (6.4.2) lib/puma/server.rb:464:in `process_client''"},{"exception_object_id":179180,"id":65,"trace":"puma
+        (6.4.2) lib/puma/server.rb:245:in `block in run''"},{"exception_object_id":179180,"id":66,"trace":"puma
+        (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread''"}]}}'
+  recorded_at: Tue, 16 Apr 2024 23:04:17 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips
+    body:
+      encoding: UTF-8
+      string: '{"user_id":100,"trip":{"name":"Trip To Japan","location":"Japan","start_date":"2024-04-20","end_date":"2024-04-30","status":"in_progress","total_budget":1000,"user_id":100}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Request-Id:
+      - 85a1a9df-3cb8-4749-be7f-9dc78ff30a47
+      X-Runtime:
+      - '0.015668'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, process_action.action_controller;dur=0.12
+      Content-Length:
+      - '16828'
+    body:
+      encoding: UTF-8
+      string: '{"status":400,"error":"Bad Request","exception":"#\u003cActionController::ParameterMissing:
+        param is missing or the value is empty: trip\u003e","traces":{"Application
+        Trace":[{"exception_object_id":179240,"id":1,"trace":"app/controllers/api/v1/trips_controller.rb:32:in
+        `trip_params''"},{"exception_object_id":179240,"id":2,"trace":"app/controllers/api/v1/trips_controller.rb:20:in
+        `create''"}],"Framework Trace":[{"exception_object_id":179240,"id":0,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/strong_parameters.rb:523:in `require''"},{"exception_object_id":179240,"id":3,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action''"},{"exception_object_id":179240,"id":4,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/base.rb:224:in `process_action''"},{"exception_object_id":179240,"id":5,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/rendering.rb:165:in `process_action''"},{"exception_object_id":179240,"id":6,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/callbacks.rb:259:in `block in process_action''"},{"exception_object_id":179240,"id":7,"trace":"activesupport
+        (7.1.3.2) lib/active_support/callbacks.rb:110:in `run_callbacks''"},{"exception_object_id":179240,"id":8,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/callbacks.rb:258:in `process_action''"},{"exception_object_id":179240,"id":9,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/rescue.rb:25:in `process_action''"},{"exception_object_id":179240,"id":10,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action''"},{"exception_object_id":179240,"id":11,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications.rb:206:in `block in instrument''"},{"exception_object_id":179240,"id":12,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument''"},{"exception_object_id":179240,"id":13,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications.rb:206:in `instrument''"},{"exception_object_id":179240,"id":14,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/instrumentation.rb:73:in `process_action''"},{"exception_object_id":179240,"id":15,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/params_wrapper.rb:261:in `process_action''"},{"exception_object_id":179240,"id":16,"trace":"activerecord
+        (7.1.3.2) lib/active_record/railties/controller_runtime.rb:32:in `process_action''"},{"exception_object_id":179240,"id":17,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/base.rb:160:in `process''"},{"exception_object_id":179240,"id":18,"trace":"actionview
+        (7.1.3.2) lib/action_view/rendering.rb:40:in `process''"},{"exception_object_id":179240,"id":19,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal.rb:227:in `dispatch''"},{"exception_object_id":179240,"id":20,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal.rb:309:in `dispatch''"},{"exception_object_id":179240,"id":21,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch''"},{"exception_object_id":179240,"id":22,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:32:in `serve''"},{"exception_object_id":179240,"id":23,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:51:in `block in serve''"},{"exception_object_id":179240,"id":24,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes''"},{"exception_object_id":179240,"id":25,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `each''"},{"exception_object_id":179240,"id":26,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `find_routes''"},{"exception_object_id":179240,"id":27,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve''"},{"exception_object_id":179240,"id":28,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:882:in `call''"},{"exception_object_id":179240,"id":29,"trace":"rack
+        (3.0.10) lib/rack/etag.rb:29:in `call''"},{"exception_object_id":179240,"id":30,"trace":"rack
+        (3.0.10) lib/rack/conditional_get.rb:43:in `call''"},{"exception_object_id":179240,"id":31,"trace":"rack
+        (3.0.10) lib/rack/head.rb:15:in `call''"},{"exception_object_id":179240,"id":32,"trace":"activerecord
+        (7.1.3.2) lib/active_record/migration.rb:655:in `call''"},{"exception_object_id":179240,"id":33,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call''"},{"exception_object_id":179240,"id":34,"trace":"activesupport
+        (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks''"},{"exception_object_id":179240,"id":35,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call''"},{"exception_object_id":179240,"id":36,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":179240,"id":37,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call''"},{"exception_object_id":179240,"id":38,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call''"},{"exception_object_id":179240,"id":39,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call''"},{"exception_object_id":179240,"id":40,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app''"},{"exception_object_id":179240,"id":41,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call''"},{"exception_object_id":179240,"id":42,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged''"},{"exception_object_id":179240,"id":43,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged''"},{"exception_object_id":179240,"id":44,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged''"},{"exception_object_id":179240,"id":45,"trace":"activesupport
+        (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing''"},{"exception_object_id":179240,"id":46,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:24:in `call''"},{"exception_object_id":179240,"id":47,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call''"},{"exception_object_id":179240,"id":48,"trace":"request_store
+        (1.6.0) lib/request_store/middleware.rb:19:in `call''"},{"exception_object_id":179240,"id":49,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call''"},{"exception_object_id":179240,"id":50,"trace":"rack
+        (3.0.10) lib/rack/runtime.rb:24:in `call''"},{"exception_object_id":179240,"id":51,"trace":"activesupport
+        (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
+        `call''"},{"exception_object_id":179240,"id":52,"trace":"actionpack (7.1.3.2)
+        lib/action_dispatch/middleware/server_timing.rb:59:in `block in call''"},{"exception_object_id":179240,"id":53,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events''"},{"exception_object_id":179240,"id":54,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call''"},{"exception_object_id":179240,"id":55,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":179240,"id":56,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call''"},{"exception_object_id":179240,"id":57,"trace":"rack
+        (3.0.10) lib/rack/sendfile.rb:114:in `call''"},{"exception_object_id":179240,"id":58,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call''"},{"exception_object_id":179240,"id":59,"trace":"railties
+        (7.1.3.2) lib/rails/engine.rb:536:in `call''"},{"exception_object_id":179240,"id":60,"trace":"puma
+        (6.4.2) lib/puma/configuration.rb:272:in `call''"},{"exception_object_id":179240,"id":61,"trace":"puma
+        (6.4.2) lib/puma/request.rb:100:in `block in handle_request''"},{"exception_object_id":179240,"id":62,"trace":"puma
+        (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown''"},{"exception_object_id":179240,"id":63,"trace":"puma
+        (6.4.2) lib/puma/request.rb:99:in `handle_request''"},{"exception_object_id":179240,"id":64,"trace":"puma
+        (6.4.2) lib/puma/server.rb:464:in `process_client''"},{"exception_object_id":179240,"id":65,"trace":"puma
+        (6.4.2) lib/puma/server.rb:245:in `block in run''"},{"exception_object_id":179240,"id":66,"trace":"puma
+        (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread''"}],"Full Trace":[{"exception_object_id":179240,"id":0,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/strong_parameters.rb:523:in `require''"},{"exception_object_id":179240,"id":1,"trace":"app/controllers/api/v1/trips_controller.rb:32:in
+        `trip_params''"},{"exception_object_id":179240,"id":2,"trace":"app/controllers/api/v1/trips_controller.rb:20:in
+        `create''"},{"exception_object_id":179240,"id":3,"trace":"actionpack (7.1.3.2)
+        lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action''"},{"exception_object_id":179240,"id":4,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/base.rb:224:in `process_action''"},{"exception_object_id":179240,"id":5,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/rendering.rb:165:in `process_action''"},{"exception_object_id":179240,"id":6,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/callbacks.rb:259:in `block in process_action''"},{"exception_object_id":179240,"id":7,"trace":"activesupport
+        (7.1.3.2) lib/active_support/callbacks.rb:110:in `run_callbacks''"},{"exception_object_id":179240,"id":8,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/callbacks.rb:258:in `process_action''"},{"exception_object_id":179240,"id":9,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/rescue.rb:25:in `process_action''"},{"exception_object_id":179240,"id":10,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action''"},{"exception_object_id":179240,"id":11,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications.rb:206:in `block in instrument''"},{"exception_object_id":179240,"id":12,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument''"},{"exception_object_id":179240,"id":13,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications.rb:206:in `instrument''"},{"exception_object_id":179240,"id":14,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/instrumentation.rb:73:in `process_action''"},{"exception_object_id":179240,"id":15,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/params_wrapper.rb:261:in `process_action''"},{"exception_object_id":179240,"id":16,"trace":"activerecord
+        (7.1.3.2) lib/active_record/railties/controller_runtime.rb:32:in `process_action''"},{"exception_object_id":179240,"id":17,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/base.rb:160:in `process''"},{"exception_object_id":179240,"id":18,"trace":"actionview
+        (7.1.3.2) lib/action_view/rendering.rb:40:in `process''"},{"exception_object_id":179240,"id":19,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal.rb:227:in `dispatch''"},{"exception_object_id":179240,"id":20,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal.rb:309:in `dispatch''"},{"exception_object_id":179240,"id":21,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch''"},{"exception_object_id":179240,"id":22,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:32:in `serve''"},{"exception_object_id":179240,"id":23,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:51:in `block in serve''"},{"exception_object_id":179240,"id":24,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes''"},{"exception_object_id":179240,"id":25,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `each''"},{"exception_object_id":179240,"id":26,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `find_routes''"},{"exception_object_id":179240,"id":27,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve''"},{"exception_object_id":179240,"id":28,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:882:in `call''"},{"exception_object_id":179240,"id":29,"trace":"rack
+        (3.0.10) lib/rack/etag.rb:29:in `call''"},{"exception_object_id":179240,"id":30,"trace":"rack
+        (3.0.10) lib/rack/conditional_get.rb:43:in `call''"},{"exception_object_id":179240,"id":31,"trace":"rack
+        (3.0.10) lib/rack/head.rb:15:in `call''"},{"exception_object_id":179240,"id":32,"trace":"activerecord
+        (7.1.3.2) lib/active_record/migration.rb:655:in `call''"},{"exception_object_id":179240,"id":33,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call''"},{"exception_object_id":179240,"id":34,"trace":"activesupport
+        (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks''"},{"exception_object_id":179240,"id":35,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call''"},{"exception_object_id":179240,"id":36,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":179240,"id":37,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call''"},{"exception_object_id":179240,"id":38,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call''"},{"exception_object_id":179240,"id":39,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call''"},{"exception_object_id":179240,"id":40,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app''"},{"exception_object_id":179240,"id":41,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call''"},{"exception_object_id":179240,"id":42,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged''"},{"exception_object_id":179240,"id":43,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged''"},{"exception_object_id":179240,"id":44,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged''"},{"exception_object_id":179240,"id":45,"trace":"activesupport
+        (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing''"},{"exception_object_id":179240,"id":46,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:24:in `call''"},{"exception_object_id":179240,"id":47,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call''"},{"exception_object_id":179240,"id":48,"trace":"request_store
+        (1.6.0) lib/request_store/middleware.rb:19:in `call''"},{"exception_object_id":179240,"id":49,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call''"},{"exception_object_id":179240,"id":50,"trace":"rack
+        (3.0.10) lib/rack/runtime.rb:24:in `call''"},{"exception_object_id":179240,"id":51,"trace":"activesupport
+        (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
+        `call''"},{"exception_object_id":179240,"id":52,"trace":"actionpack (7.1.3.2)
+        lib/action_dispatch/middleware/server_timing.rb:59:in `block in call''"},{"exception_object_id":179240,"id":53,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events''"},{"exception_object_id":179240,"id":54,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call''"},{"exception_object_id":179240,"id":55,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":179240,"id":56,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call''"},{"exception_object_id":179240,"id":57,"trace":"rack
+        (3.0.10) lib/rack/sendfile.rb:114:in `call''"},{"exception_object_id":179240,"id":58,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call''"},{"exception_object_id":179240,"id":59,"trace":"railties
+        (7.1.3.2) lib/rails/engine.rb:536:in `call''"},{"exception_object_id":179240,"id":60,"trace":"puma
+        (6.4.2) lib/puma/configuration.rb:272:in `call''"},{"exception_object_id":179240,"id":61,"trace":"puma
+        (6.4.2) lib/puma/request.rb:100:in `block in handle_request''"},{"exception_object_id":179240,"id":62,"trace":"puma
+        (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown''"},{"exception_object_id":179240,"id":63,"trace":"puma
+        (6.4.2) lib/puma/request.rb:99:in `handle_request''"},{"exception_object_id":179240,"id":64,"trace":"puma
+        (6.4.2) lib/puma/server.rb:464:in `process_client''"},{"exception_object_id":179240,"id":65,"trace":"puma
+        (6.4.2) lib/puma/server.rb:245:in `block in run''"},{"exception_object_id":179240,"id":66,"trace":"puma
+        (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread''"}]}}'
+  recorded_at: Tue, 16 Apr 2024 23:04:17 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:3000/api/v1/trips?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"42f8104a18754db6b114ef6672fc4f0e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5950426f-b6df-4ba2-a6a4-729553acaafa
+      X-Runtime:
+      - '0.014292'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.01, sql.active_record;dur=1.23, process_action.action_controller;dur=2.93
+      Content-Length:
+      - '25'
+    body:
+      encoding: UTF-8
+      string: '{"data":[],"included":[]}'
+  recorded_at: Tue, 16 Apr 2024 23:04:18 GMT
+recorded_with: VCR 6.2.0

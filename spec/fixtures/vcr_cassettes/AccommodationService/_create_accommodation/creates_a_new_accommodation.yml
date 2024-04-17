@@ -1,0 +1,920 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/59/accommodations
+    body:
+      encoding: UTF-8
+      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"3d830f6728a33162f745f1d5efa7e3da"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 83ed6979-57ed-4cac-b267-fbec3f3b08a0
+      X-Runtime:
+      - '0.006672'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.98, instantiation.active_record;dur=0.02,
+        transaction.active_record;dur=0.87, process_action.action_controller;dur=2.83
+      Content-Length:
+      - '293'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"7","type":"accommodation","attributes":{"trip_id":59,"name":"Conrad
+        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
+        Tokyo","lat":null,"lon":null,"type_of_accommodation":null,"address_format":"Ginza,
+        Tokyo"}}}'
+  recorded_at: Mon, 15 Apr 2024 23:17:57 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/77/accommodations
+    body:
+      encoding: UTF-8
+      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"a4208844c0d36295515b822338a79c66"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 310bf26e-b5ce-49fe-ba4c-18ae0fadd5da
+      X-Runtime:
+      - '0.007423'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.45, instantiation.active_record;dur=0.03,
+        transaction.active_record;dur=0.96, process_action.action_controller;dur=3.36
+      Content-Length:
+      - '294'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"16","type":"accommodation","attributes":{"trip_id":77,"name":"Conrad
+        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
+        Tokyo","lat":null,"lon":null,"type_of_accommodation":null,"address_format":"Ginza,
+        Tokyo"}}}'
+  recorded_at: Mon, 15 Apr 2024 23:19:28 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/95/accommodations
+    body:
+      encoding: UTF-8
+      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"81c992e4b7fb5856f9f4da49ea622a64"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3c7557ee-6737-42c3-8410-9e28e5950494
+      X-Runtime:
+      - '0.006711'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.98, instantiation.active_record;dur=0.03,
+        transaction.active_record;dur=0.85, process_action.action_controller;dur=2.97
+      Content-Length:
+      - '294'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"25","type":"accommodation","attributes":{"trip_id":95,"name":"Conrad
+        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
+        Tokyo","lat":null,"lon":null,"type_of_accommodation":null,"address_format":"Ginza,
+        Tokyo"}}}'
+  recorded_at: Mon, 15 Apr 2024 23:19:50 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/113/accommodations
+    body:
+      encoding: UTF-8
+      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"4c67093742b188b9bede25abfbeb82bd"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b91f5e3b-cd59-45dd-8c50-41b5f6386043
+      X-Runtime:
+      - '0.017891'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=5.34, instantiation.active_record;dur=0.09,
+        transaction.active_record;dur=3.55, process_action.action_controller;dur=13.96
+      Content-Length:
+      - '295'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"34","type":"accommodation","attributes":{"trip_id":113,"name":"Conrad
+        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
+        Tokyo","lat":null,"lon":null,"type_of_accommodation":null,"address_format":"Ginza,
+        Tokyo"}}}'
+  recorded_at: Mon, 15 Apr 2024 23:20:08 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/131/accommodations
+    body:
+      encoding: UTF-8
+      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"1d89380331192999f45c9da1ebb366df"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 80eba130-9e6f-4356-bed0-513bc22f89d7
+      X-Runtime:
+      - '0.006571'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.98, instantiation.active_record;dur=0.02,
+        transaction.active_record;dur=1.00, process_action.action_controller;dur=2.67
+      Content-Length:
+      - '295'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"43","type":"accommodation","attributes":{"trip_id":131,"name":"Conrad
+        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
+        Tokyo","lat":null,"lon":null,"type_of_accommodation":null,"address_format":"Ginza,
+        Tokyo"}}}'
+  recorded_at: Mon, 15 Apr 2024 23:20:54 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/149/accommodations
+    body:
+      encoding: UTF-8
+      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"e478266aa032204bea0c55373c7eb1d7"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4072f625-02ec-4b58-9c5e-873e4714dd78
+      X-Runtime:
+      - '0.008924'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.94, instantiation.active_record;dur=0.04,
+        transaction.active_record;dur=0.88, process_action.action_controller;dur=3.62
+      Content-Length:
+      - '295'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"52","type":"accommodation","attributes":{"trip_id":149,"name":"Conrad
+        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
+        Tokyo","lat":null,"lon":null,"type_of_accommodation":null,"address_format":"Ginza,
+        Tokyo"}}}'
+  recorded_at: Mon, 15 Apr 2024 23:21:15 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/167/accommodations
+    body:
+      encoding: UTF-8
+      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"ace2d59880f4fa45d8ba1e39d2af68ed"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 46728c5b-dd4e-491b-85be-71d9fbcb83e8
+      X-Runtime:
+      - '0.007004'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.66, instantiation.active_record;dur=0.02,
+        transaction.active_record;dur=0.91, process_action.action_controller;dur=3.09
+      Content-Length:
+      - '295'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"61","type":"accommodation","attributes":{"trip_id":167,"name":"Conrad
+        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
+        Tokyo","lat":null,"lon":null,"type_of_accommodation":null,"address_format":"Ginza,
+        Tokyo"}}}'
+  recorded_at: Mon, 15 Apr 2024 23:22:45 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/185/accommodations
+    body:
+      encoding: UTF-8
+      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"8088cd8af099b580e4565d228ea422a0"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 91aa9b8d-ce10-44ae-a0ea-f427da47f8bb
+      X-Runtime:
+      - '0.007163'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.97, instantiation.active_record;dur=0.02,
+        transaction.active_record;dur=1.15, process_action.action_controller;dur=2.79
+      Content-Length:
+      - '295'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"70","type":"accommodation","attributes":{"trip_id":185,"name":"Conrad
+        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
+        Tokyo","lat":null,"lon":null,"type_of_accommodation":null,"address_format":"Ginza,
+        Tokyo"}}}'
+  recorded_at: Mon, 15 Apr 2024 23:47:05 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/203/accommodations
+    body:
+      encoding: UTF-8
+      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"0784b429c4a4ca59a749e9af6a8c7363"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b31f068f-3e03-436a-b256-8346f3eb9892
+      X-Runtime:
+      - '0.006822'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.98, instantiation.active_record;dur=0.02,
+        transaction.active_record;dur=0.84, process_action.action_controller;dur=2.88
+      Content-Length:
+      - '295'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"79","type":"accommodation","attributes":{"trip_id":203,"name":"Conrad
+        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
+        Tokyo","lat":null,"lon":null,"type_of_accommodation":null,"address_format":"Ginza,
+        Tokyo"}}}'
+  recorded_at: Tue, 16 Apr 2024 15:46:54 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/221/accommodations
+    body:
+      encoding: UTF-8
+      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"80cfe4d6a88f520e51198ac1373807ce"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4f2f656b-fe1c-4615-86ca-5433f4a7fff0
+      X-Runtime:
+      - '0.039359'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=31.23,
+        instantiation.active_record;dur=0.03, transaction.active_record;dur=31.33,
+        process_action.action_controller;dur=34.50
+      Content-Length:
+      - '295'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"88","type":"accommodation","attributes":{"trip_id":221,"name":"Conrad
+        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
+        Tokyo","lat":null,"lon":null,"type_of_accommodation":null,"address_format":"Ginza,
+        Tokyo"}}}'
+  recorded_at: Tue, 16 Apr 2024 18:57:38 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/239/accommodations
+    body:
+      encoding: UTF-8
+      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"5de59ed87b17ec750282ad5afea39776"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b0f63f77-04ca-45e1-a0b1-4c2f3acfa0b8
+      X-Runtime:
+      - '0.007774'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=2.48, instantiation.active_record;dur=0.02,
+        transaction.active_record;dur=1.09, process_action.action_controller;dur=3.99
+      Content-Length:
+      - '295'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"97","type":"accommodation","attributes":{"trip_id":239,"name":"Conrad
+        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
+        Tokyo","lat":null,"lon":null,"type_of_accommodation":null,"address_format":"Ginza,
+        Tokyo"}}}'
+  recorded_at: Tue, 16 Apr 2024 18:58:07 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/256/accommodations
+    body:
+      encoding: UTF-8
+      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"463857a78325b09e81d6a0a5be5778e7"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 89900ec9-ae18-4065-9f53-e86b08bd5063
+      X-Runtime:
+      - '0.006301'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.03, instantiation.active_record;dur=0.02,
+        transaction.active_record;dur=0.80, process_action.action_controller;dur=2.37
+      Content-Length:
+      - '296'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"106","type":"accommodation","attributes":{"trip_id":256,"name":"Conrad
+        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
+        Tokyo","lat":null,"lon":null,"type_of_accommodation":null,"address_format":"Ginza,
+        Tokyo"}}}'
+  recorded_at: Tue, 16 Apr 2024 20:22:09 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips
+    body:
+      encoding: UTF-8
+      string: '{"user_id":1,"trip":{"name":"Trip To Japan","location":"Japan","start_date":"2024-04-20","end_date":"2024-04-30","status":"in_progress","total_budget":1000,"user_id":1}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Request-Id:
+      - e23c6be0-7dc4-42ea-b27e-34bb9534b7d0
+      X-Runtime:
+      - '0.017153'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, process_action.action_controller;dur=0.13
+      Content-Length:
+      - '16828'
+    body:
+      encoding: UTF-8
+      string: '{"status":400,"error":"Bad Request","exception":"#\u003cActionController::ParameterMissing:
+        param is missing or the value is empty: trip\u003e","traces":{"Application
+        Trace":[{"exception_object_id":178440,"id":1,"trace":"app/controllers/api/v1/trips_controller.rb:32:in
+        `trip_params''"},{"exception_object_id":178440,"id":2,"trace":"app/controllers/api/v1/trips_controller.rb:20:in
+        `create''"}],"Framework Trace":[{"exception_object_id":178440,"id":0,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/strong_parameters.rb:523:in `require''"},{"exception_object_id":178440,"id":3,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action''"},{"exception_object_id":178440,"id":4,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/base.rb:224:in `process_action''"},{"exception_object_id":178440,"id":5,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/rendering.rb:165:in `process_action''"},{"exception_object_id":178440,"id":6,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/callbacks.rb:259:in `block in process_action''"},{"exception_object_id":178440,"id":7,"trace":"activesupport
+        (7.1.3.2) lib/active_support/callbacks.rb:110:in `run_callbacks''"},{"exception_object_id":178440,"id":8,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/callbacks.rb:258:in `process_action''"},{"exception_object_id":178440,"id":9,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/rescue.rb:25:in `process_action''"},{"exception_object_id":178440,"id":10,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action''"},{"exception_object_id":178440,"id":11,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications.rb:206:in `block in instrument''"},{"exception_object_id":178440,"id":12,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument''"},{"exception_object_id":178440,"id":13,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications.rb:206:in `instrument''"},{"exception_object_id":178440,"id":14,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/instrumentation.rb:73:in `process_action''"},{"exception_object_id":178440,"id":15,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/params_wrapper.rb:261:in `process_action''"},{"exception_object_id":178440,"id":16,"trace":"activerecord
+        (7.1.3.2) lib/active_record/railties/controller_runtime.rb:32:in `process_action''"},{"exception_object_id":178440,"id":17,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/base.rb:160:in `process''"},{"exception_object_id":178440,"id":18,"trace":"actionview
+        (7.1.3.2) lib/action_view/rendering.rb:40:in `process''"},{"exception_object_id":178440,"id":19,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal.rb:227:in `dispatch''"},{"exception_object_id":178440,"id":20,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal.rb:309:in `dispatch''"},{"exception_object_id":178440,"id":21,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch''"},{"exception_object_id":178440,"id":22,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:32:in `serve''"},{"exception_object_id":178440,"id":23,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:51:in `block in serve''"},{"exception_object_id":178440,"id":24,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes''"},{"exception_object_id":178440,"id":25,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `each''"},{"exception_object_id":178440,"id":26,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `find_routes''"},{"exception_object_id":178440,"id":27,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve''"},{"exception_object_id":178440,"id":28,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:882:in `call''"},{"exception_object_id":178440,"id":29,"trace":"rack
+        (3.0.10) lib/rack/etag.rb:29:in `call''"},{"exception_object_id":178440,"id":30,"trace":"rack
+        (3.0.10) lib/rack/conditional_get.rb:43:in `call''"},{"exception_object_id":178440,"id":31,"trace":"rack
+        (3.0.10) lib/rack/head.rb:15:in `call''"},{"exception_object_id":178440,"id":32,"trace":"activerecord
+        (7.1.3.2) lib/active_record/migration.rb:655:in `call''"},{"exception_object_id":178440,"id":33,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call''"},{"exception_object_id":178440,"id":34,"trace":"activesupport
+        (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks''"},{"exception_object_id":178440,"id":35,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call''"},{"exception_object_id":178440,"id":36,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":178440,"id":37,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call''"},{"exception_object_id":178440,"id":38,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call''"},{"exception_object_id":178440,"id":39,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call''"},{"exception_object_id":178440,"id":40,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app''"},{"exception_object_id":178440,"id":41,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call''"},{"exception_object_id":178440,"id":42,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged''"},{"exception_object_id":178440,"id":43,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged''"},{"exception_object_id":178440,"id":44,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged''"},{"exception_object_id":178440,"id":45,"trace":"activesupport
+        (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing''"},{"exception_object_id":178440,"id":46,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:24:in `call''"},{"exception_object_id":178440,"id":47,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call''"},{"exception_object_id":178440,"id":48,"trace":"request_store
+        (1.6.0) lib/request_store/middleware.rb:19:in `call''"},{"exception_object_id":178440,"id":49,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call''"},{"exception_object_id":178440,"id":50,"trace":"rack
+        (3.0.10) lib/rack/runtime.rb:24:in `call''"},{"exception_object_id":178440,"id":51,"trace":"activesupport
+        (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
+        `call''"},{"exception_object_id":178440,"id":52,"trace":"actionpack (7.1.3.2)
+        lib/action_dispatch/middleware/server_timing.rb:59:in `block in call''"},{"exception_object_id":178440,"id":53,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events''"},{"exception_object_id":178440,"id":54,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call''"},{"exception_object_id":178440,"id":55,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":178440,"id":56,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call''"},{"exception_object_id":178440,"id":57,"trace":"rack
+        (3.0.10) lib/rack/sendfile.rb:114:in `call''"},{"exception_object_id":178440,"id":58,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call''"},{"exception_object_id":178440,"id":59,"trace":"railties
+        (7.1.3.2) lib/rails/engine.rb:536:in `call''"},{"exception_object_id":178440,"id":60,"trace":"puma
+        (6.4.2) lib/puma/configuration.rb:272:in `call''"},{"exception_object_id":178440,"id":61,"trace":"puma
+        (6.4.2) lib/puma/request.rb:100:in `block in handle_request''"},{"exception_object_id":178440,"id":62,"trace":"puma
+        (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown''"},{"exception_object_id":178440,"id":63,"trace":"puma
+        (6.4.2) lib/puma/request.rb:99:in `handle_request''"},{"exception_object_id":178440,"id":64,"trace":"puma
+        (6.4.2) lib/puma/server.rb:464:in `process_client''"},{"exception_object_id":178440,"id":65,"trace":"puma
+        (6.4.2) lib/puma/server.rb:245:in `block in run''"},{"exception_object_id":178440,"id":66,"trace":"puma
+        (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread''"}],"Full Trace":[{"exception_object_id":178440,"id":0,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/strong_parameters.rb:523:in `require''"},{"exception_object_id":178440,"id":1,"trace":"app/controllers/api/v1/trips_controller.rb:32:in
+        `trip_params''"},{"exception_object_id":178440,"id":2,"trace":"app/controllers/api/v1/trips_controller.rb:20:in
+        `create''"},{"exception_object_id":178440,"id":3,"trace":"actionpack (7.1.3.2)
+        lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action''"},{"exception_object_id":178440,"id":4,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/base.rb:224:in `process_action''"},{"exception_object_id":178440,"id":5,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/rendering.rb:165:in `process_action''"},{"exception_object_id":178440,"id":6,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/callbacks.rb:259:in `block in process_action''"},{"exception_object_id":178440,"id":7,"trace":"activesupport
+        (7.1.3.2) lib/active_support/callbacks.rb:110:in `run_callbacks''"},{"exception_object_id":178440,"id":8,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/callbacks.rb:258:in `process_action''"},{"exception_object_id":178440,"id":9,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/rescue.rb:25:in `process_action''"},{"exception_object_id":178440,"id":10,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action''"},{"exception_object_id":178440,"id":11,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications.rb:206:in `block in instrument''"},{"exception_object_id":178440,"id":12,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument''"},{"exception_object_id":178440,"id":13,"trace":"activesupport
+        (7.1.3.2) lib/active_support/notifications.rb:206:in `instrument''"},{"exception_object_id":178440,"id":14,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/instrumentation.rb:73:in `process_action''"},{"exception_object_id":178440,"id":15,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal/params_wrapper.rb:261:in `process_action''"},{"exception_object_id":178440,"id":16,"trace":"activerecord
+        (7.1.3.2) lib/active_record/railties/controller_runtime.rb:32:in `process_action''"},{"exception_object_id":178440,"id":17,"trace":"actionpack
+        (7.1.3.2) lib/abstract_controller/base.rb:160:in `process''"},{"exception_object_id":178440,"id":18,"trace":"actionview
+        (7.1.3.2) lib/action_view/rendering.rb:40:in `process''"},{"exception_object_id":178440,"id":19,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal.rb:227:in `dispatch''"},{"exception_object_id":178440,"id":20,"trace":"actionpack
+        (7.1.3.2) lib/action_controller/metal.rb:309:in `dispatch''"},{"exception_object_id":178440,"id":21,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch''"},{"exception_object_id":178440,"id":22,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:32:in `serve''"},{"exception_object_id":178440,"id":23,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:51:in `block in serve''"},{"exception_object_id":178440,"id":24,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes''"},{"exception_object_id":178440,"id":25,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `each''"},{"exception_object_id":178440,"id":26,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:124:in `find_routes''"},{"exception_object_id":178440,"id":27,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve''"},{"exception_object_id":178440,"id":28,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/routing/route_set.rb:882:in `call''"},{"exception_object_id":178440,"id":29,"trace":"rack
+        (3.0.10) lib/rack/etag.rb:29:in `call''"},{"exception_object_id":178440,"id":30,"trace":"rack
+        (3.0.10) lib/rack/conditional_get.rb:43:in `call''"},{"exception_object_id":178440,"id":31,"trace":"rack
+        (3.0.10) lib/rack/head.rb:15:in `call''"},{"exception_object_id":178440,"id":32,"trace":"activerecord
+        (7.1.3.2) lib/active_record/migration.rb:655:in `call''"},{"exception_object_id":178440,"id":33,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call''"},{"exception_object_id":178440,"id":34,"trace":"activesupport
+        (7.1.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks''"},{"exception_object_id":178440,"id":35,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call''"},{"exception_object_id":178440,"id":36,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":178440,"id":37,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call''"},{"exception_object_id":178440,"id":38,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call''"},{"exception_object_id":178440,"id":39,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call''"},{"exception_object_id":178440,"id":40,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app''"},{"exception_object_id":178440,"id":41,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call''"},{"exception_object_id":178440,"id":42,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged''"},{"exception_object_id":178440,"id":43,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged''"},{"exception_object_id":178440,"id":44,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged''"},{"exception_object_id":178440,"id":45,"trace":"activesupport
+        (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing''"},{"exception_object_id":178440,"id":46,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:24:in `call''"},{"exception_object_id":178440,"id":47,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call''"},{"exception_object_id":178440,"id":48,"trace":"request_store
+        (1.6.0) lib/request_store/middleware.rb:19:in `call''"},{"exception_object_id":178440,"id":49,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call''"},{"exception_object_id":178440,"id":50,"trace":"rack
+        (3.0.10) lib/rack/runtime.rb:24:in `call''"},{"exception_object_id":178440,"id":51,"trace":"activesupport
+        (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
+        `call''"},{"exception_object_id":178440,"id":52,"trace":"actionpack (7.1.3.2)
+        lib/action_dispatch/middleware/server_timing.rb:59:in `block in call''"},{"exception_object_id":178440,"id":53,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events''"},{"exception_object_id":178440,"id":54,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call''"},{"exception_object_id":178440,"id":55,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":178440,"id":56,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call''"},{"exception_object_id":178440,"id":57,"trace":"rack
+        (3.0.10) lib/rack/sendfile.rb:114:in `call''"},{"exception_object_id":178440,"id":58,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call''"},{"exception_object_id":178440,"id":59,"trace":"railties
+        (7.1.3.2) lib/rails/engine.rb:536:in `call''"},{"exception_object_id":178440,"id":60,"trace":"puma
+        (6.4.2) lib/puma/configuration.rb:272:in `call''"},{"exception_object_id":178440,"id":61,"trace":"puma
+        (6.4.2) lib/puma/request.rb:100:in `block in handle_request''"},{"exception_object_id":178440,"id":62,"trace":"puma
+        (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown''"},{"exception_object_id":178440,"id":63,"trace":"puma
+        (6.4.2) lib/puma/request.rb:99:in `handle_request''"},{"exception_object_id":178440,"id":64,"trace":"puma
+        (6.4.2) lib/puma/server.rb:464:in `process_client''"},{"exception_object_id":178440,"id":65,"trace":"puma
+        (6.4.2) lib/puma/server.rb:245:in `block in run''"},{"exception_object_id":178440,"id":66,"trace":"puma
+        (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread''"}]}}'
+  recorded_at: Tue, 16 Apr 2024 23:04:17 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips//accommodations
+    body:
+      encoding: UTF-8
+      string: accommodation%5Baddress%5D=Ginza%2C+Tokyo&accommodation%5Bcheck_in%5D=2024-04-20&accommodation%5Bcheck_out%5D=2024-04-30&accommodation%5Bname%5D=Conrad+Tokyo&user_id=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Request-Id:
+      - 8a067e27-d8c1-4c50-866c-58f9cbeda6a5
+      X-Runtime:
+      - '0.006584'
+      Server-Timing:
+      - ''
+      Content-Length:
+      - '7187'
+    body:
+      encoding: UTF-8
+      string: '{"status":404,"error":"Not Found","exception":"#\u003cActionController::RoutingError:
+        No route matches [POST] \"/api/v1/trips/accommodations\"\u003e","traces":{"Application
+        Trace":[],"Framework Trace":[{"exception_object_id":178460,"id":0,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:33:in `call''"},{"exception_object_id":178460,"id":1,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call''"},{"exception_object_id":178460,"id":2,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app''"},{"exception_object_id":178460,"id":3,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call''"},{"exception_object_id":178460,"id":4,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged''"},{"exception_object_id":178460,"id":5,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged''"},{"exception_object_id":178460,"id":6,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged''"},{"exception_object_id":178460,"id":7,"trace":"activesupport
+        (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing''"},{"exception_object_id":178460,"id":8,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:24:in `call''"},{"exception_object_id":178460,"id":9,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call''"},{"exception_object_id":178460,"id":10,"trace":"request_store
+        (1.6.0) lib/request_store/middleware.rb:19:in `call''"},{"exception_object_id":178460,"id":11,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call''"},{"exception_object_id":178460,"id":12,"trace":"rack
+        (3.0.10) lib/rack/runtime.rb:24:in `call''"},{"exception_object_id":178460,"id":13,"trace":"activesupport
+        (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
+        `call''"},{"exception_object_id":178460,"id":14,"trace":"actionpack (7.1.3.2)
+        lib/action_dispatch/middleware/server_timing.rb:59:in `block in call''"},{"exception_object_id":178460,"id":15,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events''"},{"exception_object_id":178460,"id":16,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call''"},{"exception_object_id":178460,"id":17,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":178460,"id":18,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call''"},{"exception_object_id":178460,"id":19,"trace":"rack
+        (3.0.10) lib/rack/sendfile.rb:114:in `call''"},{"exception_object_id":178460,"id":20,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call''"},{"exception_object_id":178460,"id":21,"trace":"railties
+        (7.1.3.2) lib/rails/engine.rb:536:in `call''"},{"exception_object_id":178460,"id":22,"trace":"puma
+        (6.4.2) lib/puma/configuration.rb:272:in `call''"},{"exception_object_id":178460,"id":23,"trace":"puma
+        (6.4.2) lib/puma/request.rb:100:in `block in handle_request''"},{"exception_object_id":178460,"id":24,"trace":"puma
+        (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown''"},{"exception_object_id":178460,"id":25,"trace":"puma
+        (6.4.2) lib/puma/request.rb:99:in `handle_request''"},{"exception_object_id":178460,"id":26,"trace":"puma
+        (6.4.2) lib/puma/server.rb:464:in `process_client''"},{"exception_object_id":178460,"id":27,"trace":"puma
+        (6.4.2) lib/puma/server.rb:245:in `block in run''"},{"exception_object_id":178460,"id":28,"trace":"puma
+        (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread''"}],"Full Trace":[{"exception_object_id":178460,"id":0,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:33:in `call''"},{"exception_object_id":178460,"id":1,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call''"},{"exception_object_id":178460,"id":2,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:37:in `call_app''"},{"exception_object_id":178460,"id":3,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:24:in `block in call''"},{"exception_object_id":178460,"id":4,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `block in tagged''"},{"exception_object_id":178460,"id":5,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:39:in `tagged''"},{"exception_object_id":178460,"id":6,"trace":"activesupport
+        (7.1.3.2) lib/active_support/tagged_logging.rb:135:in `tagged''"},{"exception_object_id":178460,"id":7,"trace":"activesupport
+        (7.1.3.2) lib/active_support/broadcast_logger.rb:240:in `method_missing''"},{"exception_object_id":178460,"id":8,"trace":"railties
+        (7.1.3.2) lib/rails/rack/logger.rb:24:in `call''"},{"exception_object_id":178460,"id":9,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call''"},{"exception_object_id":178460,"id":10,"trace":"request_store
+        (1.6.0) lib/request_store/middleware.rb:19:in `call''"},{"exception_object_id":178460,"id":11,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/request_id.rb:28:in `call''"},{"exception_object_id":178460,"id":12,"trace":"rack
+        (3.0.10) lib/rack/runtime.rb:24:in `call''"},{"exception_object_id":178460,"id":13,"trace":"activesupport
+        (7.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
+        `call''"},{"exception_object_id":178460,"id":14,"trace":"actionpack (7.1.3.2)
+        lib/action_dispatch/middleware/server_timing.rb:59:in `block in call''"},{"exception_object_id":178460,"id":15,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events''"},{"exception_object_id":178460,"id":16,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call''"},{"exception_object_id":178460,"id":17,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":178460,"id":18,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/static.rb:25:in `call''"},{"exception_object_id":178460,"id":19,"trace":"rack
+        (3.0.10) lib/rack/sendfile.rb:114:in `call''"},{"exception_object_id":178460,"id":20,"trace":"actionpack
+        (7.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call''"},{"exception_object_id":178460,"id":21,"trace":"railties
+        (7.1.3.2) lib/rails/engine.rb:536:in `call''"},{"exception_object_id":178460,"id":22,"trace":"puma
+        (6.4.2) lib/puma/configuration.rb:272:in `call''"},{"exception_object_id":178460,"id":23,"trace":"puma
+        (6.4.2) lib/puma/request.rb:100:in `block in handle_request''"},{"exception_object_id":178460,"id":24,"trace":"puma
+        (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown''"},{"exception_object_id":178460,"id":25,"trace":"puma
+        (6.4.2) lib/puma/request.rb:99:in `handle_request''"},{"exception_object_id":178460,"id":26,"trace":"puma
+        (6.4.2) lib/puma/server.rb:464:in `process_client''"},{"exception_object_id":178460,"id":27,"trace":"puma
+        (6.4.2) lib/puma/server.rb:245:in `block in run''"},{"exception_object_id":178460,"id":28,"trace":"puma
+        (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread''"}]}}'
+  recorded_at: Tue, 16 Apr 2024 23:04:17 GMT
+recorded_with: VCR 6.2.0

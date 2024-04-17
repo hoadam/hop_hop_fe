@@ -32,6 +32,12 @@ class TripService < HophopService
     Trip.from_json(json)
   end
 
+  # def self.update_trip(user_id, trip_id, trip_params)
+  #   # binding.pry
+  #   response = conn.put("trips/#{trip_id}", user_id: user_id, trip: trip_params.merge(user_id: user_id))
+  #   json = JSON.parse(response.body, symbolize_names: true)
+  #   Trip.from_json(json)
+  # end
   def self.update_trip(user_id, trip_id, trip_params)
     response = conn.put("trips/#{trip_id}") do |req|
       req.body = {

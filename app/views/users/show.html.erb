@@ -1,1 +1,36 @@
 <p>Name: <%= @user.full_name %></p>
+<h1>Account Details</h1>
+<p>Name: <%= @user.name %></p>
+<p>Email: <%= @user.email %></p>
+
+<%= button_to 'Logout', logout_path, method: :delete, class: "btn btn-primary" %>
+
+<%
+=begin%>
+ <h2>Past Trips</h2>
+<div class="past-trips">
+  <% @user.trips.each do |trip| %> 
+    <div class="trip">
+      <p>Trip Name: <%= trip.name %></p>
+      <p>Start Date: <%= trip.start_date %></p>
+      <p>End Date: <%= trip.end_date %></p>
+      <%= button_to 'Edit', edit_user_trip_path(@user, trip), class: "btn btn-secondary" %>
+      <%= button_to 'Delete', user_trip_path(@user, trip), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+    </div>
+  <% end %>
+</div> 
+<%
+=end%>
+
+<h2>Current Trips</h2>
+<div class="current-trips">
+  <% @trips.each do |trip| %>
+    <div class="trip">
+      <p>Trip Name: <%= trip.name %></p>
+      <p>Start Date: <%= trip.start_date %></p>
+      <p>End Date: <%= trip.end_date %></p>
+      <%= button_to 'Edit', edit_user_trip_path(@user, trip), class: "btn btn-secondary" %>
+      <%= button_to 'Delete', user_trip_path(@user, trip), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+    </div>
+  <% end %>
+</div>
