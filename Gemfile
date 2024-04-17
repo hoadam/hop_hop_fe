@@ -37,6 +37,8 @@ gem "bcrypt", "~> 3.1.7"
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
 gem "omniauth-rails_csrf_protection"
+gem 'google-apis-places_v1', '~> 0.1'
+
 
 gem 'dotenv-rails'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -44,6 +46,11 @@ gem "tzinfo-data", platforms: %i[ windows jruby ]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
+
+# 2FA
+gem 'devise'
+gem 'devise-two-factor'
+gem 'rqrcode'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
@@ -61,6 +68,7 @@ group :development, :test do
   gem 'faker'
   gem "capybara"
   gem "launchy"
+  gem "warden"
 end
 
 group :development do

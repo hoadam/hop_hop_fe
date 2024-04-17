@@ -1,13 +1,11 @@
 class ApplicationController < ActionController::Base
-  helper_method :current_user
+  protect_from_forgery prepend: true
+  before_action :authenticate_user!
 
-  def current_user
-    @_current_user ||= User.find(session[:user_id]) if session[:user_id]
-  end
+  # Devise is now resposible for error messages
+  # private
 
-  private
-
-  def error_message(errors)
-    errors.full_messages.join(', ')
-  end
+  # def error_message(errors)
+  #   errors.full_messages.join(', ')
+  # end
 end

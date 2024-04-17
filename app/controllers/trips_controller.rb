@@ -6,7 +6,36 @@ class TripsController < ApplicationController
 
   def show
     @user = User.find(params[:user_id])
+
+    @accommodations = AccommodationService.get_accommodations(params[:user_id], params[:id])
+
     @trip = TripService.trip_details(params[:user_id], params[:id])
-    @activities = Activity.daily_activities(params[:user_id], params[:id])
+
+    @daily_itineraries = @trip.daily_itineraries
+    @activities = @trip.activities
+  end
+
+  def edit
+    @user = User.find(params[:user_id])
+    @trip = TripService.trip_details(params[:user_id], params[:id])
+  end
+
+  def update
+    @user = User.find(params[:user_id])
+
+    @trip = TripService.trip_details(params[:user_id], params[:id])
+
+    TripService.update_trip(params[:user_id], params[:id], trip_params)
+    redirect_to user_trip_path(@user, @trip.id)
+  rescue
+    flash[:error] = "Failed to update trip"
+    redirect_to edit_user_trip_path(@user, @trip.id)
+  end
+
+
+  private
+
+  def trip_params
+    params.permit(:name, :location, :start_date, :end_date, :total_budget)
   end
 end
