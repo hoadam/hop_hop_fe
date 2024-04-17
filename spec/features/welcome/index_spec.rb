@@ -21,7 +21,6 @@ RSpec.describe 'Welcome Page', type: :feature do
     it 'takes you to sign up' do
         visit root_path
 
-        save_and_open_page
         click_on ('Sign Up')
 
         expect(current_path).to eq(register_user_path)

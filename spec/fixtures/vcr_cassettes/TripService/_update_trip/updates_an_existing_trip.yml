@@ -35,21 +35,21 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"0b361cae6a24114f7ae61ad494c60ded"
+      - W/"a1c98f5cc850000e82a1c49a91aef0c2"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7a7588f3-33eb-4d27-a2dd-11d66656e142
+      - 4f623449-0279-4098-83dd-810590f4a3ca
       X-Runtime:
-      - '0.029577'
+      - '0.029842'
       Server-Timing:
-      - start_processing.action_controller;dur=0.00, sql.active_record;dur=10.69,
-        transaction.active_record;dur=11.49, instantiation.active_record;dur=0.09,
-        process_action.action_controller;dur=25.97
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=13.89,
+        transaction.active_record;dur=11.02, instantiation.active_record;dur=0.10,
+        process_action.action_controller;dur=26.25
       Content-Length:
       - '1663'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"361","type":"trip","attributes":{"name":"Trip To Japan","location":"Japan","status":"in_progress","total_budget":1000,"start_date":"04/20/2024","end_date":"04/30/2024","total_expenses":0},"relationships":{"daily_itineraries":{"data":[{"id":"2476","type":"daily_itinerary"},{"id":"2477","type":"daily_itinerary"},{"id":"2478","type":"daily_itinerary"},{"id":"2479","type":"daily_itinerary"},{"id":"2480","type":"daily_itinerary"},{"id":"2481","type":"daily_itinerary"},{"id":"2482","type":"daily_itinerary"},{"id":"2483","type":"daily_itinerary"},{"id":"2484","type":"daily_itinerary"},{"id":"2485","type":"daily_itinerary"},{"id":"2486","type":"daily_itinerary"}]}}},"included":[{"id":"2476","type":"daily_itinerary","attributes":{"trip_id":361,"date":"2024-04-20"}},{"id":"2477","type":"daily_itinerary","attributes":{"trip_id":361,"date":"2024-04-21"}},{"id":"2478","type":"daily_itinerary","attributes":{"trip_id":361,"date":"2024-04-22"}},{"id":"2479","type":"daily_itinerary","attributes":{"trip_id":361,"date":"2024-04-23"}},{"id":"2480","type":"daily_itinerary","attributes":{"trip_id":361,"date":"2024-04-24"}},{"id":"2481","type":"daily_itinerary","attributes":{"trip_id":361,"date":"2024-04-25"}},{"id":"2482","type":"daily_itinerary","attributes":{"trip_id":361,"date":"2024-04-26"}},{"id":"2483","type":"daily_itinerary","attributes":{"trip_id":361,"date":"2024-04-27"}},{"id":"2484","type":"daily_itinerary","attributes":{"trip_id":361,"date":"2024-04-28"}},{"id":"2485","type":"daily_itinerary","attributes":{"trip_id":361,"date":"2024-04-29"}},{"id":"2486","type":"daily_itinerary","attributes":{"trip_id":361,"date":"2024-04-30"}}]}'
-  recorded_at: Wed, 17 Apr 2024 05:02:19 GMT
+      string: '{"data":{"id":"403","type":"trip","attributes":{"name":"Trip To Japan","location":"Japan","status":"in_progress","total_budget":1000,"start_date":"04/20/2024","end_date":"04/30/2024","total_expenses":0},"relationships":{"daily_itineraries":{"data":[{"id":"2938","type":"daily_itinerary"},{"id":"2939","type":"daily_itinerary"},{"id":"2940","type":"daily_itinerary"},{"id":"2941","type":"daily_itinerary"},{"id":"2942","type":"daily_itinerary"},{"id":"2943","type":"daily_itinerary"},{"id":"2944","type":"daily_itinerary"},{"id":"2945","type":"daily_itinerary"},{"id":"2946","type":"daily_itinerary"},{"id":"2947","type":"daily_itinerary"},{"id":"2948","type":"daily_itinerary"}]}}},"included":[{"id":"2938","type":"daily_itinerary","attributes":{"trip_id":403,"date":"2024-04-20"}},{"id":"2939","type":"daily_itinerary","attributes":{"trip_id":403,"date":"2024-04-21"}},{"id":"2940","type":"daily_itinerary","attributes":{"trip_id":403,"date":"2024-04-22"}},{"id":"2941","type":"daily_itinerary","attributes":{"trip_id":403,"date":"2024-04-23"}},{"id":"2942","type":"daily_itinerary","attributes":{"trip_id":403,"date":"2024-04-24"}},{"id":"2943","type":"daily_itinerary","attributes":{"trip_id":403,"date":"2024-04-25"}},{"id":"2944","type":"daily_itinerary","attributes":{"trip_id":403,"date":"2024-04-26"}},{"id":"2945","type":"daily_itinerary","attributes":{"trip_id":403,"date":"2024-04-27"}},{"id":"2946","type":"daily_itinerary","attributes":{"trip_id":403,"date":"2024-04-28"}},{"id":"2947","type":"daily_itinerary","attributes":{"trip_id":403,"date":"2024-04-29"}},{"id":"2948","type":"daily_itinerary","attributes":{"trip_id":403,"date":"2024-04-30"}}]}'
+  recorded_at: Wed, 17 Apr 2024 05:10:40 GMT
 recorded_with: VCR 6.2.0
