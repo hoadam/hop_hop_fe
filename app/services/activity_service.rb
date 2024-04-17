@@ -5,7 +5,7 @@ class ActivityService
 
   def self.get_url(url, params = {})
     response = conn.get(url, params)
-    binding.pry
+
     JSON.parse(response.body, symbolize_names: true)[:data]
   end
 
@@ -16,25 +16,20 @@ class ActivityService
     end
   end
 
-  def self.activity_details(user_id, trip_id, daily_itinerary_id, activity_id)
-    json = get_url("trips/#{trip_id}/daily_itineraries/#{daily_itinerary_id}/activities/#{activity_id}", user_id: user_id)
-    Activity.from_json(json)
-  end
-
   def self.create_activity(user_id, trip_id, daily_itinerary_id, activity_params)
     response = conn.post("trips/#{trip_id}/daily_itineraries/#{daily_itinerary_id}/activities", activity: activity_params.merge(user_id: user_id))
-    binding.pry
+
     json = JSON.parse(response.body, symbolize_names: true)[:data]
     Activity.from_json(json)
   end
 
-  def self.update_trip(user_id, trip_id, daily_itinerary_id, activity_id, activity_params)
+  def self.update_activity(user_id, trip_id, daily_itinerary_id, activity_id, activity_params)
     response = conn.put("trips/#{trip_id}/daily_itineraries/#{daily_itinerary_id}/activities/#{activity_id}", activity: activity_params.merge(user_id: user_id))
     json = JSON.parse(response.body, symbolize_names: true)[:data]
     Activity.from_json(json)
   end
 
-  def self.delete_trip(user_id, trip_id, daily_itinerary_id, activity_id)
+  def self.delete_activity(user_id, trip_id, daily_itinerary_id, activity_id)
     response = conn.delete("trips/#{trip_id}/daily_itineraries/#{daily_itinerary_id}/activities/#{activity_id}", user_id: user_id)
     response.success?
   end
