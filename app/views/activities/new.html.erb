@@ -1,5 +1,7 @@
 <h1>Create Activity</h1>
-
+<div data-controller="activities">
+    <div id="searchForm">
+    </div>
 <%= form_with url: user_trip_daily_itinerary_activities_path(params[:user_id], params[:trip_id], params[:daily_itinerary_id]), data: {turbo: false}, local: true do |f| %>
     <%= f.label :name, "Activity Name" %>
     <%= f.text_field :name %>
@@ -15,3 +17,4 @@
 
     <%= f.submit "Create Activity" %>
 <% end %>
+</div>
