@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 RSpec.feature "UserProfile", type: :feature do
-  let!(:user) { create(:user, email: 'user@gmail.com', password: 'password123') }
-  let!(:past_trip) { create(:trip, user: user, name: 'Past Trip', start_date: 2.weeks.ago, end_date: 1.week.ago) }
-  let!(:current_trip) { create(:trip, user: user, name: 'Current Trip', start_date: Date.today, end_date: 1.week.from_now) }
+  user = User.create!(name: 'Selena', email: 'selena@example.com',
+  password: 'selena123', password_confirmation: 'selena123')
+  trip = Trip.create(user_id: user.id, name: 'Current Trip', start_date: DateTime.new(2024,12,10), end_date:DateTime.new(2024,12,30)) 
 
   it "User logs in and views their profile" do
     # User logs in
