@@ -1,11 +1,14 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
+  # Validations are now being handled by devise
+  # name is null: false now in db
+  # Validations interfere with updating existing users (If user does not want to change password, he can leave field blank in form)
     describe 'validations' do 
         it { should validate_presence_of(:name) }
-        it { should validate_presence_of(:email) }
-        it { should validate_presence_of(:password) }
-        it { should validate_presence_of(:password_confirmation) }
+    #     it { should validate_presence_of(:email) }
+    #     it { should validate_presence_of(:password) }
+    #     it { should validate_presence_of(:password_confirmation) }
     end
 
     describe 'has_secure_password' do

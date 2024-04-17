@@ -2,9 +2,11 @@
 <p>Hop Hop! - your ultimate travel planning companion. Enjoy your trip and let us take away the stress of planning for you</p>
 
 <% if user_signed_in? %>
-   <h2> <%= current_user.email%> </h2>
-   <%= button_to "Log Out", destroy_user_session_path, method: :delete %>
+   <p>Logged in as <strong> <%= current_user.email%> </p></strong>
+   <%= button_to "Edit Profile", edit_user_registration_path, method: :get, data:{turbo_method: :get} %>
+   <%= button_to "Log Out", destroy_user_session_path, method: :delete, data:{turbo_method: :delete} %>
 <%else%>
    <%= button_to "Log in", new_user_session_path %>
-   <%= button_to "Create Account", new_user_registration_path, method: :get %>
+   <%= button_to "Sign up", new_user_registration_path, method: :get %>
 <%end%>
+

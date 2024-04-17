@@ -10615,58 +10615,6 @@ http_interactions:
   recorded_at: Tue, 16 Apr 2024 19:00:16 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:3000/api/v1/trips
-    body:
-      encoding: UTF-8
-      string: trip%5Bend_date%5D=2024-04-30&trip%5Blocation%5D=Japan&trip%5Bname%5D=Trip+To+Japan&trip%5Bstart_date%5D=2024-04-20&trip%5Bstatus%5D=in_progress&trip%5Btotal_budget%5D=1000&trip%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"7915f044d4232ea06766b5cb498589d9"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - d099bb20-1401-44f4-bf13-e10b5147e076
-      X-Runtime:
-      - '0.043687'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.00, sql.active_record;dur=24.12,
-        transaction.active_record;dur=11.11, instantiation.active_record;dur=0.13,
-        process_action.action_controller;dur=39.21
-      Content-Length:
-      - '1691'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"755","type":"trip","attributes":{"name":"Trip To Japan","location":"Japan","start_date":"2024-04-20T00:00:00.000Z","end_date":"2024-04-30T00:00:00.000Z","status":"in_progress","total_budget":1000,"total_expenses":0},"relationships":{"daily_itineraries":{"data":[{"id":"8284","type":"daily_itinerary"},{"id":"8285","type":"daily_itinerary"},{"id":"8286","type":"daily_itinerary"},{"id":"8287","type":"daily_itinerary"},{"id":"8288","type":"daily_itinerary"},{"id":"8289","type":"daily_itinerary"},{"id":"8290","type":"daily_itinerary"},{"id":"8291","type":"daily_itinerary"},{"id":"8292","type":"daily_itinerary"},{"id":"8293","type":"daily_itinerary"},{"id":"8294","type":"daily_itinerary"}]}}},"included":[{"id":"8284","type":"daily_itinerary","attributes":{"trip_id":755,"date":"2024-04-20"}},{"id":"8285","type":"daily_itinerary","attributes":{"trip_id":755,"date":"2024-04-21"}},{"id":"8286","type":"daily_itinerary","attributes":{"trip_id":755,"date":"2024-04-22"}},{"id":"8287","type":"daily_itinerary","attributes":{"trip_id":755,"date":"2024-04-23"}},{"id":"8288","type":"daily_itinerary","attributes":{"trip_id":755,"date":"2024-04-24"}},{"id":"8289","type":"daily_itinerary","attributes":{"trip_id":755,"date":"2024-04-25"}},{"id":"8290","type":"daily_itinerary","attributes":{"trip_id":755,"date":"2024-04-26"}},{"id":"8291","type":"daily_itinerary","attributes":{"trip_id":755,"date":"2024-04-27"}},{"id":"8292","type":"daily_itinerary","attributes":{"trip_id":755,"date":"2024-04-28"}},{"id":"8293","type":"daily_itinerary","attributes":{"trip_id":755,"date":"2024-04-29"}},{"id":"8294","type":"daily_itinerary","attributes":{"trip_id":755,"date":"2024-04-30"}}]}'
-  recorded_at: Tue, 16 Apr 2024 22:14:43 GMT
-- request:
-    method: post
     uri: http://127.0.0.1:3000/api/v1/trips/755/daily_itineraries/8284/activities
     body:
       encoding: UTF-8
@@ -10984,4 +10932,1013 @@ http_interactions:
         Planet"}},{"id":"213","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
         Planet"}}]}'
   recorded_at: Tue, 16 Apr 2024 22:14:43 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/773/daily_itineraries/8482/activities
+    body:
+      encoding: UTF-8
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"e74a70b58f7764640e90e4de5de6b921"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 72721fad-4e2b-441f-91e8-c01cf9cc2ba6
+      X-Runtime:
+      - '0.009283'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=2.22, instantiation.active_record;dur=0.07,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=1.91,
+        process_action.action_controller;dur=5.35
+      Content-Length:
+      - '164'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"217","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Wed, 17 Apr 2024 02:26:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/773/daily_itineraries/8482/activities
+    body:
+      encoding: UTF-8
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"998f79233af54a5ff8604633cdc6d7c4"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 933ee81c-39a0-4030-891a-e1f6590ce8bb
+      X-Runtime:
+      - '0.006529'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.11, instantiation.active_record;dur=0.06,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=0.86,
+        process_action.action_controller;dur=3.01
+      Content-Length:
+      - '164'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"218","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Wed, 17 Apr 2024 02:26:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/773/daily_itineraries/8482/activities
+    body:
+      encoding: UTF-8
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"a4c5f0ceffd7278b0faae500c84a404e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8f8b7ca7-8036-4efa-89d6-f61ab080bddd
+      X-Runtime:
+      - '0.005972'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.08, instantiation.active_record;dur=0.05,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=0.76,
+        process_action.action_controller;dur=2.70
+      Content-Length:
+      - '164'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"219","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Wed, 17 Apr 2024 02:26:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/773/daily_itineraries/8482/activities
+    body:
+      encoding: UTF-8
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"7d437697659c24a378a7c3cbd916a514"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 515648b5-b046-4997-84fa-eff0b5834a06
+      X-Runtime:
+      - '0.006386'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.31, instantiation.active_record;dur=0.05,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=0.84,
+        process_action.action_controller;dur=3.00
+      Content-Length:
+      - '164'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"220","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Wed, 17 Apr 2024 02:26:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/773/daily_itineraries/8482/activities
+    body:
+      encoding: UTF-8
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"70568a78d9b0fd3558835eec4770d718"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0c2122f1-7cb9-4b09-8e8e-5a79301e1670
+      X-Runtime:
+      - '0.007583'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.54, instantiation.active_record;dur=0.06,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=1.12,
+        process_action.action_controller;dur=4.25
+      Content-Length:
+      - '164'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"221","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Wed, 17 Apr 2024 02:26:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:3000/api/v1/trips/773/daily_itineraries/8482/activities?user_id=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"617e88a45a9e96f677be1dca9a76b0aa"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 454276c2-8176-49a6-a174-5517ae1b74b0
+      X-Runtime:
+      - '0.005815'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.50, instantiation.active_record;dur=0.12,
+        process_action.action_controller;dur=2.25
+      Content-Length:
+      - '790'
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"217","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}},{"id":"218","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}},{"id":"219","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}},{"id":"220","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}},{"id":"221","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}]}'
+  recorded_at: Wed, 17 Apr 2024 02:26:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/791/daily_itineraries/8680/activities
+    body:
+      encoding: UTF-8
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"422b518e4cc0631b576ac583341cca89"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 33815ffd-1aec-40d2-9bec-efce751979ef
+      X-Runtime:
+      - '0.008173'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.46, instantiation.active_record;dur=0.05,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=1.20,
+        process_action.action_controller;dur=3.78
+      Content-Length:
+      - '164'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"225","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Wed, 17 Apr 2024 02:50:44 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/791/daily_itineraries/8680/activities
+    body:
+      encoding: UTF-8
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"6ef79896b484ef374382afe0f1b3f2b6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1b9d0af9-6123-4d35-a1c7-7ec480a7d910
+      X-Runtime:
+      - '0.008214'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.86, instantiation.active_record;dur=0.06,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=1.40,
+        process_action.action_controller;dur=3.72
+      Content-Length:
+      - '164'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"226","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Wed, 17 Apr 2024 02:50:44 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/791/daily_itineraries/8680/activities
+    body:
+      encoding: UTF-8
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"6bb91319f1c12a39547b13a69d6252a5"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0f7b969b-68ed-4104-9a3c-345b29b4348f
+      X-Runtime:
+      - '0.007191'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.46, instantiation.active_record;dur=0.06,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=1.20,
+        process_action.action_controller;dur=3.46
+      Content-Length:
+      - '164'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"227","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Wed, 17 Apr 2024 02:50:44 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/791/daily_itineraries/8680/activities
+    body:
+      encoding: UTF-8
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"21d486904ff436c5cce75b8ae9ee1c68"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ba64596c-6ba0-433b-8d7e-b646b841bcf9
+      X-Runtime:
+      - '0.007704'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.84, instantiation.active_record;dur=0.07,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=1.51,
+        process_action.action_controller;dur=3.86
+      Content-Length:
+      - '164'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"228","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Wed, 17 Apr 2024 02:50:44 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/791/daily_itineraries/8680/activities
+    body:
+      encoding: UTF-8
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"fc32da9c94574862eedf99e693f185fa"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6e5adcf8-2ee1-4d03-a5d0-0984453002be
+      X-Runtime:
+      - '0.007149'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.16, instantiation.active_record;dur=0.08,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=0.86,
+        process_action.action_controller;dur=3.23
+      Content-Length:
+      - '164'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"229","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Wed, 17 Apr 2024 02:50:44 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:3000/api/v1/trips/791/daily_itineraries/8680/activities?user_id=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"c3c028481c28f2d3ef80761ef17a0b55"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6273f273-8347-4816-92e6-c300b8596ed6
+      X-Runtime:
+      - '0.008050'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.81, instantiation.active_record;dur=0.13,
+        process_action.action_controller;dur=2.85
+      Content-Length:
+      - '790'
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"225","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}},{"id":"226","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}},{"id":"227","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}},{"id":"228","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}},{"id":"229","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}]}'
+  recorded_at: Wed, 17 Apr 2024 02:50:44 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips
+    body:
+      encoding: UTF-8
+      string: trip%5Bend_date%5D=2024-04-30&trip%5Blocation%5D=Japan&trip%5Bname%5D=Trip+To+Japan&trip%5Bstart_date%5D=2024-04-20&trip%5Bstatus%5D=in_progress&trip%5Btotal_budget%5D=1000&trip%5Buser_id%5D=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"858a7647c356390581f04635e37b4666"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 13cf525e-c2f5-47ba-a291-c6d69b82829b
+      X-Runtime:
+      - '0.030133'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=10.44,
+        transaction.active_record;dur=10.11, instantiation.active_record;dur=0.10,
+        process_action.action_controller;dur=26.08
+      Content-Length:
+      - '1691'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"809","type":"trip","attributes":{"name":"Trip To Japan","location":"Japan","start_date":"2024-04-20T00:00:00.000Z","end_date":"2024-04-30T00:00:00.000Z","status":"in_progress","total_budget":1000,"total_expenses":0},"relationships":{"daily_itineraries":{"data":[{"id":"8878","type":"daily_itinerary"},{"id":"8879","type":"daily_itinerary"},{"id":"8880","type":"daily_itinerary"},{"id":"8881","type":"daily_itinerary"},{"id":"8882","type":"daily_itinerary"},{"id":"8883","type":"daily_itinerary"},{"id":"8884","type":"daily_itinerary"},{"id":"8885","type":"daily_itinerary"},{"id":"8886","type":"daily_itinerary"},{"id":"8887","type":"daily_itinerary"},{"id":"8888","type":"daily_itinerary"}]}}},"included":[{"id":"8878","type":"daily_itinerary","attributes":{"trip_id":809,"date":"2024-04-20"}},{"id":"8879","type":"daily_itinerary","attributes":{"trip_id":809,"date":"2024-04-21"}},{"id":"8880","type":"daily_itinerary","attributes":{"trip_id":809,"date":"2024-04-22"}},{"id":"8881","type":"daily_itinerary","attributes":{"trip_id":809,"date":"2024-04-23"}},{"id":"8882","type":"daily_itinerary","attributes":{"trip_id":809,"date":"2024-04-24"}},{"id":"8883","type":"daily_itinerary","attributes":{"trip_id":809,"date":"2024-04-25"}},{"id":"8884","type":"daily_itinerary","attributes":{"trip_id":809,"date":"2024-04-26"}},{"id":"8885","type":"daily_itinerary","attributes":{"trip_id":809,"date":"2024-04-27"}},{"id":"8886","type":"daily_itinerary","attributes":{"trip_id":809,"date":"2024-04-28"}},{"id":"8887","type":"daily_itinerary","attributes":{"trip_id":809,"date":"2024-04-29"}},{"id":"8888","type":"daily_itinerary","attributes":{"trip_id":809,"date":"2024-04-30"}}]}'
+  recorded_at: Wed, 17 Apr 2024 02:51:01 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/809/daily_itineraries/8878/activities
+    body:
+      encoding: UTF-8
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"0a2e2f7020267507d9898d820db17a5d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ceb529f0-1123-4a6d-965b-7526edaf49c0
+      X-Runtime:
+      - '0.007952'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.35, instantiation.active_record;dur=0.06,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=1.09,
+        process_action.action_controller;dur=3.73
+      Content-Length:
+      - '164'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"233","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Wed, 17 Apr 2024 02:51:01 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/809/daily_itineraries/8878/activities
+    body:
+      encoding: UTF-8
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"9d3849829a0a77bccbbdc93c123e3940"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - df6a10a7-10c4-4da2-a2c3-3611668e680d
+      X-Runtime:
+      - '0.006861'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.21, instantiation.active_record;dur=0.05,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=0.94,
+        process_action.action_controller;dur=3.35
+      Content-Length:
+      - '164'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"234","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Wed, 17 Apr 2024 02:51:01 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/809/daily_itineraries/8878/activities
+    body:
+      encoding: UTF-8
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"6a14cf9ba18ddcc1331d97143a180a7a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4a5d6141-9306-40dc-959a-5a0dad67d011
+      X-Runtime:
+      - '0.006562'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.15, instantiation.active_record;dur=0.05,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=0.84,
+        process_action.action_controller;dur=2.89
+      Content-Length:
+      - '164'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"235","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Wed, 17 Apr 2024 02:51:01 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/809/daily_itineraries/8878/activities
+    body:
+      encoding: UTF-8
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"c8e650781864ab93e424a8f2789e5d7b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1d20d502-e28b-4085-bde4-4e23c8333e54
+      X-Runtime:
+      - '0.006707'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.94, instantiation.active_record;dur=0.05,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=1.32,
+        process_action.action_controller;dur=3.63
+      Content-Length:
+      - '164'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"236","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Wed, 17 Apr 2024 02:51:01 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/809/daily_itineraries/8878/activities
+    body:
+      encoding: UTF-8
+      string: activity%5Bname%5D=Teamlab+Planet&activity%5Buser_id%5D=1
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"2c592d42ce1ef57199ae0f04e5559935"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d68ab6c8-5902-4e88-acbc-31ae1b54f45a
+      X-Runtime:
+      - '0.006046'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.00, instantiation.active_record;dur=0.04,
+        unpermitted_parameters.action_controller;dur=0.00, transaction.active_record;dur=0.84,
+        process_action.action_controller;dur=2.88
+      Content-Length:
+      - '164'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"237","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}}'
+  recorded_at: Wed, 17 Apr 2024 02:51:01 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:3000/api/v1/trips/809/daily_itineraries/8878/activities?user_id=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"80e394b88f4f953cc248d2d56576d625"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c8ef3d61-6157-447b-be51-e07cd22266ef
+      X-Runtime:
+      - '0.005212'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.42, instantiation.active_record;dur=0.09,
+        process_action.action_controller;dur=1.92
+      Content-Length:
+      - '790'
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"233","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}},{"id":"234","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}},{"id":"235","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}},{"id":"236","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}},{"id":"237","type":"activity","attributes":{"address":null,"description":null,"lat":null,"lon":null,"expenses":null,"rating":null,"name":"Teamlab
+        Planet"}}]}'
+  recorded_at: Wed, 17 Apr 2024 02:51:01 GMT
 recorded_with: VCR 6.2.0

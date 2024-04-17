@@ -7,7 +7,7 @@ RSpec.describe 'Welcome Page', type: :feature do
         expect(page).to have_content('Hop Hop')
         expect(page).to have_content('Hop Hop! - your ultimate travel planning companion.')
         expect(page).to have_button('Log in')
-        expect(page).to have_button('Create Account')
+        expect(page).to have_button('Sign up')
         expect(page).not_to have_button('Log Out')
     end
 
@@ -22,7 +22,7 @@ RSpec.describe 'Welcome Page', type: :feature do
     it 'takes you to sign up' do 
         visit root_path
 
-        click_on ('Create Account')
+        click_on ('Sign up')
 
         expect(current_path).to eq(new_user_registration_path)
     end

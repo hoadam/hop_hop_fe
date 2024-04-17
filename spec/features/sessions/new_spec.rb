@@ -11,7 +11,7 @@ RSpec.describe 'Log in', type: :feature do
       fill_in 'Password', with: 'selena123'
       click_on 'Log in'
 
-      expect(current_path).to eq(user_path(user))
+      expect(current_path).to eq(root_path)
     end
 
     it 'user can sign in with Google' do
@@ -41,7 +41,7 @@ RSpec.describe 'Log in', type: :feature do
       click_on 'Log in'
 
       expect(current_path).to eq(new_user_session_path)
-      expect(page).to have_content('Invalid Email or password.')
+      expect(page).to have_content('Invalid email or password')
     end
   end
 end
