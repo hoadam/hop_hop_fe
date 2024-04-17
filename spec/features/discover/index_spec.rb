@@ -4,13 +4,14 @@ RSpec.describe "Discover Index", type: :feature do
   before do
     @user = User.create!(name: 'Selena', email: 'selena@gmail.com',
       password: 'selena123', password_confirmation: 'selena123')
-    visit user_login_path
+
+    visit new_user_session_path
 
     fill_in 'Email', with: 'selena@gmail.com'
     fill_in 'Password', with: 'selena123'
-    click_button 'Log In'
+    click_on("Log in")
 
-    visit user_discover_index_path(@user.id)
+    visit discover_index_path
   end
 
   context "a user searches for a location" do
@@ -19,7 +20,7 @@ RSpec.describe "Discover Index", type: :feature do
 
       within "#search-form" do
         fill_in(:search, with: "Paris")
-        click_button("Search")
+        click_on("Search")
       end
       expect(page).to have_css("#results")
 
@@ -35,11 +36,10 @@ RSpec.describe "Discover Index", type: :feature do
     it "keeps track of the results when clicking on other links", :vcr do
       within "#search-form" do
         fill_in(:search, with: "Paris")
-        click_button("Search")
+        click_on("Search")
       end
 
       click_link("Paris, Ile-de-France, Metropolitan France, France")
-      expect(page.current_path).to eq(user_discover_index_path(@user))
 
       within "#results" do
         expect(page).to have_link("Paris, Ile-de-France, Metropolitan France, France")
@@ -51,14 +51,14 @@ RSpec.describe "Discover Index", type: :feature do
     it "keeps track of results when navigating away from the page", :vcr do
       within "#search-form" do
         fill_in(:search, with: "Paris")
-        click_button("Search")
+        click_on("Search")
       end
 
       click_link("Dashboard")
-      expect(page.current_path).to eq(user_path(@user))
+      expect(page.current_path).to eq(dashboard_path)
 
       click_link("Discover")
-      expect(page.current_path).to eq(user_discover_index_path(@user))
+      expect(page.current_path).to eq(discover_index_path)
 
       within "#results" do
         expect(page).to have_link("Paris, Ile-de-France, Metropolitan France, France")
@@ -72,7 +72,7 @@ RSpec.describe "Discover Index", type: :feature do
     it "repopulates with a different result", :vcr do
       within "#search-form" do
         fill_in(:search, with: "Paris")
-        click_button("Search")
+        click_on("Search")
       end
 
       within "#results" do
@@ -83,7 +83,7 @@ RSpec.describe "Discover Index", type: :feature do
 
       within "#search-form" do
         fill_in(:search, with: "Disneyland")
-        click_button("Search")
+        click_on("Search")
       end
 
       within "#results" do

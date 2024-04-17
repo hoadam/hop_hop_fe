@@ -5,7 +5,7 @@ RSpec.describe 'discover page', type: :feature do
     before(:each) do
       @user = User.create!(name: 'Selena', email: 'selena@gmail.com',
       password: 'selena123', password_confirmation: 'selena123')
-      visit user_login_path
+      visit new_user_session_path
 
       fill_in 'Email', with: 'selena@gmail.com'
       fill_in 'Password', with: 'selena123'
