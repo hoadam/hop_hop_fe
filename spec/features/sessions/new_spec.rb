@@ -3,8 +3,11 @@ require 'rails_helper'
 RSpec.describe 'Log in', type: :feature do
   describe 'When user visits log in page' do
     it 'shows a form to fill in, after the user clicks on "Login" the user is taken to their dashboard page' do
-      user = User.create!(name: 'Selena', email: 'selena@gmail.com',
-                           password: 'selena123', password_confirmation: 'selena123')
+      user = User.create!(name: 'Selena', 
+                          email: 'selena@gmail.com',
+                          password: 'selena123',
+                          password_confirmation: 'selena123')
+
       visit new_user_session_path
 
       fill_in 'Email', with: 'selena@gmail.com'
@@ -12,6 +15,7 @@ RSpec.describe 'Log in', type: :feature do
       click_on 'Log in'
 
       expect(current_path).to eq(root_path)
+      expect(page).to have_content("Signed in successfully")
     end
 
     it 'user can sign in with Google' do
