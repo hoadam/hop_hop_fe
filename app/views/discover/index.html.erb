@@ -1,4 +1,4 @@
-<div id="searchResults" data-info="<%= @results %>"></div>
+<div id="searchResults" data-info=" <%= @json_data %>"></div>
 <h2>What are you searching for?</h2>
 <%= form_with url: "/users/#{current_user.id}/discover", method: :get do |form| %>
 
@@ -19,8 +19,5 @@
     </li>
   <% end %>
 </ul>
-<div id="searchResults" data-info=" <%= @json_datajn %>"></div>
 <%= render "/shared/map" %>
-
-<!-- prettier-ignore -->
 
