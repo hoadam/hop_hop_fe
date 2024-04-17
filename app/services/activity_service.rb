@@ -13,10 +13,11 @@ class ActivityService < HophopService
   end
 
   def self.create_activity(user_id, trip_id, daily_itinerary_id, activity_params)
+    activity_params = activity_params.merge(user_id: user_id).to_json
     response = conn.post("trips/#{trip_id}/daily_itineraries/#{daily_itinerary_id}/activities") do |req|
       req.body = {
-        activity: activity_params.merge(user_id: user_id)
-  }.to_json
+        activity: JSON.parse(activity_params)
+      }
     end
 
     json = JSON.parse(response.body, symbolize_names: true)[:data]

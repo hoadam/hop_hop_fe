@@ -1,0 +1,8 @@
+<%= simple_form_for :activities, url: path, method: method, data: { turbo: false } do |f| %>
+  <%= f.input :name, label: 'Activity Name', :label_html => { :class => 'text-white quicksand weight-bold' } %>
+  <%= f.input :address, :label_html => { :class => 'text-white quicksand weight-bold' } %>
+  <%= f.input :expenses, as: :integer, :label_html => { :class => 'text-white quicksand weight-bold' } %>
+  <%= f.input :description, :label_html => { :class => 'text-white quicksand weight-bold' } %>
+
+  <%= f.button :submit, button %>
+<% end %>
