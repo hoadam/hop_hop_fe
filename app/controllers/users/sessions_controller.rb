@@ -6,9 +6,7 @@ class Users::SessionsController < Devise::SessionsController
     self.resource = warden.authenticate!(auth_options.merge(strategy: :password_authenticable))
 
     if resource && resource.active_for_authentication?
-      #If resource has 2FA enabled
       if resource.otp_required_for_login
-        # generate a signed token for user ID.
         verifier = Rails.application.message_verifier(:otp_session)
         token = verifier.generate(resource.id)
         session[:otp_token] = token
@@ -17,15 +15,12 @@ class Users::SessionsController < Devise::SessionsController
 
         redirect_to user_otp_path and return
       else
-        # 2FA is not required for login
         set_flash_message(:notice, :signed_in)
         sign_in(resource_name, resource)
         yield resource if block_given?
         respond_with resource, location: after_sign_in_path_for(resource) and return 
       end
     end
-
-    #if user authentication fails
     flash[:alert] = "Invalid email or password."
     redirect_to new_user_session_path
   end
