@@ -1,5 +1,7 @@
 <h1>Update Accommodation</h1>
-
+<div data-controller="accommodations">
+    <div id="searchForm">
+    </div>
 <%= form_with url: user_trip_accommodation_path(params[:user_id], params[:trip_id], params[:id]), method: :patch, data: {turbo: false}, local: true do |f| %>
     <%= f.label :name, "Accommodation Name" %>
     <%= f.text_field :name, value: @accommodation.name %>
@@ -18,3 +20,4 @@
 
     <%= f.submit "Update Accommodation" %>
 <% end %>
+</div>
