@@ -2,16 +2,24 @@
 
 <p>Location: <%= @trip.location %></p>
 <p><%= @trip.start_date %> - <%= @trip.end_date %></p>
+
+<strong>Total Budget</strong>
+    <p><%= @trip.total_budget %></p>
+
+<strong>Total Expenses</strong>
+    <p><%= @trip.total_expenses %></p>
+
 <div><%= link_to 'Edit', edit_user_trip_path(@user, @trip.id) %></div>
 
 <h2>Accommodation</h2>
+    <div><%= link_to 'Create Accommodation', new_user_trip_accommodation_path(@user, @trip.id) %></div>
+
     <% @accommodations.each do |accommodation| %>
         <p><%= accommodation.name %></p>
         <p><%= accommodation.address %></p>
         <p>Check In: <%= accommodation.check_in %></p>
         <p>Check Out: <%= accommodation.check_out %></p>
         <div><%= link_to 'Edit', edit_user_trip_accommodation_path(@user, @trip.id, accommodation.id) %></div>
-        <div><%= link_to 'Create Accommodation', new_user_trip_accommodation_path(@user, @trip.id) %></div>
         <div><%= button_to 'Delete', user_trip_accommodation_path(@user, @trip.id, accommodation.id), method: :delete %></div>
     <% end %>
 
@@ -33,8 +41,3 @@
         </section>
     <% end %>
 
-<strong>Total Budget</strong>
-    <p><%= @trip.total_budget %></p>
-
-<strong>Total Expenses</strong>
-    <p><%= @trip.total_expenses %></p>
