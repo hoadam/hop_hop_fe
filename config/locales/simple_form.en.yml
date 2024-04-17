@@ -2,9 +2,13 @@ en:
   simple_form:
     "yes": 'Yes'
     "no": 'No'
+    placeholders:
+      trip:
+        location: "Where are you going?"
+        total_budget: "How much are you spending?"
     required:
       text: 'required'
-      mark: '*'
+      mark: ''
       # You can uncomment the line below if you need to overwrite the whole required html.
       # When using html, text and mark won't be used.
       # html: '<abbr title="required">*</abbr>'

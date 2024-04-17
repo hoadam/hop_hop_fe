@@ -1,20 +1,11 @@
 <h1 class="text-6xl">Create a New Trip!</h1>
 
-<%= form_with url: trips_path(current_user.id), method: :post, data: { turbo: false } do |f| %> 
-<%= f.label :name, 'Trip Name' %>
-<%= f.text_field :name %> <br />
+<%= simple_form_for :trip, url: trips_path(current_user.id), method: :post, data: { turbo: false } do |f| %>
+  <%= f.input :name, label: 'Trip Name' %>
+  <%= f.input :location %>
+  <%= f.input :start_date, as: :date %>
+  <%= f.input :end_date, as: :date %>
+  <%= f.input :total_budget, as: :integer %>
 
-<%= f.label :location %>
-<%= f.text_field :location %> <br />
-
-<%= f.label :start_date %>
-<%= f.date_field :start_date %> <br />
-
-<%= f.label :end_date %>
-<%= f.date_field :end_date %> <br />
-
-<%= f.label :total_budget %>
-<%= f.number_field :total_budget %> <br />
-
-  <%= f.submit "Submit" %>
+  <%= f.button :submit %>
 <% end %>
