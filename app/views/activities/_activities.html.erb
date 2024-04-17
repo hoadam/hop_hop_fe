@@ -1,8 +1,8 @@
-<%= simple_form_for :activities, url: path, method: method, data: { turbo: false } do |f| %>
-  <%= f.input :name, label: 'Activity Name', :label_html => { :class => 'text-white quicksand weight-bold' } %>
-  <%= f.input :address, :label_html => { :class => 'text-white quicksand weight-bold' } %>
-  <%= f.input :expenses, as: :integer, :label_html => { :class => 'text-white quicksand weight-bold' } %>
-  <%= f.input :description, :label_html => { :class => 'text-white quicksand weight-bold' } %>
+<%= simple_form_for :activities, url: path, method: method, html: { class: "activity"},  data: { turbo: false } do |f| %>
+  <%= f.input :name, label: 'Activity Name', input_html: { value: activity_name }, :label_html => { :class => 'text-white quicksand weight-bold' } %>
+  <%= f.input :address, input_html: { value: activity_address }, :label_html => { :class => 'text-white quicksand weight-bold' } %>
+  <%= f.input :expenses, as: :integer, input_html: { value: activity_expenses }, :label_html => { :class => 'text-white quicksand weight-bold' } %>
+  <%= f.input :description, input_html: { value: activity_description }, :label_html => { :class => 'text-white quicksand weight-bold' } %>
 
   <%= f.button :submit, button %>
 <% end %>
