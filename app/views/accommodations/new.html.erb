@@ -3,9 +3,14 @@
 
   <div class="container">
     <%= render partial: "accommodations", locals: {
-      path: trip_accommodations_path(params[:trip_id]),
-      method: :post,
-      button: "Create Accommodation"
+                                          path: trip_accommodations_path(params[:trip_id]),
+                                          method: :post,
+                                          name: "Accommodation Name",
+                                          address: "Address",
+                                          check_in: "",
+                                          check_out: "",
+                                          expenses: 0,
+                                          button: "Create Accommodation"
 } %>
   </div>
 </div>
