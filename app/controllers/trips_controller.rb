@@ -22,7 +22,7 @@ class TripsController < ApplicationController
   def create
     TripService.create_trip(current_user.id, trip_params)
 
-    redirect_to user_path(current_user.id)
+    redirect_to dashboard_path(current_user.id)
   end
 
   def update
@@ -36,7 +36,7 @@ class TripsController < ApplicationController
 
   def destroy
     TripService.delete_trip(current_user.id, params[:id] )
-    redirect_to user_path(current_user.id)
+    redirect_to dashboard_path(current_user.id)
   end
 
 
