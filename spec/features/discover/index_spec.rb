@@ -30,6 +30,16 @@ RSpec.describe "Discover Index", type: :feature do
         expect(page).to have_link("Town of Paris, Oneida County, New York, United States")
       end
     end
+
+    it "renders an error when no results show", :vcr do
+      within "#search-form" do
+        fill_in(:search, with: "Big Air Chandler")
+        click_on("Search")
+      end
+
+      expect(page).to have_no_css("#results")
+      expect(page).to have_content("Sorry, couldn't find Big Air Chandler, try again.")
+    end
   end
 
   context "a user navigates away from the page" do
