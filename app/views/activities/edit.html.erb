@@ -1,0 +1,17 @@
+<h1>Edit Activity</h1>
+
+<%= form_with url: user_trip_daily_itinerary_activity_path(params[:user_id], params[:trip_id], params[:daily_itinerary_id], params[:id]), method: :patch, data: {turbo: false}, local: true do |f| %>
+    <%= f.label :name, "Activity Name" %>
+    <%= f.text_field :name, value: @activity.name %>
+
+    <%= f.label :address, "Address" %>
+    <%= f.text_field :address, value: @activity.address %>
+
+    <%= f.label :expenses, "Expense" %>
+    <%= f.text_field :expenses, value: @activity.expenses %>
+
+    <%= f.label :description, "Description" %>
+    <%= f.date_field :description, value: @activity.description %>
+
+    <%= f.submit "Update Activity" %>
+<% end %>

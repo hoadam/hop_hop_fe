@@ -17,8 +17,8 @@ class Accommodation
     @lon = lon
     @type_of_accommodation = type_of_accommodation
     @expenses = expenses
-    @check_in = check_in
-    @check_out = check_out
+    @check_in = Date.parse(check_in) if check_in
+    @check_out = Date.parse(check_out) if check_out
   end
 
   def self.from_json(json)

@@ -1,0 +1,20 @@
+<h1>Create Accommodation</h1>
+
+<%= form_with url: user_trip_accommodations_path(params[:user_id], params[:trip_id]), data: {turbo: false}, local: true do |f| %>
+    <%= f.label :name, "Accommodation Name" %>
+    <%= f.text_field :name %>
+
+    <%= f.label :address, "Address" %>
+    <%= f.text_field :address %>
+
+    <%= f.label :check_in, "Check In" %>
+    <%= f.date_field :check_in %>
+
+    <%= f.label :check_out, "Check Out" %>
+    <%= f.date_field :check_out %>
+
+    <%= f.label :expenses, "Expenses" %>
+    <%= f.text_field :expenses %>
+
+    <%= f.submit "Create Accommodation" %>
+<% end %>
