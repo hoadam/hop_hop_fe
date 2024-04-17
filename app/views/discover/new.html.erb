@@ -1,14 +1,7 @@
-<h1>New Search</h1>
-  <%= form_with url: "/users/#{current_user.id}/discover", method: :get do |form| %>
+<%= form_with url: "/users/#{current_user.id}/discover", method: :get do |form| %>
 
-    <%= form.label :search, "Search for a place to discover:" %>
-    <%= text_field_tag(:search, params[:search]) %>
-  <br />
-    <%= form.label :latitude %>
-    <%= form.text_field :latitude %>
-  <br />
-    <%= form.label :longitude %>
-    <%= form.text_field :longitude %>
-  <br />
-    <%= form.submit "Search" %>
-  <% end %>
+<%= form.label :search, "Search for a place to discover:" %>
+<%= text_field_tag(:search, params[:search]) %>
+<br />
+<%= form.submit "Search" %>
+<% end %>

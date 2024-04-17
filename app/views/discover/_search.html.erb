@@ -1,15 +1,6 @@
-<%= turbo_frame_tag "search" do %>
   <%= form_with url: "/users/#{current_user.id}/discover", method: :get do |form| %>
-
-  <%= form.label :search, "Search for a place to discover:" %>
-  <%= text_field_tag(:search, params[:search]) %>
-
-  <%= form.label :latitude %>
-  <%= form.text_field :latitude %>
-
-  <%= form.label :longitude %>
-  <%= form.text_field :longitude %>
-
-  <%= form.submit "Search" %>
+    <%= form.label :search, "Search for a place to discover:" %>
+    <%= text_field_tag(:search, params[:search]) %>
+    <br />
+    <%= form.submit "Search" %>
   <% end %>
-<% end %>
