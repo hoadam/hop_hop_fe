@@ -1,8 +1,8 @@
 class DiscoverController < ApplicationController
+
   def index
-    @user = User.find(params[:user_id])
-    @search = params[:search]
-    @results = search_location
+    search_location_objects
+    json_data
   end
 
   def new
@@ -11,9 +11,17 @@ class DiscoverController < ApplicationController
   def create
   end
 
-  def search_location
-    results = Geocoder.search(params[:search])
-    results.map{|result| Search.new(result.to_json)}
+  private
+  def find_location
+    Geocoder.search(params[:search])
+  end
+
+  def json_data
+    @json_data = find_location.to_json
+  end
+
+  def search_location_objects
+    @search_objects = find_location.map{|result| Search.new(result.to_json)}
   end
 end
   #Adding turboframe tag will not send the session[:search_results]

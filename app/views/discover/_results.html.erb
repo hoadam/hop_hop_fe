@@ -1,0 +1,7 @@
+  <ul>
+    <% @search_results.each do |search_result| %>
+      <li><%= link_to "#{search_result.name} at #{search_result.address}", "#", data: { turbo_method: :get } %>
+      </li>
+    <% end %>
+  </ul>
+

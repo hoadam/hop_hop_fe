@@ -1,12 +1,25 @@
 <div id="searchResults" data-info="<%= @results %>"></div>
-<h2>Which place are you searching for?</h2>
+<h2>What are you searching for?</h2>
+<%= form_with url: "/users/#{current_user.id}/discover", method: :get do |form| %>
+
+<%= form.label :search, "Search for a place to discover:" %>
+<%= text_field_tag(:search, params[:search]) %>
+<br />
+<%= form.label :latitude %>
+<%= form.text_field :latitude %>
+<br />
+<%= form.label :longitude %>
+<%= form.text_field :longitude %>
+<br />
+<%= form.submit "Search" %>
+<% end %>
 <ul>
-  <% @results.each do |result| %>
-    <li>
-      <%= link_to "#{result.name} in #{result.address}", user_discover_path(current_user.id), data: { turbo_method: :get } %>
+  <% @search_objects.each do |search_result| %>
+    <li><%= link_to "#{search_result.name} at #{search_result.address}", "#", data: { turbo_method: :get } %>
     </li>
   <% end %>
 </ul>
+<div id="searchResults" data-info=" <%= @json_datajn %>"></div>
 <%= render "/shared/map" %>
 
 <!-- prettier-ignore -->
