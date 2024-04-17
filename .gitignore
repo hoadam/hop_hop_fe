@@ -45,3 +45,24 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+# Ignore VCR files
+
+# Ignore bundler config
+/bin
+/.bundle
+/Gemfile*.lock
+
+# Ignore all of the generated gem stuff
+/pkg
+/*.gem
+
+# Ignore all bundler caching
+/vendor/cache
+/vendor/bundle
+
+# Ignore documentation cache and generated files
+/.yardoc/
+/_yardoc/
+/doc/
+/rdoc/
