@@ -1,6 +1,7 @@
 class TripService < HophopService
   def self.get_trips(user_id)
     response = get_url('trips', user_id: user_id)
+
     return [] if response[:data].blank?
 
     response[:data].map do |json|
@@ -27,6 +28,7 @@ class TripService < HophopService
   def self.create_trip(user_id, trip_params)
     response = conn.post("trips", trip: trip_params.merge(user_id: user_id))
     json = JSON.parse(response.body, symbolize_names: true)
+
     Trip.from_json(json)
   end
 
