@@ -1,7 +1,7 @@
 class DiscoverController < ApplicationController
 
   def index
-    search_location_objects
+    filtered_search_objects
     json_data
   end
 
@@ -21,7 +21,11 @@ class DiscoverController < ApplicationController
   end
 
   def search_location_objects
-    @search_objects = find_location.map{|result| Search.new(result)}
+    find_location.map{|result| Search.new(result)}
+  end
+
+  def filtered_search_objects
+    @search_objects = search_location_objects.uniq {|object| object.display_name}
   end
 end
   #Adding turboframe tag will not send the session[:search_results]

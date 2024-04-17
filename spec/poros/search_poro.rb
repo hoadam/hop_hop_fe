@@ -9,5 +9,6 @@ RSpec.describe Search do
     expect(search_result.display_name).to eq("Disneyland, 1313, South Harbor Boulevard, Anaheim Resort District, Anaheim, Orange County, California, 92802, United States")
     expect(search_result.lat).to eq("33.813651199999995")
     expect(search_result.lon).to eq("-117.91973507032726")
+    expect(search_result.type).to eq("theme_park")
   end
 end
