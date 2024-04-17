@@ -19,10 +19,8 @@
 
   <body>
     <%= render partial: "shared/navbar" %>
-    <% flash.each do |type, message| %>
-      <section class=<%= type %>>
-      <p><%= message %></p>
-      </section>
+    <% flash.each do |name, msg| %>
+      <%= content_tag :div, msg, class: name %>
     <% end %>
       <%= yield %>
   </body>

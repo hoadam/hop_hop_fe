@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Edit User', type: :feature do
   describe 'As a user' do
     before(:each) do
-      @user = User.create!(name: 'Selena', 
+      @user = User.create!(name: 'Selena',
                           email: 'selena@gmail.com',
                           password: 'selena123',
                           password_confirmation: 'selena123')
@@ -13,9 +13,8 @@ RSpec.describe 'Edit User', type: :feature do
       fill_in 'Email', with: 'selena@gmail.com'
       fill_in 'Password', with: 'selena123'
       click_on 'Log in'
-
-      expect(page).to have_button("Edit Profile")
-      expect(page).to have_content("Logged in as #{@user.email}")
+      expect(page).to have_content("Signed in successfully.")
+      expect(page).to have_link("Edit Profile")
 
       click_on 'Edit Profile'
 
@@ -30,7 +29,7 @@ RSpec.describe 'Edit User', type: :feature do
 
       click_on 'Update'
 
-      expect(page).to have_button("Edit Profile")
+      expect(page).to have_link("Edit Profile")
       expect(page).to have_content("Logged in as selena@test.com")
       expect(page).to_not have_content("Logged in as #{@user.email}")
     end
@@ -44,31 +43,29 @@ RSpec.describe 'Edit User', type: :feature do
 
       click_on 'Update'
 
-      expect(page).to have_button("Edit Profile")
-      expect(page).to have_button("Log Out")
+      expect(page).to have_link("Edit Profile")
+      expect(page).to have_link("Log Out")
       expect(page).to have_content("Logged in as #{@user.email}")
-      
+
       click_on 'Log Out'
 
       expect(current_path).to eq(root_path)
-      expect(page).to have_content("Log in")
+      expect(page).to have_content("Log In")
 
-      click_on 'Log in'
+      click_on 'Log In'
 
       fill_in 'Email', with: 'selena@gmail.com'
       fill_in 'Password', with: 'selena123'
 
       click_on 'Log in'
-
       expect(page).to have_content("Invalid email or password")
-      
+
       fill_in 'Email', with: 'selena@gmail.com'
       fill_in 'Password', with: 'letmein'
 
       click_on 'Log in'
 
       expect(page).to have_content("Signed in successfully")
-      expect(page).to have_content("Logged in as #{@user.email}")
     end
   end
 end

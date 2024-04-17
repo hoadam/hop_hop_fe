@@ -6,9 +6,11 @@ class Users::RegistrationsController < Devise::RegistrationsController
   def update
     self.resource = resource_class.to_adapter.get!(send(:"current_#{resource_name}").to_key)
 
+
     redirect_to edit_registration_path(resource_name) and return if should_disable_otp? && !disable_otp
 
     process_standard_update
+
   end
 
   private
@@ -20,7 +22,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   def configure_account_update_params
     devise_parameter_sanitizer.permit(:account_update, keys: [:otp_attempt])
   end
-  
+
   def should_disable_otp?
     resource.otp_required_for_login && params[:user][:otp_attempt].present? && params[:user][:current_password].present?
   end
@@ -53,7 +55,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
     if resource_updated
       set_flash_message_for_update(resource, prev_unconfirmed_email)
       bypass_sign_in resource, scope: resource_name if sign_in_after_change_password?
-      respond_with resource, location: after_update_path_for(resource)
+      respond_with resource, location: edit_user_registration_path
     else
       clean_up_passwords resource
       set_minimum_password_length

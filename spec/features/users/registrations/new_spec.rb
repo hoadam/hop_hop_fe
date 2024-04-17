@@ -8,7 +8,7 @@ RSpec.describe 'User Registration', type: :feature do
         fill_in 'Email', with: 'selena@gmail.com'
         fill_in 'user_password', with: 'selena123'
         fill_in 'user_password_confirmation', with: 'selena123'
-        
+
         click_button 'Sign up'
 
         expect(current_path).to eq(root_path)
@@ -21,14 +21,14 @@ RSpec.describe 'User Registration', type: :feature do
         fill_in 'Email', with: ''
         fill_in 'user_password', with: 'selena123'
         fill_in 'user_password_confirmation', with: '123'
-        
+
         click_button 'Sign up'
 
         expect(page).to have_content("Email can't be blank")
         expect(page).to have_content("Password confirmation doesn't match Password")
-        expect(current_path).to eq(users_path)
+        expect(current_path).to eq(user_registration_path)
     end
-    
+
     it "users can sign up using their google acocunt" do
       OmniAuth.config.test_mode = true
       OmniAuth.config.mock_auth[:google_oauth2] = OmniAuth::AuthHash.new({
@@ -39,13 +39,10 @@ RSpec.describe 'User Registration', type: :feature do
           email: 'test@example.com'
         }
       })
-    
+
       visit new_user_registration_path
       click_on "Log in with Google"
-    
+
       expect(current_path).to eq(root_path)
     end
 end
-
-
-

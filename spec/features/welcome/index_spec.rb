@@ -12,8 +12,7 @@ RSpec.describe 'Welcome Page', type: :feature do
 
     it 'takes you to login' do
         visit root_path
-
-        click_on ('Log in')
+        click_on ('Log In')
 
         expect(current_path).to eq(new_user_session_path)
     end
@@ -21,7 +20,7 @@ RSpec.describe 'Welcome Page', type: :feature do
     it 'takes you to sign up' do
         visit root_path
 
-        click_on ('Sign up')
+        click_on ('Sign Up')
 
         expect(current_path).to eq(new_user_registration_path)
     end

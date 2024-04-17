@@ -146,146 +146,6 @@ http_interactions:
   recorded_at: Wed, 17 Apr 2024 18:18:10 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Paris
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 17 Apr 2024 18:18:49 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '3123'
-      Connection:
-      - keep-alive
-      Keep-Alive:
-      - timeout=20
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        W3sicGxhY2VfaWQiOjExNTEzNDM3OSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo3MTUyNSwibGF0IjoiNDguODUzNDk1MSIsImxvbiI6IjIuMzQ4MzkxNSIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxMiwiaW1wb3J0YW5jZSI6MC44MzE3MTAxNzE1NTg4NjczLCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiUGFyaXMiLCJkaXNwbGF5X25hbWUiOiJQYXJpcywgSWxlLWRlLUZyYW5jZSwgTWV0cm9wb2xpdGFuIEZyYW5jZSwgRnJhbmNlIiwiYWRkcmVzcyI6eyJjaXR5IjoiUGFyaXMiLCJJU08zMTY2LTItbHZsNiI6IkZSLTc1Iiwic3RhdGUiOiJJbGUtZGUtRnJhbmNlIiwiSVNPMzE2Ni0yLWx2bDQiOiJGUi1JREYiLCJyZWdpb24iOiJNZXRyb3BvbGl0YW4gRnJhbmNlIiwiY291bnRyeSI6IkZyYW5jZSIsImNvdW50cnlfY29kZSI6ImZyIn0sImJvdW5kaW5nYm94IjpbIjQ4LjgxNTU3NTUiLCI0OC45MDIxNTYwIiwiMi4yMjQxMjIwIiwiMi40Njk3NjAyIl19LHsicGxhY2VfaWQiOjExNTA0NzAyNywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo3NDQ0LCJsYXQiOiI0OC44NTg4ODk3IiwibG9uIjoiMi4zMjAwNDEwMjE3MjAwNzY2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE1LCJpbXBvcnRhbmNlIjowLjgzMTcxMDE3MTU1ODg2NzMsImFkZHJlc3N0eXBlIjoic3VidXJiIiwibmFtZSI6IlBhcmlzIiwiZGlzcGxheV9uYW1lIjoiUGFyaXMsIElsZS1kZS1GcmFuY2UsIE1ldHJvcG9saXRhbiBGcmFuY2UsIEZyYW5jZSIsImFkZHJlc3MiOnsic3VidXJiIjoiUGFyaXMiLCJjaXR5X2Rpc3RyaWN0IjoiUGFyaXMiLCJjaXR5IjoiUGFyaXMiLCJJU08zMTY2LTItbHZsNiI6IkZSLTc1Iiwic3RhdGUiOiJJbGUtZGUtRnJhbmNlIiwiSVNPMzE2Ni0yLWx2bDQiOiJGUi1JREYiLCJyZWdpb24iOiJNZXRyb3BvbGl0YW4gRnJhbmNlIiwiY291bnRyeSI6IkZyYW5jZSIsImNvdW50cnlfY29kZSI6ImZyIn0sImJvdW5kaW5nYm94IjpbIjQ4LjgxNTU3NTUiLCI0OC45MDIxNTYwIiwiMi4yMjQxMjIwIiwiMi40Njk3NjAyIl19LHsicGxhY2VfaWQiOjMyMDk5NjczOCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxMTUzNTcsImxhdCI6IjMzLjY2MTc5NjIiLCJsb24iOiItOTUuNTU1NTEzIiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE2LCJpbXBvcnRhbmNlIjowLjQ5NjE2NDUwOTcxMzQ2NTEsImFkZHJlc3N0eXBlIjoidG93biIsIm5hbWUiOiJQYXJpcyIsImRpc3BsYXlfbmFtZSI6IlBhcmlzLCBMYW1hciBDb3VudHksIFRleGFzLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJ0b3duIjoiUGFyaXMiLCJjb3VudHkiOiJMYW1hciBDb3VudHkiLCJzdGF0ZSI6IlRleGFzIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1UWCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiMzMuNjIwNjM0NSIsIjMzLjczODM4NjYiLCItOTUuNjI3OTM5NiIsIi05NS40MzU0MTE1Il19LHsicGxhY2VfaWQiOjExNTA5Mzg1MSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxNjQxMTkzLCJsYXQiOiI0OC44NTg4ODk3IiwibG9uIjoiMi4zMjAwNDEwMjE3MjAwNzY2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE0LCJpbXBvcnRhbmNlIjowLjQyODM5NTM5MTc3MjgxNTIsImFkZHJlc3N0eXBlIjoiY2l0eV9kaXN0cmljdCIsIm5hbWUiOiJQYXJpcyIsImRpc3BsYXlfbmFtZSI6IlBhcmlzLCBJbGUtZGUtRnJhbmNlLCBNZXRyb3BvbGl0YW4gRnJhbmNlLCBGcmFuY2UiLCJhZGRyZXNzIjp7ImNpdHlfZGlzdHJpY3QiOiJQYXJpcyIsImNpdHkiOiJQYXJpcyIsIklTTzMxNjYtMi1sdmw2IjoiRlItNzUiLCJzdGF0ZSI6IklsZS1kZS1GcmFuY2UiLCJJU08zMTY2LTItbHZsNCI6IkZSLUlERiIsInJlZ2lvbiI6Ik1ldHJvcG9saXRhbiBGcmFuY2UiLCJjb3VudHJ5IjoiRnJhbmNlIiwiY291bnRyeV9jb2RlIjoiZnIifSwiYm91bmRpbmdib3giOlsiNDguODE1NTc1NSIsIjQ4LjkwMjE1NjAiLCIyLjIyNDEyMjAiLCIyLjQ2OTc2MDIiXX0seyJwbGFjZV9pZCI6OTc1MTEyMywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjozNjY5NTgzLCJsYXQiOiI0My4wMDA2MjUzIiwibG9uIjoiLTc1LjMxMzc3NzUiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwicGxhY2VfcmFuayI6MTQsImltcG9ydGFuY2UiOjAuNDA0ODkyOTAyNTczMDg5MjQsImFkZHJlc3N0eXBlIjoidmlsbGFnZSIsIm5hbWUiOiJUb3duIG9mIFBhcmlzIiwiZGlzcGxheV9uYW1lIjoiVG93biBvZiBQYXJpcywgT25laWRhIENvdW50eSwgTmV3IFlvcmssIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7InZpbGxhZ2UiOiJUb3duIG9mIFBhcmlzIiwiY291bnR5IjoiT25laWRhIENvdW50eSIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyI0Mi45MzU2NjUwIiwiNDMuMDIzNDQ4MCIsIi03NS4zMjc1MTQwIiwiLTc1LjIwNzMzODAiXX1d
-  recorded_at: Wed, 17 Apr 2024 18:18:49 GMT
-- request:
-    method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Paris
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 17 Apr 2024 18:18:49 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '3123'
-      Connection:
-      - keep-alive
-      Keep-Alive:
-      - timeout=20
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        W3sicGxhY2VfaWQiOjExNTEzNDM3OSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo3MTUyNSwibGF0IjoiNDguODUzNDk1MSIsImxvbiI6IjIuMzQ4MzkxNSIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxMiwiaW1wb3J0YW5jZSI6MC44MzE3MTAxNzE1NTg4NjczLCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiUGFyaXMiLCJkaXNwbGF5X25hbWUiOiJQYXJpcywgSWxlLWRlLUZyYW5jZSwgTWV0cm9wb2xpdGFuIEZyYW5jZSwgRnJhbmNlIiwiYWRkcmVzcyI6eyJjaXR5IjoiUGFyaXMiLCJJU08zMTY2LTItbHZsNiI6IkZSLTc1Iiwic3RhdGUiOiJJbGUtZGUtRnJhbmNlIiwiSVNPMzE2Ni0yLWx2bDQiOiJGUi1JREYiLCJyZWdpb24iOiJNZXRyb3BvbGl0YW4gRnJhbmNlIiwiY291bnRyeSI6IkZyYW5jZSIsImNvdW50cnlfY29kZSI6ImZyIn0sImJvdW5kaW5nYm94IjpbIjQ4LjgxNTU3NTUiLCI0OC45MDIxNTYwIiwiMi4yMjQxMjIwIiwiMi40Njk3NjAyIl19LHsicGxhY2VfaWQiOjExNTA0NzAyNywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo3NDQ0LCJsYXQiOiI0OC44NTg4ODk3IiwibG9uIjoiMi4zMjAwNDEwMjE3MjAwNzY2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE1LCJpbXBvcnRhbmNlIjowLjgzMTcxMDE3MTU1ODg2NzMsImFkZHJlc3N0eXBlIjoic3VidXJiIiwibmFtZSI6IlBhcmlzIiwiZGlzcGxheV9uYW1lIjoiUGFyaXMsIElsZS1kZS1GcmFuY2UsIE1ldHJvcG9saXRhbiBGcmFuY2UsIEZyYW5jZSIsImFkZHJlc3MiOnsic3VidXJiIjoiUGFyaXMiLCJjaXR5X2Rpc3RyaWN0IjoiUGFyaXMiLCJjaXR5IjoiUGFyaXMiLCJJU08zMTY2LTItbHZsNiI6IkZSLTc1Iiwic3RhdGUiOiJJbGUtZGUtRnJhbmNlIiwiSVNPMzE2Ni0yLWx2bDQiOiJGUi1JREYiLCJyZWdpb24iOiJNZXRyb3BvbGl0YW4gRnJhbmNlIiwiY291bnRyeSI6IkZyYW5jZSIsImNvdW50cnlfY29kZSI6ImZyIn0sImJvdW5kaW5nYm94IjpbIjQ4LjgxNTU3NTUiLCI0OC45MDIxNTYwIiwiMi4yMjQxMjIwIiwiMi40Njk3NjAyIl19LHsicGxhY2VfaWQiOjMyMDk5NjczOCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxMTUzNTcsImxhdCI6IjMzLjY2MTc5NjIiLCJsb24iOiItOTUuNTU1NTEzIiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE2LCJpbXBvcnRhbmNlIjowLjQ5NjE2NDUwOTcxMzQ2NTEsImFkZHJlc3N0eXBlIjoidG93biIsIm5hbWUiOiJQYXJpcyIsImRpc3BsYXlfbmFtZSI6IlBhcmlzLCBMYW1hciBDb3VudHksIFRleGFzLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJ0b3duIjoiUGFyaXMiLCJjb3VudHkiOiJMYW1hciBDb3VudHkiLCJzdGF0ZSI6IlRleGFzIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1UWCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiMzMuNjIwNjM0NSIsIjMzLjczODM4NjYiLCItOTUuNjI3OTM5NiIsIi05NS40MzU0MTE1Il19LHsicGxhY2VfaWQiOjExNTA5Mzg1MSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxNjQxMTkzLCJsYXQiOiI0OC44NTg4ODk3IiwibG9uIjoiMi4zMjAwNDEwMjE3MjAwNzY2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE0LCJpbXBvcnRhbmNlIjowLjQyODM5NTM5MTc3MjgxNTIsImFkZHJlc3N0eXBlIjoiY2l0eV9kaXN0cmljdCIsIm5hbWUiOiJQYXJpcyIsImRpc3BsYXlfbmFtZSI6IlBhcmlzLCBJbGUtZGUtRnJhbmNlLCBNZXRyb3BvbGl0YW4gRnJhbmNlLCBGcmFuY2UiLCJhZGRyZXNzIjp7ImNpdHlfZGlzdHJpY3QiOiJQYXJpcyIsImNpdHkiOiJQYXJpcyIsIklTTzMxNjYtMi1sdmw2IjoiRlItNzUiLCJzdGF0ZSI6IklsZS1kZS1GcmFuY2UiLCJJU08zMTY2LTItbHZsNCI6IkZSLUlERiIsInJlZ2lvbiI6Ik1ldHJvcG9saXRhbiBGcmFuY2UiLCJjb3VudHJ5IjoiRnJhbmNlIiwiY291bnRyeV9jb2RlIjoiZnIifSwiYm91bmRpbmdib3giOlsiNDguODE1NTc1NSIsIjQ4LjkwMjE1NjAiLCIyLjIyNDEyMjAiLCIyLjQ2OTc2MDIiXX0seyJwbGFjZV9pZCI6OTc1MTEyMywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjozNjY5NTgzLCJsYXQiOiI0My4wMDA2MjUzIiwibG9uIjoiLTc1LjMxMzc3NzUiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwicGxhY2VfcmFuayI6MTQsImltcG9ydGFuY2UiOjAuNDA0ODkyOTAyNTczMDg5MjQsImFkZHJlc3N0eXBlIjoidmlsbGFnZSIsIm5hbWUiOiJUb3duIG9mIFBhcmlzIiwiZGlzcGxheV9uYW1lIjoiVG93biBvZiBQYXJpcywgT25laWRhIENvdW50eSwgTmV3IFlvcmssIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7InZpbGxhZ2UiOiJUb3duIG9mIFBhcmlzIiwiY291bnR5IjoiT25laWRhIENvdW50eSIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyI0Mi45MzU2NjUwIiwiNDMuMDIzNDQ4MCIsIi03NS4zMjc1MTQwIiwiLTc1LjIwNzMzODAiXX1d
-  recorded_at: Wed, 17 Apr 2024 18:18:49 GMT
-- request:
-    method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Paris
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 17 Apr 2024 18:18:50 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '3123'
-      Connection:
-      - keep-alive
-      Keep-Alive:
-      - timeout=20
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        W3sicGxhY2VfaWQiOjExNTEzNDM3OSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo3MTUyNSwibGF0IjoiNDguODUzNDk1MSIsImxvbiI6IjIuMzQ4MzkxNSIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxMiwiaW1wb3J0YW5jZSI6MC44MzE3MTAxNzE1NTg4NjczLCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiUGFyaXMiLCJkaXNwbGF5X25hbWUiOiJQYXJpcywgSWxlLWRlLUZyYW5jZSwgTWV0cm9wb2xpdGFuIEZyYW5jZSwgRnJhbmNlIiwiYWRkcmVzcyI6eyJjaXR5IjoiUGFyaXMiLCJJU08zMTY2LTItbHZsNiI6IkZSLTc1Iiwic3RhdGUiOiJJbGUtZGUtRnJhbmNlIiwiSVNPMzE2Ni0yLWx2bDQiOiJGUi1JREYiLCJyZWdpb24iOiJNZXRyb3BvbGl0YW4gRnJhbmNlIiwiY291bnRyeSI6IkZyYW5jZSIsImNvdW50cnlfY29kZSI6ImZyIn0sImJvdW5kaW5nYm94IjpbIjQ4LjgxNTU3NTUiLCI0OC45MDIxNTYwIiwiMi4yMjQxMjIwIiwiMi40Njk3NjAyIl19LHsicGxhY2VfaWQiOjExNTA0NzAyNywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo3NDQ0LCJsYXQiOiI0OC44NTg4ODk3IiwibG9uIjoiMi4zMjAwNDEwMjE3MjAwNzY2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE1LCJpbXBvcnRhbmNlIjowLjgzMTcxMDE3MTU1ODg2NzMsImFkZHJlc3N0eXBlIjoic3VidXJiIiwibmFtZSI6IlBhcmlzIiwiZGlzcGxheV9uYW1lIjoiUGFyaXMsIElsZS1kZS1GcmFuY2UsIE1ldHJvcG9saXRhbiBGcmFuY2UsIEZyYW5jZSIsImFkZHJlc3MiOnsic3VidXJiIjoiUGFyaXMiLCJjaXR5X2Rpc3RyaWN0IjoiUGFyaXMiLCJjaXR5IjoiUGFyaXMiLCJJU08zMTY2LTItbHZsNiI6IkZSLTc1Iiwic3RhdGUiOiJJbGUtZGUtRnJhbmNlIiwiSVNPMzE2Ni0yLWx2bDQiOiJGUi1JREYiLCJyZWdpb24iOiJNZXRyb3BvbGl0YW4gRnJhbmNlIiwiY291bnRyeSI6IkZyYW5jZSIsImNvdW50cnlfY29kZSI6ImZyIn0sImJvdW5kaW5nYm94IjpbIjQ4LjgxNTU3NTUiLCI0OC45MDIxNTYwIiwiMi4yMjQxMjIwIiwiMi40Njk3NjAyIl19LHsicGxhY2VfaWQiOjMyMDk5NjczOCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxMTUzNTcsImxhdCI6IjMzLjY2MTc5NjIiLCJsb24iOiItOTUuNTU1NTEzIiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE2LCJpbXBvcnRhbmNlIjowLjQ5NjE2NDUwOTcxMzQ2NTEsImFkZHJlc3N0eXBlIjoidG93biIsIm5hbWUiOiJQYXJpcyIsImRpc3BsYXlfbmFtZSI6IlBhcmlzLCBMYW1hciBDb3VudHksIFRleGFzLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJ0b3duIjoiUGFyaXMiLCJjb3VudHkiOiJMYW1hciBDb3VudHkiLCJzdGF0ZSI6IlRleGFzIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1UWCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiMzMuNjIwNjM0NSIsIjMzLjczODM4NjYiLCItOTUuNjI3OTM5NiIsIi05NS40MzU0MTE1Il19LHsicGxhY2VfaWQiOjExNTA5Mzg1MSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxNjQxMTkzLCJsYXQiOiI0OC44NTg4ODk3IiwibG9uIjoiMi4zMjAwNDEwMjE3MjAwNzY2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE0LCJpbXBvcnRhbmNlIjowLjQyODM5NTM5MTc3MjgxNTIsImFkZHJlc3N0eXBlIjoiY2l0eV9kaXN0cmljdCIsIm5hbWUiOiJQYXJpcyIsImRpc3BsYXlfbmFtZSI6IlBhcmlzLCBJbGUtZGUtRnJhbmNlLCBNZXRyb3BvbGl0YW4gRnJhbmNlLCBGcmFuY2UiLCJhZGRyZXNzIjp7ImNpdHlfZGlzdHJpY3QiOiJQYXJpcyIsImNpdHkiOiJQYXJpcyIsIklTTzMxNjYtMi1sdmw2IjoiRlItNzUiLCJzdGF0ZSI6IklsZS1kZS1GcmFuY2UiLCJJU08zMTY2LTItbHZsNCI6IkZSLUlERiIsInJlZ2lvbiI6Ik1ldHJvcG9saXRhbiBGcmFuY2UiLCJjb3VudHJ5IjoiRnJhbmNlIiwiY291bnRyeV9jb2RlIjoiZnIifSwiYm91bmRpbmdib3giOlsiNDguODE1NTc1NSIsIjQ4LjkwMjE1NjAiLCIyLjIyNDEyMjAiLCIyLjQ2OTc2MDIiXX0seyJwbGFjZV9pZCI6OTc1MTEyMywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjozNjY5NTgzLCJsYXQiOiI0My4wMDA2MjUzIiwibG9uIjoiLTc1LjMxMzc3NzUiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwicGxhY2VfcmFuayI6MTQsImltcG9ydGFuY2UiOjAuNDA0ODkyOTAyNTczMDg5MjQsImFkZHJlc3N0eXBlIjoidmlsbGFnZSIsIm5hbWUiOiJUb3duIG9mIFBhcmlzIiwiZGlzcGxheV9uYW1lIjoiVG93biBvZiBQYXJpcywgT25laWRhIENvdW50eSwgTmV3IFlvcmssIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7InZpbGxhZ2UiOiJUb3duIG9mIFBhcmlzIiwiY291bnR5IjoiT25laWRhIENvdW50eSIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyI0Mi45MzU2NjUwIiwiNDMuMDIzNDQ4MCIsIi03NS4zMjc1MTQwIiwiLTc1LjIwNzMzODAiXX1d
-  recorded_at: Wed, 17 Apr 2024 18:18:50 GMT
-- request:
-    method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Paris
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 17 Apr 2024 18:18:50 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '3123'
-      Connection:
-      - keep-alive
-      Keep-Alive:
-      - timeout=20
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        W3sicGxhY2VfaWQiOjExNTEzNDM3OSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo3MTUyNSwibGF0IjoiNDguODUzNDk1MSIsImxvbiI6IjIuMzQ4MzkxNSIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxMiwiaW1wb3J0YW5jZSI6MC44MzE3MTAxNzE1NTg4NjczLCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiUGFyaXMiLCJkaXNwbGF5X25hbWUiOiJQYXJpcywgSWxlLWRlLUZyYW5jZSwgTWV0cm9wb2xpdGFuIEZyYW5jZSwgRnJhbmNlIiwiYWRkcmVzcyI6eyJjaXR5IjoiUGFyaXMiLCJJU08zMTY2LTItbHZsNiI6IkZSLTc1Iiwic3RhdGUiOiJJbGUtZGUtRnJhbmNlIiwiSVNPMzE2Ni0yLWx2bDQiOiJGUi1JREYiLCJyZWdpb24iOiJNZXRyb3BvbGl0YW4gRnJhbmNlIiwiY291bnRyeSI6IkZyYW5jZSIsImNvdW50cnlfY29kZSI6ImZyIn0sImJvdW5kaW5nYm94IjpbIjQ4LjgxNTU3NTUiLCI0OC45MDIxNTYwIiwiMi4yMjQxMjIwIiwiMi40Njk3NjAyIl19LHsicGxhY2VfaWQiOjExNTA0NzAyNywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo3NDQ0LCJsYXQiOiI0OC44NTg4ODk3IiwibG9uIjoiMi4zMjAwNDEwMjE3MjAwNzY2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE1LCJpbXBvcnRhbmNlIjowLjgzMTcxMDE3MTU1ODg2NzMsImFkZHJlc3N0eXBlIjoic3VidXJiIiwibmFtZSI6IlBhcmlzIiwiZGlzcGxheV9uYW1lIjoiUGFyaXMsIElsZS1kZS1GcmFuY2UsIE1ldHJvcG9saXRhbiBGcmFuY2UsIEZyYW5jZSIsImFkZHJlc3MiOnsic3VidXJiIjoiUGFyaXMiLCJjaXR5X2Rpc3RyaWN0IjoiUGFyaXMiLCJjaXR5IjoiUGFyaXMiLCJJU08zMTY2LTItbHZsNiI6IkZSLTc1Iiwic3RhdGUiOiJJbGUtZGUtRnJhbmNlIiwiSVNPMzE2Ni0yLWx2bDQiOiJGUi1JREYiLCJyZWdpb24iOiJNZXRyb3BvbGl0YW4gRnJhbmNlIiwiY291bnRyeSI6IkZyYW5jZSIsImNvdW50cnlfY29kZSI6ImZyIn0sImJvdW5kaW5nYm94IjpbIjQ4LjgxNTU3NTUiLCI0OC45MDIxNTYwIiwiMi4yMjQxMjIwIiwiMi40Njk3NjAyIl19LHsicGxhY2VfaWQiOjMyMDk5NjczOCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxMTUzNTcsImxhdCI6IjMzLjY2MTc5NjIiLCJsb24iOiItOTUuNTU1NTEzIiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE2LCJpbXBvcnRhbmNlIjowLjQ5NjE2NDUwOTcxMzQ2NTEsImFkZHJlc3N0eXBlIjoidG93biIsIm5hbWUiOiJQYXJpcyIsImRpc3BsYXlfbmFtZSI6IlBhcmlzLCBMYW1hciBDb3VudHksIFRleGFzLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJ0b3duIjoiUGFyaXMiLCJjb3VudHkiOiJMYW1hciBDb3VudHkiLCJzdGF0ZSI6IlRleGFzIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1UWCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiMzMuNjIwNjM0NSIsIjMzLjczODM4NjYiLCItOTUuNjI3OTM5NiIsIi05NS40MzU0MTE1Il19LHsicGxhY2VfaWQiOjExNTA5Mzg1MSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxNjQxMTkzLCJsYXQiOiI0OC44NTg4ODk3IiwibG9uIjoiMi4zMjAwNDEwMjE3MjAwNzY2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE0LCJpbXBvcnRhbmNlIjowLjQyODM5NTM5MTc3MjgxNTIsImFkZHJlc3N0eXBlIjoiY2l0eV9kaXN0cmljdCIsIm5hbWUiOiJQYXJpcyIsImRpc3BsYXlfbmFtZSI6IlBhcmlzLCBJbGUtZGUtRnJhbmNlLCBNZXRyb3BvbGl0YW4gRnJhbmNlLCBGcmFuY2UiLCJhZGRyZXNzIjp7ImNpdHlfZGlzdHJpY3QiOiJQYXJpcyIsImNpdHkiOiJQYXJpcyIsIklTTzMxNjYtMi1sdmw2IjoiRlItNzUiLCJzdGF0ZSI6IklsZS1kZS1GcmFuY2UiLCJJU08zMTY2LTItbHZsNCI6IkZSLUlERiIsInJlZ2lvbiI6Ik1ldHJvcG9saXRhbiBGcmFuY2UiLCJjb3VudHJ5IjoiRnJhbmNlIiwiY291bnRyeV9jb2RlIjoiZnIifSwiYm91bmRpbmdib3giOlsiNDguODE1NTc1NSIsIjQ4LjkwMjE1NjAiLCIyLjIyNDEyMjAiLCIyLjQ2OTc2MDIiXX0seyJwbGFjZV9pZCI6OTc1MTEyMywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjozNjY5NTgzLCJsYXQiOiI0My4wMDA2MjUzIiwibG9uIjoiLTc1LjMxMzc3NzUiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwicGxhY2VfcmFuayI6MTQsImltcG9ydGFuY2UiOjAuNDA0ODkyOTAyNTczMDg5MjQsImFkZHJlc3N0eXBlIjoidmlsbGFnZSIsIm5hbWUiOiJUb3duIG9mIFBhcmlzIiwiZGlzcGxheV9uYW1lIjoiVG93biBvZiBQYXJpcywgT25laWRhIENvdW50eSwgTmV3IFlvcmssIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7InZpbGxhZ2UiOiJUb3duIG9mIFBhcmlzIiwiY291bnR5IjoiT25laWRhIENvdW50eSIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyI0Mi45MzU2NjUwIiwiNDMuMDIzNDQ4MCIsIi03NS4zMjc1MTQwIiwiLTc1LjIwNzMzODAiXX1d
-  recorded_at: Wed, 17 Apr 2024 18:18:50 GMT
-- request:
-    method: get
     uri: http://127.0.0.1:3000/api/v1/trips?user_id=237
     body:
       encoding: US-ASCII
@@ -334,39 +194,580 @@ http_interactions:
   recorded_at: Wed, 17 Apr 2024 18:18:50 GMT
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Paris
+    uri: http://127.0.0.1:3000/api/v1/trips?user_id=268
     body:
       encoding: US-ASCII
       string: ''
     headers:
+      User-Agent:
+      - Faraday v2.9.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
-      User-Agent:
-      - Ruby
   response:
     status:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 17 Apr 2024 18:18:51 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
       Content-Type:
       - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - eb938d31-2114-4bc5-b7ad-bf341c5e1040
+      X-Runtime:
+      - '0.004912'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.10, process_action.action_controller;dur=0.85
       Content-Length:
-      - '3123'
-      Connection:
-      - keep-alive
-      Keep-Alive:
-      - timeout=20
+      - '11'
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        W3sicGxhY2VfaWQiOjExNTEzNDM3OSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo3MTUyNSwibGF0IjoiNDguODUzNDk1MSIsImxvbiI6IjIuMzQ4MzkxNSIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxMiwiaW1wb3J0YW5jZSI6MC44MzE3MTAxNzE1NTg4NjczLCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiUGFyaXMiLCJkaXNwbGF5X25hbWUiOiJQYXJpcywgSWxlLWRlLUZyYW5jZSwgTWV0cm9wb2xpdGFuIEZyYW5jZSwgRnJhbmNlIiwiYWRkcmVzcyI6eyJjaXR5IjoiUGFyaXMiLCJJU08zMTY2LTItbHZsNiI6IkZSLTc1Iiwic3RhdGUiOiJJbGUtZGUtRnJhbmNlIiwiSVNPMzE2Ni0yLWx2bDQiOiJGUi1JREYiLCJyZWdpb24iOiJNZXRyb3BvbGl0YW4gRnJhbmNlIiwiY291bnRyeSI6IkZyYW5jZSIsImNvdW50cnlfY29kZSI6ImZyIn0sImJvdW5kaW5nYm94IjpbIjQ4LjgxNTU3NTUiLCI0OC45MDIxNTYwIiwiMi4yMjQxMjIwIiwiMi40Njk3NjAyIl19LHsicGxhY2VfaWQiOjExNTA0NzAyNywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo3NDQ0LCJsYXQiOiI0OC44NTg4ODk3IiwibG9uIjoiMi4zMjAwNDEwMjE3MjAwNzY2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE1LCJpbXBvcnRhbmNlIjowLjgzMTcxMDE3MTU1ODg2NzMsImFkZHJlc3N0eXBlIjoic3VidXJiIiwibmFtZSI6IlBhcmlzIiwiZGlzcGxheV9uYW1lIjoiUGFyaXMsIElsZS1kZS1GcmFuY2UsIE1ldHJvcG9saXRhbiBGcmFuY2UsIEZyYW5jZSIsImFkZHJlc3MiOnsic3VidXJiIjoiUGFyaXMiLCJjaXR5X2Rpc3RyaWN0IjoiUGFyaXMiLCJjaXR5IjoiUGFyaXMiLCJJU08zMTY2LTItbHZsNiI6IkZSLTc1Iiwic3RhdGUiOiJJbGUtZGUtRnJhbmNlIiwiSVNPMzE2Ni0yLWx2bDQiOiJGUi1JREYiLCJyZWdpb24iOiJNZXRyb3BvbGl0YW4gRnJhbmNlIiwiY291bnRyeSI6IkZyYW5jZSIsImNvdW50cnlfY29kZSI6ImZyIn0sImJvdW5kaW5nYm94IjpbIjQ4LjgxNTU3NTUiLCI0OC45MDIxNTYwIiwiMi4yMjQxMjIwIiwiMi40Njk3NjAyIl19LHsicGxhY2VfaWQiOjMyMDk5NjczOCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxMTUzNTcsImxhdCI6IjMzLjY2MTc5NjIiLCJsb24iOiItOTUuNTU1NTEzIiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE2LCJpbXBvcnRhbmNlIjowLjQ5NjE2NDUwOTcxMzQ2NTEsImFkZHJlc3N0eXBlIjoidG93biIsIm5hbWUiOiJQYXJpcyIsImRpc3BsYXlfbmFtZSI6IlBhcmlzLCBMYW1hciBDb3VudHksIFRleGFzLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJ0b3duIjoiUGFyaXMiLCJjb3VudHkiOiJMYW1hciBDb3VudHkiLCJzdGF0ZSI6IlRleGFzIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1UWCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiMzMuNjIwNjM0NSIsIjMzLjczODM4NjYiLCItOTUuNjI3OTM5NiIsIi05NS40MzU0MTE1Il19LHsicGxhY2VfaWQiOjExNTA5Mzg1MSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxNjQxMTkzLCJsYXQiOiI0OC44NTg4ODk3IiwibG9uIjoiMi4zMjAwNDEwMjE3MjAwNzY2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE0LCJpbXBvcnRhbmNlIjowLjQyODM5NTM5MTc3MjgxNTIsImFkZHJlc3N0eXBlIjoiY2l0eV9kaXN0cmljdCIsIm5hbWUiOiJQYXJpcyIsImRpc3BsYXlfbmFtZSI6IlBhcmlzLCBJbGUtZGUtRnJhbmNlLCBNZXRyb3BvbGl0YW4gRnJhbmNlLCBGcmFuY2UiLCJhZGRyZXNzIjp7ImNpdHlfZGlzdHJpY3QiOiJQYXJpcyIsImNpdHkiOiJQYXJpcyIsIklTTzMxNjYtMi1sdmw2IjoiRlItNzUiLCJzdGF0ZSI6IklsZS1kZS1GcmFuY2UiLCJJU08zMTY2LTItbHZsNCI6IkZSLUlERiIsInJlZ2lvbiI6Ik1ldHJvcG9saXRhbiBGcmFuY2UiLCJjb3VudHJ5IjoiRnJhbmNlIiwiY291bnRyeV9jb2RlIjoiZnIifSwiYm91bmRpbmdib3giOlsiNDguODE1NTc1NSIsIjQ4LjkwMjE1NjAiLCIyLjIyNDEyMjAiLCIyLjQ2OTc2MDIiXX0seyJwbGFjZV9pZCI6OTc1MTEyMywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjozNjY5NTgzLCJsYXQiOiI0My4wMDA2MjUzIiwibG9uIjoiLTc1LjMxMzc3NzUiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwicGxhY2VfcmFuayI6MTQsImltcG9ydGFuY2UiOjAuNDA0ODkyOTAyNTczMDg5MjQsImFkZHJlc3N0eXBlIjoidmlsbGFnZSIsIm5hbWUiOiJUb3duIG9mIFBhcmlzIiwiZGlzcGxheV9uYW1lIjoiVG93biBvZiBQYXJpcywgT25laWRhIENvdW50eSwgTmV3IFlvcmssIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7InZpbGxhZ2UiOiJUb3duIG9mIFBhcmlzIiwiY291bnR5IjoiT25laWRhIENvdW50eSIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyI0Mi45MzU2NjUwIiwiNDMuMDIzNDQ4MCIsIi03NS4zMjc1MTQwIiwiLTc1LjIwNzMzODAiXX1d
-  recorded_at: Wed, 17 Apr 2024 18:18:51 GMT
+      encoding: UTF-8
+      string: '{"data":[]}'
+  recorded_at: Wed, 17 Apr 2024 18:29:05 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:3000/api/v1/trips?user_id=299
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 77d47331-d5fd-4113-8707-e0664560189b
+      X-Runtime:
+      - '0.005254'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.62, process_action.action_controller;dur=1.41
+      Content-Length:
+      - '11'
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+  recorded_at: Wed, 17 Apr 2024 18:31:00 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:3000/api/v1/trips?user_id=328
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1e65c134-0c9e-4cde-be2f-4c37a0d4f103
+      X-Runtime:
+      - '0.005300'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.61, process_action.action_controller;dur=1.37
+      Content-Length:
+      - '11'
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+  recorded_at: Wed, 17 Apr 2024 18:40:34 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:3000/api/v1/trips?user_id=358
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a2e20529-68ec-41d7-af05-dcea875ef87b
+      X-Runtime:
+      - '0.018769'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=7.56, process_action.action_controller;dur=14.63
+      Content-Length:
+      - '11'
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+  recorded_at: Wed, 17 Apr 2024 18:48:57 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:3000/api/v1/trips?user_id=391
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a1d47c33-5774-4897-abea-52f62ea7a2d4
+      X-Runtime:
+      - '0.004883'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.21, process_action.action_controller;dur=1.40
+      Content-Length:
+      - '11'
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+  recorded_at: Wed, 17 Apr 2024 18:52:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:3000/api/v1/trips?user_id=442
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - dbab8688-5477-4a32-a35e-37df7c5d433b
+      X-Runtime:
+      - '0.014138'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=3.91, process_action.action_controller;dur=8.06
+      Content-Length:
+      - '11'
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+  recorded_at: Wed, 17 Apr 2024 19:04:41 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:3000/api/v1/trips?user_id=473
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d184b9d4-803b-4200-9464-58abe0860dfc
+      X-Runtime:
+      - '0.004899'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.14, process_action.action_controller;dur=1.08
+      Content-Length:
+      - '11'
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+  recorded_at: Wed, 17 Apr 2024 19:05:53 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:3000/api/v1/trips?user_id=504
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b015bad6-bef6-455a-a073-2025c554d314
+      X-Runtime:
+      - '0.004869'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.19, process_action.action_controller;dur=0.94
+      Content-Length:
+      - '11'
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+  recorded_at: Wed, 17 Apr 2024 19:07:42 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:3000/api/v1/trips?user_id=557
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3fb99434-7f58-4b20-8f50-a530775a828f
+      X-Runtime:
+      - '0.004275'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.18, process_action.action_controller;dur=0.83
+      Content-Length:
+      - '11'
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+  recorded_at: Wed, 17 Apr 2024 19:25:22 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:3000/api/v1/trips?user_id=649
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e71d88fb-98cb-41b9-9e3f-c8c95b026e45
+      X-Runtime:
+      - '0.015779'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=6.24, process_action.action_controller;dur=11.39
+      Content-Length:
+      - '11'
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+  recorded_at: Wed, 17 Apr 2024 19:33:55 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:3000/api/v1/trips?user_id=680
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4214ae15-70f7-4e4b-9300-9da27b1fa9be
+      X-Runtime:
+      - '0.005730'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.69, process_action.action_controller;dur=1.60
+      Content-Length:
+      - '11'
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+  recorded_at: Wed, 17 Apr 2024 19:35:08 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:3000/api/v1/trips?user_id=711
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 702c56ce-1aeb-4aef-bf09-1f836511fe18
+      X-Runtime:
+      - '0.004547'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.15, process_action.action_controller;dur=0.90
+      Content-Length:
+      - '11'
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+  recorded_at: Wed, 17 Apr 2024 19:36:10 GMT
 - request:
     method: get
     uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Paris
@@ -388,7 +789,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 17 Apr 2024 18:18:51 GMT
+      - Wed, 17 Apr 2024 19:36:37 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -401,7 +802,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         W3sicGxhY2VfaWQiOjExNTEzNDM3OSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo3MTUyNSwibGF0IjoiNDguODUzNDk1MSIsImxvbiI6IjIuMzQ4MzkxNSIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxMiwiaW1wb3J0YW5jZSI6MC44MzE3MTAxNzE1NTg4NjczLCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiUGFyaXMiLCJkaXNwbGF5X25hbWUiOiJQYXJpcywgSWxlLWRlLUZyYW5jZSwgTWV0cm9wb2xpdGFuIEZyYW5jZSwgRnJhbmNlIiwiYWRkcmVzcyI6eyJjaXR5IjoiUGFyaXMiLCJJU08zMTY2LTItbHZsNiI6IkZSLTc1Iiwic3RhdGUiOiJJbGUtZGUtRnJhbmNlIiwiSVNPMzE2Ni0yLWx2bDQiOiJGUi1JREYiLCJyZWdpb24iOiJNZXRyb3BvbGl0YW4gRnJhbmNlIiwiY291bnRyeSI6IkZyYW5jZSIsImNvdW50cnlfY29kZSI6ImZyIn0sImJvdW5kaW5nYm94IjpbIjQ4LjgxNTU3NTUiLCI0OC45MDIxNTYwIiwiMi4yMjQxMjIwIiwiMi40Njk3NjAyIl19LHsicGxhY2VfaWQiOjExNTA0NzAyNywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo3NDQ0LCJsYXQiOiI0OC44NTg4ODk3IiwibG9uIjoiMi4zMjAwNDEwMjE3MjAwNzY2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE1LCJpbXBvcnRhbmNlIjowLjgzMTcxMDE3MTU1ODg2NzMsImFkZHJlc3N0eXBlIjoic3VidXJiIiwibmFtZSI6IlBhcmlzIiwiZGlzcGxheV9uYW1lIjoiUGFyaXMsIElsZS1kZS1GcmFuY2UsIE1ldHJvcG9saXRhbiBGcmFuY2UsIEZyYW5jZSIsImFkZHJlc3MiOnsic3VidXJiIjoiUGFyaXMiLCJjaXR5X2Rpc3RyaWN0IjoiUGFyaXMiLCJjaXR5IjoiUGFyaXMiLCJJU08zMTY2LTItbHZsNiI6IkZSLTc1Iiwic3RhdGUiOiJJbGUtZGUtRnJhbmNlIiwiSVNPMzE2Ni0yLWx2bDQiOiJGUi1JREYiLCJyZWdpb24iOiJNZXRyb3BvbGl0YW4gRnJhbmNlIiwiY291bnRyeSI6IkZyYW5jZSIsImNvdW50cnlfY29kZSI6ImZyIn0sImJvdW5kaW5nYm94IjpbIjQ4LjgxNTU3NTUiLCI0OC45MDIxNTYwIiwiMi4yMjQxMjIwIiwiMi40Njk3NjAyIl19LHsicGxhY2VfaWQiOjMyMDk5NjczOCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxMTUzNTcsImxhdCI6IjMzLjY2MTc5NjIiLCJsb24iOiItOTUuNTU1NTEzIiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE2LCJpbXBvcnRhbmNlIjowLjQ5NjE2NDUwOTcxMzQ2NTEsImFkZHJlc3N0eXBlIjoidG93biIsIm5hbWUiOiJQYXJpcyIsImRpc3BsYXlfbmFtZSI6IlBhcmlzLCBMYW1hciBDb3VudHksIFRleGFzLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJ0b3duIjoiUGFyaXMiLCJjb3VudHkiOiJMYW1hciBDb3VudHkiLCJzdGF0ZSI6IlRleGFzIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1UWCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiMzMuNjIwNjM0NSIsIjMzLjczODM4NjYiLCItOTUuNjI3OTM5NiIsIi05NS40MzU0MTE1Il19LHsicGxhY2VfaWQiOjExNTA5Mzg1MSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxNjQxMTkzLCJsYXQiOiI0OC44NTg4ODk3IiwibG9uIjoiMi4zMjAwNDEwMjE3MjAwNzY2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE0LCJpbXBvcnRhbmNlIjowLjQyODM5NTM5MTc3MjgxNTIsImFkZHJlc3N0eXBlIjoiY2l0eV9kaXN0cmljdCIsIm5hbWUiOiJQYXJpcyIsImRpc3BsYXlfbmFtZSI6IlBhcmlzLCBJbGUtZGUtRnJhbmNlLCBNZXRyb3BvbGl0YW4gRnJhbmNlLCBGcmFuY2UiLCJhZGRyZXNzIjp7ImNpdHlfZGlzdHJpY3QiOiJQYXJpcyIsImNpdHkiOiJQYXJpcyIsIklTTzMxNjYtMi1sdmw2IjoiRlItNzUiLCJzdGF0ZSI6IklsZS1kZS1GcmFuY2UiLCJJU08zMTY2LTItbHZsNCI6IkZSLUlERiIsInJlZ2lvbiI6Ik1ldHJvcG9saXRhbiBGcmFuY2UiLCJjb3VudHJ5IjoiRnJhbmNlIiwiY291bnRyeV9jb2RlIjoiZnIifSwiYm91bmRpbmdib3giOlsiNDguODE1NTc1NSIsIjQ4LjkwMjE1NjAiLCIyLjIyNDEyMjAiLCIyLjQ2OTc2MDIiXX0seyJwbGFjZV9pZCI6OTc1MTEyMywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjozNjY5NTgzLCJsYXQiOiI0My4wMDA2MjUzIiwibG9uIjoiLTc1LjMxMzc3NzUiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwicGxhY2VfcmFuayI6MTQsImltcG9ydGFuY2UiOjAuNDA0ODkyOTAyNTczMDg5MjQsImFkZHJlc3N0eXBlIjoidmlsbGFnZSIsIm5hbWUiOiJUb3duIG9mIFBhcmlzIiwiZGlzcGxheV9uYW1lIjoiVG93biBvZiBQYXJpcywgT25laWRhIENvdW50eSwgTmV3IFlvcmssIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7InZpbGxhZ2UiOiJUb3duIG9mIFBhcmlzIiwiY291bnR5IjoiT25laWRhIENvdW50eSIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyI0Mi45MzU2NjUwIiwiNDMuMDIzNDQ4MCIsIi03NS4zMjc1MTQwIiwiLTc1LjIwNzMzODAiXX1d
-  recorded_at: Wed, 17 Apr 2024 18:18:51 GMT
+  recorded_at: Wed, 17 Apr 2024 19:36:37 GMT
 - request:
     method: get
     uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Paris
@@ -423,7 +824,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 17 Apr 2024 18:18:52 GMT
+      - Wed, 17 Apr 2024 19:36:38 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -436,7 +837,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         W3sicGxhY2VfaWQiOjExNTEzNDM3OSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo3MTUyNSwibGF0IjoiNDguODUzNDk1MSIsImxvbiI6IjIuMzQ4MzkxNSIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxMiwiaW1wb3J0YW5jZSI6MC44MzE3MTAxNzE1NTg4NjczLCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiUGFyaXMiLCJkaXNwbGF5X25hbWUiOiJQYXJpcywgSWxlLWRlLUZyYW5jZSwgTWV0cm9wb2xpdGFuIEZyYW5jZSwgRnJhbmNlIiwiYWRkcmVzcyI6eyJjaXR5IjoiUGFyaXMiLCJJU08zMTY2LTItbHZsNiI6IkZSLTc1Iiwic3RhdGUiOiJJbGUtZGUtRnJhbmNlIiwiSVNPMzE2Ni0yLWx2bDQiOiJGUi1JREYiLCJyZWdpb24iOiJNZXRyb3BvbGl0YW4gRnJhbmNlIiwiY291bnRyeSI6IkZyYW5jZSIsImNvdW50cnlfY29kZSI6ImZyIn0sImJvdW5kaW5nYm94IjpbIjQ4LjgxNTU3NTUiLCI0OC45MDIxNTYwIiwiMi4yMjQxMjIwIiwiMi40Njk3NjAyIl19LHsicGxhY2VfaWQiOjExNTA0NzAyNywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo3NDQ0LCJsYXQiOiI0OC44NTg4ODk3IiwibG9uIjoiMi4zMjAwNDEwMjE3MjAwNzY2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE1LCJpbXBvcnRhbmNlIjowLjgzMTcxMDE3MTU1ODg2NzMsImFkZHJlc3N0eXBlIjoic3VidXJiIiwibmFtZSI6IlBhcmlzIiwiZGlzcGxheV9uYW1lIjoiUGFyaXMsIElsZS1kZS1GcmFuY2UsIE1ldHJvcG9saXRhbiBGcmFuY2UsIEZyYW5jZSIsImFkZHJlc3MiOnsic3VidXJiIjoiUGFyaXMiLCJjaXR5X2Rpc3RyaWN0IjoiUGFyaXMiLCJjaXR5IjoiUGFyaXMiLCJJU08zMTY2LTItbHZsNiI6IkZSLTc1Iiwic3RhdGUiOiJJbGUtZGUtRnJhbmNlIiwiSVNPMzE2Ni0yLWx2bDQiOiJGUi1JREYiLCJyZWdpb24iOiJNZXRyb3BvbGl0YW4gRnJhbmNlIiwiY291bnRyeSI6IkZyYW5jZSIsImNvdW50cnlfY29kZSI6ImZyIn0sImJvdW5kaW5nYm94IjpbIjQ4LjgxNTU3NTUiLCI0OC45MDIxNTYwIiwiMi4yMjQxMjIwIiwiMi40Njk3NjAyIl19LHsicGxhY2VfaWQiOjMyMDk5NjczOCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxMTUzNTcsImxhdCI6IjMzLjY2MTc5NjIiLCJsb24iOiItOTUuNTU1NTEzIiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE2LCJpbXBvcnRhbmNlIjowLjQ5NjE2NDUwOTcxMzQ2NTEsImFkZHJlc3N0eXBlIjoidG93biIsIm5hbWUiOiJQYXJpcyIsImRpc3BsYXlfbmFtZSI6IlBhcmlzLCBMYW1hciBDb3VudHksIFRleGFzLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJ0b3duIjoiUGFyaXMiLCJjb3VudHkiOiJMYW1hciBDb3VudHkiLCJzdGF0ZSI6IlRleGFzIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1UWCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiMzMuNjIwNjM0NSIsIjMzLjczODM4NjYiLCItOTUuNjI3OTM5NiIsIi05NS40MzU0MTE1Il19LHsicGxhY2VfaWQiOjExNTA5Mzg1MSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxNjQxMTkzLCJsYXQiOiI0OC44NTg4ODk3IiwibG9uIjoiMi4zMjAwNDEwMjE3MjAwNzY2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE0LCJpbXBvcnRhbmNlIjowLjQyODM5NTM5MTc3MjgxNTIsImFkZHJlc3N0eXBlIjoiY2l0eV9kaXN0cmljdCIsIm5hbWUiOiJQYXJpcyIsImRpc3BsYXlfbmFtZSI6IlBhcmlzLCBJbGUtZGUtRnJhbmNlLCBNZXRyb3BvbGl0YW4gRnJhbmNlLCBGcmFuY2UiLCJhZGRyZXNzIjp7ImNpdHlfZGlzdHJpY3QiOiJQYXJpcyIsImNpdHkiOiJQYXJpcyIsIklTTzMxNjYtMi1sdmw2IjoiRlItNzUiLCJzdGF0ZSI6IklsZS1kZS1GcmFuY2UiLCJJU08zMTY2LTItbHZsNCI6IkZSLUlERiIsInJlZ2lvbiI6Ik1ldHJvcG9saXRhbiBGcmFuY2UiLCJjb3VudHJ5IjoiRnJhbmNlIiwiY291bnRyeV9jb2RlIjoiZnIifSwiYm91bmRpbmdib3giOlsiNDguODE1NTc1NSIsIjQ4LjkwMjE1NjAiLCIyLjIyNDEyMjAiLCIyLjQ2OTc2MDIiXX0seyJwbGFjZV9pZCI6OTc1MTEyMywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjozNjY5NTgzLCJsYXQiOiI0My4wMDA2MjUzIiwibG9uIjoiLTc1LjMxMzc3NzUiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwicGxhY2VfcmFuayI6MTQsImltcG9ydGFuY2UiOjAuNDA0ODkyOTAyNTczMDg5MjQsImFkZHJlc3N0eXBlIjoidmlsbGFnZSIsIm5hbWUiOiJUb3duIG9mIFBhcmlzIiwiZGlzcGxheV9uYW1lIjoiVG93biBvZiBQYXJpcywgT25laWRhIENvdW50eSwgTmV3IFlvcmssIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7InZpbGxhZ2UiOiJUb3duIG9mIFBhcmlzIiwiY291bnR5IjoiT25laWRhIENvdW50eSIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyI0Mi45MzU2NjUwIiwiNDMuMDIzNDQ4MCIsIi03NS4zMjc1MTQwIiwiLTc1LjIwNzMzODAiXX1d
-  recorded_at: Wed, 17 Apr 2024 18:18:52 GMT
+  recorded_at: Wed, 17 Apr 2024 19:36:38 GMT
 - request:
     method: get
     uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Paris
@@ -458,7 +859,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 17 Apr 2024 18:18:53 GMT
+      - Wed, 17 Apr 2024 19:36:38 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -471,5 +872,228 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         W3sicGxhY2VfaWQiOjExNTEzNDM3OSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo3MTUyNSwibGF0IjoiNDguODUzNDk1MSIsImxvbiI6IjIuMzQ4MzkxNSIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxMiwiaW1wb3J0YW5jZSI6MC44MzE3MTAxNzE1NTg4NjczLCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiUGFyaXMiLCJkaXNwbGF5X25hbWUiOiJQYXJpcywgSWxlLWRlLUZyYW5jZSwgTWV0cm9wb2xpdGFuIEZyYW5jZSwgRnJhbmNlIiwiYWRkcmVzcyI6eyJjaXR5IjoiUGFyaXMiLCJJU08zMTY2LTItbHZsNiI6IkZSLTc1Iiwic3RhdGUiOiJJbGUtZGUtRnJhbmNlIiwiSVNPMzE2Ni0yLWx2bDQiOiJGUi1JREYiLCJyZWdpb24iOiJNZXRyb3BvbGl0YW4gRnJhbmNlIiwiY291bnRyeSI6IkZyYW5jZSIsImNvdW50cnlfY29kZSI6ImZyIn0sImJvdW5kaW5nYm94IjpbIjQ4LjgxNTU3NTUiLCI0OC45MDIxNTYwIiwiMi4yMjQxMjIwIiwiMi40Njk3NjAyIl19LHsicGxhY2VfaWQiOjExNTA0NzAyNywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo3NDQ0LCJsYXQiOiI0OC44NTg4ODk3IiwibG9uIjoiMi4zMjAwNDEwMjE3MjAwNzY2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE1LCJpbXBvcnRhbmNlIjowLjgzMTcxMDE3MTU1ODg2NzMsImFkZHJlc3N0eXBlIjoic3VidXJiIiwibmFtZSI6IlBhcmlzIiwiZGlzcGxheV9uYW1lIjoiUGFyaXMsIElsZS1kZS1GcmFuY2UsIE1ldHJvcG9saXRhbiBGcmFuY2UsIEZyYW5jZSIsImFkZHJlc3MiOnsic3VidXJiIjoiUGFyaXMiLCJjaXR5X2Rpc3RyaWN0IjoiUGFyaXMiLCJjaXR5IjoiUGFyaXMiLCJJU08zMTY2LTItbHZsNiI6IkZSLTc1Iiwic3RhdGUiOiJJbGUtZGUtRnJhbmNlIiwiSVNPMzE2Ni0yLWx2bDQiOiJGUi1JREYiLCJyZWdpb24iOiJNZXRyb3BvbGl0YW4gRnJhbmNlIiwiY291bnRyeSI6IkZyYW5jZSIsImNvdW50cnlfY29kZSI6ImZyIn0sImJvdW5kaW5nYm94IjpbIjQ4LjgxNTU3NTUiLCI0OC45MDIxNTYwIiwiMi4yMjQxMjIwIiwiMi40Njk3NjAyIl19LHsicGxhY2VfaWQiOjMyMDk5NjczOCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxMTUzNTcsImxhdCI6IjMzLjY2MTc5NjIiLCJsb24iOiItOTUuNTU1NTEzIiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE2LCJpbXBvcnRhbmNlIjowLjQ5NjE2NDUwOTcxMzQ2NTEsImFkZHJlc3N0eXBlIjoidG93biIsIm5hbWUiOiJQYXJpcyIsImRpc3BsYXlfbmFtZSI6IlBhcmlzLCBMYW1hciBDb3VudHksIFRleGFzLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJ0b3duIjoiUGFyaXMiLCJjb3VudHkiOiJMYW1hciBDb3VudHkiLCJzdGF0ZSI6IlRleGFzIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1UWCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiMzMuNjIwNjM0NSIsIjMzLjczODM4NjYiLCItOTUuNjI3OTM5NiIsIi05NS40MzU0MTE1Il19LHsicGxhY2VfaWQiOjExNTA5Mzg1MSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxNjQxMTkzLCJsYXQiOiI0OC44NTg4ODk3IiwibG9uIjoiMi4zMjAwNDEwMjE3MjAwNzY2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE0LCJpbXBvcnRhbmNlIjowLjQyODM5NTM5MTc3MjgxNTIsImFkZHJlc3N0eXBlIjoiY2l0eV9kaXN0cmljdCIsIm5hbWUiOiJQYXJpcyIsImRpc3BsYXlfbmFtZSI6IlBhcmlzLCBJbGUtZGUtRnJhbmNlLCBNZXRyb3BvbGl0YW4gRnJhbmNlLCBGcmFuY2UiLCJhZGRyZXNzIjp7ImNpdHlfZGlzdHJpY3QiOiJQYXJpcyIsImNpdHkiOiJQYXJpcyIsIklTTzMxNjYtMi1sdmw2IjoiRlItNzUiLCJzdGF0ZSI6IklsZS1kZS1GcmFuY2UiLCJJU08zMTY2LTItbHZsNCI6IkZSLUlERiIsInJlZ2lvbiI6Ik1ldHJvcG9saXRhbiBGcmFuY2UiLCJjb3VudHJ5IjoiRnJhbmNlIiwiY291bnRyeV9jb2RlIjoiZnIifSwiYm91bmRpbmdib3giOlsiNDguODE1NTc1NSIsIjQ4LjkwMjE1NjAiLCIyLjIyNDEyMjAiLCIyLjQ2OTc2MDIiXX0seyJwbGFjZV9pZCI6OTc1MTEyMywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjozNjY5NTgzLCJsYXQiOiI0My4wMDA2MjUzIiwibG9uIjoiLTc1LjMxMzc3NzUiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwicGxhY2VfcmFuayI6MTQsImltcG9ydGFuY2UiOjAuNDA0ODkyOTAyNTczMDg5MjQsImFkZHJlc3N0eXBlIjoidmlsbGFnZSIsIm5hbWUiOiJUb3duIG9mIFBhcmlzIiwiZGlzcGxheV9uYW1lIjoiVG93biBvZiBQYXJpcywgT25laWRhIENvdW50eSwgTmV3IFlvcmssIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7InZpbGxhZ2UiOiJUb3duIG9mIFBhcmlzIiwiY291bnR5IjoiT25laWRhIENvdW50eSIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyI0Mi45MzU2NjUwIiwiNDMuMDIzNDQ4MCIsIi03NS4zMjc1MTQwIiwiLTc1LjIwNzMzODAiXX1d
-  recorded_at: Wed, 17 Apr 2024 18:18:53 GMT
+  recorded_at: Wed, 17 Apr 2024 19:36:38 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Paris
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 17 Apr 2024 19:36:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3123'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjExNTEzNDM3OSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo3MTUyNSwibGF0IjoiNDguODUzNDk1MSIsImxvbiI6IjIuMzQ4MzkxNSIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxMiwiaW1wb3J0YW5jZSI6MC44MzE3MTAxNzE1NTg4NjczLCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiUGFyaXMiLCJkaXNwbGF5X25hbWUiOiJQYXJpcywgSWxlLWRlLUZyYW5jZSwgTWV0cm9wb2xpdGFuIEZyYW5jZSwgRnJhbmNlIiwiYWRkcmVzcyI6eyJjaXR5IjoiUGFyaXMiLCJJU08zMTY2LTItbHZsNiI6IkZSLTc1Iiwic3RhdGUiOiJJbGUtZGUtRnJhbmNlIiwiSVNPMzE2Ni0yLWx2bDQiOiJGUi1JREYiLCJyZWdpb24iOiJNZXRyb3BvbGl0YW4gRnJhbmNlIiwiY291bnRyeSI6IkZyYW5jZSIsImNvdW50cnlfY29kZSI6ImZyIn0sImJvdW5kaW5nYm94IjpbIjQ4LjgxNTU3NTUiLCI0OC45MDIxNTYwIiwiMi4yMjQxMjIwIiwiMi40Njk3NjAyIl19LHsicGxhY2VfaWQiOjExNTA0NzAyNywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo3NDQ0LCJsYXQiOiI0OC44NTg4ODk3IiwibG9uIjoiMi4zMjAwNDEwMjE3MjAwNzY2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE1LCJpbXBvcnRhbmNlIjowLjgzMTcxMDE3MTU1ODg2NzMsImFkZHJlc3N0eXBlIjoic3VidXJiIiwibmFtZSI6IlBhcmlzIiwiZGlzcGxheV9uYW1lIjoiUGFyaXMsIElsZS1kZS1GcmFuY2UsIE1ldHJvcG9saXRhbiBGcmFuY2UsIEZyYW5jZSIsImFkZHJlc3MiOnsic3VidXJiIjoiUGFyaXMiLCJjaXR5X2Rpc3RyaWN0IjoiUGFyaXMiLCJjaXR5IjoiUGFyaXMiLCJJU08zMTY2LTItbHZsNiI6IkZSLTc1Iiwic3RhdGUiOiJJbGUtZGUtRnJhbmNlIiwiSVNPMzE2Ni0yLWx2bDQiOiJGUi1JREYiLCJyZWdpb24iOiJNZXRyb3BvbGl0YW4gRnJhbmNlIiwiY291bnRyeSI6IkZyYW5jZSIsImNvdW50cnlfY29kZSI6ImZyIn0sImJvdW5kaW5nYm94IjpbIjQ4LjgxNTU3NTUiLCI0OC45MDIxNTYwIiwiMi4yMjQxMjIwIiwiMi40Njk3NjAyIl19LHsicGxhY2VfaWQiOjMyMDk5NjczOCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxMTUzNTcsImxhdCI6IjMzLjY2MTc5NjIiLCJsb24iOiItOTUuNTU1NTEzIiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE2LCJpbXBvcnRhbmNlIjowLjQ5NjE2NDUwOTcxMzQ2NTEsImFkZHJlc3N0eXBlIjoidG93biIsIm5hbWUiOiJQYXJpcyIsImRpc3BsYXlfbmFtZSI6IlBhcmlzLCBMYW1hciBDb3VudHksIFRleGFzLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJ0b3duIjoiUGFyaXMiLCJjb3VudHkiOiJMYW1hciBDb3VudHkiLCJzdGF0ZSI6IlRleGFzIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1UWCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiMzMuNjIwNjM0NSIsIjMzLjczODM4NjYiLCItOTUuNjI3OTM5NiIsIi05NS40MzU0MTE1Il19LHsicGxhY2VfaWQiOjExNTA5Mzg1MSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxNjQxMTkzLCJsYXQiOiI0OC44NTg4ODk3IiwibG9uIjoiMi4zMjAwNDEwMjE3MjAwNzY2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE0LCJpbXBvcnRhbmNlIjowLjQyODM5NTM5MTc3MjgxNTIsImFkZHJlc3N0eXBlIjoiY2l0eV9kaXN0cmljdCIsIm5hbWUiOiJQYXJpcyIsImRpc3BsYXlfbmFtZSI6IlBhcmlzLCBJbGUtZGUtRnJhbmNlLCBNZXRyb3BvbGl0YW4gRnJhbmNlLCBGcmFuY2UiLCJhZGRyZXNzIjp7ImNpdHlfZGlzdHJpY3QiOiJQYXJpcyIsImNpdHkiOiJQYXJpcyIsIklTTzMxNjYtMi1sdmw2IjoiRlItNzUiLCJzdGF0ZSI6IklsZS1kZS1GcmFuY2UiLCJJU08zMTY2LTItbHZsNCI6IkZSLUlERiIsInJlZ2lvbiI6Ik1ldHJvcG9saXRhbiBGcmFuY2UiLCJjb3VudHJ5IjoiRnJhbmNlIiwiY291bnRyeV9jb2RlIjoiZnIifSwiYm91bmRpbmdib3giOlsiNDguODE1NTc1NSIsIjQ4LjkwMjE1NjAiLCIyLjIyNDEyMjAiLCIyLjQ2OTc2MDIiXX0seyJwbGFjZV9pZCI6OTc1MTEyMywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjozNjY5NTgzLCJsYXQiOiI0My4wMDA2MjUzIiwibG9uIjoiLTc1LjMxMzc3NzUiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwicGxhY2VfcmFuayI6MTQsImltcG9ydGFuY2UiOjAuNDA0ODkyOTAyNTczMDg5MjQsImFkZHJlc3N0eXBlIjoidmlsbGFnZSIsIm5hbWUiOiJUb3duIG9mIFBhcmlzIiwiZGlzcGxheV9uYW1lIjoiVG93biBvZiBQYXJpcywgT25laWRhIENvdW50eSwgTmV3IFlvcmssIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7InZpbGxhZ2UiOiJUb3duIG9mIFBhcmlzIiwiY291bnR5IjoiT25laWRhIENvdW50eSIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyI0Mi45MzU2NjUwIiwiNDMuMDIzNDQ4MCIsIi03NS4zMjc1MTQwIiwiLTc1LjIwNzMzODAiXX1d
+  recorded_at: Wed, 17 Apr 2024 19:36:39 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:3000/api/v1/trips?user_id=742
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5675aa9e-3670-4b70-9df1-e13007d1a821
+      X-Runtime:
+      - '0.004641'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.12, process_action.action_controller;dur=0.93
+      Content-Length:
+      - '11'
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+  recorded_at: Wed, 17 Apr 2024 19:36:39 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Paris
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 17 Apr 2024 19:36:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3123'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjExNTEzNDM3OSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo3MTUyNSwibGF0IjoiNDguODUzNDk1MSIsImxvbiI6IjIuMzQ4MzkxNSIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxMiwiaW1wb3J0YW5jZSI6MC44MzE3MTAxNzE1NTg4NjczLCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiUGFyaXMiLCJkaXNwbGF5X25hbWUiOiJQYXJpcywgSWxlLWRlLUZyYW5jZSwgTWV0cm9wb2xpdGFuIEZyYW5jZSwgRnJhbmNlIiwiYWRkcmVzcyI6eyJjaXR5IjoiUGFyaXMiLCJJU08zMTY2LTItbHZsNiI6IkZSLTc1Iiwic3RhdGUiOiJJbGUtZGUtRnJhbmNlIiwiSVNPMzE2Ni0yLWx2bDQiOiJGUi1JREYiLCJyZWdpb24iOiJNZXRyb3BvbGl0YW4gRnJhbmNlIiwiY291bnRyeSI6IkZyYW5jZSIsImNvdW50cnlfY29kZSI6ImZyIn0sImJvdW5kaW5nYm94IjpbIjQ4LjgxNTU3NTUiLCI0OC45MDIxNTYwIiwiMi4yMjQxMjIwIiwiMi40Njk3NjAyIl19LHsicGxhY2VfaWQiOjExNTA0NzAyNywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo3NDQ0LCJsYXQiOiI0OC44NTg4ODk3IiwibG9uIjoiMi4zMjAwNDEwMjE3MjAwNzY2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE1LCJpbXBvcnRhbmNlIjowLjgzMTcxMDE3MTU1ODg2NzMsImFkZHJlc3N0eXBlIjoic3VidXJiIiwibmFtZSI6IlBhcmlzIiwiZGlzcGxheV9uYW1lIjoiUGFyaXMsIElsZS1kZS1GcmFuY2UsIE1ldHJvcG9saXRhbiBGcmFuY2UsIEZyYW5jZSIsImFkZHJlc3MiOnsic3VidXJiIjoiUGFyaXMiLCJjaXR5X2Rpc3RyaWN0IjoiUGFyaXMiLCJjaXR5IjoiUGFyaXMiLCJJU08zMTY2LTItbHZsNiI6IkZSLTc1Iiwic3RhdGUiOiJJbGUtZGUtRnJhbmNlIiwiSVNPMzE2Ni0yLWx2bDQiOiJGUi1JREYiLCJyZWdpb24iOiJNZXRyb3BvbGl0YW4gRnJhbmNlIiwiY291bnRyeSI6IkZyYW5jZSIsImNvdW50cnlfY29kZSI6ImZyIn0sImJvdW5kaW5nYm94IjpbIjQ4LjgxNTU3NTUiLCI0OC45MDIxNTYwIiwiMi4yMjQxMjIwIiwiMi40Njk3NjAyIl19LHsicGxhY2VfaWQiOjMyMDk5NjczOCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxMTUzNTcsImxhdCI6IjMzLjY2MTc5NjIiLCJsb24iOiItOTUuNTU1NTEzIiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE2LCJpbXBvcnRhbmNlIjowLjQ5NjE2NDUwOTcxMzQ2NTEsImFkZHJlc3N0eXBlIjoidG93biIsIm5hbWUiOiJQYXJpcyIsImRpc3BsYXlfbmFtZSI6IlBhcmlzLCBMYW1hciBDb3VudHksIFRleGFzLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJ0b3duIjoiUGFyaXMiLCJjb3VudHkiOiJMYW1hciBDb3VudHkiLCJzdGF0ZSI6IlRleGFzIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1UWCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiMzMuNjIwNjM0NSIsIjMzLjczODM4NjYiLCItOTUuNjI3OTM5NiIsIi05NS40MzU0MTE1Il19LHsicGxhY2VfaWQiOjExNTA5Mzg1MSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxNjQxMTkzLCJsYXQiOiI0OC44NTg4ODk3IiwibG9uIjoiMi4zMjAwNDEwMjE3MjAwNzY2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE0LCJpbXBvcnRhbmNlIjowLjQyODM5NTM5MTc3MjgxNTIsImFkZHJlc3N0eXBlIjoiY2l0eV9kaXN0cmljdCIsIm5hbWUiOiJQYXJpcyIsImRpc3BsYXlfbmFtZSI6IlBhcmlzLCBJbGUtZGUtRnJhbmNlLCBNZXRyb3BvbGl0YW4gRnJhbmNlLCBGcmFuY2UiLCJhZGRyZXNzIjp7ImNpdHlfZGlzdHJpY3QiOiJQYXJpcyIsImNpdHkiOiJQYXJpcyIsIklTTzMxNjYtMi1sdmw2IjoiRlItNzUiLCJzdGF0ZSI6IklsZS1kZS1GcmFuY2UiLCJJU08zMTY2LTItbHZsNCI6IkZSLUlERiIsInJlZ2lvbiI6Ik1ldHJvcG9saXRhbiBGcmFuY2UiLCJjb3VudHJ5IjoiRnJhbmNlIiwiY291bnRyeV9jb2RlIjoiZnIifSwiYm91bmRpbmdib3giOlsiNDguODE1NTc1NSIsIjQ4LjkwMjE1NjAiLCIyLjIyNDEyMjAiLCIyLjQ2OTc2MDIiXX0seyJwbGFjZV9pZCI6OTc1MTEyMywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjozNjY5NTgzLCJsYXQiOiI0My4wMDA2MjUzIiwibG9uIjoiLTc1LjMxMzc3NzUiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwicGxhY2VfcmFuayI6MTQsImltcG9ydGFuY2UiOjAuNDA0ODkyOTAyNTczMDg5MjQsImFkZHJlc3N0eXBlIjoidmlsbGFnZSIsIm5hbWUiOiJUb3duIG9mIFBhcmlzIiwiZGlzcGxheV9uYW1lIjoiVG93biBvZiBQYXJpcywgT25laWRhIENvdW50eSwgTmV3IFlvcmssIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7InZpbGxhZ2UiOiJUb3duIG9mIFBhcmlzIiwiY291bnR5IjoiT25laWRhIENvdW50eSIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyI0Mi45MzU2NjUwIiwiNDMuMDIzNDQ4MCIsIi03NS4zMjc1MTQwIiwiLTc1LjIwNzMzODAiXX1d
+  recorded_at: Wed, 17 Apr 2024 19:36:39 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Paris
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 17 Apr 2024 19:36:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3123'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjExNTEzNDM3OSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo3MTUyNSwibGF0IjoiNDguODUzNDk1MSIsImxvbiI6IjIuMzQ4MzkxNSIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxMiwiaW1wb3J0YW5jZSI6MC44MzE3MTAxNzE1NTg4NjczLCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiUGFyaXMiLCJkaXNwbGF5X25hbWUiOiJQYXJpcywgSWxlLWRlLUZyYW5jZSwgTWV0cm9wb2xpdGFuIEZyYW5jZSwgRnJhbmNlIiwiYWRkcmVzcyI6eyJjaXR5IjoiUGFyaXMiLCJJU08zMTY2LTItbHZsNiI6IkZSLTc1Iiwic3RhdGUiOiJJbGUtZGUtRnJhbmNlIiwiSVNPMzE2Ni0yLWx2bDQiOiJGUi1JREYiLCJyZWdpb24iOiJNZXRyb3BvbGl0YW4gRnJhbmNlIiwiY291bnRyeSI6IkZyYW5jZSIsImNvdW50cnlfY29kZSI6ImZyIn0sImJvdW5kaW5nYm94IjpbIjQ4LjgxNTU3NTUiLCI0OC45MDIxNTYwIiwiMi4yMjQxMjIwIiwiMi40Njk3NjAyIl19LHsicGxhY2VfaWQiOjExNTA0NzAyNywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo3NDQ0LCJsYXQiOiI0OC44NTg4ODk3IiwibG9uIjoiMi4zMjAwNDEwMjE3MjAwNzY2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE1LCJpbXBvcnRhbmNlIjowLjgzMTcxMDE3MTU1ODg2NzMsImFkZHJlc3N0eXBlIjoic3VidXJiIiwibmFtZSI6IlBhcmlzIiwiZGlzcGxheV9uYW1lIjoiUGFyaXMsIElsZS1kZS1GcmFuY2UsIE1ldHJvcG9saXRhbiBGcmFuY2UsIEZyYW5jZSIsImFkZHJlc3MiOnsic3VidXJiIjoiUGFyaXMiLCJjaXR5X2Rpc3RyaWN0IjoiUGFyaXMiLCJjaXR5IjoiUGFyaXMiLCJJU08zMTY2LTItbHZsNiI6IkZSLTc1Iiwic3RhdGUiOiJJbGUtZGUtRnJhbmNlIiwiSVNPMzE2Ni0yLWx2bDQiOiJGUi1JREYiLCJyZWdpb24iOiJNZXRyb3BvbGl0YW4gRnJhbmNlIiwiY291bnRyeSI6IkZyYW5jZSIsImNvdW50cnlfY29kZSI6ImZyIn0sImJvdW5kaW5nYm94IjpbIjQ4LjgxNTU3NTUiLCI0OC45MDIxNTYwIiwiMi4yMjQxMjIwIiwiMi40Njk3NjAyIl19LHsicGxhY2VfaWQiOjMyMDk5NjczOCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxMTUzNTcsImxhdCI6IjMzLjY2MTc5NjIiLCJsb24iOiItOTUuNTU1NTEzIiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE2LCJpbXBvcnRhbmNlIjowLjQ5NjE2NDUwOTcxMzQ2NTEsImFkZHJlc3N0eXBlIjoidG93biIsIm5hbWUiOiJQYXJpcyIsImRpc3BsYXlfbmFtZSI6IlBhcmlzLCBMYW1hciBDb3VudHksIFRleGFzLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJ0b3duIjoiUGFyaXMiLCJjb3VudHkiOiJMYW1hciBDb3VudHkiLCJzdGF0ZSI6IlRleGFzIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1UWCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiMzMuNjIwNjM0NSIsIjMzLjczODM4NjYiLCItOTUuNjI3OTM5NiIsIi05NS40MzU0MTE1Il19LHsicGxhY2VfaWQiOjExNTA5Mzg1MSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxNjQxMTkzLCJsYXQiOiI0OC44NTg4ODk3IiwibG9uIjoiMi4zMjAwNDEwMjE3MjAwNzY2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE0LCJpbXBvcnRhbmNlIjowLjQyODM5NTM5MTc3MjgxNTIsImFkZHJlc3N0eXBlIjoiY2l0eV9kaXN0cmljdCIsIm5hbWUiOiJQYXJpcyIsImRpc3BsYXlfbmFtZSI6IlBhcmlzLCBJbGUtZGUtRnJhbmNlLCBNZXRyb3BvbGl0YW4gRnJhbmNlLCBGcmFuY2UiLCJhZGRyZXNzIjp7ImNpdHlfZGlzdHJpY3QiOiJQYXJpcyIsImNpdHkiOiJQYXJpcyIsIklTTzMxNjYtMi1sdmw2IjoiRlItNzUiLCJzdGF0ZSI6IklsZS1kZS1GcmFuY2UiLCJJU08zMTY2LTItbHZsNCI6IkZSLUlERiIsInJlZ2lvbiI6Ik1ldHJvcG9saXRhbiBGcmFuY2UiLCJjb3VudHJ5IjoiRnJhbmNlIiwiY291bnRyeV9jb2RlIjoiZnIifSwiYm91bmRpbmdib3giOlsiNDguODE1NTc1NSIsIjQ4LjkwMjE1NjAiLCIyLjIyNDEyMjAiLCIyLjQ2OTc2MDIiXX0seyJwbGFjZV9pZCI6OTc1MTEyMywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjozNjY5NTgzLCJsYXQiOiI0My4wMDA2MjUzIiwibG9uIjoiLTc1LjMxMzc3NzUiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwicGxhY2VfcmFuayI6MTQsImltcG9ydGFuY2UiOjAuNDA0ODkyOTAyNTczMDg5MjQsImFkZHJlc3N0eXBlIjoidmlsbGFnZSIsIm5hbWUiOiJUb3duIG9mIFBhcmlzIiwiZGlzcGxheV9uYW1lIjoiVG93biBvZiBQYXJpcywgT25laWRhIENvdW50eSwgTmV3IFlvcmssIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7InZpbGxhZ2UiOiJUb3duIG9mIFBhcmlzIiwiY291bnR5IjoiT25laWRhIENvdW50eSIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyI0Mi45MzU2NjUwIiwiNDMuMDIzNDQ4MCIsIi03NS4zMjc1MTQwIiwiLTc1LjIwNzMzODAiXX1d
+  recorded_at: Wed, 17 Apr 2024 19:36:41 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Paris
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 17 Apr 2024 19:36:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3123'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjExNTEzNDM3OSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo3MTUyNSwibGF0IjoiNDguODUzNDk1MSIsImxvbiI6IjIuMzQ4MzkxNSIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxMiwiaW1wb3J0YW5jZSI6MC44MzE3MTAxNzE1NTg4NjczLCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiUGFyaXMiLCJkaXNwbGF5X25hbWUiOiJQYXJpcywgSWxlLWRlLUZyYW5jZSwgTWV0cm9wb2xpdGFuIEZyYW5jZSwgRnJhbmNlIiwiYWRkcmVzcyI6eyJjaXR5IjoiUGFyaXMiLCJJU08zMTY2LTItbHZsNiI6IkZSLTc1Iiwic3RhdGUiOiJJbGUtZGUtRnJhbmNlIiwiSVNPMzE2Ni0yLWx2bDQiOiJGUi1JREYiLCJyZWdpb24iOiJNZXRyb3BvbGl0YW4gRnJhbmNlIiwiY291bnRyeSI6IkZyYW5jZSIsImNvdW50cnlfY29kZSI6ImZyIn0sImJvdW5kaW5nYm94IjpbIjQ4LjgxNTU3NTUiLCI0OC45MDIxNTYwIiwiMi4yMjQxMjIwIiwiMi40Njk3NjAyIl19LHsicGxhY2VfaWQiOjExNTA0NzAyNywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo3NDQ0LCJsYXQiOiI0OC44NTg4ODk3IiwibG9uIjoiMi4zMjAwNDEwMjE3MjAwNzY2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE1LCJpbXBvcnRhbmNlIjowLjgzMTcxMDE3MTU1ODg2NzMsImFkZHJlc3N0eXBlIjoic3VidXJiIiwibmFtZSI6IlBhcmlzIiwiZGlzcGxheV9uYW1lIjoiUGFyaXMsIElsZS1kZS1GcmFuY2UsIE1ldHJvcG9saXRhbiBGcmFuY2UsIEZyYW5jZSIsImFkZHJlc3MiOnsic3VidXJiIjoiUGFyaXMiLCJjaXR5X2Rpc3RyaWN0IjoiUGFyaXMiLCJjaXR5IjoiUGFyaXMiLCJJU08zMTY2LTItbHZsNiI6IkZSLTc1Iiwic3RhdGUiOiJJbGUtZGUtRnJhbmNlIiwiSVNPMzE2Ni0yLWx2bDQiOiJGUi1JREYiLCJyZWdpb24iOiJNZXRyb3BvbGl0YW4gRnJhbmNlIiwiY291bnRyeSI6IkZyYW5jZSIsImNvdW50cnlfY29kZSI6ImZyIn0sImJvdW5kaW5nYm94IjpbIjQ4LjgxNTU3NTUiLCI0OC45MDIxNTYwIiwiMi4yMjQxMjIwIiwiMi40Njk3NjAyIl19LHsicGxhY2VfaWQiOjMyMDk5NjczOCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxMTUzNTcsImxhdCI6IjMzLjY2MTc5NjIiLCJsb24iOiItOTUuNTU1NTEzIiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE2LCJpbXBvcnRhbmNlIjowLjQ5NjE2NDUwOTcxMzQ2NTEsImFkZHJlc3N0eXBlIjoidG93biIsIm5hbWUiOiJQYXJpcyIsImRpc3BsYXlfbmFtZSI6IlBhcmlzLCBMYW1hciBDb3VudHksIFRleGFzLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJ0b3duIjoiUGFyaXMiLCJjb3VudHkiOiJMYW1hciBDb3VudHkiLCJzdGF0ZSI6IlRleGFzIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1UWCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiMzMuNjIwNjM0NSIsIjMzLjczODM4NjYiLCItOTUuNjI3OTM5NiIsIi05NS40MzU0MTE1Il19LHsicGxhY2VfaWQiOjExNTA5Mzg1MSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxNjQxMTkzLCJsYXQiOiI0OC44NTg4ODk3IiwibG9uIjoiMi4zMjAwNDEwMjE3MjAwNzY2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE0LCJpbXBvcnRhbmNlIjowLjQyODM5NTM5MTc3MjgxNTIsImFkZHJlc3N0eXBlIjoiY2l0eV9kaXN0cmljdCIsIm5hbWUiOiJQYXJpcyIsImRpc3BsYXlfbmFtZSI6IlBhcmlzLCBJbGUtZGUtRnJhbmNlLCBNZXRyb3BvbGl0YW4gRnJhbmNlLCBGcmFuY2UiLCJhZGRyZXNzIjp7ImNpdHlfZGlzdHJpY3QiOiJQYXJpcyIsImNpdHkiOiJQYXJpcyIsIklTTzMxNjYtMi1sdmw2IjoiRlItNzUiLCJzdGF0ZSI6IklsZS1kZS1GcmFuY2UiLCJJU08zMTY2LTItbHZsNCI6IkZSLUlERiIsInJlZ2lvbiI6Ik1ldHJvcG9saXRhbiBGcmFuY2UiLCJjb3VudHJ5IjoiRnJhbmNlIiwiY291bnRyeV9jb2RlIjoiZnIifSwiYm91bmRpbmdib3giOlsiNDguODE1NTc1NSIsIjQ4LjkwMjE1NjAiLCIyLjIyNDEyMjAiLCIyLjQ2OTc2MDIiXX0seyJwbGFjZV9pZCI6OTc1MTEyMywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjozNjY5NTgzLCJsYXQiOiI0My4wMDA2MjUzIiwibG9uIjoiLTc1LjMxMzc3NzUiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwicGxhY2VfcmFuayI6MTQsImltcG9ydGFuY2UiOjAuNDA0ODkyOTAyNTczMDg5MjQsImFkZHJlc3N0eXBlIjoidmlsbGFnZSIsIm5hbWUiOiJUb3duIG9mIFBhcmlzIiwiZGlzcGxheV9uYW1lIjoiVG93biBvZiBQYXJpcywgT25laWRhIENvdW50eSwgTmV3IFlvcmssIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7InZpbGxhZ2UiOiJUb3duIG9mIFBhcmlzIiwiY291bnR5IjoiT25laWRhIENvdW50eSIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyI0Mi45MzU2NjUwIiwiNDMuMDIzNDQ4MCIsIi03NS4zMjc1MTQwIiwiLTc1LjIwNzMzODAiXX1d
+  recorded_at: Wed, 17 Apr 2024 19:36:41 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Paris
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 17 Apr 2024 19:36:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3123'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjExNTEzNDM3OSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo3MTUyNSwibGF0IjoiNDguODUzNDk1MSIsImxvbiI6IjIuMzQ4MzkxNSIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJwbGFjZV9yYW5rIjoxMiwiaW1wb3J0YW5jZSI6MC44MzE3MTAxNzE1NTg4NjczLCJhZGRyZXNzdHlwZSI6ImNpdHkiLCJuYW1lIjoiUGFyaXMiLCJkaXNwbGF5X25hbWUiOiJQYXJpcywgSWxlLWRlLUZyYW5jZSwgTWV0cm9wb2xpdGFuIEZyYW5jZSwgRnJhbmNlIiwiYWRkcmVzcyI6eyJjaXR5IjoiUGFyaXMiLCJJU08zMTY2LTItbHZsNiI6IkZSLTc1Iiwic3RhdGUiOiJJbGUtZGUtRnJhbmNlIiwiSVNPMzE2Ni0yLWx2bDQiOiJGUi1JREYiLCJyZWdpb24iOiJNZXRyb3BvbGl0YW4gRnJhbmNlIiwiY291bnRyeSI6IkZyYW5jZSIsImNvdW50cnlfY29kZSI6ImZyIn0sImJvdW5kaW5nYm94IjpbIjQ4LjgxNTU3NTUiLCI0OC45MDIxNTYwIiwiMi4yMjQxMjIwIiwiMi40Njk3NjAyIl19LHsicGxhY2VfaWQiOjExNTA0NzAyNywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo3NDQ0LCJsYXQiOiI0OC44NTg4ODk3IiwibG9uIjoiMi4zMjAwNDEwMjE3MjAwNzY2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE1LCJpbXBvcnRhbmNlIjowLjgzMTcxMDE3MTU1ODg2NzMsImFkZHJlc3N0eXBlIjoic3VidXJiIiwibmFtZSI6IlBhcmlzIiwiZGlzcGxheV9uYW1lIjoiUGFyaXMsIElsZS1kZS1GcmFuY2UsIE1ldHJvcG9saXRhbiBGcmFuY2UsIEZyYW5jZSIsImFkZHJlc3MiOnsic3VidXJiIjoiUGFyaXMiLCJjaXR5X2Rpc3RyaWN0IjoiUGFyaXMiLCJjaXR5IjoiUGFyaXMiLCJJU08zMTY2LTItbHZsNiI6IkZSLTc1Iiwic3RhdGUiOiJJbGUtZGUtRnJhbmNlIiwiSVNPMzE2Ni0yLWx2bDQiOiJGUi1JREYiLCJyZWdpb24iOiJNZXRyb3BvbGl0YW4gRnJhbmNlIiwiY291bnRyeSI6IkZyYW5jZSIsImNvdW50cnlfY29kZSI6ImZyIn0sImJvdW5kaW5nYm94IjpbIjQ4LjgxNTU3NTUiLCI0OC45MDIxNTYwIiwiMi4yMjQxMjIwIiwiMi40Njk3NjAyIl19LHsicGxhY2VfaWQiOjMyMDk5NjczOCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxMTUzNTcsImxhdCI6IjMzLjY2MTc5NjIiLCJsb24iOiItOTUuNTU1NTEzIiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE2LCJpbXBvcnRhbmNlIjowLjQ5NjE2NDUwOTcxMzQ2NTEsImFkZHJlc3N0eXBlIjoidG93biIsIm5hbWUiOiJQYXJpcyIsImRpc3BsYXlfbmFtZSI6IlBhcmlzLCBMYW1hciBDb3VudHksIFRleGFzLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJ0b3duIjoiUGFyaXMiLCJjb3VudHkiOiJMYW1hciBDb3VudHkiLCJzdGF0ZSI6IlRleGFzIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1UWCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiMzMuNjIwNjM0NSIsIjMzLjczODM4NjYiLCItOTUuNjI3OTM5NiIsIi05NS40MzU0MTE1Il19LHsicGxhY2VfaWQiOjExNTA5Mzg1MSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxNjQxMTkzLCJsYXQiOiI0OC44NTg4ODk3IiwibG9uIjoiMi4zMjAwNDEwMjE3MjAwNzY2IiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsInBsYWNlX3JhbmsiOjE0LCJpbXBvcnRhbmNlIjowLjQyODM5NTM5MTc3MjgxNTIsImFkZHJlc3N0eXBlIjoiY2l0eV9kaXN0cmljdCIsIm5hbWUiOiJQYXJpcyIsImRpc3BsYXlfbmFtZSI6IlBhcmlzLCBJbGUtZGUtRnJhbmNlLCBNZXRyb3BvbGl0YW4gRnJhbmNlLCBGcmFuY2UiLCJhZGRyZXNzIjp7ImNpdHlfZGlzdHJpY3QiOiJQYXJpcyIsImNpdHkiOiJQYXJpcyIsIklTTzMxNjYtMi1sdmw2IjoiRlItNzUiLCJzdGF0ZSI6IklsZS1kZS1GcmFuY2UiLCJJU08zMTY2LTItbHZsNCI6IkZSLUlERiIsInJlZ2lvbiI6Ik1ldHJvcG9saXRhbiBGcmFuY2UiLCJjb3VudHJ5IjoiRnJhbmNlIiwiY291bnRyeV9jb2RlIjoiZnIifSwiYm91bmRpbmdib3giOlsiNDguODE1NTc1NSIsIjQ4LjkwMjE1NjAiLCIyLjIyNDEyMjAiLCIyLjQ2OTc2MDIiXX0seyJwbGFjZV9pZCI6OTc1MTEyMywibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjozNjY5NTgzLCJsYXQiOiI0My4wMDA2MjUzIiwibG9uIjoiLTc1LjMxMzc3NzUiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwicGxhY2VfcmFuayI6MTQsImltcG9ydGFuY2UiOjAuNDA0ODkyOTAyNTczMDg5MjQsImFkZHJlc3N0eXBlIjoidmlsbGFnZSIsIm5hbWUiOiJUb3duIG9mIFBhcmlzIiwiZGlzcGxheV9uYW1lIjoiVG93biBvZiBQYXJpcywgT25laWRhIENvdW50eSwgTmV3IFlvcmssIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7InZpbGxhZ2UiOiJUb3duIG9mIFBhcmlzIiwiY291bnR5IjoiT25laWRhIENvdW50eSIsInN0YXRlIjoiTmV3IFlvcmsiLCJJU08zMTY2LTItbHZsNCI6IlVTLU5ZIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyI0Mi45MzU2NjUwIiwiNDMuMDIzNDQ4MCIsIi03NS4zMjc1MTQwIiwiLTc1LjIwNzMzODAiXX1d
+  recorded_at: Wed, 17 Apr 2024 19:36:42 GMT
 recorded_with: VCR 6.2.0

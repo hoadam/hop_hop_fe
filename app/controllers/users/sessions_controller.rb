@@ -3,11 +3,6 @@ class Users::SessionsController < Devise::SessionsController
 
   # # # Adapted from Devise Sessions Controller
 
-  def show
-    @user = User.find(params[:id]).decorate
-    @trips = TripService.get_trips(current_user.id)
-  end
-
   def new
     @user = User.new
   end

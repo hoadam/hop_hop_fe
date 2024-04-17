@@ -1,3 +1,4 @@
+<h1>Logged in as <%= current_user.email %></h1>
 <h2>Edit Profile</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
