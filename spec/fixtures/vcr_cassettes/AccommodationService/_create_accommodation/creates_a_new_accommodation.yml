@@ -663,58 +663,6 @@ http_interactions:
   recorded_at: Wed, 17 Apr 2024 22:37:17 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:3000/api/v1/trips
-    body:
-      encoding: UTF-8
-      string: '{"trip":{"name":"Trip To Japan","location":"Japan","start_date":"2024-04-20","end_date":"2024-04-30","status":"in_progress","total_budget":1000,"user_id":1}}'
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/json
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"8295b2681461f6f8a18e8e4ede99c989"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - b8816447-0366-4527-bec6-7018bf22db09
-      X-Runtime:
-      - '0.033822'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.00, sql.active_record;dur=12.09,
-        transaction.active_record;dur=11.06, instantiation.active_record;dur=0.10,
-        process_action.action_controller;dur=29.26
-      Content-Length:
-      - '1691'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"674","type":"trip","attributes":{"name":"Trip To Japan","location":"Japan","status":"in_progress","total_budget":1000,"start_date":"2024-04-20T00:00:00.000Z","end_date":"2024-04-30T00:00:00.000Z","total_expenses":0},"relationships":{"daily_itineraries":{"data":[{"id":"7404","type":"daily_itinerary"},{"id":"7405","type":"daily_itinerary"},{"id":"7406","type":"daily_itinerary"},{"id":"7407","type":"daily_itinerary"},{"id":"7408","type":"daily_itinerary"},{"id":"7409","type":"daily_itinerary"},{"id":"7410","type":"daily_itinerary"},{"id":"7411","type":"daily_itinerary"},{"id":"7412","type":"daily_itinerary"},{"id":"7413","type":"daily_itinerary"},{"id":"7414","type":"daily_itinerary"}]}}},"included":[{"id":"7404","type":"daily_itinerary","attributes":{"trip_id":674,"date":"2024-04-20"}},{"id":"7405","type":"daily_itinerary","attributes":{"trip_id":674,"date":"2024-04-21"}},{"id":"7406","type":"daily_itinerary","attributes":{"trip_id":674,"date":"2024-04-22"}},{"id":"7407","type":"daily_itinerary","attributes":{"trip_id":674,"date":"2024-04-23"}},{"id":"7408","type":"daily_itinerary","attributes":{"trip_id":674,"date":"2024-04-24"}},{"id":"7409","type":"daily_itinerary","attributes":{"trip_id":674,"date":"2024-04-25"}},{"id":"7410","type":"daily_itinerary","attributes":{"trip_id":674,"date":"2024-04-26"}},{"id":"7411","type":"daily_itinerary","attributes":{"trip_id":674,"date":"2024-04-27"}},{"id":"7412","type":"daily_itinerary","attributes":{"trip_id":674,"date":"2024-04-28"}},{"id":"7413","type":"daily_itinerary","attributes":{"trip_id":674,"date":"2024-04-29"}},{"id":"7414","type":"daily_itinerary","attributes":{"trip_id":674,"date":"2024-04-30"}}]}'
-  recorded_at: Wed, 17 Apr 2024 22:37:49 GMT
-- request:
-    method: post
     uri: http://127.0.0.1:3000/api/v1/trips/674/accommodations
     body:
       encoding: UTF-8
@@ -768,4 +716,496 @@ http_interactions:
         Tokyo","lat":null,"lon":null,"type_of_accommodation":null,"address_format":"Ginza,
         Tokyo"}}}'
   recorded_at: Wed, 17 Apr 2024 22:37:49 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/705/accommodations
+    body:
+      encoding: UTF-8
+      string: '{"user_id":1,"accommodation":{"name":"Conrad Tokyo","address":"Ginza,
+        Tokyo","check_in":"2024-04-20","check_out":"2024-04-30"}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"ba44fc96e8ce1a1cc29558009d6900ae"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - bc6ce1b4-bc0e-4619-9785-1a070eb8863f
+      X-Runtime:
+      - '0.007479'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=2.50, instantiation.active_record;dur=0.02,
+        transaction.active_record;dur=2.64, process_action.action_controller;dur=3.97
+      Content-Length:
+      - '296'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"304","type":"accommodation","attributes":{"trip_id":705,"name":"Conrad
+        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
+        Tokyo","lat":null,"lon":null,"type_of_accommodation":null,"address_format":"Ginza,
+        Tokyo"}}}'
+  recorded_at: Thu, 18 Apr 2024 15:09:55 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/723/accommodations
+    body:
+      encoding: UTF-8
+      string: '{"user_id":1,"accommodation":{"name":"Conrad Tokyo","address":"Ginza,
+        Tokyo","check_in":"2024-04-20","check_out":"2024-04-30"}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"ee7b557f8724f1e47e3135c4c40750b7"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 119e546b-f03e-4399-98ce-643d583b815b
+      X-Runtime:
+      - '0.005950'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.93, instantiation.active_record;dur=0.02,
+        transaction.active_record;dur=0.92, process_action.action_controller;dur=2.43
+      Content-Length:
+      - '296'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"313","type":"accommodation","attributes":{"trip_id":723,"name":"Conrad
+        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
+        Tokyo","lat":null,"lon":null,"type_of_accommodation":null,"address_format":"Ginza,
+        Tokyo"}}}'
+  recorded_at: Thu, 18 Apr 2024 15:14:11 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/741/accommodations
+    body:
+      encoding: UTF-8
+      string: '{"user_id":1,"accommodation":{"name":"Conrad Tokyo","address":"Ginza,
+        Tokyo","check_in":"2024-04-20","check_out":"2024-04-30"}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"c9f7a86f6dea4fea49603271c9f7131d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4207ff6e-90b4-4680-a0fb-5bb17873954f
+      X-Runtime:
+      - '0.006887'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.93, instantiation.active_record;dur=0.02,
+        transaction.active_record;dur=1.88, process_action.action_controller;dur=3.28
+      Content-Length:
+      - '296'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"322","type":"accommodation","attributes":{"trip_id":741,"name":"Conrad
+        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
+        Tokyo","lat":null,"lon":null,"type_of_accommodation":null,"address_format":"Ginza,
+        Tokyo"}}}'
+  recorded_at: Thu, 18 Apr 2024 15:14:57 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/759/accommodations
+    body:
+      encoding: UTF-8
+      string: '{"user_id":1,"accommodation":{"name":"Conrad Tokyo","address":"Ginza,
+        Tokyo","check_in":"2024-04-20","check_out":"2024-04-30"}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"f0cc79cfb182f5ff5732e660609775ac"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d6755849-2e01-4dad-9d66-53db0c8f5016
+      X-Runtime:
+      - '0.006306'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.94, instantiation.active_record;dur=0.02,
+        transaction.active_record;dur=0.88, process_action.action_controller;dur=2.64
+      Content-Length:
+      - '296'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"331","type":"accommodation","attributes":{"trip_id":759,"name":"Conrad
+        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
+        Tokyo","lat":null,"lon":null,"type_of_accommodation":null,"address_format":"Ginza,
+        Tokyo"}}}'
+  recorded_at: Thu, 18 Apr 2024 15:18:02 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/777/accommodations
+    body:
+      encoding: UTF-8
+      string: '{"user_id":1,"accommodation":{"name":"Conrad Tokyo","address":"Ginza,
+        Tokyo","check_in":"2024-04-20","check_out":"2024-04-30"}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"e6e7b28e11717ded4d907447a6044b69"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 16377682-30f7-4915-890f-51ac0e8bd98d
+      X-Runtime:
+      - '0.006723'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.32, instantiation.active_record;dur=0.02,
+        transaction.active_record;dur=1.05, process_action.action_controller;dur=3.06
+      Content-Length:
+      - '296'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"340","type":"accommodation","attributes":{"trip_id":777,"name":"Conrad
+        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
+        Tokyo","lat":null,"lon":null,"type_of_accommodation":null,"address_format":"Ginza,
+        Tokyo"}}}'
+  recorded_at: Thu, 18 Apr 2024 15:21:37 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/795/accommodations
+    body:
+      encoding: UTF-8
+      string: '{"user_id":1,"accommodation":{"name":"Conrad Tokyo","address":"Ginza,
+        Tokyo","check_in":"2024-04-20","check_out":"2024-04-30"}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"a89cbb632ea0b803903a58cfc1f737a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8efc28d3-86e2-4155-9efc-e106471ccc2c
+      X-Runtime:
+      - '0.005566'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.79, instantiation.active_record;dur=0.02,
+        transaction.active_record;dur=0.69, process_action.action_controller;dur=2.07
+      Content-Length:
+      - '296'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"349","type":"accommodation","attributes":{"trip_id":795,"name":"Conrad
+        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
+        Tokyo","lat":null,"lon":null,"type_of_accommodation":null,"address_format":"Ginza,
+        Tokyo"}}}'
+  recorded_at: Thu, 18 Apr 2024 15:21:57 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/813/accommodations
+    body:
+      encoding: UTF-8
+      string: '{"user_id":1,"accommodation":{"name":"Conrad Tokyo","address":"Ginza,
+        Tokyo","check_in":"2024-04-20","check_out":"2024-04-30"}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"a14e3f0d8b4679ad58f96969dd6b5787"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3c5991e6-35cf-4656-8306-a90fd0157494
+      X-Runtime:
+      - '0.006131'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.90, instantiation.active_record;dur=0.02,
+        transaction.active_record;dur=1.15, process_action.action_controller;dur=2.59
+      Content-Length:
+      - '296'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"358","type":"accommodation","attributes":{"trip_id":813,"name":"Conrad
+        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
+        Tokyo","lat":null,"lon":null,"type_of_accommodation":null,"address_format":"Ginza,
+        Tokyo"}}}'
+  recorded_at: Thu, 18 Apr 2024 15:25:14 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips
+    body:
+      encoding: UTF-8
+      string: '{"trip":{"name":"Trip To Japan","location":"Japan","start_date":"2024-04-20","end_date":"2024-04-30","status":"in_progress","total_budget":1000,"user_id":1}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"ba3773636c0a1e12c183b2f0d3f54214"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c6278197-d0e9-4435-9d3a-adab3de37f27
+      X-Runtime:
+      - '0.031491'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=12.93,
+        transaction.active_record;dur=10.88, instantiation.active_record;dur=0.10,
+        process_action.action_controller;dur=27.70
+      Content-Length:
+      - '1691'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"831","type":"trip","attributes":{"name":"Trip To Japan","location":"Japan","status":"in_progress","total_budget":1000,"start_date":"2024-04-20T00:00:00.000Z","end_date":"2024-04-30T00:00:00.000Z","total_expenses":0},"relationships":{"daily_itineraries":{"data":[{"id":"9131","type":"daily_itinerary"},{"id":"9132","type":"daily_itinerary"},{"id":"9133","type":"daily_itinerary"},{"id":"9134","type":"daily_itinerary"},{"id":"9135","type":"daily_itinerary"},{"id":"9136","type":"daily_itinerary"},{"id":"9137","type":"daily_itinerary"},{"id":"9138","type":"daily_itinerary"},{"id":"9139","type":"daily_itinerary"},{"id":"9140","type":"daily_itinerary"},{"id":"9141","type":"daily_itinerary"}]}}},"included":[{"id":"9131","type":"daily_itinerary","attributes":{"trip_id":831,"date":"2024-04-20"}},{"id":"9132","type":"daily_itinerary","attributes":{"trip_id":831,"date":"2024-04-21"}},{"id":"9133","type":"daily_itinerary","attributes":{"trip_id":831,"date":"2024-04-22"}},{"id":"9134","type":"daily_itinerary","attributes":{"trip_id":831,"date":"2024-04-23"}},{"id":"9135","type":"daily_itinerary","attributes":{"trip_id":831,"date":"2024-04-24"}},{"id":"9136","type":"daily_itinerary","attributes":{"trip_id":831,"date":"2024-04-25"}},{"id":"9137","type":"daily_itinerary","attributes":{"trip_id":831,"date":"2024-04-26"}},{"id":"9138","type":"daily_itinerary","attributes":{"trip_id":831,"date":"2024-04-27"}},{"id":"9139","type":"daily_itinerary","attributes":{"trip_id":831,"date":"2024-04-28"}},{"id":"9140","type":"daily_itinerary","attributes":{"trip_id":831,"date":"2024-04-29"}},{"id":"9141","type":"daily_itinerary","attributes":{"trip_id":831,"date":"2024-04-30"}}]}'
+  recorded_at: Thu, 18 Apr 2024 15:26:02 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips/831/accommodations
+    body:
+      encoding: UTF-8
+      string: '{"user_id":1,"accommodation":{"name":"Conrad Tokyo","address":"Ginza,
+        Tokyo","check_in":"2024-04-20","check_out":"2024-04-30"}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"5fbeb137aea2fa475d4bd3413b890311"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ced98bcc-9b96-405a-a685-51e3d10750b8
+      X-Runtime:
+      - '0.006224'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.98, instantiation.active_record;dur=0.02,
+        transaction.active_record;dur=1.24, process_action.action_controller;dur=2.63
+      Content-Length:
+      - '296'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"367","type":"accommodation","attributes":{"trip_id":831,"name":"Conrad
+        Tokyo","check_in":"2024-04-20T00:00:00.000Z","check_out":"2024-04-30T00:00:00.000Z","expenses":null,"address":"Ginza,
+        Tokyo","lat":null,"lon":null,"type_of_accommodation":null,"address_format":"Ginza,
+        Tokyo"}}}'
+  recorded_at: Thu, 18 Apr 2024 15:26:02 GMT
 recorded_with: VCR 6.2.0

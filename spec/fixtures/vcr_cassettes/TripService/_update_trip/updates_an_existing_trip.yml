@@ -613,58 +613,6 @@ http_interactions:
       string: '{"data":{"id":"670","type":"trip","attributes":{"name":"Japan Trip","location":"Japan","status":"in_progress","total_budget":1000,"start_date":"2024-04-20T00:00:00.000Z","end_date":"2024-04-30T00:00:00.000Z","total_expenses":0},"relationships":{"daily_itineraries":{"data":[{"id":"7360","type":"daily_itinerary"},{"id":"7361","type":"daily_itinerary"},{"id":"7362","type":"daily_itinerary"},{"id":"7363","type":"daily_itinerary"},{"id":"7364","type":"daily_itinerary"},{"id":"7365","type":"daily_itinerary"},{"id":"7366","type":"daily_itinerary"},{"id":"7367","type":"daily_itinerary"},{"id":"7368","type":"daily_itinerary"},{"id":"7369","type":"daily_itinerary"},{"id":"7370","type":"daily_itinerary"}]}}},"included":[{"id":"7360","type":"daily_itinerary","attributes":{"trip_id":670,"date":"2024-04-20"}},{"id":"7361","type":"daily_itinerary","attributes":{"trip_id":670,"date":"2024-04-21"}},{"id":"7362","type":"daily_itinerary","attributes":{"trip_id":670,"date":"2024-04-22"}},{"id":"7363","type":"daily_itinerary","attributes":{"trip_id":670,"date":"2024-04-23"}},{"id":"7364","type":"daily_itinerary","attributes":{"trip_id":670,"date":"2024-04-24"}},{"id":"7365","type":"daily_itinerary","attributes":{"trip_id":670,"date":"2024-04-25"}},{"id":"7366","type":"daily_itinerary","attributes":{"trip_id":670,"date":"2024-04-26"}},{"id":"7367","type":"daily_itinerary","attributes":{"trip_id":670,"date":"2024-04-27"}},{"id":"7368","type":"daily_itinerary","attributes":{"trip_id":670,"date":"2024-04-28"}},{"id":"7369","type":"daily_itinerary","attributes":{"trip_id":670,"date":"2024-04-29"}},{"id":"7370","type":"daily_itinerary","attributes":{"trip_id":670,"date":"2024-04-30"}}]}'
   recorded_at: Wed, 17 Apr 2024 22:37:18 GMT
 - request:
-    method: post
-    uri: http://127.0.0.1:3000/api/v1/trips
-    body:
-      encoding: UTF-8
-      string: '{"trip":{"name":"Trip To Japan","location":"Japan","start_date":"2024-04-20","end_date":"2024-04-30","status":"in_progress","total_budget":1000,"user_id":1}}'
-    headers:
-      User-Agent:
-      - Faraday v2.9.0
-      Content-Type:
-      - application/json
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"d6accc860ea4ec7b0785f6ed45af17f8"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - c3635dcd-8249-45e3-8f4b-ddcce32be11f
-      X-Runtime:
-      - '0.031189'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.00, sql.active_record;dur=11.96,
-        transaction.active_record;dur=10.36, instantiation.active_record;dur=0.09,
-        process_action.action_controller;dur=27.29
-      Content-Length:
-      - '1691'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"688","type":"trip","attributes":{"name":"Trip To Japan","location":"Japan","status":"in_progress","total_budget":1000,"start_date":"2024-04-20T00:00:00.000Z","end_date":"2024-04-30T00:00:00.000Z","total_expenses":0},"relationships":{"daily_itineraries":{"data":[{"id":"7558","type":"daily_itinerary"},{"id":"7559","type":"daily_itinerary"},{"id":"7560","type":"daily_itinerary"},{"id":"7561","type":"daily_itinerary"},{"id":"7562","type":"daily_itinerary"},{"id":"7563","type":"daily_itinerary"},{"id":"7564","type":"daily_itinerary"},{"id":"7565","type":"daily_itinerary"},{"id":"7566","type":"daily_itinerary"},{"id":"7567","type":"daily_itinerary"},{"id":"7568","type":"daily_itinerary"}]}}},"included":[{"id":"7558","type":"daily_itinerary","attributes":{"trip_id":688,"date":"2024-04-20"}},{"id":"7559","type":"daily_itinerary","attributes":{"trip_id":688,"date":"2024-04-21"}},{"id":"7560","type":"daily_itinerary","attributes":{"trip_id":688,"date":"2024-04-22"}},{"id":"7561","type":"daily_itinerary","attributes":{"trip_id":688,"date":"2024-04-23"}},{"id":"7562","type":"daily_itinerary","attributes":{"trip_id":688,"date":"2024-04-24"}},{"id":"7563","type":"daily_itinerary","attributes":{"trip_id":688,"date":"2024-04-25"}},{"id":"7564","type":"daily_itinerary","attributes":{"trip_id":688,"date":"2024-04-26"}},{"id":"7565","type":"daily_itinerary","attributes":{"trip_id":688,"date":"2024-04-27"}},{"id":"7566","type":"daily_itinerary","attributes":{"trip_id":688,"date":"2024-04-28"}},{"id":"7567","type":"daily_itinerary","attributes":{"trip_id":688,"date":"2024-04-29"}},{"id":"7568","type":"daily_itinerary","attributes":{"trip_id":688,"date":"2024-04-30"}}]}'
-  recorded_at: Wed, 17 Apr 2024 22:37:50 GMT
-- request:
     method: put
     uri: http://127.0.0.1:3000/api/v1/trips/688
     body:
@@ -715,4 +663,464 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"688","type":"trip","attributes":{"name":"Japan Trip","location":"Japan","status":"in_progress","total_budget":1000,"start_date":"2024-04-20T00:00:00.000Z","end_date":"2024-04-30T00:00:00.000Z","total_expenses":0},"relationships":{"daily_itineraries":{"data":[{"id":"7558","type":"daily_itinerary"},{"id":"7559","type":"daily_itinerary"},{"id":"7560","type":"daily_itinerary"},{"id":"7561","type":"daily_itinerary"},{"id":"7562","type":"daily_itinerary"},{"id":"7563","type":"daily_itinerary"},{"id":"7564","type":"daily_itinerary"},{"id":"7565","type":"daily_itinerary"},{"id":"7566","type":"daily_itinerary"},{"id":"7567","type":"daily_itinerary"},{"id":"7568","type":"daily_itinerary"}]}}},"included":[{"id":"7558","type":"daily_itinerary","attributes":{"trip_id":688,"date":"2024-04-20"}},{"id":"7559","type":"daily_itinerary","attributes":{"trip_id":688,"date":"2024-04-21"}},{"id":"7560","type":"daily_itinerary","attributes":{"trip_id":688,"date":"2024-04-22"}},{"id":"7561","type":"daily_itinerary","attributes":{"trip_id":688,"date":"2024-04-23"}},{"id":"7562","type":"daily_itinerary","attributes":{"trip_id":688,"date":"2024-04-24"}},{"id":"7563","type":"daily_itinerary","attributes":{"trip_id":688,"date":"2024-04-25"}},{"id":"7564","type":"daily_itinerary","attributes":{"trip_id":688,"date":"2024-04-26"}},{"id":"7565","type":"daily_itinerary","attributes":{"trip_id":688,"date":"2024-04-27"}},{"id":"7566","type":"daily_itinerary","attributes":{"trip_id":688,"date":"2024-04-28"}},{"id":"7567","type":"daily_itinerary","attributes":{"trip_id":688,"date":"2024-04-29"}},{"id":"7568","type":"daily_itinerary","attributes":{"trip_id":688,"date":"2024-04-30"}}]}'
   recorded_at: Wed, 17 Apr 2024 22:37:50 GMT
+- request:
+    method: put
+    uri: http://127.0.0.1:3000/api/v1/trips/719
+    body:
+      encoding: UTF-8
+      string: '{"user_id":1,"trip":{"name":"Japan Trip","user_id":1}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"a04137d68f0bab46e993ea013f01f697"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9dbed7a4-c6a9-4e78-ae86-72fd777c7071
+      X-Runtime:
+      - '0.008213'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.37, instantiation.active_record;dur=0.11,
+        transaction.active_record;dur=0.72, process_action.action_controller;dur=4.37
+      Content-Length:
+      - '1688'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"719","type":"trip","attributes":{"name":"Japan Trip","location":"Japan","status":"in_progress","total_budget":1000,"start_date":"2024-04-20T00:00:00.000Z","end_date":"2024-04-30T00:00:00.000Z","total_expenses":0},"relationships":{"daily_itineraries":{"data":[{"id":"7899","type":"daily_itinerary"},{"id":"7900","type":"daily_itinerary"},{"id":"7901","type":"daily_itinerary"},{"id":"7902","type":"daily_itinerary"},{"id":"7903","type":"daily_itinerary"},{"id":"7904","type":"daily_itinerary"},{"id":"7905","type":"daily_itinerary"},{"id":"7906","type":"daily_itinerary"},{"id":"7907","type":"daily_itinerary"},{"id":"7908","type":"daily_itinerary"},{"id":"7909","type":"daily_itinerary"}]}}},"included":[{"id":"7899","type":"daily_itinerary","attributes":{"trip_id":719,"date":"2024-04-20"}},{"id":"7900","type":"daily_itinerary","attributes":{"trip_id":719,"date":"2024-04-21"}},{"id":"7901","type":"daily_itinerary","attributes":{"trip_id":719,"date":"2024-04-22"}},{"id":"7902","type":"daily_itinerary","attributes":{"trip_id":719,"date":"2024-04-23"}},{"id":"7903","type":"daily_itinerary","attributes":{"trip_id":719,"date":"2024-04-24"}},{"id":"7904","type":"daily_itinerary","attributes":{"trip_id":719,"date":"2024-04-25"}},{"id":"7905","type":"daily_itinerary","attributes":{"trip_id":719,"date":"2024-04-26"}},{"id":"7906","type":"daily_itinerary","attributes":{"trip_id":719,"date":"2024-04-27"}},{"id":"7907","type":"daily_itinerary","attributes":{"trip_id":719,"date":"2024-04-28"}},{"id":"7908","type":"daily_itinerary","attributes":{"trip_id":719,"date":"2024-04-29"}},{"id":"7909","type":"daily_itinerary","attributes":{"trip_id":719,"date":"2024-04-30"}}]}'
+  recorded_at: Thu, 18 Apr 2024 15:09:56 GMT
+- request:
+    method: put
+    uri: http://127.0.0.1:3000/api/v1/trips/737
+    body:
+      encoding: UTF-8
+      string: '{"user_id":1,"trip":{"name":"Japan Trip","user_id":1}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"4beb53fcb7d533ed0862b8ff4be7e36c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c610e69d-ec21-4cff-9ec0-4cf7441a37b7
+      X-Runtime:
+      - '0.008319'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.40, instantiation.active_record;dur=0.11,
+        transaction.active_record;dur=0.69, process_action.action_controller;dur=4.74
+      Content-Length:
+      - '1688'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"737","type":"trip","attributes":{"name":"Japan Trip","location":"Japan","status":"in_progress","total_budget":1000,"start_date":"2024-04-20T00:00:00.000Z","end_date":"2024-04-30T00:00:00.000Z","total_expenses":0},"relationships":{"daily_itineraries":{"data":[{"id":"8097","type":"daily_itinerary"},{"id":"8098","type":"daily_itinerary"},{"id":"8099","type":"daily_itinerary"},{"id":"8100","type":"daily_itinerary"},{"id":"8101","type":"daily_itinerary"},{"id":"8102","type":"daily_itinerary"},{"id":"8103","type":"daily_itinerary"},{"id":"8104","type":"daily_itinerary"},{"id":"8105","type":"daily_itinerary"},{"id":"8106","type":"daily_itinerary"},{"id":"8107","type":"daily_itinerary"}]}}},"included":[{"id":"8097","type":"daily_itinerary","attributes":{"trip_id":737,"date":"2024-04-20"}},{"id":"8098","type":"daily_itinerary","attributes":{"trip_id":737,"date":"2024-04-21"}},{"id":"8099","type":"daily_itinerary","attributes":{"trip_id":737,"date":"2024-04-22"}},{"id":"8100","type":"daily_itinerary","attributes":{"trip_id":737,"date":"2024-04-23"}},{"id":"8101","type":"daily_itinerary","attributes":{"trip_id":737,"date":"2024-04-24"}},{"id":"8102","type":"daily_itinerary","attributes":{"trip_id":737,"date":"2024-04-25"}},{"id":"8103","type":"daily_itinerary","attributes":{"trip_id":737,"date":"2024-04-26"}},{"id":"8104","type":"daily_itinerary","attributes":{"trip_id":737,"date":"2024-04-27"}},{"id":"8105","type":"daily_itinerary","attributes":{"trip_id":737,"date":"2024-04-28"}},{"id":"8106","type":"daily_itinerary","attributes":{"trip_id":737,"date":"2024-04-29"}},{"id":"8107","type":"daily_itinerary","attributes":{"trip_id":737,"date":"2024-04-30"}}]}'
+  recorded_at: Thu, 18 Apr 2024 15:14:12 GMT
+- request:
+    method: put
+    uri: http://127.0.0.1:3000/api/v1/trips/755
+    body:
+      encoding: UTF-8
+      string: '{"user_id":1,"trip":{"name":"Japan Trip","user_id":1}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"7134fd1bd7613b200c9188ce75f17841"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d935464c-525b-4bd8-8516-8a1c3d7e5f81
+      X-Runtime:
+      - '0.008522'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.47, instantiation.active_record;dur=0.11,
+        transaction.active_record;dur=1.31, process_action.action_controller;dur=4.91
+      Content-Length:
+      - '1688'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"755","type":"trip","attributes":{"name":"Japan Trip","location":"Japan","status":"in_progress","total_budget":1000,"start_date":"2024-04-20T00:00:00.000Z","end_date":"2024-04-30T00:00:00.000Z","total_expenses":0},"relationships":{"daily_itineraries":{"data":[{"id":"8295","type":"daily_itinerary"},{"id":"8296","type":"daily_itinerary"},{"id":"8297","type":"daily_itinerary"},{"id":"8298","type":"daily_itinerary"},{"id":"8299","type":"daily_itinerary"},{"id":"8300","type":"daily_itinerary"},{"id":"8301","type":"daily_itinerary"},{"id":"8302","type":"daily_itinerary"},{"id":"8303","type":"daily_itinerary"},{"id":"8304","type":"daily_itinerary"},{"id":"8305","type":"daily_itinerary"}]}}},"included":[{"id":"8295","type":"daily_itinerary","attributes":{"trip_id":755,"date":"2024-04-20"}},{"id":"8296","type":"daily_itinerary","attributes":{"trip_id":755,"date":"2024-04-21"}},{"id":"8297","type":"daily_itinerary","attributes":{"trip_id":755,"date":"2024-04-22"}},{"id":"8298","type":"daily_itinerary","attributes":{"trip_id":755,"date":"2024-04-23"}},{"id":"8299","type":"daily_itinerary","attributes":{"trip_id":755,"date":"2024-04-24"}},{"id":"8300","type":"daily_itinerary","attributes":{"trip_id":755,"date":"2024-04-25"}},{"id":"8301","type":"daily_itinerary","attributes":{"trip_id":755,"date":"2024-04-26"}},{"id":"8302","type":"daily_itinerary","attributes":{"trip_id":755,"date":"2024-04-27"}},{"id":"8303","type":"daily_itinerary","attributes":{"trip_id":755,"date":"2024-04-28"}},{"id":"8304","type":"daily_itinerary","attributes":{"trip_id":755,"date":"2024-04-29"}},{"id":"8305","type":"daily_itinerary","attributes":{"trip_id":755,"date":"2024-04-30"}}]}'
+  recorded_at: Thu, 18 Apr 2024 15:14:59 GMT
+- request:
+    method: put
+    uri: http://127.0.0.1:3000/api/v1/trips/773
+    body:
+      encoding: UTF-8
+      string: '{"user_id":1,"trip":{"name":"Japan Trip","user_id":1}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"3d9da7fc9ec3604d94435db05cc6f85c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fd575aa7-c38b-48a6-97fd-755efa98ccdb
+      X-Runtime:
+      - '0.008320'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.27, instantiation.active_record;dur=0.11,
+        transaction.active_record;dur=0.69, process_action.action_controller;dur=4.64
+      Content-Length:
+      - '1688'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"773","type":"trip","attributes":{"name":"Japan Trip","location":"Japan","status":"in_progress","total_budget":1000,"start_date":"2024-04-20T00:00:00.000Z","end_date":"2024-04-30T00:00:00.000Z","total_expenses":0},"relationships":{"daily_itineraries":{"data":[{"id":"8493","type":"daily_itinerary"},{"id":"8494","type":"daily_itinerary"},{"id":"8495","type":"daily_itinerary"},{"id":"8496","type":"daily_itinerary"},{"id":"8497","type":"daily_itinerary"},{"id":"8498","type":"daily_itinerary"},{"id":"8499","type":"daily_itinerary"},{"id":"8500","type":"daily_itinerary"},{"id":"8501","type":"daily_itinerary"},{"id":"8502","type":"daily_itinerary"},{"id":"8503","type":"daily_itinerary"}]}}},"included":[{"id":"8493","type":"daily_itinerary","attributes":{"trip_id":773,"date":"2024-04-20"}},{"id":"8494","type":"daily_itinerary","attributes":{"trip_id":773,"date":"2024-04-21"}},{"id":"8495","type":"daily_itinerary","attributes":{"trip_id":773,"date":"2024-04-22"}},{"id":"8496","type":"daily_itinerary","attributes":{"trip_id":773,"date":"2024-04-23"}},{"id":"8497","type":"daily_itinerary","attributes":{"trip_id":773,"date":"2024-04-24"}},{"id":"8498","type":"daily_itinerary","attributes":{"trip_id":773,"date":"2024-04-25"}},{"id":"8499","type":"daily_itinerary","attributes":{"trip_id":773,"date":"2024-04-26"}},{"id":"8500","type":"daily_itinerary","attributes":{"trip_id":773,"date":"2024-04-27"}},{"id":"8501","type":"daily_itinerary","attributes":{"trip_id":773,"date":"2024-04-28"}},{"id":"8502","type":"daily_itinerary","attributes":{"trip_id":773,"date":"2024-04-29"}},{"id":"8503","type":"daily_itinerary","attributes":{"trip_id":773,"date":"2024-04-30"}}]}'
+  recorded_at: Thu, 18 Apr 2024 15:18:03 GMT
+- request:
+    method: put
+    uri: http://127.0.0.1:3000/api/v1/trips/791
+    body:
+      encoding: UTF-8
+      string: '{"user_id":1,"trip":{"name":"Japan Trip","user_id":1}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"b25da535243dbf1a24a22a3de51a9622"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - be30ebbf-f9ba-45a0-98d4-d28eac81b7bb
+      X-Runtime:
+      - '0.008414'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.37, instantiation.active_record;dur=0.11,
+        transaction.active_record;dur=0.94, process_action.action_controller;dur=4.75
+      Content-Length:
+      - '1688'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"791","type":"trip","attributes":{"name":"Japan Trip","location":"Japan","status":"in_progress","total_budget":1000,"start_date":"2024-04-20T00:00:00.000Z","end_date":"2024-04-30T00:00:00.000Z","total_expenses":0},"relationships":{"daily_itineraries":{"data":[{"id":"8691","type":"daily_itinerary"},{"id":"8692","type":"daily_itinerary"},{"id":"8693","type":"daily_itinerary"},{"id":"8694","type":"daily_itinerary"},{"id":"8695","type":"daily_itinerary"},{"id":"8696","type":"daily_itinerary"},{"id":"8697","type":"daily_itinerary"},{"id":"8698","type":"daily_itinerary"},{"id":"8699","type":"daily_itinerary"},{"id":"8700","type":"daily_itinerary"},{"id":"8701","type":"daily_itinerary"}]}}},"included":[{"id":"8691","type":"daily_itinerary","attributes":{"trip_id":791,"date":"2024-04-20"}},{"id":"8692","type":"daily_itinerary","attributes":{"trip_id":791,"date":"2024-04-21"}},{"id":"8693","type":"daily_itinerary","attributes":{"trip_id":791,"date":"2024-04-22"}},{"id":"8694","type":"daily_itinerary","attributes":{"trip_id":791,"date":"2024-04-23"}},{"id":"8695","type":"daily_itinerary","attributes":{"trip_id":791,"date":"2024-04-24"}},{"id":"8696","type":"daily_itinerary","attributes":{"trip_id":791,"date":"2024-04-25"}},{"id":"8697","type":"daily_itinerary","attributes":{"trip_id":791,"date":"2024-04-26"}},{"id":"8698","type":"daily_itinerary","attributes":{"trip_id":791,"date":"2024-04-27"}},{"id":"8699","type":"daily_itinerary","attributes":{"trip_id":791,"date":"2024-04-28"}},{"id":"8700","type":"daily_itinerary","attributes":{"trip_id":791,"date":"2024-04-29"}},{"id":"8701","type":"daily_itinerary","attributes":{"trip_id":791,"date":"2024-04-30"}}]}'
+  recorded_at: Thu, 18 Apr 2024 15:21:38 GMT
+- request:
+    method: put
+    uri: http://127.0.0.1:3000/api/v1/trips/809
+    body:
+      encoding: UTF-8
+      string: '{"user_id":1,"trip":{"name":"Japan Trip","user_id":1}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"432c2ae0ed9a294c8b870beb22815798"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - cf3cf677-37c7-48b8-a1d9-7571ec7ef150
+      X-Runtime:
+      - '0.008562'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.40, instantiation.active_record;dur=0.12,
+        transaction.active_record;dur=0.72, process_action.action_controller;dur=4.66
+      Content-Length:
+      - '1688'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"809","type":"trip","attributes":{"name":"Japan Trip","location":"Japan","status":"in_progress","total_budget":1000,"start_date":"2024-04-20T00:00:00.000Z","end_date":"2024-04-30T00:00:00.000Z","total_expenses":0},"relationships":{"daily_itineraries":{"data":[{"id":"8889","type":"daily_itinerary"},{"id":"8890","type":"daily_itinerary"},{"id":"8891","type":"daily_itinerary"},{"id":"8892","type":"daily_itinerary"},{"id":"8893","type":"daily_itinerary"},{"id":"8894","type":"daily_itinerary"},{"id":"8895","type":"daily_itinerary"},{"id":"8896","type":"daily_itinerary"},{"id":"8897","type":"daily_itinerary"},{"id":"8898","type":"daily_itinerary"},{"id":"8899","type":"daily_itinerary"}]}}},"included":[{"id":"8889","type":"daily_itinerary","attributes":{"trip_id":809,"date":"2024-04-20"}},{"id":"8890","type":"daily_itinerary","attributes":{"trip_id":809,"date":"2024-04-21"}},{"id":"8891","type":"daily_itinerary","attributes":{"trip_id":809,"date":"2024-04-22"}},{"id":"8892","type":"daily_itinerary","attributes":{"trip_id":809,"date":"2024-04-23"}},{"id":"8893","type":"daily_itinerary","attributes":{"trip_id":809,"date":"2024-04-24"}},{"id":"8894","type":"daily_itinerary","attributes":{"trip_id":809,"date":"2024-04-25"}},{"id":"8895","type":"daily_itinerary","attributes":{"trip_id":809,"date":"2024-04-26"}},{"id":"8896","type":"daily_itinerary","attributes":{"trip_id":809,"date":"2024-04-27"}},{"id":"8897","type":"daily_itinerary","attributes":{"trip_id":809,"date":"2024-04-28"}},{"id":"8898","type":"daily_itinerary","attributes":{"trip_id":809,"date":"2024-04-29"}},{"id":"8899","type":"daily_itinerary","attributes":{"trip_id":809,"date":"2024-04-30"}}]}'
+  recorded_at: Thu, 18 Apr 2024 15:21:58 GMT
+- request:
+    method: put
+    uri: http://127.0.0.1:3000/api/v1/trips/827
+    body:
+      encoding: UTF-8
+      string: '{"user_id":1,"trip":{"name":"Japan Trip","user_id":1}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"26bf0272e3d23696271101b3f1ac66c0"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 59bba95a-e490-4716-86bd-1fad4a7de680
+      X-Runtime:
+      - '0.008898'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.89, instantiation.active_record;dur=0.11,
+        transaction.active_record;dur=0.74, process_action.action_controller;dur=5.26
+      Content-Length:
+      - '1688'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"827","type":"trip","attributes":{"name":"Japan Trip","location":"Japan","status":"in_progress","total_budget":1000,"start_date":"2024-04-20T00:00:00.000Z","end_date":"2024-04-30T00:00:00.000Z","total_expenses":0},"relationships":{"daily_itineraries":{"data":[{"id":"9087","type":"daily_itinerary"},{"id":"9088","type":"daily_itinerary"},{"id":"9089","type":"daily_itinerary"},{"id":"9090","type":"daily_itinerary"},{"id":"9091","type":"daily_itinerary"},{"id":"9092","type":"daily_itinerary"},{"id":"9093","type":"daily_itinerary"},{"id":"9094","type":"daily_itinerary"},{"id":"9095","type":"daily_itinerary"},{"id":"9096","type":"daily_itinerary"},{"id":"9097","type":"daily_itinerary"}]}}},"included":[{"id":"9087","type":"daily_itinerary","attributes":{"trip_id":827,"date":"2024-04-20"}},{"id":"9088","type":"daily_itinerary","attributes":{"trip_id":827,"date":"2024-04-21"}},{"id":"9089","type":"daily_itinerary","attributes":{"trip_id":827,"date":"2024-04-22"}},{"id":"9090","type":"daily_itinerary","attributes":{"trip_id":827,"date":"2024-04-23"}},{"id":"9091","type":"daily_itinerary","attributes":{"trip_id":827,"date":"2024-04-24"}},{"id":"9092","type":"daily_itinerary","attributes":{"trip_id":827,"date":"2024-04-25"}},{"id":"9093","type":"daily_itinerary","attributes":{"trip_id":827,"date":"2024-04-26"}},{"id":"9094","type":"daily_itinerary","attributes":{"trip_id":827,"date":"2024-04-27"}},{"id":"9095","type":"daily_itinerary","attributes":{"trip_id":827,"date":"2024-04-28"}},{"id":"9096","type":"daily_itinerary","attributes":{"trip_id":827,"date":"2024-04-29"}},{"id":"9097","type":"daily_itinerary","attributes":{"trip_id":827,"date":"2024-04-30"}}]}'
+  recorded_at: Thu, 18 Apr 2024 15:25:15 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips
+    body:
+      encoding: UTF-8
+      string: '{"trip":{"name":"Trip To Japan","location":"Japan","start_date":"2024-04-20","end_date":"2024-04-30","status":"in_progress","total_budget":1000,"user_id":1}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"0158c072566bea47a5e09fa4c0b849a3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - '0765920c-fe77-4e5f-b262-1604eed1b41a'
+      X-Runtime:
+      - '0.030911'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=11.41,
+        transaction.active_record;dur=11.25, instantiation.active_record;dur=0.09,
+        process_action.action_controller;dur=27.16
+      Content-Length:
+      - '1691'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"845","type":"trip","attributes":{"name":"Trip To Japan","location":"Japan","status":"in_progress","total_budget":1000,"start_date":"2024-04-20T00:00:00.000Z","end_date":"2024-04-30T00:00:00.000Z","total_expenses":0},"relationships":{"daily_itineraries":{"data":[{"id":"9285","type":"daily_itinerary"},{"id":"9286","type":"daily_itinerary"},{"id":"9287","type":"daily_itinerary"},{"id":"9288","type":"daily_itinerary"},{"id":"9289","type":"daily_itinerary"},{"id":"9290","type":"daily_itinerary"},{"id":"9291","type":"daily_itinerary"},{"id":"9292","type":"daily_itinerary"},{"id":"9293","type":"daily_itinerary"},{"id":"9294","type":"daily_itinerary"},{"id":"9295","type":"daily_itinerary"}]}}},"included":[{"id":"9285","type":"daily_itinerary","attributes":{"trip_id":845,"date":"2024-04-20"}},{"id":"9286","type":"daily_itinerary","attributes":{"trip_id":845,"date":"2024-04-21"}},{"id":"9287","type":"daily_itinerary","attributes":{"trip_id":845,"date":"2024-04-22"}},{"id":"9288","type":"daily_itinerary","attributes":{"trip_id":845,"date":"2024-04-23"}},{"id":"9289","type":"daily_itinerary","attributes":{"trip_id":845,"date":"2024-04-24"}},{"id":"9290","type":"daily_itinerary","attributes":{"trip_id":845,"date":"2024-04-25"}},{"id":"9291","type":"daily_itinerary","attributes":{"trip_id":845,"date":"2024-04-26"}},{"id":"9292","type":"daily_itinerary","attributes":{"trip_id":845,"date":"2024-04-27"}},{"id":"9293","type":"daily_itinerary","attributes":{"trip_id":845,"date":"2024-04-28"}},{"id":"9294","type":"daily_itinerary","attributes":{"trip_id":845,"date":"2024-04-29"}},{"id":"9295","type":"daily_itinerary","attributes":{"trip_id":845,"date":"2024-04-30"}}]}'
+  recorded_at: Thu, 18 Apr 2024 15:26:03 GMT
+- request:
+    method: put
+    uri: http://127.0.0.1:3000/api/v1/trips/845
+    body:
+      encoding: UTF-8
+      string: '{"user_id":1,"trip":{"name":"Japan Trip","user_id":1}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"da5287861174e4381903c64f13d74e73"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 98c40325-d84f-4f64-947a-60f15dbde936
+      X-Runtime:
+      - '0.014014'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=5.67, instantiation.active_record;dur=0.12,
+        transaction.active_record;dur=1.38, process_action.action_controller;dur=10.31
+      Content-Length:
+      - '1688'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"845","type":"trip","attributes":{"name":"Japan Trip","location":"Japan","status":"in_progress","total_budget":1000,"start_date":"2024-04-20T00:00:00.000Z","end_date":"2024-04-30T00:00:00.000Z","total_expenses":0},"relationships":{"daily_itineraries":{"data":[{"id":"9285","type":"daily_itinerary"},{"id":"9286","type":"daily_itinerary"},{"id":"9287","type":"daily_itinerary"},{"id":"9288","type":"daily_itinerary"},{"id":"9289","type":"daily_itinerary"},{"id":"9290","type":"daily_itinerary"},{"id":"9291","type":"daily_itinerary"},{"id":"9292","type":"daily_itinerary"},{"id":"9293","type":"daily_itinerary"},{"id":"9294","type":"daily_itinerary"},{"id":"9295","type":"daily_itinerary"}]}}},"included":[{"id":"9285","type":"daily_itinerary","attributes":{"trip_id":845,"date":"2024-04-20"}},{"id":"9286","type":"daily_itinerary","attributes":{"trip_id":845,"date":"2024-04-21"}},{"id":"9287","type":"daily_itinerary","attributes":{"trip_id":845,"date":"2024-04-22"}},{"id":"9288","type":"daily_itinerary","attributes":{"trip_id":845,"date":"2024-04-23"}},{"id":"9289","type":"daily_itinerary","attributes":{"trip_id":845,"date":"2024-04-24"}},{"id":"9290","type":"daily_itinerary","attributes":{"trip_id":845,"date":"2024-04-25"}},{"id":"9291","type":"daily_itinerary","attributes":{"trip_id":845,"date":"2024-04-26"}},{"id":"9292","type":"daily_itinerary","attributes":{"trip_id":845,"date":"2024-04-27"}},{"id":"9293","type":"daily_itinerary","attributes":{"trip_id":845,"date":"2024-04-28"}},{"id":"9294","type":"daily_itinerary","attributes":{"trip_id":845,"date":"2024-04-29"}},{"id":"9295","type":"daily_itinerary","attributes":{"trip_id":845,"date":"2024-04-30"}}]}'
+  recorded_at: Thu, 18 Apr 2024 15:26:03 GMT
 recorded_with: VCR 6.2.0
