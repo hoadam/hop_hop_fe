@@ -1,15 +1,21 @@
-<h1>Edit Trip</h1>
-<div data-controller="trips">
-    <div id="searchForm">
+<div class="pt-40 flex items-center justify-center h-screen">
+  <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+    <%= link_to sanitize("&larr; Back to Trip"), trip_path(@trip.id), class: "btn" %>
+    <h5 class="text-xl font-medium text-gray-900 dark:text-white text-center">Edit <%= @trip.name %></h5>
+    <div data-controller="trips">
+      <div id="searchForm">
+        <%= render partial: "trips", locals: {
+            path: trip_path(@trip.id),
+            method: :patch,
+            trip_name: @trip.name,
+            trip_location: @trip.location,
+            start_date: @trip.start_date,
+            end_date: @trip.end_date,
+            total_budget: @trip.total_budget,
+            button: "Submit"
+        } %>
+      </div>
     </div>
-    <%= render partial: "trips", locals: {
-        path: trip_path(@trip.id),
-        method: :patch,
-        trip_name: @trip.name,
-        trip_location: @trip.location,
-        start_date: @trip.start_date,
-        end_date: @trip.end_date,
-        total_budget: @trip.total_budget,
-        button: "Submit"
-} %>
+  </div>
 </div>
+
