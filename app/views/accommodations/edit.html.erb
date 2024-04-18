@@ -18,6 +18,9 @@
     <%= f.label :expenses, "Expenses" %>
     <%= f.text_field :expenses, value: @accommodation.expenses %>
 
+    <%= f.hidden_field :lat, value: @accommodation.lat %>
+    <%= f.hidden_field :lon, value: @accommodation.lon %>
+
     <%= f.submit "Update Accommodation" %>
 <% end %>
 </div>

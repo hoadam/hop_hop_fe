@@ -43,6 +43,6 @@ class AccommodationsController < ApplicationController
   private
 
   def accommodation_params
-    params.permit(:name, :address, :check_in, :check_out, :expenses)
+    params.permit(:name, :address, :check_in, :check_out, :expenses, :lat, :lon)
   end
 end

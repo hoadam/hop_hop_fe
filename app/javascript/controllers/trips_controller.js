@@ -32,4 +32,6 @@ export default class extends Controller {
   updateAddress(address) {
     document.getElementById("location").value = address
   }
+
+  
 }
