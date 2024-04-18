@@ -66,5 +66,10 @@ yarn-debug.log*
 /spec/fixtures/webmock
 
 # Ignore custom files
+<<<<<<< HEAD
 /spec/fixtures/*
 .DS_store
+=======
+spec/fixtures/*
+.DS_store
+>>>>>>> 5983786 (update gitignore)
