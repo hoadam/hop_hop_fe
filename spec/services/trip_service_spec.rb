@@ -62,8 +62,8 @@ describe TripService do
 
       expect(response.name).to eq('Trip To Japan')
       expect(response.location).to eq('Japan')
-      expect(response.start_date).to eq(Date.parse '2024-04-20')
-      expect(response.end_date).to eq(Date.parse '2024-04-30')
+      expect(response.start_date.to_s).to eq("2024-04-20")
+      expect(response.end_date.to_s).to eq("2024-04-30")
       expect(response.status).to eq('in_progress')
       expect(response.total_budget).to eq(1000)
     end

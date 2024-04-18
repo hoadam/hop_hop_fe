@@ -26,8 +26,9 @@ export default class extends Controller {
     
     // Update form
     this.updateAddress(place.formattedAddress)
-    this.updateName(place["displayName"]) // place.displayName
+    this.updateName(place.displayName) 
     // updateLatLon()
+    this.updateLatLon(place.location.lat, place.location.lng)
   }
   updateAddress(address) {
     document.getElementById("address").value = address
@@ -35,4 +36,9 @@ export default class extends Controller {
   updateName(name) {
     document.getElementById("name").value = name
   }
+  updateLatLon(lat,lng) {
+    document.getElementById("lat").value = lat;
+    document.getElementById("lon").value = lng;
+  }
+  
 }

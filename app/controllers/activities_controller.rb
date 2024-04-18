@@ -6,7 +6,6 @@ class ActivitiesController < ApplicationController
   def create
     @trip = TripService.trip_details(current_user.id, params[:trip_id])
     @activity = ActivityService.create_activity(current_user.id, params[:trip_id], params[:daily_itinerary_id], activity_params)
-
     redirect_to trip_path(@trip.id)
   end
 
@@ -18,7 +17,6 @@ class ActivitiesController < ApplicationController
   def update
     @trip = TripService.trip_details(current_user.id, params[:trip_id])
     @activity = ActivityService.activity_details(current_user.id, params[:trip_id], params[:daily_itinerary_id], params[:id])
-
     ActivityService.update_activity(current_user.id, params[:trip_id], params[:daily_itinerary_id], params[:id], activity_params)
     redirect_to trip_path(@trip.id)
   rescue => e
@@ -27,20 +25,16 @@ class ActivitiesController < ApplicationController
   end
 
   def destroy
-    @trip = TripService.trip_details(current_user.id, params[:trip_id])
-    @activity = ActivityService.activity_details(current_user.id, params[:trip_id], params[:daily_itinerary_id], params[:id])
-
     ActivityService.delete_activity(current_user.id, params[:trip_id], params[:daily_itinerary_id], params[:id])
-
-    redirect_to trip_path(@trip.id)
+    redirect_to trip_path(params[:trip_id])
   rescue => e
-
     flash[:error] = "Failed to delete accommodation - #{e.message}"
+    redirect_to trip_path(params[:trip_id])
   end
 
   private
 
   def activity_params
-    params.require(:activities).permit(:name, :address, :expenses, :description)
+    params.permit(:name, :address, :expenses, :description)
   end
 end

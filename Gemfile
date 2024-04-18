@@ -37,7 +37,7 @@ gem "bcrypt", "~> 3.1.7"
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
 gem "omniauth-rails_csrf_protection"
-gem 'google-apis-places_v1', '~> 0.1'
+
 
 gem 'dotenv-rails'
 
@@ -83,6 +83,7 @@ group :development, :test do
   gem "capybara"
   gem "launchy"
   gem "warden"
+  gem 'database_cleaner-active_record'
 end
 
 group :development do

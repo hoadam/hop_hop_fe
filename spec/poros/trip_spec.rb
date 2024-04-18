@@ -18,8 +18,8 @@ RSpec.describe Trip do
       expect(trip.id).to eq(id)
       expect(trip.name).to eq(name)
       expect(trip.location).to eq(location)
-      expect(trip.start_date).to eq(Date.parse(start_date))
-      expect(trip.end_date).to eq(Date.parse(end_date))
+      expect(trip.start_date.to_s).to eq(start_date)  
+      expect(trip.end_date.to_s).to eq(end_date)  
       expect(trip.status).to eq(status)
       expect(trip.total_budget).to eq(total_budget)
       expect(trip.total_expenses).to eq(total_expenses)
@@ -53,12 +53,55 @@ RSpec.describe Trip do
       expect(trip.id).to eq("1")
       expect(trip.name).to eq(name)
       expect(trip.location).to eq(location)
-      expect(trip.start_date).to eq(Date.parse start_date)
-      expect(trip.end_date).to eq(Date.parse end_date)
+      expect(trip.start_date.to_s).to eq(start_date)  
+      expect(trip.end_date.to_s).to eq(end_date)   
       expect(trip.status).to eq(status)
       expect(trip.total_budget).to eq(total_budget)
       expect(trip.total_expenses).to eq(total_expenses)
       expect(trip.daily_itineraries).to eq(daily_itineraries)
+    end
+  end
+
+  describe '.from_json' do 
+    let(:json) do
+      {
+        data: {
+          id: "1",
+          attributes: {
+            name: name,
+            location: location,
+            start_date: start_date,
+            end_date: end_date,
+            status: status,
+            total_budget: total_budget,
+            total_expenses: total_expenses,
+            daily_itineraries: {
+              "2024-01-01" => [{
+                data: {
+                  id: "101",
+                  type: "activity",
+                  attributes: { name: "Hiking", description: "Hiking in the mountains" }
+                }
+              }]
+            }
+          }
+        }
+      }
+    end
+
+    it 'creates a Trip object from JSON and processes activities' do
+      allow(Activity).to receive(:from_json).and_call_original
+      trip = Trip.from_json(json)
+      
+      expect(Activity).to have_received(:from_json).with({
+        id: "101",
+        type: "activity",
+        attributes: { name: "Hiking", description: "Hiking in the mountains" }
+      })
+      
+      expect(trip.activities["2024-01-01"].length).to eq(1)
+      expect(trip.activities["2024-01-01"].first).to be_an_instance_of(Activity)
+      expect(trip.activities["2024-01-01"].first.name).to eq("Hiking")
     end
   end
 end

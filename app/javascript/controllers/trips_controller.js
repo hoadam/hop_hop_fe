@@ -26,10 +26,14 @@ export default class extends Controller {
     
     // Update form
     this.updateAddress(place.formattedAddress)
-    this.updateName(place["displayName"]) // place.displayName
-    // updateLatLon()
+    this.updateLatLon(place.location.lat, place.location.lng)
   }
   updateAddress(address) {
     document.getElementById("location").value = address
   }
+  updateLatLon(lat,lng) {
+    document.getElementById("lat").value = lat;
+    document.getElementById("lon").value = lng;
+  }
+  
 }
