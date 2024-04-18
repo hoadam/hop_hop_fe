@@ -18,6 +18,9 @@
     <%= f.label :total_budget, "Total Budget" %>
     <%= f.text_field :total_budget, value: @trip.total_budget %>
 
+    <%= f.hidden_field :lat %>
+    <%= f.hidden_field :lon %>
+
     <%= f.submit "Update Trip" %>
 <% end %>
 </div>
