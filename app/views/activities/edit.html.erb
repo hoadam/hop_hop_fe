@@ -13,7 +13,7 @@
     <%= f.text_field :expenses, value: @activity.expenses %>
 
     <%= f.label :description, "Description" %>
-    <%= f.date_field :description, value: @activity.description %>
+    <%= f.text_field :description, value: @activity.description %>
 
     <%= f.hidden_field :lat, value: @activity.lat %>
     <%= f.hidden_field :lon, value: @activity.lon %>
