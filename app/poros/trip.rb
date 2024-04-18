@@ -14,8 +14,8 @@ class Trip
     @id = id
     @name = name
     @location = location
-    @start_date = Date.parse(start_date) if start_date
-    @end_date = Date.parse(end_date) if end_date
+    @start_date = start_date
+    @end_date = end_date
     @status = status
     @total_budget = total_budget
     @total_expenses = total_expenses
