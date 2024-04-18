@@ -18,6 +18,8 @@ class AccommodationsController < ApplicationController
     @trip = TripService.trip_details(current_user.id, params[:trip_id])
     @accommodation = AccommodationService.accommodation_details(current_user.id, params[:trip_id], params[:id])
     AccommodationService.update_accommodation(current_user.id, params[:trip_id], params[:id], accommodation_params)
+
+    redirect_to trip_path(@trip.id)
   rescue => e
     flash[:error] = "Failed to update accommodation - #{e.message}"
   end

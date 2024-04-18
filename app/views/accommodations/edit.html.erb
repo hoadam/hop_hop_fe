@@ -2,47 +2,18 @@
   <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
     <%= link_to sanitize("&larr; Back to Trip"), trip_path(@trip.id), class: "btn" %>
     <h5 class="text-xl font-medium text-center text-gray-900 dark:text-white">Edit Accommodation</h5>
-    <div data-controller="trips">
-      <div id="searchForm">
-        <%= render partial: "accommodations", locals: {
-                                              path: trip_accommodation_path(params[:trip_id], params[:id]),
-                                              method: :patch,
-                                              name: @accommodation.name,
-                                              address: @accommodation.address,
-                                              check_in: @accommodation.check_in,
-                                              check_out: @accommodation.check_out,
-                                              expenses: @accommodation.expenses,
-                                              button: "Update Accommodation"
-        } %>
-      </div>
+    <div data-controller="accommodations">
+      <div id="searchForm"><div>
+      <%= render partial: "accommodations", locals: {
+                                            path: trip_accommodation_path(params[:trip_id], params[:id]),
+                                            method: :patch,
+                                            name: @accommodation.name,
+                                            address: @accommodation.address,
+                                            check_in: @accommodation.check_in,
+                                            check_out: @accommodation.check_out,
+                                            expenses: @accommodation.expenses,
+                                            button: "Update Accommodation"
+      } %>
     </div>
   </div>
-</div>
-
-<h1>Update Accommodation</h1>
-
-<div data-controller="accommodations">
-    <div id="searchForm">
-    </div>
-<%= form_with url: user_trip_accommodation_path(params[:user_id], params[:trip_id], params[:id]), method: :patch, data: {turbo: false}, local: true do |f| %>
->>>>>>>>> Temporary merge branch 2
-    <%= f.label :name, "Accommodation Name" %>
-    <%= f.text_field :name, value: @accommodation.name %>
-
-    <%= f.label :address, "Address" %>
-    <%= f.text_field :address, value: @accommodation.address%>
-
-    <%= f.label :check_in, "Check In" %>
-    <%= f.date_field :check_in, value: @accommodation.check_in %>
-
-    <%= f.label :check_out, "Check Out" %>
-    <%= f.date_field :check_out, value: @accommodation.check_out %>
-
-    <%= f.label :expenses, "Expenses" %>
-    <%= f.text_field :expenses, value: @accommodation.expenses %>
-
-    <%= f.submit "Update Accommodation" %>
-<% end %>
-<<<<<<<<< Temporary merge branch 1
-=========
 </div>
