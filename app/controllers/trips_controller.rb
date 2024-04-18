@@ -30,10 +30,10 @@ class TripsController < ApplicationController
   end
 
   def update
-
     @trip = TripService.trip_details(current_user.id, params[:id])
 
     TripService.update_trip(current_user.id, params[:id], trip_params)
+    redirect_to trip_path(@trip.id)
   rescue
     flash[:error] = "Failed to update trip"
   end
