@@ -1,0 +1,19 @@
+<h2>Scan The QR Code to Enable Two Factor Authentication </h2>
+<div id="svg">
+  <%= raw RQRCode::QRCode.new(@provisioning_uri,
+                              :svg,
+                              level: :h,
+                              :unit => 10,
+                              :offset => 10,
+                              fill: :orange,
+                              size: 12).as_svg %>
+
+</div>
+<%= form_with url: enable_otp_verify_path, method: :post do |f| %>
+  <div>
+    <%= f.label "otp_attempt", "Enter OTP" %>
+    <%= f.text_field :otp_attempt %>
+    <%= f.submit "Verify and Enable" %>
+  </div>
+<% end %>
+<%= link_to "Back", edit_user_registration_path %>

@@ -37,3 +37,30 @@
 .env
 /app/assets/builds/*
 !/app/assets/builds/.keep
+!/app/vendor/assets
+
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+
+# Ignore bundler config
+/bin
+/.bundle
+/Gemfile*.lock
+
+# Ignore all of the generated gem stuff
+/pkg
+/*.gem
+
+# Ignore all bundler caching
+/vendor/cache
+/vendor/bundle
+
+# Ignore VCR cassettes
+/spec/fixtures/vcr_cassettes
+
+# Ignore WebMock stubs
+/spec/fixtures/webmock

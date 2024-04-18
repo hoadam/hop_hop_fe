@@ -3,7 +3,6 @@ class TripService < HophopService
     response = get_url('trips', user_id: user_id)
 
     return [] if response[:data].blank?
-
     response[:data].map do |json|
       Trip.new(
         json.dig(:id),
@@ -26,10 +25,16 @@ class TripService < HophopService
   end
 
   def self.create_trip(user_id, trip_params)
-    response = conn.post("trips", trip: trip_params.merge(user_id: user_id))
-    json = JSON.parse(response.body, symbolize_names: true)
+    trip_params = trip_params.merge(user_id: user_id).to_json
+    trip_params = JSON.parse(trip_params, symbolize_names: true)
 
-    Trip.from_json(json)
+    begin
+      response = conn.post("trips", trip: trip_params)
+      json = JSON.parse(response.body, symbolize_names: true)
+      Trip.from_json(json)
+    rescue Faraday::BadRequestError => error
+      error_message = "Bad request: #{error.message}"
+    end
   end
 
   def self.update_trip(user_id, trip_id, trip_params)
