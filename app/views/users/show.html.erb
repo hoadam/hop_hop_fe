@@ -1,6 +1,9 @@
 <div class="container mint-cream top-border">
   <h1 class="text-6xl">Welcome <%= @user.full_name %>!</h1>
 </div>
+<div>
+  <%= render "sidebar" %>
+</div>
 <%= link_to 'Plan a new Trip', new_trip_path%>
 
 <div class="current-trips">

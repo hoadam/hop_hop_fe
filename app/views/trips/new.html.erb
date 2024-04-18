@@ -1,12 +1,17 @@
-<h1 class="text-6xl">Create a New Trip!</h1>
-
-<%= render partial: "trips", locals: {
-                                      path: trips_path(current_user.id),
-                                      method: :post,
-                                      trip_name: "Trip",
-                                      trip_location: "Location",
-                                      start_date: "",
-                                      end_date: "",
-                                      total_budget: 0,
-                                      button: "Save Trip"
-} %>
+<div class="pt-40 flex items-center justify-center h-screen">
+  <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+    <form class="space-y-6" action="#">
+        <h5 class="text-xl font-medium text-gray-900 dark:text-white">Create a New Trip!</h5>
+        <%= render partial: "trips", locals: {
+          path: trips_path,
+          method: :post,
+          trip_name: "Trip",
+          trip_location: "Location",
+          start_date: "",
+          end_date: DateTime.now.next,
+          total_budget: 0,
+          button: "Create Trip"
+        } %>
+    </form>
+  </div>
+</div>

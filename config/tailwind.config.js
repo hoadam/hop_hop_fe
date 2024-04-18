@@ -1,26 +1,27 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
-
+console.log("Checking")
 module.exports = {
   content: [
     './public/*.html',
     './app/helpers/**/*.rb',
     './app/javascript/**/*.js',
-    './app/views/**/*.{erb,haml,html,slim}'
+    './app/views/**/*.{erb,haml,html,slim}',
+    "./node_modules/flowbite/**/*.js"
   ],
   theme: {
-    colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
-      white: '#ffffff',
-      'mint-cream': '#EFF7F6',
-      'prussian-blue': '#172A3A',
-      'midnight-green': '#004346',
-      'celeste': '#B2F7EF',
-    },
     extend: {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        cream: '#FFFBF8',
+        blue: "#1E3950",
+        mint: '#EFF7F6',
+        green: '#004346',
+        celeste: '#B2F7EF'
+      }
     },
     container: {
       center: true,
@@ -41,6 +42,7 @@ module.exports = {
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/typography'),
     require('@tailwindcss/container-queries'),
+    require('flowbite/plugin')
   ],
   corePlugins: {
     visibility: false,
