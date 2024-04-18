@@ -1,8 +1,9 @@
 <div class="p-5 mb-4 border border-gray-100 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
     <% @daily_itineraries.each do |daily_itinerary| %>
-        <%= link_to 'Create Activity', new_trip_daily_itinerary_activity_path(@trip.id, daily_itinerary.id) %>
         <time class="text-lg font-semibold text-gray-900 dark:text-white"><%= daily_itinerary.date %></time>
-        <div><%= button_to 'Delete', trip_daily_itinerary_activity_path(@trip.id, daily_itinerary.id), method: :delete %></div>
+        <br>
+        <%= link_to 'Add Activity', new_trip_daily_itinerary_activity_path(@trip.id, daily_itinerary.id) %>
+
         <ol class="mt-3 divide-y divider-gray-200 dark:divide-gray-700">
             <% @activities[daily_itinerary.date].each do |activity| %>
                 <li>
@@ -30,6 +31,7 @@
                 </li>
             <% end %>
         </ol>
+    </br>
     <% end %>
 </div>
 

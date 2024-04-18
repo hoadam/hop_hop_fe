@@ -1,6 +1,6 @@
 <%= simple_form_for :trip, url: path, method: method, class: "space-y-6" do |f| %>
   <div>
-    <%= f.input :name, label: 'Trip Name', autofocus: true, { value: trip_name, class: "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" }, :label_html => { :class => "block mb-2 text-sm font-medium text-gray-900 dark:text-white" } %>
+    <%= f.input :name, label: 'Trip Name', autofocus: true, input_html: { value: trip_name, class: "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" }, :label_html => { :class => "block mb-2 text-sm font-medium text-gray-900 dark:text-white" } %>
   </div>
   <div>
     <%= f.input :location, input_html: { value: trip_location, class: "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" }, :label_html => { :class => 'block mb-2 text-sm font-medium text-gray-900 dark:text-white' } %>

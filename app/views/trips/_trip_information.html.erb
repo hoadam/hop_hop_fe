@@ -1,0 +1,42 @@
+<div class="pt-32 w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+  <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800" id="defaultTab" data-tabs-toggle="#defaultTabContent" role="tablist">
+    <li class="me-2">
+      <button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="true" class="inline-block p-4 text-blue-600 rounded-ss-lg hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-blue-500">Trip</button>
+    </li>
+    <li class="me-2">
+      <button id="services-tab" data-tabs-target="#services" type="button" role="tab" aria-controls="services" aria-selected="false" class="inline-block p-4 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300">Accommodation</button>
+    </li>
+  </ul>
+      <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="about" role="tabpanel" aria-labelledby="about-tab">
+          <p class="mb-3 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"><%= @trip.name %>
+            <p class="mb-3 font-normal text-md text-black dark:text-gray-400">Location: <span class="text-gray-500"><%= @trip.location %></span></p>
+            <p class="mb-3 font-normal text-md text-black dark:text-gray-400">Travel dates: <span class="text-gray-500"><%= @trip.start_date %> - <%= @trip.end_date %></span></p>
+          </p>
+          <p>
+            <strong>Total Budget</strong>
+              <p><%= @trip.total_budget %></p>
+
+            <strong>Total Expenses</strong>
+              <p><%= @trip.total_expenses %></p>
+          </p>
+          <%= link_to edit_trip_path(@trip.id), class: "inline-flex items-center font-medium text-blue-600 hover:text-blue-800 dark:text-blue-500 dark:hover:text-blue-700" do %>
+          Edit
+            <%= tag.svg class: "w-2.5 h-2.5 ms-2 rtl:rotate-180", aria_hidden: "true", xmlns: "http://www.w3.org/2000/svg", fill: "none", viewBox: "0 0 6 10" do %>
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            <% end %>
+          <% end %>
+      </div>
+      <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="services" role="tabpanel">
+        <p class="mb-5 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white">Where are you staying?</p>
+        <% @accommodations.each do |accommodation| %>
+          <%= accommodation.name %>
+          <%= accommodation.address %>
+          <%= accommodation.check_in %>
+          <%= accommodation.check_out %>
+        <% end %>
+    hello
+
+      </div>
+    </div>
+  </div>
+</div>
