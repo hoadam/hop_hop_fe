@@ -20,6 +20,7 @@ class TripsController < ApplicationController
   end
 
   def create
+    require 'pry'; binding.pry
     trip = TripService.create_trip(current_user.id, trip_params)
     if trip.is_a?(String)
       flash[:alert] = "Make sure you have filled out all fields correctly"
@@ -50,6 +51,6 @@ class TripsController < ApplicationController
   private
 
   def trip_params
-    params.permit(:name, :location, :start_date, :end_date, :total_budget)
+    params.require(:trip).permit(:name, :location, :start_date, :end_date, :total_budget)
   end
 end
