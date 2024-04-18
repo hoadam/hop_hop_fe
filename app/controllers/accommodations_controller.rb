@@ -6,6 +6,7 @@ class AccommodationsController < ApplicationController
   def create
     @trip = TripService.trip_details(current_user.id, params[:trip_id])
     @accommodation = AccommodationService.create_accommodation(current_user.id, params[:trip_id], accommodation_params)
+    redirect_to trip_path(@trip.id)
   end
 
   def edit
@@ -32,6 +33,6 @@ class AccommodationsController < ApplicationController
   private
 
   def accommodation_params
-    params.permit(:name, :address, :check_in, :check_out, :expenses, :lat, :lon)
+    params.require(:accommodations).permit(:name, :address, :check_in, :check_out, :expenses, :lat, :lon)
   end
 end

@@ -32,13 +32,13 @@ export default class extends Controller {
 
   }
   updateAddress(address) {
-    document.getElementById("address").value = address
+    document.getElementById("activities_address").value = address
   }
   updateName(name) {
-    document.getElementById("name").value = name
+    document.getElementById("activities_name").value = name
   }
   updateLatLon(lat,lng) {
-    document.getElementById("lat").value = lat;
-    document.getElementById("lon").value = lng;
+    document.getElementById("activities_lat").value = lat;
+    document.getElementById("activities_lon").value = lng;
   }
 }
