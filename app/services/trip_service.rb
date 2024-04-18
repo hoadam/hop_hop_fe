@@ -8,6 +8,8 @@ class TripService < HophopService
         json.dig(:id),
         json.dig(:attributes, :name),
         json.dig(:attributes, :location),
+        json.dig(:attributes, :lat),
+        json.dig(:attributes, :lon),
         json.dig(:attributes, :start_date),
         json.dig(:attributes, :end_date),
         json.dig(:attributes, :status),
