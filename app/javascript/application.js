@@ -2,7 +2,8 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 
-// Declare the map variable
+if (!document.getElementById("trip-show")) {
+// Declare the map variable)
 let map
 
 // Create an asynchronous function to initialize the map
@@ -124,3 +125,4 @@ document.addEventListener('turbo:load', function() {
   //     title: place.displayName,
   //   });
   // }
+}
