@@ -1,17 +1,18 @@
-<div class="container">
-  <h1 class="text-center text-4xl">Where are you staying?</h1>
-
-  <div class="container">
-    <%= render partial: "accommodations", locals: {
-                                          path: trip_accommodations_path(params[:trip_id]),
-                                          method: :post,
-                                          name: "Accommodation Name",
-                                          address: "Address",
-                                          check_in: "",
-                                          check_out: "",
-                                          expenses: 0,
-                                          button: "Create Accommodation"
-} %>
+<div data-controller="accommodations">
+  <div id="searchForm">
+  </div><div class="container">
+    <h1 class="text-center text-4xl">Where are you staying?</h1>
+  
+    <div class="container">
+      <%= render partial: "accommodations", locals: {
+                                            path: trip_accommodations_path(params[:trip_id]),
+                                            method: :post,
+                                            name: "Accommodation Name",
+                                            address: "Address",
+                                            check_in: "",
+                                            check_out: "",
+                                            expenses: 0,
+                                            button: "Create Accommodation"
+  } %>
+    </div>
   </div>
-</div>
-
