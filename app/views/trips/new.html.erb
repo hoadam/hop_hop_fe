@@ -1,6 +1,6 @@
 <h1 class="text-6xl">Create a New Trip!</h1>
 
-<%= form_with url: trips_path(current_user.id), method: :post, data: { turbo: false } do |f| %> 
+<%= form_with url: trips_path(), method: :post, data: { turbo: false } do |f| %> 
 <%= f.label :name, 'Trip Name' %>
 <%= f.text_field :name %> <br />
 

@@ -3,7 +3,7 @@
     <div id="searchForm">
     </div>
 
-    <%= form_with url: trip_accommodations_path(current_user.id, params[:trip_id]), data: {turbo: false}, local: true do |f| %>
+    <%= form_with url: trip_accommodations_path(params[:trip_id]), data: {turbo: false}, local: true do |f| %>
         <%= f.label :name, "Accommodation Name" %>
         <%= f.text_field :name %>
         <br/>

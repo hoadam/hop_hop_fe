@@ -2,7 +2,7 @@
 <div data-controller="trips">
     <div id="searchForm">
     </div>
-<%= form_with url: trip_path(current_user.id, params[:id]), method: :patch, data: {turbo: false}, local: true do |f| %>
+<%= form_with url: trip_path(params[:id]), method: :patch, data: {turbo: false}, local: true do |f| %>
     <%= f.label :name, "Trip Name" %>
     <%= f.text_field :name, value: @trip.name %>
 

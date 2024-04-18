@@ -2,7 +2,7 @@
 <div data-controller="activities">
     <div id="searchForm">
     </div>
-<%= form_with url: trip_daily_itinerary_activities_path(current_user.id, params[:trip_id], params[:daily_itinerary_id]), data: {turbo: false}, local: true do |f| %>
+<%= form_with url: trip_daily_itinerary_activities_path(params[:trip_id], params[:daily_itinerary_id]), data: {turbo: false}, local: true do |f| %>
     <%= f.label :name, "Activity Name" %>
     <%= f.text_field :name %>
 
