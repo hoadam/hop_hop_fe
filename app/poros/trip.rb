@@ -2,6 +2,8 @@ class Trip
   attr_reader :id,
               :name,
               :location,
+              :lat,
+              :lon,
               :start_date,
               :end_date,
               :status,
@@ -10,10 +12,12 @@ class Trip
               :daily_itineraries,
               :activities
 
-  def initialize(id, name, location, start_date, end_date, status, total_budget, total_expenses, daily_itineraries, activities)
+  def initialize(id, name, location, lat, lon, start_date, end_date, status, total_budget, total_expenses, daily_itineraries, activities)
     @id = id
     @name = name
     @location = location
+    @lat = lat
+    @lon = lon
     @start_date = Date.parse(start_date) if start_date
     @end_date = Date.parse(end_date) if end_date
     @status = status
@@ -28,6 +32,8 @@ class Trip
       json.dig(:data, :id),
       json.dig(:data, :attributes, :name),
       json.dig(:data, :attributes, :location),
+      json.dig(:data, :attributes, :lat),
+      json.dig(:data, :attributes, :lon),
       json.dig(:data, :attributes, :start_date),
       json.dig(:data, :attributes, :end_date),
       json.dig(:data, :attributes, :status),
