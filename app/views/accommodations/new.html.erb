@@ -1,7 +1,7 @@
 <div class="pt-40 flex items-center justify-center h-screen">
   <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
     <%= link_to sanitize("&larr; Back to Trip"), trip_path(@trip.id), class: "btn" %>
-    <h5 class="text-xl font-medium text-center text-gray-900 dark:text-white">Edit Activities</h5>
+    <h5 class="text-xl font-medium text-center text-gray-900 dark:text-white">Add an Accommodation</h5>
     <div data-controller="trips">
       <div id="searchForm">
         <%= render partial: "accommodations", locals: {
