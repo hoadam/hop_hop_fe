@@ -1,7 +1,12 @@
 class Users::SessionsController < Devise::SessionsController
   skip_before_action :authenticate_user!, only: [:after_sign_in_path_for]
-  
+
   # # # Adapted from Devise Sessions Controller
+
+  def new
+    @user = User.new
+  end
+
   def create
     self.resource = warden.authenticate!(auth_options.merge(strategy: :password_authenticable))
 
@@ -18,7 +23,7 @@ class Users::SessionsController < Devise::SessionsController
         set_flash_message(:notice, :signed_in)
         sign_in(resource_name, resource)
         yield resource if block_given?
-        respond_with resource, location: after_sign_in_path_for(resource) and return 
+        respond_with resource, location: after_sign_in_path_for(resource) and return
       end
     end
     flash[:alert] = "Invalid email or password."
@@ -28,7 +33,7 @@ class Users::SessionsController < Devise::SessionsController
   def after_sign_out_path_for(resource_or_scope)
     root_path
   end
-  
+
   def after_sign_in_path_for(resource_or_scope)
     root_path
   end

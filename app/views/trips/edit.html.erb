@@ -1,6 +1,6 @@
 <h1>Edit Trip</h1>
 
-<%= form_with url: user_trip_path(params[:user_id], params[:id]), method: :patch, data: {turbo: false}, local: true do |f| %>
+<%= form_with url: trip_path(current_user.id, params[:id]), method: :patch, data: {turbo: false}, local: true do |f| %>
     <%= f.label :name, "Trip Name" %>
     <%= f.text_field :name, value: @trip.name %>
 

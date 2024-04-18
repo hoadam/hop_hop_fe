@@ -1,6 +1,6 @@
 <h1>Update Accommodation</h1>
 
-<%= form_with url: user_trip_accommodation_path(params[:user_id], params[:trip_id], params[:id]), method: :patch, data: {turbo: false}, local: true do |f| %>
+<%= form_with url: trip_accommodation_path(current_user.id, params[:trip_id], params[:id]), method: :patch, data: {turbo: false}, local: true do |f| %>
     <%= f.label :name, "Accommodation Name" %>
     <%= f.text_field :name, value: @accommodation.name %>
 

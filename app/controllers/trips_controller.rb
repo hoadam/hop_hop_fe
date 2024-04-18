@@ -1,35 +1,46 @@
 class TripsController < ApplicationController
   def index
-    @user = User.find(params[:user_id])
-    @trips = TripService.get_trips(params[:user_id])
+    @trips = TripService.get_trips(current_user.id)
   end
 
   def show
-    @user = User.find(params[:user_id])
 
-    @accommodations = AccommodationService.get_accommodations(params[:user_id], params[:id])
+    @accommodations = AccommodationService.get_accommodations(current_user.id, params[:id])
 
-    @trip = TripService.trip_details(params[:user_id], params[:id])
+    @trip = TripService.trip_details(current_user.id, params[:id])
 
     @daily_itineraries = @trip.daily_itineraries
     @activities = @trip.activities
   end
 
   def edit
-    @user = User.find(params[:user_id])
-    @trip = TripService.trip_details(params[:user_id], params[:id])
+    @trip = TripService.trip_details(current_user.id, params[:id])
+  end
+
+  def new;end
+
+  def create
+    trip = TripService.create_trip(current_user.id, trip_params)
+    if trip.is_a?(String)
+      flash[:alert] = "Make sure you have filled out all fields correctly"
+      render :new
+    else
+      redirect_to dashboard_path
+    end
   end
 
   def update
-    @user = User.find(params[:user_id])
 
-    @trip = TripService.trip_details(params[:user_id], params[:id])
+    @trip = TripService.trip_details(current_user.id, params[:id])
 
-    TripService.update_trip(params[:user_id], params[:id], trip_params)
-    redirect_to user_trip_path(@user, @trip.id)
+    TripService.update_trip(current_user.id, params[:id], trip_params)
   rescue
     flash[:error] = "Failed to update trip"
-    redirect_to edit_user_trip_path(@user, @trip.id)
+  end
+
+  def destroy
+    TripService.delete_trip(current_user.id, params[:id] )
+    redirect_to dashboard_path(current_user.id)
   end
 
 

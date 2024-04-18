@@ -1,6 +1,6 @@
 <h1>Create Activity</h1>
 
-<%= form_with url: user_trip_daily_itinerary_activities_path(params[:user_id], params[:trip_id], params[:daily_itinerary_id]), data: {turbo: false}, local: true do |f| %>
+<%= form_with url: trip_daily_itinerary_activities_path(current_user.id, params[:trip_id], params[:daily_itinerary_id]), data: {turbo: false}, local: true do |f| %>
     <%= f.label :name, "Activity Name" %>
     <%= f.text_field :name %>
 

@@ -9,32 +9,32 @@
 <strong>Total Expenses</strong>
     <p><%= @trip.total_expenses %></p>
 
-<div><%= link_to 'Edit', edit_user_trip_path(@user, @trip.id) %></div>
+<div><%= link_to 'Edit', edit_trip_path(@trip.id) %></div>
 
 <h2>Accommodation</h2>
-    <div><%= link_to 'Create Accommodation', new_user_trip_accommodation_path(@user, @trip.id) %></div>
+    <div><%= link_to 'Create Accommodation', new_trip_accommodation_path(@trip.id) %></div>
 
     <% @accommodations.each do |accommodation| %>
         <p><%= accommodation.name %></p>
         <p><%= accommodation.address %></p>
         <p>Check In: <%= accommodation.check_in %></p>
         <p>Check Out: <%= accommodation.check_out %></p>
-        <div><%= link_to 'Edit', edit_user_trip_accommodation_path(@user, @trip.id, accommodation.id) %></div>
-        <div><%= button_to 'Delete', user_trip_accommodation_path(@user, @trip.id, accommodation.id), method: :delete %></div>
+        <div><%= link_to 'Edit', edit_trip_accommodation_path(@trip.id, accommodation.id) %></div>
+        <div><%= button_to 'Delete',_trip_accommodation_path(@trip.id, accommodation.id), method: :delete %></div>
     <% end %>
 
 <h3>Itineraries</h3>
     <% @daily_itineraries.each do |daily_itinerary| %>
         <section> 
             <span><%= daily_itinerary.date %></span>
-            <div><%= link_to 'Create Activity', new_user_trip_daily_itinerary_activity_path(@user, @trip.id, daily_itinerary.id) %></div>
+            <div><%= link_to 'Create Activity', new_trip_daily_itinerary_activity_path(@trip.id, daily_itinerary.id) %></div>
             <ol>
                 <% @activities[daily_itinerary.date].each do |activity| %>
                 <li>
                     Name: <%= activity.name %><br/>
                     Description: <%= activity.description %>
-                    <div><%= link_to 'Edit', edit_user_trip_daily_itinerary_activity_path(@user, @trip.id, daily_itinerary.id, activity.id) %></div>
-                    <div><%= button_to 'Delete', user_trip_daily_itinerary_activity_path(@user, @trip.id, daily_itinerary.id, activity.id), method: :delete %></div>
+                    <div><%= link_to 'Edit', edit_trip_daily_itinerary_activity_path(@trip.id, daily_itinerary.id, activity.id) %></div>
+                    <div><%= button_to 'Delete',_trip_daily_itinerary_activity_path(@trip.id, daily_itinerary.id, activity.id), method: :delete %></div>
                 </li>
             <% end %>
             </ol>

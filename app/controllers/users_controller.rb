@@ -1,6 +1,11 @@
 class UsersController < ApplicationController
   before_action :authenticate_user!, except: [:show_otp, :verify_otp]
 
+  def show
+    @user = User.find(current_user.id).decorate
+    @trips = TripService.get_trips(current_user.id)
+  end
+
   def disable_otp
     if current_user.validate_and_consume_otp!(params[:otp_attempt])
       current_user.otp_required_for_login = false
