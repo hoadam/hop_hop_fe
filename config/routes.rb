@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   }
 
   get "/", to: "welcome#index"
-  root 'welcome#index'
+  root to: 'pages#home'
 
   get 'enable_otp_show_qr', to: "users#enable_otp_show_qr", as: 'enable_otp_show_qr'
   post 'enable_otp_verify', to: "users#enable_otp_verify", as: 'enable_otp_verify'

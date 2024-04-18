@@ -20,14 +20,18 @@ RSpec.describe "Discover Index", type: :feature do
       expect(page).to have_no_content("Girls Trip!")
 
       visit new_trip_path
+      save_and_open_page
+      fill_in("Trip Name", with: "Girls Trip!")
+      fill_in("Location", with: "Miami, Florida")
+      select '2024', from: 'trip_start_date_1i' # Year
+      select 'April', from: 'trip_start_date_2i' # Month
+      select '17', from: 'trip_start_date_3i'    # Day
+      select '2024', from: 'trip_end_date_1i' # Year
+      select 'April', from: 'trip_end_date_2i' # Month
+      select '20', from: 'trip_end_date_3i'    # Day
+      fill_in("Total budget", with: "2000")
 
-      fill_in(:name, with: "Girls Trip!")
-      fill_in(:location, with: "Miami, Florida")
-      fill_in(:start_date, with: "2025/03/03")
-      fill_in(:end_date, with: "2025/04/04")
-      fill_in(:total_budget, with: "2000")
-
-      click_on "Submit"
+      click_on "Save Trip"
       expect(page.current_path).to eq(dashboard_path)
       expect(page).to have_content("Girls Trip!")
 
@@ -36,14 +40,14 @@ RSpec.describe "Discover Index", type: :feature do
 
   context "a user leaves fields blank" do
     it "flashes a message and renders new", :vcr do
-      click_on "Submit"
+      click_on "Save Trip"
 
       expect(page).to have_content("Make sure you have filled out all fields correctly")
 
-      fill_in(:name, with: "Girls Trip!")
-      fill_in(:location, with: "Girls Trip!")
+      fill_in("Trip Name", with: "Girls Trip!")
+      fill_in("Location", with: "Girls Trip!")
 
-      click_on "Submit"
+      click_on "Save Trip"
 
       expect(page).to have_content("Make sure you have filled out all fields correctly")
     end

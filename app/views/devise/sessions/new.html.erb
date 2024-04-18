@@ -1,26 +1,28 @@
-<h2>Log in</h2>
-
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
-  </div>
-
-  <% if devise_mapping.rememberable? %>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+<div class="pt-40 flex items-center justify-center h-screen">
+  <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+    <h5 class="text-xl font-medium text-center text-gray-900 dark:text-white">Log In</h5>
+          <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name, class: "space-y-6")) do |f| %>
+            <div class="field">
+              <%= f.input :email, autofocus: true, autocomplete: "email", input_html: { value: "email", class: "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" }, :label_html => { :class => 'block mb-2 text-sm font-medium text-gray-900 dark:text-white' } %>
+            </div>
+            <div class="field">
+              <%= f.input :password, autocomplete: "current-email", input_html: { class: "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" }, :label_html => { :class => 'block mb-2 text-sm font-medium text-gray-900 dark:text-white' } %>
+            </div>
+            <% if devise_mapping.rememberable? %>
+              <div class="field">
+                <%= f.input :remember_me, as: :boolean, boolean_style: :inline %>
+              </div>
+            <% end %>
+            <div class="actions">
+              <%= f.button :submit, "Log in", class: "w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" %>
+            </div>
+          <% end %>
+          <br>
+          <%= render "devise/shared/links" %>
+        </p>
+      </div>
     </div>
-  <% end %>
-
-  <div class="actions">
-    <%= f.submit "Log in" %>
   </div>
-<% end %>
+</div>
 
-<%= render "devise/shared/links" %>
+

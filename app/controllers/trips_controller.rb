@@ -17,7 +17,8 @@ class TripsController < ApplicationController
     @trip = TripService.trip_details(current_user.id, params[:id])
   end
 
-  def new;end
+  def new
+  end
 
   def create
     trip = TripService.create_trip(current_user.id, trip_params)
@@ -47,6 +48,6 @@ class TripsController < ApplicationController
   private
 
   def trip_params
-    params.permit(:name, :location, :start_date, :end_date, :total_budget)
+    params.require(:trip).permit(:name, :location, :start_date, :end_date, :total_budget)
   end
 end
