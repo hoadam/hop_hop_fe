@@ -4,7 +4,6 @@ class TripsController < ApplicationController
   end
 
   def show
-
     @accommodations = AccommodationService.get_accommodations(current_user.id, params[:id])
 
     @trip = TripService.trip_details(current_user.id, params[:id])
@@ -17,7 +16,8 @@ class TripsController < ApplicationController
     @trip = TripService.trip_details(current_user.id, params[:id])
   end
 
-  def new;end
+  def new
+  end
 
   def create
     trip = TripService.create_trip(current_user.id, trip_params)
@@ -25,7 +25,7 @@ class TripsController < ApplicationController
       flash[:alert] = "Make sure you have filled out all fields correctly"
       render :new
     else
-      redirect_to dashboard_path
+      redirect_to trip_path(trip.id)
     end
   end
 
@@ -40,6 +40,9 @@ class TripsController < ApplicationController
 
   def destroy
     TripService.delete_trip(current_user.id, params[:id] )
+    redirect_to dashboard_path(current_user.id)
+  rescue => e
+    flash[:error] = "Failed to delete trip- #{e.message}"
     redirect_to dashboard_path(current_user.id)
   end
 

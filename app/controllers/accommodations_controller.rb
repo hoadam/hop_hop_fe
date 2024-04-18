@@ -6,6 +6,7 @@ class AccommodationsController < ApplicationController
   def create
     @trip = TripService.trip_details(current_user.id, params[:trip_id])
     @accommodation = AccommodationService.create_accommodation(current_user.id, params[:trip_id], accommodation_params)
+    redirect_to trip_path(@trip.id)
   end
 
   def edit
@@ -16,18 +17,18 @@ class AccommodationsController < ApplicationController
   def update
     @trip = TripService.trip_details(current_user.id, params[:trip_id])
     @accommodation = AccommodationService.accommodation_details(current_user.id, params[:trip_id], params[:id])
-
     AccommodationService.update_accommodation(current_user.id, params[:trip_id], params[:id], accommodation_params)
+    redirect_to trip_path(@trip.id)
   rescue => e
     flash[:error] = "Failed to update accommodation - #{e.message}"
   end
 
   def destroy
-    @trip = TripService.trip_details(current_user.id, params[:trip_id])
-    @accommodation = AccommodationService.accommodation_details(current_user.id, params[:trip_id], params[:id])
     AccommodationService.delete_accommodation(current_user.id, params[:trip_id], params[:id])
+    redirect_to trip_path(params[:trip_id])
   rescue => e
     flash[:error] = "Failed to delete accommodation - #{e.message}"
+    redirect_to trip_path(params[:trip_id])
   end
 
   private
