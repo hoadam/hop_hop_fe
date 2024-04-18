@@ -1,20 +1,27 @@
 <h1>Create Accommodation</h1>
+<div data-controller="accommodations">
+    <div id="searchForm">
+    </div>
 
-<%= form_with url: trip_accommodations_path(current_user.id, params[:trip_id]), data: {turbo: false}, local: true do |f| %>
-    <%= f.label :name, "Accommodation Name" %>
-    <%= f.text_field :name %>
-
-    <%= f.label :address, "Address" %>
-    <%= f.text_field :address %>
-
-    <%= f.label :check_in, "Check In" %>
-    <%= f.date_field :check_in %>
-
-    <%= f.label :check_out, "Check Out" %>
-    <%= f.date_field :check_out %>
-
-    <%= f.label :expenses, "Expenses" %>
-    <%= f.text_field :expenses %>
-
-    <%= f.submit "Create Accommodation" %>
-<% end %>
+    <%= form_with url: trip_accommodations_path(params[:trip_id]), data: {turbo: false}, local: true do |f| %>
+        <%= f.label :name, "Accommodation Name" %>
+        <%= f.text_field :name %>
+        <br/>
+        <%= f.label :address, "Address" %>
+        <%= f.text_field :address %>
+        <br/>
+        <%= f.label :check_in, "Check In" %>
+        <%= f.date_field :check_in %>
+         <br/>
+        <%= f.label :check_out, "Check Out" %>
+        <%= f.date_field :check_out %>
+ <br/>
+        <%= f.label :expenses, "Expenses" %>
+        <%= f.text_field :expenses %>
+ <br/>
+        <%= f.hidden_field :lat %>
+        <%= f.hidden_field :lot %>
+        
+        <%= f.submit "Create Accommodation" %>
+    <% end %>
+</div>

@@ -1,6 +1,10 @@
 <h1>Update Accommodation</h1>
 
-<%= form_with url: trip_accommodation_path(current_user.id, params[:trip_id], params[:id]), method: :patch, data: {turbo: false}, local: true do |f| %>
+<div data-controller="accommodations">
+    <div id="searchForm">
+    </div>
+
+<%= form_with url: trip_accommodation_path(params[:trip_id], params[:id]), method: :patch, data: {turbo: false}, local: true do |f| %>
     <%= f.label :name, "Accommodation Name" %>
     <%= f.text_field :name, value: @accommodation.name %>
 
@@ -16,5 +20,9 @@
     <%= f.label :expenses, "Expenses" %>
     <%= f.text_field :expenses, value: @accommodation.expenses %>
 
+    <%= f.hidden_field :lat, value: @accommodation.lat %>
+    <%= f.hidden_field :lon, value: @accommodation.lon %>
+
     <%= f.submit "Update Accommodation" %>
 <% end %>
+</div>
