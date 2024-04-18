@@ -2,8 +2,6 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 
-
-if (!document.getElementById("trip-show")) {
 // Declare the map variable)
 let map
 
@@ -85,7 +83,6 @@ document.addEventListener('turbo:load', function() {
 
     map.setZoom(15)
   }
-
   // Used to wait for the #map to appear, if it does, is it a String?
   // If it is a String, then return a promise
   const waitForElement = async function(elem) {
@@ -106,24 +103,3 @@ document.addEventListener('turbo:load', function() {
         });
     }
   };
-
-  // const getPlaceDetails = async function(Place) {
-  //   const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
-  //   // Use place ID to create a new Place instance.
-  //   const place = new Place({
-  //     id: Place.placeId
-  //   });
-
-  //   // Call fetchFields, passing the desired data fields.
-  //   await place.fetchFields({
-  //     fields: ["displayName", "formattedAddress", "location"],
-  //   });
-
-  //   // Add an Advanced Marker
-  //   const marker = new AdvancedMarkerElement({
-  //     map,
-  //     position: place.location,
-  //     title: place.displayName,
-  //   });
-  // }
-}
