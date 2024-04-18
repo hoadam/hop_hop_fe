@@ -23,7 +23,7 @@
   <body>
    
 
-    <div id="mainBody" class="container">
+    <div id="mainBody" class="mx-auto">
       <% flash.each do |name, msg| %>
         <%= content_tag :div, msg, class: name %>
       <% end %>
