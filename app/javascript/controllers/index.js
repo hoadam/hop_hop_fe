@@ -1,6 +1,6 @@
 // // Import and register all your controllers from the importmap under controllers/*
 
-import { application } from "./controllers/application"
+import { application } from "./application"
 
 import AccommodationsController from "./accommodations_controller"
 import ActivitiesController from "./activities_controller"
