@@ -1,7 +1,7 @@
 // Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
 import "@hotwired/turbo-rails"
 import "./controllers"
-
+if (!document.getElementById("trip-show")) {
 // Declare the map variable)
 let map
 
@@ -66,4 +66,4 @@ document.addEventListener('turbo:load', function() {
         });
     }
   };
- w
+}
