@@ -65,12 +65,13 @@ RSpec.describe "Two-Factor Authentication", type: :feature do
   describe "Disabling 2FA" do
     it "allows user to disable 2FA" do
       user = create(:user, otp_required_for_login: true)
-
+      
       allow_any_instance_of(User).to receive(:validate_and_consume_otp!).and_return(true)
-
+      
       login_as(user)
-
+      
       visit edit_user_registration_path
+      # save_and_open_page
 
       fill_in "user_otp_attempt", with: "any_otp_code"
       fill_in "user_current_password", with: user.password
