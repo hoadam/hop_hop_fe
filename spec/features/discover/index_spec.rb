@@ -17,6 +17,7 @@ RSpec.describe "Discover Index", type: :feature do
   context "a user searches for a location" do
     it "displays the results with clickable links", :vcr do
       expect(page).to have_no_css("#results")
+      # save_and_open_page
       input_field = find(:xpath, "/html/body/div/div/div[1]/div/gmp-place-autocomplete//div/div[1]/input", wait:10 )
 
         fill_in(:input, with: "Paris")
