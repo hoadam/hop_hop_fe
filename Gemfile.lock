@@ -163,7 +163,6 @@ GEM
       faraday-net_http (>= 2.0, < 3.2)
     faraday-net_http (3.1.0)
       net-http
-    geocoder (1.8.2)
     globalid (1.2.1)
       activesupport (>= 6.1)
     google-protobuf (4.26.1-arm64-darwin)
@@ -412,7 +411,6 @@ DEPENDENCIES
   factory_bot_rails
   faker
   faraday
-  geocoder
   importmap-rails
   jbuilder
   jsbundling-rails

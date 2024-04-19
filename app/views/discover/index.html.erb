@@ -1,19 +1,20 @@
 <div class="pt-40 container mx-auto">
   <% if @trips.present? %>
-  <div id="results">
-    <%= render "results_table" %>
-  </div>
-  <div data-controller="discover">
-    <div id="searchForm"></div>
-  </div>
-  <%= render "search" %>
-    <%= render "/shared/map" %>
+    <div id="results">
+      <%= render "results_table" %>
+    </div>
+    <div data-controller="discover">
+      <div id="searchForm"></div>
+    </div>
+    <div class="search_form">
+      <%= render "search" %>
+    </div>
   <% else %>
-  <div data-controller="discover">
-    <div id="searchForm"></div>
-  </div>
-  <%= render "search" %>
-    <%= render "/shared/map" %>
+    <div data-controller="discover">
+      <div id="searchForm"></div>
+    </div>
+    <div class="search_form">
+      <%= render "search" %>
     </div>
   <% end %>
 </div>
