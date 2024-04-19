@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   resources :discover, only: [:index, :create]
   resources :trips do
     resources :accommodations
-    resources :daily_itineraries, only: [:index, :show] do
+    resources :daily_itineraries, only: [:new, :create] do
       resources :activities
     end
   end
