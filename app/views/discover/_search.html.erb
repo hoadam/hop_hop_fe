@@ -1,4 +1,4 @@
-  <%= simple_form_for :search, url: discover_index_path, method: :get, data: { turbo: false } do |f| %>
+  <%= simple_form_for :search_results, url: discover_index_path, method: :get, data: { turbo: false } do |f| %>
     <%= f.input :lat, as: :hidden %>
     <%= f.input :lon, as: :hidden %>
     <%= f.input :search, as: :hidden %>

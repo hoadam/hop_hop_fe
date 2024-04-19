@@ -2,20 +2,20 @@
   <table>
     <tr>
       <td>Name</td>
-      <td><%= discover_facade.displayname %></td>
+      <td><%= @search.displayname %></td>
     </tr>
     <tr>
       <td>Address</td>
-      <td><%= discover_facade.address %></td>
+      <td><%= @search.address %></td>
     </tr>
     <tr>
       <td>Rating</td>
-      <td><%= discover_facade.rating %></td>
+      <td><%= @search.rating %></td>
     </tr>
   </table>
-    <%= simple_form_for :search, url: discover_index_path, method: :post, class: "max-w-sm mx-auto" do |f| %>
-      <%= f.input :Trip, as: :select, collection: @trips.map { |trip| [trip.name, trip.id] }, include_blank: true, input_html: { class: "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"}, label_html: { class: "block mb-2 text-sm font-medium text-gray-900 dark:text-white" } %>
-      <%= f.input :Type, as: :select, collection: ["Accommodation", "Activity"], input_html: { class: "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"}, label_html: { class: "block mb-2 text-sm font-medium text-gray-900 dark:text-white" } %>
+    <%= simple_form_for :search_results, url: discover_index_path, method: :post, class: "max-w-sm mx-auto" do |f| %>
+      <%= f.input :trip, as: :select, collection: @trips.map { |trip| [trip.name, trip.id] }, include_blank: true, input_html: { class: "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"}, label_html: { class: "block mb-2 text-sm font-medium text-gray-900 dark:text-white" } %>
+      <%= f.input :type, as: :select, collection: ["Accommodation", "Activity"], input_html: { class: "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"}, label_html: { class: "block mb-2 text-sm font-medium text-gray-900 dark:text-white" } %>
       <%= f.button :submit, "Add to Trip" %>
     <% end %>
 </div>

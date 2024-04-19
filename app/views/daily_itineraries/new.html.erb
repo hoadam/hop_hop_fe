@@ -1,6 +1,5 @@
 <div class="pt-40 flex items-center justify-center h-screen">
   <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
-    <%= render "shared/flash" %>
     <%= link_to sanitize("&larr; Back to Dashboard"), dashboard_path, class: "btn" %>
     <h5 class="text-xl font-medium text-center text-gray-900 dark:text-white">Add your Activity!</h5>
     <%= simple_form_for :search, url: trip_daily_itineraries_path(params[:trip_id]), method: :post, class: "max-w-sm mx-auto" do |f| %>

@@ -1,4 +1,4 @@
-<div class="pt-40">
+<div class="pt-40 container mx-auto">
   <% if @trips.present? %>
   <div id="results">
     <%= render "results_table" %>
@@ -7,14 +7,12 @@
     <div id="searchForm"></div>
   </div>
   <%= render "search" %>
-  <%= render "shared/flash" %>
     <%= render "/shared/map" %>
   <% else %>
-  <%= render "search" %>
   <div data-controller="discover">
     <div id="searchForm"></div>
   </div>
-  <%= render "shared/flash" %>
+  <%= render "search" %>
     <%= render "/shared/map" %>
     </div>
   <% end %>

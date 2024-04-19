@@ -38,19 +38,19 @@ export default class extends Controller {
     this.updateId(place.id);
 }
   updateAddress(address) {
-    document.getElementById("search_search").value = address;
+    document.getElementById("search_results_search").value = address;
   }
   updateLatLon(lat,lng) {
-    document.getElementById("search_lat").value = lat;
-    document.getElementById("search_lon").value = lng;
+    document.getElementById("search_results_lat").value = lat;
+    document.getElementById("search_results_lon").value = lng;
   }
   updateDisplayName(displayname) {
-    document.getElementById("search_displayname").value = displayname;
+    document.getElementById("search_results_displayname").value = displayname;
   }
   updateRating(rating) {
-    document.getElementById("search_rating").value = rating;
+    document.getElementById("search_results_rating").value = rating;
   }
   updateId(id) {
-    document.getElementById("search_id").value = id;
+    document.getElementById("search_results_id").value = id;
   }
 }

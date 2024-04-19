@@ -1,13 +1,15 @@
 class DiscoverController < ApplicationController
 
   def index
-    if search_params.empty?
+    if params[:search_results].present? && filter_search.empty?
       @trips = nil
-      flash[:alert] = "Sorry, try again"
-    else
+      flash.now[:alert] = "Sorry, enter a search"
+    elsif params[:search_results].present?
       @trips = TripService.get_trips(current_user.id)
-      session[:search] = params[:search]
-      DiscoverFacade.new(params[:search])
+      session[:search_results] = params[:search_results]
+      @search = Search.new(params[:search_results])
+    else
+      @trips = nil
     end
   end
 
@@ -15,10 +17,10 @@ class DiscoverController < ApplicationController
   end
 
   def create
-    if params[:search][:Type] == "Accommodation"
+    if params[:search_results][:type] == "Accommodation"
 
-      redirect_to new_trip_accommodation_path(trip_id: search_params[:Trip], search: session[:search].to_json)
-    elsif params[:search][:Type] == "Activity"
+      redirect_to new_trip_accommodation_path(trip_id: search_params[:Trip], search: session[:search_results].to_json)
+    elsif params[:search_results][:type] == "Activity"
 
       redirect_to new_trip_daily_itinerary_path(search_params[:Trip])
     else
@@ -29,6 +31,10 @@ class DiscoverController < ApplicationController
   end
 
   def search_params
-    params.require(:search).permit(:Trip, :Type)
+    params = params.require(:search_results)
+  end
+
+  def filter_search
+    params[:search_results].values.delete_if(&:empty?)
   end
 end
