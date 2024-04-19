@@ -1,26 +1,19 @@
-<h1 class="text-6xl">Create a New Trip!</h1>
-<div data-controller="trips">
-    <div id="searchForm">
+<div class="pt-40 flex items-center justify-center h-screen">
+  <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+    <%= link_to sanitize("&larr; Back to Dashboard"), dashboard_path, class: "btn" %>
+    <h5 class="text-xl font-medium text-center text-gray-900 dark:text-white">Create a New Trip</h5>
+    <div data-controller="trips">
+      <div id="searchForm"></div>
+      <%= render partial: "trips", locals: {
+        path: trips_path,
+        method: :post,
+        trip_name: "",
+        trip_location: "",
+        start_date: "",
+        end_date: "",
+        total_budget: 0,
+        button: "Create Trip"
+      } %>
     </div>
-<%= form_with url: trips_path(), method: :post, data: { turbo: false } do |f| %> 
-<%= f.label :name, 'Trip Name' %>
-<%= f.text_field :name %> <br />
-
-<%= f.label :location %>
-<%= f.text_field :location %> <br />
-
-<%= f.label :start_date %>
-<%= f.date_field :start_date %> <br />
-
-<%= f.label :end_date %>
-<%= f.date_field :end_date %> <br />
-
-<%= f.label :total_budget %>
-<%= f.number_field :total_budget %> <br />
-
-<%= f.hidden_field :lat %>
-<%= f.hidden_field :lon %>
-
-<%= f.submit "Submit" %>
-<% end %>
+  </div>
 </div>

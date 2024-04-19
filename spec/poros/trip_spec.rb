@@ -4,14 +4,16 @@ RSpec.describe Trip do
   let(:id) { 1 }
   let(:name) { 'Trip Name' }
   let(:location) { 'Trip Location' }
-  let(:start_date) { Date.new(2024, 1, 1).to_s }
-  let(:end_date) { Date.new(2024, 1, 3).to_s }
+  let!(:start_date) { '2024-01-01' }
+  let!(:end_date) { '2024-01-03' }
   let(:status) { 'in_progress' }
   let(:total_budget) { 1000 }
   let(:total_expenses) { 500 }
   let(:daily_itineraries) { [] }
   let(:activities) {[]}
-  let(:trip) { Trip.new(id, name, location, start_date, end_date, status, total_budget, total_expenses, daily_itineraries, activities)}
+  let(:lat) { 3.12345566}
+  let(:lon) {-16.02000059}
+  let(:trip) { Trip.new(id, name, location, lat, lon, start_date, end_date, status, total_budget, total_expenses, daily_itineraries, activities) }
 
   describe "#initialize" do
     it 'sets the attributes correctly' do
@@ -42,7 +44,9 @@ RSpec.describe Trip do
             total_budget: total_budget,
             total_expenses: total_expenses,
             daily_itineraries: daily_itineraries,
-            activities: activities
+            activities: activities,
+            lat: lat,
+            lon: lon
           }
         }
       }

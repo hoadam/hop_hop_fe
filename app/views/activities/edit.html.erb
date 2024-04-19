@@ -1,23 +1,19 @@
-<h1>Edit Activity</h1>
-<div data-controller="activities">
-    <div id="searchForm">
+<div class="pt-40 flex items-center justify-center h-screen">
+  <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+    <%= link_to sanitize("&larr; Back to Trip"), trip_path(@trip.id), class: "btn" %>
+    <h5 class="text-xl font-medium text-center text-gray-900 dark:text-white">Edit Activity</h5>
+    <div data-controller="activities">
+      <div id="searchForm">
+        <%= render partial: "activities", locals: {
+                                          path: trip_daily_itinerary_activity_path(@trip.id, params[:daily_itinerary_id], params[:id]),
+                                          method: :patch,
+                                          activity_name: @activity.name,
+                                          activity_description: @activity.description,
+                                          activity_expenses: @activity.expenses,
+                                          activity_address: @activity.address,
+                                          button: "Update Activity"
+        } %>
+      </div>
     </div>
-<%= form_with url: trip_daily_itinerary_activity_path(params[:trip_id], params[:daily_itinerary_id], params[:id]), method: :patch, data: {turbo: false}, local: true do |f| %>
-    <%= f.label :name, "Activity Name" %>
-    <%= f.text_field :name, value: @activity.name %>
-
-    <%= f.label :address, "Address" %>
-    <%= f.text_field :address, value: @activity.address %>
-
-    <%= f.label :expenses, "Expense" %>
-    <%= f.text_field :expenses, value: @activity.expenses %>
-
-    <%= f.label :description, "Description" %>
-    <%= f.text_field :description, value: @activity.description %>
-
-    <%= f.hidden_field :lat, value: @activity.lat %>
-    <%= f.hidden_field :lon, value: @activity.lon %>
-
-    <%= f.submit "Update Activity" %>
-<% end %>
+  </div>
 </div>

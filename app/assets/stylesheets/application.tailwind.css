@@ -1,78 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-turbo-frame {
-  display: block;
-  border: 1px solid blue;
-}
-nav {
-  background-color: #FFFBF8;
-}
-.mulish {
-  font-family: "mulish";
+/*
+
+@layer components {
+  .btn-primary {
+    @apply py-2 px-4 bg-blue-200;
+  }
 }
 
-#logo {
-  width: 80px;
-  height: 80px;
-}
-/* .padding {
-  padding-top: 25px;
-  padding-bottom: 25px;
-} */
-
-.link {
-  padding-inline: 1rem;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  background: #004346;
-  border-color: #004346;
-  color: #EFF7F6;
-}
-
-.mint-row {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-}
-
-.celeste {
-  background-color: #B2F7EF;
-}
-
-.mint-cream {
-  background-color: #EFF7F6;
-}
-
-.prussian-blue {
-  background-color: #172A3A;
-}
-
-.midnight-green {
-  background-color: #004346;
-}
-
-.snow {
-  background-color: #fffbf8;
-}
-
-/* 
- * Always set the map height explicitly to define the size of the div element
- * that contains the map. 
- */
-
- #map {
-  height: 500px;
-  width: 500px;
-}
-
-/* 
- * Optional: Makes the sample page fill the window. 
- */
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
+*/

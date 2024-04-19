@@ -1,27 +1,22 @@
-<h1>Create Accommodation</h1>
-<div data-controller="accommodations">
-    <div id="searchForm">
-    </div>
+<div class="pt-40 flex items-center justify-center h-screen">
+  <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
 
-    <%= form_with url: trip_accommodations_path(params[:trip_id]), data: {turbo: false}, local: true do |f| %>
-        <%= f.label :name, "Accommodation Name" %>
-        <%= f.text_field :name %>
-        <br/>
-        <%= f.label :address, "Address" %>
-        <%= f.text_field :address %>
-        <br/>
-        <%= f.label :check_in, "Check In" %>
-        <%= f.date_field :check_in %>
-         <br/>
-        <%= f.label :check_out, "Check Out" %>
-        <%= f.date_field :check_out %>
- <br/>
-        <%= f.label :expenses, "Expenses" %>
-        <%= f.text_field :expenses %>
- <br/>
-        <%= f.hidden_field :lat %>
-        <%= f.hidden_field :lot %>
-        
-        <%= f.submit "Create Accommodation" %>
-    <% end %>
+    <%= link_to sanitize("&larr; Back to Trip"), trip_path(@trip.id), class: "btn" %>
+    <h5 class="text-xl font-medium text-center text-gray-900 dark:text-white">Add an Accommodation</h5>
+    <div data-controller="accommodations">
+      <div id="searchForm">
+      <div>
+      <%= render partial: "accommodations", locals: {
+                                              path: trip_accommodations_path(params[:trip_id]),
+                                              method: :post,
+                                              name: @accommodation[:displayname],
+                                              address: @accommodation[:search],
+                                              check_in: "",
+                                              check_out: "",
+                                              expenses: 0,
+                                              button: "Create Accommodation"
+      } %>
+    </div>
+  </div>
 </div>
+

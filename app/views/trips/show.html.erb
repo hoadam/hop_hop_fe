@@ -1,55 +1,7 @@
-<div class="flex h-screen" id="trip-show">
-    <div data-controller="trip-dashboard" data-trip-dashboard-trip-value="<%= @trip.to_json %>" class="pl-6 pt-6 w-1/2 overflow-y-scroll">
-        <h1 class="text-2xl font-bold" ><%= @trip.name %></h1>
+<%= render "trip_information" %>
 
-        <div>
-            <p>Location: <%= @trip.location %></p>
-            <p><%= @trip.start_date %> - <%= @trip.end_date %></p>
+<%= render "daily_activities" %>
 
-            <strong>Total Budget</strong>
-                <p><%= @trip.total_budget %></p>
-
-            <strong>Total Expenses</strong>
-                <p><%= @trip.total_expenses %></p>
-
-            <div><%= link_to 'Edit', edit_trip_path(@trip.id) %></div>
-
-            <h2>Accommodation</h2>
-                <div><%= link_to 'Create Accommodation', new_trip_accommodation_path(@trip.id) %></div>
-
-                <% @accommodations.each do |accommodation| %>
-                    <p><%= accommodation.name %></p>
-                    <p><%= accommodation.address %></p>
-                    <p>Check In: <%= accommodation.check_in %></p>
-                    <p>Check Out: <%= accommodation.check_out %></p>
-                    <div><%= link_to 'Edit', edit_trip_accommodation_path(@trip.id, accommodation.id) %></div>
-                    <div><%= button_to 'Delete', trip_accommodation_path(@trip.id, accommodation.id), method: :delete %></div>
-                <% end %>
-
-            <h3>Itineraries</h3>
-                <% @daily_itineraries.each do |daily_itinerary| %>
-                    <section> 
-                        <span><%= daily_itinerary.date %></span>
-                        <div><%= link_to 'Create Activity', new_trip_daily_itinerary_activity_path(@trip.id, daily_itinerary.id) %></div>
-                        <div>
-                            <% @activities[daily_itinerary.date].each do |activity| %>
-                            <div>
-                                Name: <%= activity.name %><br/>
-                                Description: <%= activity.description %>
-                                <div><%= link_to 'Edit', edit_trip_daily_itinerary_activity_path(@trip.id, daily_itinerary.id, activity.id) %></div>
-                                <div><%= button_to 'Delete', trip_daily_itinerary_activity_path(@trip.id, daily_itinerary.id, activity.id), method: :delete %></div>
-                            </div>
-                        <% end %>
-                        </div>
-                    </section>
-                <% end %>
-            </div>
-        </div>
-
-        <div class="flex w-1/2">
-
-            <div id="map" class="w-full ">
-            </div>
-        </div>
-    </div>
+<div data-controller="trip-dashboard" data-trip-dashboard-trip-value="<%= @trip.to_json %>"">
+<%= render "shared/map" %>
 </div>

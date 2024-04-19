@@ -10,10 +10,11 @@ class AccommodationService < HophopService
   end
 
   def self.create_accommodation(user_id, trip_id, accommodation_params)
+    accommodation_params = accommodation_params.to_json
     response = conn.post("trips/#{trip_id}/accommodations") do |req|
       req.body = {
         user_id: user_id,
-        accommodation: accommodation_params
+        accommodation: JSON.parse(accommodation_params)
       }.to_json
     end
 

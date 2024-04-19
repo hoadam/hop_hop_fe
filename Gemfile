@@ -59,7 +59,12 @@ gem 'rqrcode'
 # gem "image_processing", "~> 1.2"
 gem 'draper'
 
-gem "geocoder"
+# Customize forms, used with bootstrap
+gem "simple_form"
+gem 'bootstrap', '~> 5.3.2'
+
+# Needed for bootstrap
+gem 'dartsass-sprockets'
 
 
 group :development, :test do
