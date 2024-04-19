@@ -1,11 +1,20 @@
 class Search
-  attr_reader :lat, :lon, :display_name, :type, :id
+  attr_reader :displayname, :lat, :lon, :id, :address, :rating
 
-  def initialize(result)
-    @id = result.data["place_id"]
-    @lat = result.data["lat"]
-    @lon = result.data["lon"]
-    @display_name = result.data["display_name"]
-    @type = result.data["type"]
+  def initialize(search_params)
+    @lat = search_params[:lat]
+    @lon = search_params[:lon]
+    @displayname = search_params[:displayname]
+    @rating = search_params[:rating]
+    @id = search_params[:id]
+    @address = search_params[:search]
+  end
+
+  def to_json
+    {
+      lat: @lat,
+      lon: @lon,
+      id: @id
+    }.to_json
   end
 end

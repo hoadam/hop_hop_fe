@@ -31,14 +31,14 @@ export default class extends Controller {
     this.updateLatLon(place.location.lat, place.location.lng)
   }
   updateAddress(address) {
-    document.getElementById("address").value = address
+    document.getElementById("accommodations_address").value = address
   }
   updateName(name) {
-    document.getElementById("name").value = name
+    document.getElementById("accommodations_name").value = name
   }
   updateLatLon(lat,lng) {
-    document.getElementById("lat").value = lat;
-    document.getElementById("lon").value = lng;
+    document.getElementById("accommodations_lat").value = lat;
+    document.getElementById("accommodations_lon").value = lng;
   }
   
 }

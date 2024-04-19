@@ -1,7 +1,7 @@
 /*
 ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
 */
-
+@import "bootstrap";
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
@@ -34,6 +34,8 @@
 6. Use the user's configured `sans` font-variation-settings by default.
 7. Disable tap highlights on iOS
 */
+//= require inter-font.css
+
 
 html,
 :host {

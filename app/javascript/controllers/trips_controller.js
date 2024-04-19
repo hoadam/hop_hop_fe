@@ -23,17 +23,17 @@ export default class extends Controller {
       fields: ["displayName", "formattedAddress", "location"],
     });
     place = place.toJSON()
-    
     // Update form
     this.updateAddress(place.formattedAddress)
     this.updateLatLon(place.location.lat, place.location.lng)
   }
   updateAddress(address) {
-    document.getElementById("location").value = address
+    console.log(document.getElementById("trip_location").value)
+    document.getElementById("trip_location").value = address
   }
   updateLatLon(lat,lng) {
-    document.getElementById("lat").value = lat;
-    document.getElementById("lon").value = lng;
+    document.getElementById("trip_lat").value = lat;
+    document.getElementById("trip_lon").value = lng;
   }
   
 }
