@@ -53,6 +53,7 @@
                   <% end %>
                   </span>
                <% end %>
+                <%= button_to "Delete", trip_path(trip.id), method: :delete, class: "bg-red-400 rounded-lg p-2 h-10 hover:scale-105 transition-all duration-200" %>
             </li>
          <% end %>
       </ul>
