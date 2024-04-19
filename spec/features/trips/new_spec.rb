@@ -41,14 +41,14 @@ RSpec.describe "Discover Index", type: :feature do
     it "flashes a message and renders new", :vcr do
       click_on "Create Trip"
 
-      expect(page).to have_content("Make sure you have filled out all fields correctly")
+      expect(page).to have_content("Validation failed: Name can't be blank, Location can't be blank, End date must be greater than 2024-04-19 00:00:00 UTC")
 
       fill_in("Trip Name", with: "Girls Trip!")
       fill_in("Location", with: "Girls Trip!")
 
       click_on "Create Trip"
 
-      expect(page).to have_content("Make sure you have filled out all fields correctly")
+      expect(page).to have_content("Validation failed: End date must be greater than 2024-04-19 00:00:00 UTC")
     end
   end
 end
