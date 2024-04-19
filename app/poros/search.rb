@@ -1,11 +1,11 @@
 class Search
-  attr_reader :lat, :lon, :display_name, :type, :id
+  attr_reader :lat, :lon, :display_name, :rating, :id
 
   def initialize(result)
-    @id = result.data["place_id"]
-    @lat = result.data["lat"]
-    @lon = result.data["lon"]
-    @display_name = result.data["display_name"]
-    @type = result.data["type"]
+    @id = result["d"]
+    @lat = result["lat"]
+    @lon = result["lon"]
+    @display_name = result["displayname"]
+    @rating = result["rating"]
   end
 end

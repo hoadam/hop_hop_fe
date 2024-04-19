@@ -1,8 +1,10 @@
 class DiscoverController < ApplicationController
 
   def index
-    session[:search] = params[:search] if params[:search]
-    if discover_facade.empty? && params[:search]
+    if params[:search]
+      session[:search] = params[:search]
+      DiscoverFacade.new(params[:search])
+    else
       flash.now[:alert] = "Sorry, couldn't find #{params[:search][:search]}, try again."
     end
   end
@@ -11,5 +13,7 @@ class DiscoverController < ApplicationController
   end
 
   def create
+  # <!-- <div id="JSON" data-info=" <%= discover_facade.json_data %>"></div> -->
+
   end
 end

@@ -1,19 +1,10 @@
 <div class="pt-40">
-  <% if discover_facade.empty? %>
-  <div id="search-form">
-    <%= render "search" %>
-  </div>
-<% else %>
-  <div id="search-form">
-    <%= render "search" %>
-  </div>
-
-  <div id="JSON" data-info=" <%= discover_facade.json_data %>"></div>
   <div id="results">
     <%= render "results" %>
   </div>
-<% end %>
-
+<div data-controller="discover">
+  <div id="searchForm"></div>
+</div>
+<%= render "search" %>
 <%= render "/shared/map" %>
 </div>
-

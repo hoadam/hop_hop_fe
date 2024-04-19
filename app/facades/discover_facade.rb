@@ -1,26 +1,15 @@
 class DiscoverFacade
-  attr_reader :search_params
+  attr_reader :displayname, :lat, :lon, :id, :address, :rating
   def initialize(search_params)
-    @search_params = search_params
+    @lat = search_params[:lat]
+    @lon = search_params[:lon]
+    @displayname = search_params[:displayname]
+    @rating = search_params[:rating]
+    @id = search_params[:id]
+    @address = search_params[:search]
   end
 
-  def find_location
-    Geocoder.search(@search_params)
-  end
-
-  def search_objects
-    find_location.map{|result| Search.new(result)}
-  end
-
-  def json_data
-    find_location.to_json
-  end
-
-  def filtered_search_objects
-    search_objects.uniq {|object| object.display_name}
-  end
-
-  def empty?
-    search_objects.empty?
+  def self.json_data
+    to_json
   end
 end

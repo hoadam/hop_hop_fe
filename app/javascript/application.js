@@ -15,13 +15,12 @@ async function initMap() {
     center: { lat: 39.833333, lng: -98.585522 },
     zoom: 4,
   });
-  console.log(map)
   map.addListener("click", (e) => {
     map.panTo(e.latLng);
   });
   // Adding a pin to search results
   // Access the data from the data-info attribute of your element
-  console.log(document.getElementById("JSON").dataset);
+
   const dataArray = document.getElementById("JSON").dataset.info;
 
   // Parse the data to extract the lat and lon
@@ -52,7 +51,6 @@ document.addEventListener('turbo:load', function() {
     const queryString = window.location.search
     // Use URLSearchParams to parse the query string
     const params = new URLSearchParams(queryString);
-    console.log(params)
     // Get the latitude and longitude from the parameters
     const latitude = params.get('lat');
     const longitude = params.get('lon');
