@@ -6,8 +6,7 @@ Rails.application.routes.draw do
       omniauth_callbacks: 'users/omniauth_callbacks',
   }
 
-  get "/", to: "welcome#index"
-  root to: 'pages#home'
+  root to: "welcome#index"
 
   get 'enable_otp_show_qr', to: "users#enable_otp_show_qr", as: 'enable_otp_show_qr'
   post 'enable_otp_verify', to: "users#enable_otp_verify", as: 'enable_otp_verify'

@@ -20,30 +20,39 @@ class TripsController < ApplicationController
   end
 
   def create
-    trip = TripService.create_trip(current_user.id, trip_params)
-    if trip.is_a?(String)
-      flash[:alert] = "Make sure you have filled out all fields correctly"
-      render :new
-    else
+    begin
+      trip = TripService.create_trip(current_user.id, trip_params)
+
       redirect_to trip_path(trip.id)
+    rescue Faraday::BadRequestError => e
+      flash[:error] = JSON.parse(e.response[:body], symbolize_names: true)[:errors].first[:detail]
+
+      render :new
     end
   end
 
   def update
-    @trip = TripService.trip_details(current_user.id, params[:id])
+    begin
+      @trip = TripService.trip_details(current_user.id, params[:id])
+      TripService.update_trip(current_user.id, params[:id], trip_params)
+      redirect_to trip_path(@trip.id)
 
-    TripService.update_trip(current_user.id, params[:id], trip_params)
-    redirect_to trip_path(@trip.id)
-  rescue
-    flash[:error] = "Failed to update trip"
+    rescue Faraday::BadRequestError => e
+      flash[:error] = JSON.parse(e.response[:body], symbolize_names: true)[:errors].first[:detail]
+
+      render :show
+    end
   end
 
   def destroy
-    TripService.delete_trip(current_user.id, params[:id] )
-    redirect_to dashboard_path(current_user.id)
-  rescue => e
-    flash[:error] = "Failed to delete trip- #{e.message}"
-    redirect_to dashboard_path(current_user.id)
+    begin
+      TripService.delete_trip(current_user.id, params[:id] )
+      redirect_to dashboard_path(current_user.id)
+    rescue Faraday::BadRequestError => e
+      flash[:error] = JSON.parse(e.response[:body], symbolize_names: true)[:errors].first[:detail]
+
+      redirect_to dashboard_path
+    end
   end
 
 
