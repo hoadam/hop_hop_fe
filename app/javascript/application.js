@@ -24,42 +24,21 @@ async function initMap() {
   const dataArray = document.getElementById("JSON").dataset.info;
   // Parse the data to extract the lat and lon
   const jsonData = JSON.parse(dataArray);
-    const latitude = jsonData.lat
-    const longitude = jsonData.lon
-
-    const latLng = new google.maps.LatLng(latitude, longitude);
-    const placeId = jsonData.id
-  getPlaceDetails(placeId);
-  console.log("test", getPlaceDetails(placeId))
-
+  const latitude = jsonData.lat
+  const longitude = jsonData.lon
+  const latLng = new google.maps.LatLng(latitude, longitude);
+  console.log(latLng)
   placeMarkerAndPanTo(latLng, map)
 
-  searchLocation();
-  // const latLng = new google.maps.LatLng(latitude, longitude);
-  // console.log(latLng.slice(1))
-  getPlaceDetails();
 }
 
 document.addEventListener('turbo:load', function() {
   console.log("Loading map!")
   initMap(); // Call your function to initialize Google Maps
-  searchLocation();
-  console.log("Searching!")
 });
 
-const getPlaceDetails = async function(placeId) {
-  const { Place } = await google.maps.importLibrary("place");
-  // Create a new Place instance using the place ID.
-  const place = new Place({ id: placeId });
-  
-  // Retrieve the place details.
-  const details = await place.fetchDetails()
-  // Handle the retrieved place details.
-  console.log(details); // Output the details to the console as an example
-};
-
   const placeMarkerAndPanTo = function(latLng, map) {
-    new google.maps.AdvancedMarker({
+    new google.maps.Marker({
       position: latLng,
       map: map,
     });
