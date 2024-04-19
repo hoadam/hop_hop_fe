@@ -1,0 +1,103 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips
+    body:
+      encoding: UTF-8
+      string: '{"trip":{"name":"","location":"","start_date":"","end_date":"","total_budget":"","lat":"","lon":"","user_id":7}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 63572819-d0dc-4784-9bfb-dc2590cbd890
+      X-Runtime:
+      - '0.196371'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, process_action.action_controller;dur=192.10
+      Content-Length:
+      - '195'
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"detail":"Validation failed: Name can''t be blank, Location
+        can''t be blank, Start date can''t be blank, End date can''t be blank, End
+        date can''t be blank, Total budget can''t be blank"}]}'
+  recorded_at: Thu, 18 Apr 2024 19:21:51 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips
+    body:
+      encoding: UTF-8
+      string: '{"trip":{"name":"Girls Trip!","location":"Girls Trip!","start_date":"","end_date":"","total_budget":"","lat":"","lon":"","user_id":7}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 9c330c10-e2ce-44d2-a1f1-6dd5f05784a5
+      X-Runtime:
+      - '0.004467'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, process_action.action_controller;dur=0.79
+      Content-Length:
+      - '149'
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"detail":"Validation failed: Start date can''t be blank,
+        End date can''t be blank, End date can''t be blank, Total budget can''t be
+        blank"}]}'
+  recorded_at: Thu, 18 Apr 2024 19:21:51 GMT
+recorded_with: VCR 6.2.0

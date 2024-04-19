@@ -1,0 +1,204 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://127.0.0.1:3000/api/v1/trips?user_id=6
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 072aaf99-869b-4a5a-9ae2-b1c85f5d7ac3
+      X-Runtime:
+      - '0.089545'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=24.93,
+        process_action.action_controller;dur=72.43
+      Content-Length:
+      - '11'
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+  recorded_at: Thu, 18 Apr 2024 19:21:51 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:3000/api/v1/trips
+    body:
+      encoding: UTF-8
+      string: '{"trip":{"name":"Girls Trip!","location":"Miami, Florida","start_date":"2025/03/03","end_date":"2025/04/04","total_budget":"2000","lat":"","lon":"","user_id":6}}'
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"475a1faac6224cc417907d347cb63c71"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ec2eeb86-f4dd-4939-ab76-521807b63710
+      X-Runtime:
+      - '0.175941'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=94.32,
+        transaction.active_record;dur=65.19, instantiation.active_record;dur=0.23,
+        process_action.action_controller;dur=162.92
+      Content-Length:
+      - '4514'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"317","type":"trip","attributes":{"name":"Girls Trip!","location":"Miami,
+        Florida","lat":null,"lon":null,"status":"in_progress","total_budget":2000,"start_date":"2025-03-03T00:00:00.000Z","end_date":"2025-04-04T00:00:00.000Z","total_expenses":0},"relationships":{"daily_itineraries":{"data":[{"id":"3768","type":"daily_itinerary"},{"id":"3769","type":"daily_itinerary"},{"id":"3770","type":"daily_itinerary"},{"id":"3771","type":"daily_itinerary"},{"id":"3772","type":"daily_itinerary"},{"id":"3773","type":"daily_itinerary"},{"id":"3774","type":"daily_itinerary"},{"id":"3775","type":"daily_itinerary"},{"id":"3776","type":"daily_itinerary"},{"id":"3777","type":"daily_itinerary"},{"id":"3778","type":"daily_itinerary"},{"id":"3779","type":"daily_itinerary"},{"id":"3780","type":"daily_itinerary"},{"id":"3781","type":"daily_itinerary"},{"id":"3782","type":"daily_itinerary"},{"id":"3783","type":"daily_itinerary"},{"id":"3784","type":"daily_itinerary"},{"id":"3785","type":"daily_itinerary"},{"id":"3786","type":"daily_itinerary"},{"id":"3787","type":"daily_itinerary"},{"id":"3788","type":"daily_itinerary"},{"id":"3789","type":"daily_itinerary"},{"id":"3790","type":"daily_itinerary"},{"id":"3791","type":"daily_itinerary"},{"id":"3792","type":"daily_itinerary"},{"id":"3793","type":"daily_itinerary"},{"id":"3794","type":"daily_itinerary"},{"id":"3795","type":"daily_itinerary"},{"id":"3796","type":"daily_itinerary"},{"id":"3797","type":"daily_itinerary"},{"id":"3798","type":"daily_itinerary"},{"id":"3799","type":"daily_itinerary"},{"id":"3800","type":"daily_itinerary"}]}}},"included":[{"id":"3768","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-03"}},{"id":"3769","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-04"}},{"id":"3770","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-05"}},{"id":"3771","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-06"}},{"id":"3772","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-07"}},{"id":"3773","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-08"}},{"id":"3774","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-09"}},{"id":"3775","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-10"}},{"id":"3776","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-11"}},{"id":"3777","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-12"}},{"id":"3778","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-13"}},{"id":"3779","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-14"}},{"id":"3780","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-15"}},{"id":"3781","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-16"}},{"id":"3782","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-17"}},{"id":"3783","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-18"}},{"id":"3784","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-19"}},{"id":"3785","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-20"}},{"id":"3786","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-21"}},{"id":"3787","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-22"}},{"id":"3788","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-23"}},{"id":"3789","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-24"}},{"id":"3790","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-25"}},{"id":"3791","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-26"}},{"id":"3792","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-27"}},{"id":"3793","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-28"}},{"id":"3794","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-29"}},{"id":"3795","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-30"}},{"id":"3796","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-31"}},{"id":"3797","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-04-01"}},{"id":"3798","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-04-02"}},{"id":"3799","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-04-03"}},{"id":"3800","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-04-04"}}]}'
+  recorded_at: Thu, 18 Apr 2024 19:21:51 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:3000/api/v1/trips/317/accommodations?user_id=6
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9f6c74db-e500-4500-bd20-9400c333a803
+      X-Runtime:
+      - '0.005649'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.39, instantiation.active_record;dur=0.05,
+        process_action.action_controller;dur=1.81
+      Content-Length:
+      - '11'
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+  recorded_at: Thu, 18 Apr 2024 19:21:51 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:3000/api/v1/trips/317?user_id=6
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"c94f4ff920e586b8c5d098f4d0357f27"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4befc562-9010-4bc1-b076-01abb01dabca
+      X-Runtime:
+      - '0.012654'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=3.72, instantiation.active_record;dur=0.44,
+        process_action.action_controller;dur=9.26
+      Content-Length:
+      - '5064'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"317","type":"trip","attributes":{"name":"Girls Trip!","location":"Miami,
+        Florida","lat":null,"lon":null,"status":"in_progress","total_budget":2000,"start_date":"2025-03-03T00:00:00.000Z","end_date":"2025-04-04T00:00:00.000Z","total_expenses":0,"daily_itineraries":{"2025-03-03":[],"2025-03-04":[],"2025-03-05":[],"2025-03-06":[],"2025-03-07":[],"2025-03-08":[],"2025-03-09":[],"2025-03-10":[],"2025-03-11":[],"2025-03-12":[],"2025-03-13":[],"2025-03-14":[],"2025-03-15":[],"2025-03-16":[],"2025-03-17":[],"2025-03-18":[],"2025-03-19":[],"2025-03-20":[],"2025-03-21":[],"2025-03-22":[],"2025-03-23":[],"2025-03-24":[],"2025-03-25":[],"2025-03-26":[],"2025-03-27":[],"2025-03-28":[],"2025-03-29":[],"2025-03-30":[],"2025-03-31":[],"2025-04-01":[],"2025-04-02":[],"2025-04-03":[],"2025-04-04":[]}},"relationships":{"daily_itineraries":{"data":[{"id":"3768","type":"daily_itinerary"},{"id":"3769","type":"daily_itinerary"},{"id":"3770","type":"daily_itinerary"},{"id":"3771","type":"daily_itinerary"},{"id":"3772","type":"daily_itinerary"},{"id":"3773","type":"daily_itinerary"},{"id":"3774","type":"daily_itinerary"},{"id":"3775","type":"daily_itinerary"},{"id":"3776","type":"daily_itinerary"},{"id":"3777","type":"daily_itinerary"},{"id":"3778","type":"daily_itinerary"},{"id":"3779","type":"daily_itinerary"},{"id":"3780","type":"daily_itinerary"},{"id":"3781","type":"daily_itinerary"},{"id":"3782","type":"daily_itinerary"},{"id":"3783","type":"daily_itinerary"},{"id":"3784","type":"daily_itinerary"},{"id":"3785","type":"daily_itinerary"},{"id":"3786","type":"daily_itinerary"},{"id":"3787","type":"daily_itinerary"},{"id":"3788","type":"daily_itinerary"},{"id":"3789","type":"daily_itinerary"},{"id":"3790","type":"daily_itinerary"},{"id":"3791","type":"daily_itinerary"},{"id":"3792","type":"daily_itinerary"},{"id":"3793","type":"daily_itinerary"},{"id":"3794","type":"daily_itinerary"},{"id":"3795","type":"daily_itinerary"},{"id":"3796","type":"daily_itinerary"},{"id":"3797","type":"daily_itinerary"},{"id":"3798","type":"daily_itinerary"},{"id":"3799","type":"daily_itinerary"},{"id":"3800","type":"daily_itinerary"}]}}},"included":[{"id":"3768","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-03"}},{"id":"3769","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-04"}},{"id":"3770","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-05"}},{"id":"3771","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-06"}},{"id":"3772","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-07"}},{"id":"3773","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-08"}},{"id":"3774","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-09"}},{"id":"3775","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-10"}},{"id":"3776","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-11"}},{"id":"3777","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-12"}},{"id":"3778","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-13"}},{"id":"3779","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-14"}},{"id":"3780","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-15"}},{"id":"3781","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-16"}},{"id":"3782","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-17"}},{"id":"3783","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-18"}},{"id":"3784","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-19"}},{"id":"3785","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-20"}},{"id":"3786","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-21"}},{"id":"3787","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-22"}},{"id":"3788","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-23"}},{"id":"3789","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-24"}},{"id":"3790","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-25"}},{"id":"3791","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-26"}},{"id":"3792","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-27"}},{"id":"3793","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-28"}},{"id":"3794","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-29"}},{"id":"3795","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-30"}},{"id":"3796","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-03-31"}},{"id":"3797","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-04-01"}},{"id":"3798","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-04-02"}},{"id":"3799","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-04-03"}},{"id":"3800","type":"daily_itinerary","attributes":{"trip_id":317,"date":"2025-04-04"}}]}'
+  recorded_at: Thu, 18 Apr 2024 19:21:51 GMT
+recorded_with: VCR 6.2.0
