@@ -1,55 +1,100 @@
-<h1>Logged in as <%= current_user.email %></h1>
-<h2>Edit Profile</h2>
-
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div><br>
-
-  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-  <% end %>
-
-  <% if resource.otp_required_for_login %>
-    <div class="field">
-      <i>Enter OTP to disable Two Factor Authentication</i><br />
-      <%= f.text_field :otp_attempt %>
-    </div><br>
-  <% else %>
-    <div class="field">
-      <i>Enable Two-Factor Authentication?</i><br />
-      <%= link_to "Enable 2FA", enable_otp_show_qr_path %>
-    </div><br>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-    <% if @minimum_password_length %>
-      <br />
-      <em><%= @minimum_password_length %> characters minimum</em>
-    <% end %>
-  </div><br>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div><br>
-
-  <div class="field">
-    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-    <%= f.password_field :current_password, autocomplete: "current-password" %>
-  </div><br>
-
-  <div class="actions">
-    <%= f.submit "Update" %>
+<div class="container">
+  <div class="header p-8 text-center text-2xl font-semibold">
+    <h1>Welcome <%= current_user.email %> 👋</h1>
   </div>
-<% end %>
 
-<h4>Cancel my account</h4>
-<div><%= button_to "Delete Account", registration_path(resource_name), data: { confirm: "Are you sure?", turbo_confirm: "Are you sure?" }, method: :delete %></div>
-<br><br>
-<%= link_to "Back", :back %>
+  
+  <div class="flex flex-col content-center">
+    <h2 class="h-12 flex items-center text-xl underline font-semibold tracking-wide bg-[#f6931d] px-4 rounded-t-lg">Edit Profile</h2>
+    
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+    <div class="edit__form grid grid-cols-2 p-4 gap-4">
+<%
+=begin%>
+            -------- Error Message
+<%
+=end%>
+        <%= render "devise/shared/error_messages", resource: resource %>
+        <div class="field flex flex-col content-between flex-wrap">
+          <%= f.label :email, class: "text-sm"%>
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "rounded-sm w-full h-10" %>
+        </div>
+
+        <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+          <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+        <% end %>
+
+<%
+=begin%>
+                ------ 2FA
+<%
+=end%>
+        <% if resource.otp_required_for_login %>
+          <div class="field">
+            <p>Enter OTP to disable Two Factor Authentication</p> 
+            <%= f.text_field :otp_attempt %>
+          </div>
+        <% else %>
+          <div class="field flex content-center justify-center flex-wrap flex-col">
+
+           <p class="text-sm">Enable Two-Factor Authentication?</p>  
+            <button class="bg-[#8cc63e] rounded-lg w-1/3 min-w-[60px] m-auto h-8 hover:scale-105 transition-all duration-200">
+              <%= link_to "Enable", enable_otp_show_qr_path %>
+            </button>
+          </div>
+        <% end %>
+
+<%
+=begin%>
+          ------- Passwords
+<%
+=end%>
+        <div class="field flex flex-col content-between flex-wrap">
+          <div class="text-sm flex">
+            <%= f.label :new_password, class: "capitalize" %> 
+          </div>
+          
+          <%= f.password_field :new_password, autocomplete: "new-password", class: "rounded-sm w-full h-10" %>
+          <% if @minimum_password_length %>
+             
+            <p class="text-sm italic"><%= @minimum_password_length %> characters minimum</p>
+          <% end %>
+        </div>
+
+
+        <div class="field flex flex-col content-between flex-wrap">
+          <%= f.label :confirm_password, class: "text-sm capitalize" %> 
+          <%= f.password_field :confirm_password, autocomplete: "confirm-password", class: "rounded-sm w-full h-10" %>
+        </div>
+
+        <div class="field flex flex-col content-between flex-wrap">
+          <%= f.label :old_password, class: "text-sm" %>
+          <%= f.password_field :old_password, autocomplete: "old-password", class: "rounded-sm w-full h-10" %>
+        </div>
+
+  <%
+=begin%>
+    ----- Form Actions 
+<%
+=end%>
+        <div class="actions flex content-end flex-wrap">
+          <%= f.submit "Update", class: "!bg-[#8cc63e] rounded-lg w-1/3 m-auto h-8 hover:scale-105 transition-all duration-200"%>
+          <button class="!bg-[#f6931d] rounded-lg w-1/3 m-auto h-8 hover:scale-105 transition-all duration-200"><a href="javascript:history.back()">Cancel</a></button>
+        </div>
+
+
+
+      </div>
+    <% end %>
+  </div>
+
+        <div class="flex min-w-full space-x-4 px-4 py-2 justify-center items-center mt-10">
+
+            <%= button_to "Delete Account", registration_path(resource_name), data: { confirm: "Are you sure?", turbo_confirm: "Are you sure?" }, method: :delete, class: "bg-red-400 rounded-lg p-2 h-10 hover:scale-105 transition-all duration-200" %>
+
+          <%= link_to "Go Back", :back, class: "bg-yellow-400 rounded-lg p-2 h-10 hover:scale-105 transition-all duration-200"%>
+        </div>
+
+          <%= image_tag("second_logo.png", alt: 'Hop-Hop Carrot Logo', class: "h-24 mx-auto my-4")%>
+
+</div>
