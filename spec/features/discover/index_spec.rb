@@ -11,13 +11,13 @@
 #     fill_in 'Password', with: 'selena123'
 #     click_on("Log in")
 
-#     visit discover_index_path
-#   end
+    visit discover_index_path
+  end
 
-#   context "a user searches for a location" do
-#     it "displays the results with clickable links", :vcr do
-#       expect(page).to have_no_css("#results")
-#       input_field = find(:xpath, "/html/body/div/div/div[1]/div/gmp-place-autocomplete//div/div[1]/input", wait:10 )
+  context "a user searches for a location" do
+    it "displays the results with clickable links", :vcr do
+      expect(page).to have_no_css("#results")
+      input_field = find(:xpath, "/html/body/div/div/div[1]/div/gmp-place-autocomplete//div/div[1]/input", wait:10 )
 
 #         fill_in(:input, with: "Paris")
 #         click_on("Search")
@@ -37,7 +37,7 @@
 #     end
 
 #     it "renders an error when no results show", :vcr do
-#       within "#search-Form" do
+#       within "#search-form" do
 #         click_on("Search")
 #       end
 
@@ -46,12 +46,12 @@
 #     end
 #   end
 
-#   context "a user searches for a new search" do
-#     it "repopulates with a different result", :vcr do
-#       within "#search-Form" do
-#         fill_in("search[search]", with: "Paris")
-#         click_on("Search")
-#       end
+  context "a user searches for a new search" do
+    it "repopulates with a different result", :vcr do
+      within "#search-Form" do
+        fill_in("search[search]", with: "Paris")
+        click_on("Search")
+      end
 
 #       within "#results" do
 #         link_1 = find("a[href='/discover.5?lat=48.8263025&lon=2.382592'][data-turbo-method='get']")
