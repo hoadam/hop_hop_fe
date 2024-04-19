@@ -6,9 +6,7 @@
       <li class="me-2">
           <button id="services-tab" data-tabs-target="#services" type="button" role="tab" aria-controls="services" aria-selected="false" class="inline-block p-4 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300">Accommodation</button>
       </li>
-      <li class="me-2">
-          <button id="statistics-tab" data-tabs-target="#statistics" type="button" role="tab" aria-controls="statistics" aria-selected="false" class="inline-block p-4 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300">Facts</button>
-      </li>
+
   </ul>
   <div id="defaultTabContent">
       <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="about" role="tabpanel" aria-labelledby="about-tab">
@@ -77,26 +75,8 @@
             <%= tag.svg class: "w-2.5 h-2.5 ms-2 rtl:rotate-180", aria_hidden: "true", xmlns: "http://www.w3.org/2000/svg", fill: "none", viewBox: "0 0 6 10" do %>
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
             <% end %>
-          <% end %>
-          <% end %>
-
-      </div>
-      <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="statistics" role="tabpanel" aria-labelledby="statistics-tab">
-          <dl class="grid max-w-screen-xl grid-cols-2 gap-8 p-4 mx-auto text-gray-900 sm:grid-cols-3 xl:grid-cols-6 dark:text-white sm:p-8">
-              <div class="flex flex-col">
-                  <dt class="mb-2 text-3xl font-extrabold">73M+</dt>
-                  <dd class="text-gray-500 dark:text-gray-400">Developers</dd>
-              </div>
-              <div class="flex flex-col">
-                  <dt class="mb-2 text-3xl font-extrabold">100M+</dt>
-                  <dd class="text-gray-500 dark:text-gray-400">Public repositories</dd>
-              </div>
-              <div class="flex flex-col">
-                  <dt class="mb-2 text-3xl font-extrabold">1000s</dt>
-                  <dd class="text-gray-500 dark:text-gray-400">Open source projects</dd>
-              </div>
-          </dl>
-      </div>
+        <% end %>
+    <% end %>
   </div>
 </div>
 
