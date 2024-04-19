@@ -23,8 +23,8 @@ class DailyItinerariesController < ApplicationController
 
   def activity_params
     params[:activities] = {
-      name: session[:search]["displayname"],
-      address: session[:search]["search"]
+      name: session[:search_results]["displayname"],
+      address: session[:search_results]["search"]
     }
   end
 end
