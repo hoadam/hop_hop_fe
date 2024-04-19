@@ -68,3 +68,4 @@ yarn-debug.log*
 # Ignore custom files
 /spec/fixtures/*
 .DS_store
+mybadge.svg
