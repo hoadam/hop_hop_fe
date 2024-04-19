@@ -13,12 +13,12 @@ RSpec.describe "Discover Index", type: :feature do
 
     visit discover_index_path
   end
-
+  
   context "a user searches for a location" do
     it "displays the results with clickable links", :vcr do
       expect(page).to have_no_css("#results")
       # save_and_open_page
-      input_field = find(:xpath, "/html/body/div/div/div[1]/div/gmp-place-autocomplete//div/div[1]/input", wait:10 )
+      input_field = find(:xpath, "/html/body/div/div/div[1]/div/gmp-place-autocomplete//div/div[1]/input", wait:20 )
 
         fill_in(:input, with: "Paris")
         click_on("Search")
@@ -38,7 +38,7 @@ RSpec.describe "Discover Index", type: :feature do
     end
 
     it "renders an error when no results show", :vcr do
-      within "#search-Form" do
+      within "#search-form" do
         click_on("Search")
       end
 
@@ -49,7 +49,7 @@ RSpec.describe "Discover Index", type: :feature do
 
   context "a user searches for a new search" do
     it "repopulates with a different result", :vcr do
-      within "#search-Form" do
+      within "#search-form" do
         fill_in("search[search]", with: "Paris")
         click_on("Search")
       end

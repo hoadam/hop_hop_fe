@@ -25,7 +25,7 @@ RSpec.describe 'Edit User', type: :feature do
       expect(page).to have_field('user_email', with: "#{@user.email}")
 
       fill_in 'user_email', with: 'selena@test.com'
-      fill_in 'user_current_password', with: "#{@user.password}"
+      fill_in 'old_password', with: "#{@user.password}"
 
       click_on 'Update'
 
