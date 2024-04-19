@@ -44,8 +44,8 @@ RSpec.describe DiscoverFacade do
     let(:paris) { DiscoverFacade.new("Paris")}
 
     it "can filter the created Search objects and select only unique display names", :vcr do
-      expect(paris.search_objects.count).to eq(5)
-      expect(paris.filtered_search_objects.count).to eq(3)
+      expect(paris.search_objects.count).to eq(10)
+      expect(paris.filtered_search_objects.count).to eq(8)
     end
   end
 
