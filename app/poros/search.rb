@@ -9,4 +9,12 @@ class Search
     @id = search_params[:id]
     @address = search_params[:search]
   end
+
+  def to_json
+    {
+      lat: @lat,
+      lon: @lon,
+      id: @id
+    }.to_json
+  end
 end

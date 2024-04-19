@@ -8,6 +8,7 @@ let map
 // Create an asynchronous function to initialize the map
 async function initMap() {
   const { Map } = await google.maps.importLibrary("maps");
+  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
   // map would be the return value of the pulling function looking for the map div
   // map = a function that keeps looking for the value, and then assigns it to map
@@ -20,60 +21,45 @@ async function initMap() {
   });
   // Adding a pin to search results
   // Access the data from the data-info attribute of your element
-
   const dataArray = document.getElementById("JSON").dataset.info;
-
   // Parse the data to extract the lat and lon
   const jsonData = JSON.parse(dataArray);
-
-  jsonData.forEach(location => {
-    const latitude = location.data.lat;
-    const longitude = location.data.lon;
+    const latitude = jsonData.lat
+    const longitude = jsonData.lon
 
     const latLng = new google.maps.LatLng(latitude, longitude);
+    const placeId = jsonData.id
+  getPlaceDetails(placeId);
+  console.log("test", getPlaceDetails(placeId))
 
-    placeMarkerAndPanTo(latLng, map)
-  });
+  placeMarkerAndPanTo(latLng, map)
 
   searchLocation();
   // const latLng = new google.maps.LatLng(latitude, longitude);
   // console.log(latLng.slice(1))
+  getPlaceDetails();
 }
 
 document.addEventListener('turbo:load', function() {
   console.log("Loading map!")
   initMap(); // Call your function to initialize Google Maps
+  searchLocation();
+  console.log("Searching!")
 });
 
-//
-  const searchLocation = function() {
-    // Query string from the URL bar
-    const queryString = window.location.search
-    // Use URLSearchParams to parse the query string
-    const params = new URLSearchParams(queryString);
-    // Get the latitude and longitude from the parameters
-    const latitude = params.get('lat');
-    const longitude = params.get('lon');
-    const latLng = new google.maps.LatLng(latitude, longitude);
-
-    if (latitude && longitude) { // Check if both latitude and longitude are not null
-      const latLng = new google.maps.LatLng(latitude, longitude);
-      placeMarkerAndPanTo(latLng, map);
-    } else {
-      console.log("Latitude and longitude are not provided");
-    }
-  }
-
-// Place markers
-  const placeMarker = function(latLng, map) {
-    new google.maps.Marker({
-      position: latLng,
-      map: map,
-    });
-  }
+const getPlaceDetails = async function(placeId) {
+  const { Place } = await google.maps.importLibrary("place");
+  // Create a new Place instance using the place ID.
+  const place = new Place({ id: placeId });
+  
+  // Retrieve the place details.
+  const details = await place.fetchDetails()
+  // Handle the retrieved place details.
+  console.log(details); // Output the details to the console as an example
+};
 
   const placeMarkerAndPanTo = function(latLng, map) {
-    new google.maps.Marker({
+    new google.maps.AdvancedMarker({
       position: latLng,
       map: map,
     });

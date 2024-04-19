@@ -19,10 +19,10 @@ class DiscoverController < ApplicationController
   def create
     if params[:search_results][:type] == "Accommodation"
 
-      redirect_to new_trip_accommodation_path(trip_id: search_params[:Trip], search: session[:search_results].to_json)
+      redirect_to new_trip_accommodation_path(trip_id: search_params[:trip], search: session[:search_results].to_json)
     elsif params[:search_results][:type] == "Activity"
 
-      redirect_to new_trip_daily_itinerary_path(search_params[:Trip])
+      redirect_to new_trip_daily_itinerary_path(search_params[:trip])
     else
       flash[:alert] = "Sorry, please make sure all fields are selected"
 
@@ -31,7 +31,7 @@ class DiscoverController < ApplicationController
   end
 
   def search_params
-    params = params.require(:search_results)
+    params.require(:search_results)
   end
 
   def filter_search

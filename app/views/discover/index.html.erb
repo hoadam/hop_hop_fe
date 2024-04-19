@@ -2,6 +2,7 @@
   <% if @trips.present? %>
     <div id="results">
       <%= render "results_table" %>
+      <div id="JSON" data-info=" <%= @search.to_json %>"></div>
     </div>
     <div id="search_form">
       <%= render "search" %>
