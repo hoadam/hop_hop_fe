@@ -36,9 +36,9 @@ class AccommodationsController < ApplicationController
 
       redirect_to trip_path(@trip.id)
     rescue Faraday::BadRequestError => e
-      flash[:error] = "Failed to update accommodation - #{e.message}"
-      @accommodation = {}
-      render :update
+      flash[:error] = JSON.parse(e.response[:body], symbolize_names: true)[:errors].first[:detail]
+
+      redirect_to edit_trip_accommodation_path(params[:trip_id], params[:id])
     end
   end
 
