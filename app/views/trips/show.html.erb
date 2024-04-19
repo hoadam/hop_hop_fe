@@ -2,6 +2,6 @@
 
 <%= render "daily_activities" %>
 
-<div data-controller="trip-dashboard" data-trip-dashboard-trip-value="<%= @trip.to_json %>"">
+<div id="trip-show" data-controller="trip-dashboard" data-trip-dashboard-trip-value="<%= @trip.to_json %>"">
 <%= render "shared/map" %>
 </div>
