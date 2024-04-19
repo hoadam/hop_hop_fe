@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   get "/dashboard", to: "users#show", as: :dashboard
-  resources :discover, only: [:index]
+  resources :discover, only: [:index, :create]
   resources :trips do
     resources :accommodations
     resources :daily_itineraries, only: [:index, :show] do

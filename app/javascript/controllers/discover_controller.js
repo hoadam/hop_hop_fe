@@ -36,7 +36,7 @@ export default class extends Controller {
     this.updateLatLon(place.location.lat, place.location.lng);
     this.updateRating(place.rating);
     this.updateId(place.id);
-  }
+}
   updateAddress(address) {
     document.getElementById("search_search").value = address;
   }
@@ -53,4 +53,3 @@ export default class extends Controller {
   updateId(id) {
     document.getElementById("search_id").value = id;
   }
-}

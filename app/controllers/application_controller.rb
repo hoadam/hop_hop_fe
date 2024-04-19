@@ -12,5 +12,4 @@ class ApplicationController < ActionController::Base
   def discover_facade
     @discover_facade ||= DiscoverFacade.new(session[:search])
   end
-
 end

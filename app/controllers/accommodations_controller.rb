@@ -1,6 +1,10 @@
 class AccommodationsController < ApplicationController
   def new
     @trip = TripService.trip_details(current_user.id, params[:trip_id])
+    if search_params.present?
+      @accommodation = search_params
+      require 'pry'; binding.pry
+    end
   end
 
   def create
@@ -36,5 +40,9 @@ class AccommodationsController < ApplicationController
 
   def accommodation_params
     params.require(:accommodations).permit(:name, :address, :check_in, :check_out, :expenses, :lat, :lon)
+  end
+
+  def search_params
+    JSON.parse(params.require(:search), symbolize_names: true)
   end
 end

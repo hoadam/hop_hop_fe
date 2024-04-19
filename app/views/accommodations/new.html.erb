@@ -8,8 +8,8 @@
       <%= render partial: "accommodations", locals: {
                                               path: trip_accommodations_path(params[:trip_id]),
                                               method: :post,
-                                              name: "",
-                                              address: "",
+                                              name: @accommodation[:displayname],
+                                              address: @accommodation[:search],
                                               check_in: "",
                                               check_out: "",
                                               expenses: 0,
