@@ -51,7 +51,7 @@ class TripsController < ApplicationController
     rescue Faraday::BadRequestError => e
       flash[:error] = JSON.parse(e.response[:body], symbolize_names: true)[:errors].first[:detail]
 
-      redirect_to dashboard_path
+      redirect_to dashboard_path(current_user.id)
     end
   end
 
