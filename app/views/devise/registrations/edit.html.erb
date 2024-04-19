@@ -51,10 +51,10 @@
 =end%>
         <div class="field flex flex-col content-between flex-wrap">
           <div class="text-sm flex">
-            <%= f.label :new_password, class: "capitalize" %> 
+            <%= f.label :password, class: "capitalize" %> 
           </div>
           
-          <%= f.password_field :new_password, autocomplete: "new-password", class: "rounded-sm w-full h-10" %>
+          <%= f.password_field :password, autocomplete: "new-password", class: "rounded-sm w-full h-10" %>
           <% if @minimum_password_length %>
              
             <p class="text-sm italic"><%= @minimum_password_length %> characters minimum</p>
@@ -63,13 +63,13 @@
 
 
         <div class="field flex flex-col content-between flex-wrap">
-          <%= f.label :confirm_password, class: "text-sm capitalize" %> 
-          <%= f.password_field :confirm_password, autocomplete: "confirm-password", class: "rounded-sm w-full h-10" %>
+          <%= f.label :password_confirmation, class: "text-sm capitalize" %> 
+          <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "rounded-sm w-full h-10" %>
         </div>
 
         <div class="field flex flex-col content-between flex-wrap">
-          <%= f.label :old_password, class: "text-sm" %>
-          <%= f.password_field :old_password, autocomplete: "old-password", class: "rounded-sm w-full h-10" %>
+          <%= f.label :current_password, class: "text-sm" %>
+          <%= f.password_field :current_password, autocomplete: "current-password", class: "rounded-sm w-full h-10" %>
         </div>
 
   <%
