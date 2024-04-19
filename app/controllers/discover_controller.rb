@@ -1,12 +1,12 @@
 class DiscoverController < ApplicationController
 
   def index
-    @trips = TripService.get_trips(current_user.id)
     if params[:search]
+      @trips = TripService.get_trips(current_user.id)
       session[:search] = params[:search]
       DiscoverFacade.new(params[:search])
     else
-      flash.now[:alert] = "Sorry, couldn't find #{params[:search][:search]}, try again."
+      @trips = nil
     end
   end
 

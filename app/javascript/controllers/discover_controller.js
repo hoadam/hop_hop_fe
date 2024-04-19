@@ -2,7 +2,7 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  
+
   async connect() {
     console.log("Discover Controller connected!")
     const [{ Map }] = await Promise.all([google.maps.importLibrary("places")]);
@@ -30,7 +30,7 @@ export default class extends Controller {
     place = place.toJSON();
     // Update form
 
-    console.log(place)
+    console.log(place);
     this.updateDisplayName(place.displayName);
     this.updateAddress(place.formattedAddress);
     this.updateLatLon(place.location.lat, place.location.lng);
@@ -53,3 +53,4 @@ export default class extends Controller {
   updateId(id) {
     document.getElementById("search_id").value = id;
   }
+}

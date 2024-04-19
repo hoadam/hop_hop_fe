@@ -1,9 +1,9 @@
   <%= simple_form_for :search, url: discover_index_path, method: :get, data: { turbo: false } do |f| %>
-  <%= f.input :lat, as: :hidden %>
-  <%= f.input :lon, as: :hidden %>
-  <%= f.input :search, as: :hidden %>
-  <%= f.input :displayname, as: :hidden %>
-  <%= f.input :rating, as: :hidden %>
-  <%= f.input :id, as: :hidden %>
-  <%= f.button :submit, "Search" %>
+    <%= f.input :lat, as: :hidden %>
+    <%= f.input :lon, as: :hidden %>
+    <%= f.input :search, as: :hidden %>
+    <%= f.input :displayname, as: :hidden %>
+    <%= f.input :rating, as: :hidden %>
+    <%= f.input :id, as: :hidden %>
+    <%= f.button :submit, "Search" %>
 <% end %>
