@@ -41,7 +41,8 @@ RSpec.describe 'User Registration', type: :feature do
       })
 
       visit new_user_registration_path
-      click_on "Log in with Google"
+
+      click_button "Log in with Google", match: :first
 
       expect(current_path).to eq(root_path)
     end
