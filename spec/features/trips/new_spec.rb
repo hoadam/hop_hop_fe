@@ -20,7 +20,7 @@ RSpec.describe "Discover Index", type: :feature do
       expect(page).to have_no_content("Girls Trip!")
 
       visit new_trip_path
-      save_and_open_page
+
       fill_in("Trip Name", with: "Girls Trip!")
       fill_in("Location", with: "Miami, Florida")
       select '2024', from: 'trip_start_date_1i' # Year
