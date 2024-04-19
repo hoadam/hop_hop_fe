@@ -1,6 +1,6 @@
 class HophopService
   def self.conn
-    conn = Faraday.new(url: 'https://api-hophop-9875038f278b.herokuapp.com/api/v1/') do |f|
+    conn = Faraday.new(url: ENV.fetch("BACKEND_API_URL", 'http://127.0.0.1:3000/api/v1')) do |f|
       f.request :json
       f.response :raise_error
     end
