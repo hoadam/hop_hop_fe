@@ -23,18 +23,52 @@
 
 ## How to Use
 *_This repo runs on Ruby v3.2.2 and  Rails v7.1.3 with a PostgresSLQ database_
-1. Fork or clone the repo, and run `bundle install`
-2. Run `bundle exec rails db:{drop,create,migrate,seed}`
-3. Start the server with `./bin/dev -p 5000` to build CSS and JS files
+
+#### Installation
+1. Clone the repository:
+
+    ```bash
+    git clone <repository_url>
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    bundle install
+    ```
+
+3. Set up the database:
+
+    ```bash
+    rails db:{drop,create,migrate,seed}
+    ```
+
+
+4. Start the server to build CSS and JS files with:
+
+    ```bash
+    ./bin/dev -p 5000
+    ```
 4. Connect it with our backend repo found here: [Hop Hop Back End](https://github.com/IgorrMagalhaess/hop_hop_be)
+
 
 ## Key Features
 * A User can log in with 2FA and Google Authentication
 * A User can search on the Google Maps in Discover or Trips page with marker locations
 * Mobile friendly design with TailwindCSS and Flowbite components
 
-## Contributors
-* [Hoa Dam](https://github.com/hoadam)
-* [Igor Malgahaess](https://github.com/IgorrMagalhaess)
-* [Selena Hamwadeh](https://github.com/Selena730)
-* [Yain Porter](https://github.com/yainporter)
+## Contributing
+Contributions are welcome! Feel free to open issues or pull requests.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+
+## Collaborators
+- Hoa Dam
+  - [LinkedIn](https://www.linkedin.com/in/hoa-dam-0ba4a716b/) || [GitHub](https://github.com/hoadam)
+- Igor Magalhaes
+  - [LinkedIn](https://www.linkedin.com/in/igorrmagalhaess/) || [GitHub](https://github.com/IgorrMagalhaess)
+- Selena Hawamdeh
+  - [LinkedIn](https://www.linkedin.com/in/selena-hawamdeh/) || [GitHub](https://github.com/Selena730)
+- Yain Porter
+  - [LinkedIn](https://www.linkedin.com/in/yainporter/) || [GitHub](https://github.com/yainporter)
