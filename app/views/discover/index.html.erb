@@ -1,18 +1,20 @@
 <div class="pt-40">
   <% if @trips.present? %>
-    <div id="results">
-      <%= render "results_table" %>
-    </div>
-    <div data-controller="discover">
-      <div id="searchForm"></div>
-    </div>
-    <%= render "search" %>
+  <div id="results">
+    <%= render "results_table" %>
+  </div>
+  <div data-controller="discover">
+    <div id="searchForm"></div>
+  </div>
+  <%= render "search" %>
+  <%= render "shared/flash" %>
     <%= render "/shared/map" %>
   <% else %>
   <%= render "search" %>
-    <div data-controller="discover">
-      <div id="searchForm"></div>
-    </div>
+  <div data-controller="discover">
+    <div id="searchForm"></div>
+  </div>
+  <%= render "shared/flash" %>
     <%= render "/shared/map" %>
     </div>
   <% end %>

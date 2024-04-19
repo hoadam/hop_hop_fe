@@ -15,11 +15,15 @@ class DiscoverController < ApplicationController
 
   def create
     if params[:search][:Type] == "Accommodation"
+
       redirect_to new_trip_accommodation_path(trip_id: search_params[:Trip], search: session[:search].to_json)
     elsif params[:search][:Type] == "Activity"
+
       redirect_to new_trip_daily_itinerary_path(search_params[:Trip])
     else
-      flash.now[:error] = "Sorry, try again."
+      flash[:alert] = "Sorry, please make sure all fields are selected"
+
+      redirect_to discover_index_path
     end
   end
 
